@@ -1,0 +1,17 @@
+{
+    "name": "poe论坛装备词缀汉化·光影",
+    "manifest_version": 2,
+    "version": "1.1",
+    "description": "poe论坛装备词缀汉化·光影",
+     
+    "permissions": [
+        "tabs",
+        "http://www.pathofexile.com/*",
+        "activeTab"
+    ],
+    "browser_action": {
+	      "default_title": "poe论坛装备词缀汉化·光影",
+	      "default_icon": "logo.png",
+	      "default_popup": "popup.html"
+	}
+}
