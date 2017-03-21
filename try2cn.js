@@ -87,7 +87,7 @@ for(var trynum=0;trynum<3;trynum++){
 	}
 	}
 
-	for(var i=0;i<itemjson.length;i++){
+for(var i=0;i<itemjson.length;i++){
 
 	link=itemjson[i].en;
 	linkCN=itemjson[i].cn; 

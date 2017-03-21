@@ -1683,15 +1683,7 @@ var baseItemTypeJson=[
 {"en":/Two Handed Sword/g,"cn":"双手剑"},
 {"en":/Two Handed Axe/g,"cn":"双手斧"},
 {"en":/Two Handed Mace/g,"cn":"双手锤"},
-{"en":/Fishing Rod/g,"cn":"鱼竿"},
-{"en":/Glove/g,"cn":"手套"},
-{"en":/Boot/g,"cn":"鞋子"},
-{"en":/Body Armour/g,"cn":"胸甲"},
-{"en":/Helmet/g,"cn":"头盔"},
-{"en":/Shield/g,"cn":"盾"},
-{"en":/Amulet/g,"cn":"护身符"},
-{"en":/Ring/g,"cn":"戒指"},
-{"en":/Quiver/g,"cn":"箭袋"},
-{"en":/Belt/g,"cn":"腰带"}
+{"en":/Fishing Rod/g,"cn":"鱼竿"}
+
 ];
 
