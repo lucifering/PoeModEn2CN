@@ -69,9 +69,11 @@ linkCN='';
 
 
 
+
+
 for(var trynum=0;trynum<3;trynum++){
 
-
+document.title='正在处理第'+(trynum+1)+'遍';
 
 	for(var i=0;i<jewelsJson.length;i++){
 	link=jewelsJson[i].en;
@@ -150,5 +152,6 @@ for(var i=0;i<baseItemTypeJson.length;i++){
   }
 
 
+document.title='处理完成';
 
-   alert('完成');
+alert('完成');
