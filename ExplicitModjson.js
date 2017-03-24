@@ -267,7 +267,8 @@ var ExplicitModjson= [
 {"en":/You cannot be Cursed with Silence/gi,"cn":"免疫沉默"},
 
 {"en":/增加 (\d+)% 元素伤害 with Weapons/gi,"cn":"增加 #% 武器元素伤害"},
-{"en":/力量 and Intelligence/gi,"cn":"力量和智慧"}
+{"en":/力量 and Intelligence/gi,"cn":"力量和智慧"},
+{"en":/增加 (\d+)% 攻击速度 while holding a Shield/gi,"cn":"持盾时增加 #% 攻击速度"}
 
 
 ];
