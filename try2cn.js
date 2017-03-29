@@ -135,12 +135,15 @@ for(var i=0;i<baseItemJson.length;i++){
 	RepItem(link,linkCN);
 
   }
-for(var i=0;i<baseJewelJson.length;i++){
+
+  if(document.location.href.indexOf('account/view-profile')!=-1){
+	for(var i=0;i<baseJewelJson.length;i++){
 
 	link=baseJewelJson[i].en;
 	linkCN=baseJewelJson[i].cn; 
 	RepItemSkillTree(link,linkCN);
 
+  }
   }
 for(var i=0;i<baseItemTypeJson.length;i++){
 
