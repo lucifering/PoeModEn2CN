@@ -144,6 +144,14 @@ for(var i=0;i<baseItemJson.length;i++){
 	RepItemSkillTree(link,linkCN);
 
   }
+  }else{
+	  for(var i=0;i<baseJewelJson.length;i++){
+
+		link=baseJewelJson[i].en;
+		linkCN=baseJewelJson[i].cn; 
+		RepItem(link,linkCN);
+
+	  }
   }
 for(var i=0;i<baseItemTypeJson.length;i++){
 
