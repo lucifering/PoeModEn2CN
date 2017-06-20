@@ -9,6 +9,7 @@
 {"en":/<span>Elemental Damage/g,"cn":"<span>元素伤害"},
 {"en":/<span>Limited to/g,"cn":"<span>数量上限"},
 {"en":/<span>Radius</g,"cn":"<span>影响范围<"},
+{"en":/<span>Support</g,"cn":"<span>辅助<"},
 {"en":/>Small</g,"cn":">小<"},
 {"en":/>Medium</g,"cn":">中<"},
 {"en":/>Large</g,"cn":">大<"},
@@ -22,8 +23,40 @@
 {"en":/<span>Armour/g,"cn":"<span>护甲"},
 {"en":/<span class="lc">Mirrored/g,"cn":"<span class=\"lc\">已复制"},
 {"en":/<span class="lc">Corrupted/g,"cn":"<span class=\"lc\">已污染"},
+
+
+
+{"en":/<span>This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Active Skill Gem you wish to augment. Right click to remove from a socket./g,"cn":"<span>这是一颗辅助宝石. 它并不会为你的角色增加能力数值, 但会强化与其连接的技能宝石. 将其放置于物品上同样颜色的插槽并连接想要强化的技能宝石. 点击右键从插槽中移除. "},
+
+
 {"en":/Properties are doubled while in a Breach/g,"cn":"在裂痕中本装备词缀效果翻倍"},
 {"en":/Has (\d+) Socket/g,"cn":"有 # 个插槽"},
+
+
+
+
+{"en":/Supported Skills deal 5% more Damage with Hits for each Poison on the Enemy, up to (\d+)/g,"cn":"被辅助技能造成5%更多击中伤害对每个中毒敌人，最多 # 次"},
+{"en":/Supported Skills inflict Decay, dealing (\d+) Chaos Damage per second for 10 seconds/g,"cn":"被辅助技能造成腐化，10秒内造成每秒 # 混沌伤害"},
+{"en":/Supported Skills deal (\d+)% less Damage with Hits/gi,"cn":"被辅助技能造成 # 较少击中伤害"},
+{"en":/Supported Skills deal (\d+)% more Damage with Ailments/gi,"cn":"被辅助技能造成 # 更多异常状态伤害"},
+{"en":/Supported Skills deal (\d+)% increased Damage with Poison/gi,"cn":"被辅助技能增加 #% 中毒伤害"},
+{"en":/Supported Skills deal (\d+)% more Poison Damage/gi,"cn":"被辅助技能有 #% 更多中毒伤害"},
+{"en":/Supported Skills have (\d+)% chance to Poison on Hit/gi,"cn":"被辅助技能有 #% 几率造成中毒"},
+{"en":/Ignites caused by Supported Skills spread to other enemies in a Radius of (\d+)/gi,"cn":"你的技能所造成的点燃效果扩散至半径范围 # 内的敌人身上"},
+{"en":/Supported Skills deal (\d+)% increased Fire Damage/gi,"cn":"被辅助技能造成增加 #% 火焰伤害"},
+{"en":/Supported Skills have (\d+)% increased Duration of Ailments on Enemies/gi,"cn":"被辅助技能增加 #% 异常状态持续时间"},
+{"en":/Supported Skills have (\d+)% increased Effect of Ailments on Enemies/gi,"cn":"被辅助技能增加 #% 异常状态效果"},
+{"en":/Supported Skills deal (\d+) to (\d+) added Fire Damage against Burning Enemies/gi,"cn":"被辅助技能对燃烧敌人附加 # 至 # 火焰伤害"},
+{"en":/Supported Attacks have (\d+)% chance to Maim on Hit/gi,"cn":"被辅助技能有 #% 几率击中造成瘫痪"},
+{"en":/Enemies Maimed by Supported Skills take (\d+)% increased Physical Damage/gi,"cn":"被辅助技能瘫痪的敌人受到增加 #% 物理伤害"},
+
+{"en":/Supported Attacks deal (\d+) to (\d+) added Physical Damage with Weapons/gi,"cn":" 被辅助技能附加 # - # 武器攻击物理伤害"},
+{"en":/Supported Attacks have (\d+)% chance to cause Bleeding/gi,"cn":"被辅助技能攻击有 #% 几率造成流血"},
+
+{"en":/Supported Attacks deal (\d+)% increased Damage with Bleeding/gi,"cn":"被辅助技能增加 #% 流血伤害"},
+
+{"en":/Supported Skills have/gi,"cn":"被辅助技能有"},
+{"en":/Supported Skills deal/gi,"cn":"被辅助技能"},
 {"en":/to Strength and Intelligence/gi,"cn":"力量和智慧"},
 {"en":/to Strength and Dexterity/gi,"cn":"力量和敏捷"},
 {"en":/to Dexterity and Intelligence/gi,"cn":"敏捷和智慧"},
@@ -144,7 +177,16 @@
 {"en":/(\d+)% reduced Ignite Duration on You/g,"cn":"减少 #% 点燃持续时间"},
 {"en":/(\d+)% reduced Shock Duration on You/g,"cn":"减少 #% 感电持续时间"},
 {"en":/You are Immune to Silence/g,"cn":"免疫沉默"},
-{"en":/(\d+)% increased Vaal Skill Damage/g,"cn":"增加 #% 瓦尔技能的伤害"}
+{"en":/(\d+)% increased Vaal Skill Damage/g,"cn":"增加 #% 瓦尔技能的伤害"},
+
+
+
+{"en":/(\d+) to (\d+) added Chaos Damage/gi,"cn":"附加 # - # 混沌伤害"},
+{"en":/(\d+)% more Spell Damage/gi,"cn":"#%更多法术伤害"},
+{"en":/(\d+)% more Damage over Time/gi,"cn":"#%更多持续伤害"},
+{"en":/(\d+)% more Physical Damage/gi,"cn":"#%更多物理伤害"},
+{"en":/no Elemental Damage/gi,"cn":"没有元素伤害"}
+
 
 
 ];

@@ -1,4 +1,18 @@
 var gemJson=[
+
+{"en":/Unbound Ailments Support/g,"cn":"异常爆发辅助"}, 
+{"en":/Ignite Proliferation Support/g,"cn":"点燃扩散辅助"},
+{"en":/Vile Toxins Support/g,"cn":"猛毒辅助"},
+{"en":/Brutality Support/g,"cn":"残暴辅助"},
+{"en":/Chance to Bleed Support/g,"cn":"几率流血辅助"},
+{"en":/Deadly Ailments Support/g,"cn":"致命异常状态辅助"},
+{"en":/Decay Support/g,"cn":"腐化辅助"},
+{"en":/Immolate Support/g,"cn":"牺牲辅助"},
+{"en":/Efficacy Support/g,"cn":"效能辅助"},
+{"en":/Maim Support/g,"cn":"瘫痪辅助"},
+{"en":/Lesser Poison Support/g,"cn":"低阶毒化辅助"},
+{"en":/Lesser Reduced Mana Cost Support/g,"cn":"低阶减少魔力消耗"},
+
 {"en":/Added Fire Damage Support/g,"cn":"附加火焰伤害辅助"},
 {"en":/Knockback Support/g,"cn":"击退辅助"},
 {"en":/Stun Support/g,"cn":"击晕辅助"},
