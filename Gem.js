@@ -1,5 +1,19 @@
 var gemJson=[
-
+{"en":/Volley Support/g,"cn":"齐射辅助"},
+{"en":/Volatile Dead/g,"cn":"致命之息"},
+{"en":/Unearth/g,"cn":"尸术矢"},
+{"en":/Spell Cascade Support/g,"cn":"秘能爆发辅助"},
+{"en":/Mirage Archer Support/g,"cn":"幻影射手辅助"},
+{"en":/Cremation/g,"cn":"熔炎送葬"},
+{"en":/Bodyswap/g,"cn":"尸术传送"},
+{"en":/Ancestral Call Support/g,"cn":"先祖战吼辅助"},
+{"en":/Storm Burst/g,"cn":"裂风雷球"},
+{"en":/Ruthless Support/g,"cn":"无情辅助"},
+{"en":/Onslaught Support/g,"cn":"猛攻辅助"},
+{"en":/Dark Pact/g,"cn":"暗夜血契"},
+{"en":/Charged Dash/g,"cn":"蓄力疾风闪"},
+{"en":/Arcane Surge Support/g,"cn":"秘术增强辅助"},
+{"en":/Elemental Damage with Attacks Support/g,"cn":"元素伤害攻击辅助"},
 {"en":/Unbound Ailments Support/g,"cn":"异常爆发辅助"}, 
 {"en":/Ignite Proliferation Support/g,"cn":"点燃扩散辅助"},
 {"en":/Vile Toxins Support/g,"cn":"猛毒辅助"},
@@ -286,6 +300,9 @@ var gemJson=[
 {"en":/Kinetic Blast/g,"cn":"力量爆破"},
 {"en":/Vortex/g,"cn":"旋涡"},
 {"en":/Summon Chaos Golem/g,"cn":"召唤混沌魔像"},
-{"en":/Summon Lightning Golem/g,"cn":"召唤闪电魔像"}
+{"en":/Summon Lightning Golem/g,"cn":"召唤闪电魔像"},
+{"en":/Herald of Ash/g,"cn":"灰烬之捷"},
+{"en":/Herald of Thunder/g,"cn":"闪电之捷"},
+{"en":/Herald of Ice/g,"cn":"冰霜之捷"},
 
 ];

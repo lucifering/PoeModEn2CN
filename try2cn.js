@@ -27,8 +27,10 @@ var group = link.exec(itemBoxContent[i].innerHTML);
 if(isNull(group)!=true){ 
 
 linkCN=tmp_linkCN;
-for(var j=1;j<group.length;j++){
+for(var j=1;j<group.length;j=j+2){
+	if(typeof(group[j])!='undefined'){
 linkCN=linkCN.replace('#',group[j]);
+}
 }
 
 
@@ -53,8 +55,12 @@ var group = link.exec(itemBoxContent[i].innerHTML);
 if(isNull(group)!=true){ 
  
 linkCN=tmp_linkCN;
-for(var j=1;j<group.length;j++){
+for(var j=1;j<group.length;j=j+2){
+if(typeof(group[j])!='undefined'){
 linkCN=linkCN.replace('#',group[j]);
+}
+
+
 }
 
 itemBoxContent[i].innerHTML=itemBoxContent[i].innerHTML.replace(group[0],linkCN);
@@ -75,15 +81,15 @@ for(var trynum=0;trynum<3;trynum++){
 
 document.title='正在处理第'+(trynum+1)+'遍';
 
-	for(var i=0;i<jewelsJson.length;i++){
-	link=jewelsJson[i].en;
-	linkCN=jewelsJson[i].cn; 
+	for(var i=0;i<modsjson.length;i++){
+	link=modsjson[i].en;
+	linkCN=modsjson[i].cn; 
 	 //遍历珠宝in论坛 优先加载处理后的珠宝词缀进行
 	if(document.location.href.indexOf('account/view-profile')==-1){
 	//论坛用普通遍历
 		RepItem(link,linkCN);
 	}else{
-	
+	RepItem(link,linkCN);
 	//否则要iframe。  处理后的珠宝词缀
 		RepItemSkillTree(link,linkCN);
 	}

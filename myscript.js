@@ -4,7 +4,9 @@ function click(e) {
 	    chrome.tabs.executeScript(null, {file: "ExplicitModjson.js"});
 		  chrome.tabs.executeScript(null, {file: "Gem.js"});
 		  chrome.tabs.executeScript(null, {file: "Jewels.js"});
+		   chrome.tabs.executeScript(null, {file: "mods.js"});
 	 chrome.tabs.executeScript(null, {file: "try2cn.js"});
+
 	  window.close();
 	}
 
