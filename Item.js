@@ -1603,7 +1603,11 @@ var baseJewelJson=[
 {"en":/Crimson Jewel/g,"cn":"赤红珠宝"},
 {"en":/Viridian Jewel/g,"cn":"翠绿珠宝"},
 {"en":/Cobalt Jewel/g,"cn":"钴蓝珠宝"},
-{"en":/Prismatic Jewel/g,"cn":"三相珠宝"}
+{"en":/Prismatic Jewel/g,"cn":"三相珠宝"},
+{"en":/Murderous Eye Jewel/g,"cn":"杀戮之眼珠宝"},
+{"en":/Searching Eye Jewel/g,"cn":"勘查之眼珠宝"},
+{"en":/Hypnotic Eye Jewel/g,"cn":"催眠之眼珠宝"},
+{"en":/Ghastly Eye Jewel/g,"cn":"极惧之眼珠宝"}
 ];
 
 var baseItemTypeJson=[

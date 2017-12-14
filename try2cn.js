@@ -79,7 +79,7 @@ linkCN='';
 
 for(var trynum=0;trynum<3;trynum++){
 
-document.title='正在处理第'+(trynum+1)+'遍';
+document.title='第'+(trynum+1)+'遍正在处理';
 
 	for(var i=0;i<modsjson.length;i++){
 	link=modsjson[i].en;
