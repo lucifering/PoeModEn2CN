@@ -7,6 +7,7 @@
     "permissions": [
         "tabs",
         "http://www.pathofexile.com/*",
+	"http://poe.ninja/builds/char/*",
         "activeTab"
     ],
     "browser_action": {
