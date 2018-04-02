@@ -45,7 +45,8 @@ function RepItemSkillTree(link, linkCN) {
 function RepItem(link, linkCN) {
 
     var tmp_linkCN = linkCN;
-    var itemBoxContent = document.getElementsByClassName('itemBoxContent') for (var i = 0; i < itemBoxContent.length; i++) {
+    var itemBoxContent = document.getElementsByClassName('itemBoxContent'); 
+		for (var i = 0; i < itemBoxContent.length; i++) {
 
         var group = link.exec(itemBoxContent[i].innerHTML);
         if (isNull(group) != true) {
