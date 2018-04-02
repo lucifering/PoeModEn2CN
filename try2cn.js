@@ -69,7 +69,7 @@ function RepItem(link, linkCN) {
 
 }
 
-if (document.location.href.indexOf('poe.ninja/builds/char/') != -1) {
+if (document.location.href.indexOf('poe.ninja/challenge/builds/char/') != -1) {
 
     ninjaFun;
 
@@ -164,8 +164,8 @@ if (document.location.href.indexOf('poe.ninja/builds/char/') != -1) {
         }
 
     }
-
-    document.title = '处理完成';
+  document.title = '处理完成';
 
     alert('完成');
+  
 }
