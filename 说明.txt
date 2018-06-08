@@ -4,3 +4,9 @@
 ÎÒµÄgithub£º
 
 https://github.com/lucifering/PoeModEn2CN
+
+
+
+git -c diff.mnemonicprefix=false -c core.quotepath=false push -v origin develop:develop
+lucifering
+code
