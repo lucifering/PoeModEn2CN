@@ -1,4 +1,13 @@
 var gemJson=[
+
+{"en":/Doryani's Touch/g,"cn":"多里亚尼之触"},
+{"en":/Summon Bestial Rhoa/g,"cn":"召唤兽化恐喙鸟"},
+{"en":/Summon Bestial Snake/g,"cn":"召唤兽化巨蛇"},
+{"en":/Summon Bestial Ursa/g,"cn":"召唤兽化之爪"},
+{"en":/Blood Offering/g,"cn":"血脉奉献"},
+{"en":/Icestorm/g,"cn":"冰风暴"},
+{"en":/Death Aura/g,"cn":"死神光环"},
+{"en":/Molten Burst/g,"cn":"熔岩爆破"},
 {"en":/Charged Traps Support/g,"cn":"陷阱充能(辅)"},
 {"en":/Explosive Trap/g,"cn":"爆裂陷阱"},
 {"en":/Flamethrower Trap/g,"cn":"喷火陷阱"},

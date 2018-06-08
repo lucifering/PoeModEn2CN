@@ -70,9 +70,10 @@ function RepItem(link, linkCN) {
 }
 
 if (document.location.href.indexOf('poe.ninja/') != -1 
-	&& document.location.href.indexOf('/builds/char/') != -1) {
+	&& document.location.href.indexOf('/builds') != -1
+	) {
 
-    ninjaFun;
+//   ninjaFun;
 
 } else { //官网
     for (var trynum = 0; trynum < 3; trynum++) {

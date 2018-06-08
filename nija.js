@@ -34631,7 +34631,9 @@ function(t, e, n) {
         e.prototype.fetchOverview = function() {
             var t = this;
             c.get("/api/data/" + this.props.snapshotVersion.version + "/getbuildoverview?overview=" + this.props.snapshotVersion.name).then(function(e) {
-                t.state.classFilter.names = e.classNames.map(function(t) {
+
+e=RepItemNinja_getbuildoverview(e);
+				t.state.classFilter.names = e.classNames.map(function(t) {
                     return {
                         name: t
                     }
@@ -35413,7 +35415,7 @@ function(t, e, n) {
                 },
                 e))
             },
-            n = this.renderClassFilterBuilder(this.state.classFilter), a = e("Items", this.renderFilterBuilder(this.state.itemFilter)), o = e("Skills (5+ links)", this.renderFilterBuilder(this.state.skillFilter)), c = e("Skill Mode (5+ links)", this.renderFilterBuilder(this.state.skillModeFilter)), r = e("Keystones / Ascendency", this.renderFilterBuilder(this.state.keystoneFilter)), u = e("Weapons", this.renderFilterBuilder(this.state.weaponConfFilter)), y = [], f = 0, p = this.state.skillDetails; f < p.length; f++) {
+            n = this.renderClassFilterBuilder(this.state.classFilter), a = e("传奇物品", this.renderFilterBuilder(this.state.itemFilter)), o = e("技能 (5L或以上)", this.renderFilterBuilder(this.state.skillFilter)), c = e("技能模式 (5L或以上)", this.renderFilterBuilder(this.state.skillModeFilter)), r = e("天赋大点 / 升华", this.renderFilterBuilder(this.state.keystoneFilter)), u = e("武器类型", this.renderFilterBuilder(this.state.weaponConfFilter)), y = [], f = 0, p = this.state.skillDetails; f < p.length; f++) {
                 var g = p[f];
                 this.isSkillDetailsActive(g) && y.push(e(g.result.name + " Supports", this.renderFilterBuilder(g.supportFilter)))
             }
@@ -35424,11 +35426,11 @@ function(t, e, n) {
             s.createElement("div", {
                 className: "p6"
             },
-            "Found ", s.createElement("b", null, this.state.resultCount), " characters."), s.createElement("div", {
+            "搜索到 ", s.createElement("b", null, this.state.resultCount), " 角色."), s.createElement("div", {
                 className: "bg-teal border-light-grey py3 px6 hover:glow-teal cursor-pointer",
                 onClick: this.onTreeToggle
             },
-            this.state.treeExpanded ? "Hide": "Show", " Passive Tree Heatmap")), this.state.treeExpanded ? s.createElement("div", {
+            this.state.treeExpanded ? "隐藏": "显示", " 天赋树热力图")), this.state.treeExpanded ? s.createElement("div", {
                 style: {
                     background: "#000"
                 }
@@ -35439,10 +35441,10 @@ function(t, e, n) {
                 className: "result-table",
                 cellPadding: 0
             },
-            s.createElement("tbody", null, s.createElement("tr", null, s.createElement("th", null, "Name"), s.createElement("th", i({},
-            this.sortProps("level")), "Level"), s.createElement("th", null), s.createElement("th", i({},
-            this.sortProps("life")), "Life"), s.createElement("th", i({},
-            this.sortProps("energy-shield")), "ES"), s.createElement("th", null, "Skills"), s.createElement("th", null, "Keystones")), this.state.charEntities.map(function(e, n) {
+            s.createElement("tbody", null, s.createElement("tr", null, s.createElement("th", null, "角色名"), s.createElement("th", i({},
+            this.sortProps("level")), "等级"), s.createElement("th", null), s.createElement("th", i({},
+            this.sortProps("life")), "生命"), s.createElement("th", i({},
+            this.sortProps("energy-shield")), "能量护盾"), s.createElement("th", null, "技能"), s.createElement("th", null, "天赋大点")), this.state.charEntities.map(function(e, n) {
                 return s.createElement("tr", {
                     key: e.name
                 },
@@ -35553,7 +35555,7 @@ function(t, e, n) {
             s.createElement("div", {
                 className: "quick-filter"
             },
-            s.createElement("div", null, "Level"), s.createElement("select", {
+            s.createElement("div", null, "选择等级"), s.createElement("select", {
                 value: this.state.minLevel,
                 onChange: this.onMinLevelChange
             },
@@ -35876,6 +35878,240 @@ function toCnProperties(namejsons, basejsons, enname) {
                     enmods += "Rarity: UNIQUE\r\n";
                 }*/
 //
+var classList=[
+    {
+        "en":"Ascendant",
+        "cn":"升华使徒"
+    },
+    {
+        "en":"Juggernaut",
+        "cn":"勇士"
+    },
+    {
+        "en":"Berserker",
+        "cn":"暴徒"
+    },
+    {
+        "en":"Chieftain",
+        "cn":"酋长"
+    },
+    {
+        "en":"Raider",
+        "cn":"侠客"
+    },
+    {
+        "en":"Deadeye",
+        "cn":"锐眼"
+    },
+    {
+        "en":"Pathfinder",
+        "cn":"追猎者"
+    },
+    {
+        "en":"Occultist",
+        "cn":"秘术家"
+    },
+    {
+        "en":"Elementalist",
+        "cn":"元素使"
+    },
+    {
+        "en":"Necromancer",
+        "cn":"召唤师"
+    },
+    {
+        "en":"Slayer",
+        "cn":"处刑者"
+    },
+    {
+        "en":"Gladiator",
+        "cn":"卫士"
+    },
+    {
+        "en":"Champion",
+        "cn":"冠军"
+    },
+    {
+        "en":"Inquisitor",
+        "cn":"判官"
+    },
+    {
+        "en":"Hierophant",
+        "cn":"圣宗"
+    },
+    {
+        "en":"Guardian",
+        "cn":"守护者"
+    },
+    {
+        "en":"Assassin",
+        "cn":"刺客"
+    },
+    {
+        "en":"Trickster",
+        "cn":"欺诈师"
+    },
+    {
+        "en":"Saboteur",
+        "cn":"破坏者"
+    }
+];
+
+var skillModes=[
+    {
+        "en":"Normal",
+        "cn":"通常"
+    },
+    {
+        "en":"Totem",
+        "cn":"图腾"
+    },
+    {
+        "en":"Mine",
+        "cn":"地雷"
+    },
+    {
+        "en":"Trap",
+        "cn":"陷阱"
+    }
+];
+
+var weaponConfigurationTypes=[
+    {
+        "en":"Unarmed","cn":"空手"
+    },
+    {
+        "en":"Two Handed Axe","cn":"双手斧"
+    },
+    {
+        "en":"Two Handed Mace","cn":"双手锤"
+    },
+    {
+        "en":"Two Handed Sword","cn":"双手剑"
+    },
+    {
+        "en":"Bow","cn":"弓"
+    },
+    {
+        "en":"Staff","cn":"长杖"
+    },
+    {
+        "en":"Dual Axes","cn":"双持斧"
+    },
+    {
+        "en":"Dual Claws","cn":"双持爪"
+    },
+    {
+        "en":"Dual Daggers","cn":"双持匕首"
+    },
+    {
+        "en":"Dual Maces","cn":"双持锤"
+    },
+    {
+        "en":"Dual Swords","cn":"双持剑"
+    },
+    {
+        "en":"Dual Wands","cn":"双持法杖"
+    },
+    {
+        "en":"Axe / Shield","cn":"斧"
+    },
+    {
+        "en":"Claw / Shield","cn":"爪"
+    },
+    {
+        "en":"Dagger / Shield","cn":"匕首 + 盾"
+    },
+    {
+        "en":"Mace / Shield","cn":"锤 + 盾"
+    },
+    {
+        "en":"Sword / Shield","cn":"剑 + 盾"
+    },
+    {
+        "en":"Wand / Shield","cn":"法杖 + 盾"
+    },
+    {
+        "en":"Axe / Claw","cn":"斧 + 爪"
+    },
+    {
+        "en":"Axe / Dagger","cn":"斧 + 匕首"
+    },
+    {
+        "en":"Axe / Mace","cn":"斧 + 锤"
+    },
+    {
+        "en":"Axe / Sword","cn":"斧 + 剑"
+    },
+    {
+        "en":"Claw / Dagger","cn":"爪 + 匕首"
+    },
+    {
+        "en":"Claw / Mace","cn":"爪 + 锤"
+    },
+    {
+        "en":"Claw / Sword","cn":"爪 + 剑"
+    },
+    {
+        "en":"Dagger / Mace","cn":"匕首 + 锤"
+    },
+    {
+        "en":"Dagger / Sword","cn":"匕首 + 剑"
+    },
+    {
+        "en":"Mace / Sword","cn":"锤 + 剑"
+    }
+];
+
+
+function RepItemNinja_getbuildoverview(buildoverviewData) {
+
+ if (buildoverviewData.uniqueItems) {	 
+	for (var i = 0; i < buildoverviewData.uniqueItems.length; i++) { 
+		buildoverviewData.uniqueItems[i].name= toCnName(uniqueNameJson,buildoverviewData.uniqueItems[i].name);
+	} 
+ }
+
+ if (buildoverviewData.activeSkills) {	 
+ for (var i = 0; i < buildoverviewData.activeSkills.length; i++) { 
+	 buildoverviewData.activeSkills[i].name= toCnName(gemJson,buildoverviewData.activeSkills[i].name);
+ } 
+ }
+
+if (buildoverviewData.skillModes) {	 
+ for (var i = 0; i < buildoverviewData.skillModes.length; i++) { 
+	 for(var j=0;j<skillModes.length;j++){
+	 
+		if(skillModes[j].en==buildoverviewData.skillModes[i].name){
+			buildoverviewData.skillModes[i].name=skillModes[j].cn;
+		}
+	 }
+	  
+ } 
+ }
+
+ if (buildoverviewData.keystones) {	 
+ for (var i = 0; i < buildoverviewData.keystones.length; i++) { 
+	 buildoverviewData.keystones[i].name= toCnName(keyStonesJson,buildoverviewData.keystones[i].name);
+
+	 console.log(buildoverviewData.keystones[i].name);
+ } 
+ }
+
+if (buildoverviewData.weaponConfigurationTypes) {	 
+ for (var i = 0; i < buildoverviewData.weaponConfigurationTypes.length; i++) { 
+	 for(var j=0;j<weaponConfigurationTypes.length;j++){
+	 
+		if(weaponConfigurationTypes[j].en==buildoverviewData.weaponConfigurationTypes[i].name){
+			buildoverviewData.weaponConfigurationTypes[i].name=weaponConfigurationTypes[j].cn;
+		}
+	 }
+	  
+ } 
+ }
+
+ return buildoverviewData;
+}
 function RepItemNinja(charactersData) {
 
     if (charactersData.skills) {
