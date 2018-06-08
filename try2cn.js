@@ -69,7 +69,8 @@ function RepItem(link, linkCN) {
 
 }
 
-if (document.location.href.indexOf('poe.ninja/challenge/builds/char/') != -1) {
+if (document.location.href.indexOf('poe.ninja/') != -1 
+	&& document.location.href.indexOf('/builds/char/') != -1) {
 
     ninjaFun;
 
