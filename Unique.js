@@ -1,6 +1,5 @@
 var uniqueNameJson=[
 
-
 {"en":/Gluttony/g,"cn":"暴食 皮革腰带"},
 {"en":/Corona Solaris/g,"cn":"日耀之冠 水晶法杖"},
 {"en":/Reach of the Council/g,"cn":"议会之触 脊弓"},

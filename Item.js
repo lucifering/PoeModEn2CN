@@ -1,3 +1,4 @@
+﻿ 
  var keyStonesJson= [ 
 {"en":/Templar Ascendancy/g,"cn":"圣堂武僧升华职业"},
 {"en":/Witch Ascendancy/g,"cn":"女巫升华职业"},
