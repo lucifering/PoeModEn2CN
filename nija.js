@@ -35417,7 +35417,7 @@ e=RepItemNinja_getbuildoverview(e);
             },
             n = this.renderClassFilterBuilder(this.state.classFilter), a = e("传奇物品", this.renderFilterBuilder(this.state.itemFilter)), o = e("技能 (5L或以上)", this.renderFilterBuilder(this.state.skillFilter)), c = e("技能模式 (5L或以上)", this.renderFilterBuilder(this.state.skillModeFilter)), r = e("天赋大点 / 升华", this.renderFilterBuilder(this.state.keystoneFilter)), u = e("武器类型", this.renderFilterBuilder(this.state.weaponConfFilter)), y = [], f = 0, p = this.state.skillDetails; f < p.length; f++) {
                 var g = p[f];
-                this.isSkillDetailsActive(g) && y.push(e(g.result.name + " Supports", this.renderFilterBuilder(g.supportFilter)))
+                this.isSkillDetailsActive(g) && y.push(e(g.result.name + " 常用辅助技能", this.renderFilterBuilder(g.supportFilter)))
             }
             var h = this.buildSearchOptions(),
             x = s.createElement("div", null, s.createElement("div", {
@@ -36064,8 +36064,22 @@ var weaponConfigurationTypes=[
 ];
 
 
+function ucfirst(str){
+
+	var strarr = str.split(' ');
+	var result = '';
+	for(var i in strarr){
+		result += strarr[i].substring(0,1).toUpperCase()+strarr[i].substring(1)+' ';
+	}
+	return result;
+}
+
+
+
 function RepItemNinja_getbuildoverview(buildoverviewData) {
 
+
+ console.log("【光影路西法】插件更新：http://bbs.17173.com/thread-10755360-1-1.html");
  if (buildoverviewData.uniqueItems) {	 
 	for (var i = 0; i < buildoverviewData.uniqueItems.length; i++) { 
 		buildoverviewData.uniqueItems[i].name= toCnName(uniqueNameJson,buildoverviewData.uniqueItems[i].name);
@@ -36094,7 +36108,7 @@ if (buildoverviewData.skillModes) {
  for (var i = 0; i < buildoverviewData.keystones.length; i++) { 
 	 buildoverviewData.keystones[i].name= toCnName(keyStonesJson,buildoverviewData.keystones[i].name);
 
-	 console.log(buildoverviewData.keystones[i].name);
+	// console.log(buildoverviewData.keystones[i].name);
  } 
  }
 
@@ -36107,6 +36121,43 @@ if (buildoverviewData.weaponConfigurationTypes) {
 		}
 	 }
 	  
+ } 
+ }
+
+
+if (buildoverviewData.skillDetails) {	 
+ for (var i = 0; i < buildoverviewData.skillDetails.length; i++) { 
+	
+	 buildoverviewData.skillDetails[i].name= toCnName(gemJson,buildoverviewData.activeSkills[i].name);
+		
+		if(buildoverviewData.skillDetails[i].supportGems &&
+		buildoverviewData.skillDetails[i].supportGems.names
+		){
+			for (var j = 0; j < buildoverviewData.skillDetails[i].supportGems.names.length; j++) { 
+			
+				buildoverviewData.skillDetails[i].supportGems.names[j].name= toCnName(gemJson,buildoverviewData.skillDetails[i].supportGems.names[j].name);
+		// console.log("pj="+JSON.stringify(buildoverviewData.skillDetails[i].supportGems.names[j]));
+
+			}	
+		
+		}
+
+		if(buildoverviewData.skillDetails[i].supportGems &&
+		buildoverviewData.skillDetails[i].supportGems.dictionary
+		){
+			 for(var p in buildoverviewData.skillDetails[i].supportGems.dictionary){
+
+					var keyname=p;
+					var valname=buildoverviewData.skillDetails[i].supportGems.dictionary[p];
+					var pcn=toCnName(gemJson,ucfirst(p).trim());
+					delete buildoverviewData.skillDetails[i].supportGems.dictionary[keyname];
+					buildoverviewData.skillDetails[i].supportGems.dictionary[pcn]=valname;
+
+					
+
+			}	
+		}
+
  } 
  }
 
@@ -36165,7 +36216,7 @@ function RepItemNinja(charactersData) {
 
                     charactersData.items[i].itemData.socketedItems[j].typeLine = toCnName(gemJson, charactersData.items[i].itemData.socketedItems[j].typeLine);
 
-                    console.log(i + " AND " + j + " ==>" + charactersData.items[i].itemData.socketedItems[j].typeLine);
+                //    console.log(i + " AND " + j + " ==>" + charactersData.items[i].itemData.socketedItems[j].typeLine);
                 }
 
             }
