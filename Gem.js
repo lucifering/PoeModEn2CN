@@ -1,5 +1,6 @@
 var gemJson=[
-
+{"en":/Advanced Traps Support/g,"cn":"陷阱冷却(辅)"},
+{"en":/Elemental Penetration Support/g,"cn":"元素穿透(辅)"},
 {"en":/Doryani's Touch/g,"cn":"多里亚尼之触"},
 {"en":/Summon Bestial Rhoa/g,"cn":"召唤兽化恐喙鸟"},
 {"en":/Summon Bestial Snake/g,"cn":"召唤兽化巨蛇"},
