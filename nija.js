@@ -1,7 +1,10 @@
+
+
  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
         ga('create', 'UA-84564417-1', 'auto');
 
-window.snapshotVersions = [{"url":"challenge","name":"incursion","version":"fd41e2f616c495a2abe524cc7ea8a703"},{"url":"challengehc","name":"hardcore-incursion","version":"328e38b5f2bcf881bd7c0bb4ba410afe"},{"url":"challengessf","name":"ssf-incursion","version":"30ae830495f2299b8111772d8276f3a5"},{"url":"challengehcssf","name":"ssf-incursion-hc","version":"478c5c2e9486f0e9b21750d79c7659dd"},{"url":"bestiary","name":"bestiary","version":"ca64a7c0e2e8c44e403c7f61dd9a0f98"},{"url":"bestiaryhc","name":"hardcore-bestiary","version":"99e498bcab1428e147ac1bd4b70759d8"},{"url":"bestiaryssf","name":"ssf-bestiary","version":"0320672171c2206ba882e34e9264678a"},{"url":"bestiaryhcssf","name":"ssf-bestiary-hc","version":"7a56b19d73f8f657e21a716e1e9eff5f"},{"url":"flashback","name":"flashback-event-(bre001)","version":"5d1aafd565170be045a711a2fa1651b7"},{"url":"flashbackhc","name":"hc-flashback-event-(bre002)","version":"bb25db6d235635d89d39b311275ba982"},{"url":"flashbackssf","name":"ssf-flashback-event-(bre003)","version":"7df1babdf7cc55be6124ec8c99d36410"},{"url":"flashbackhcssf","name":"hc-ssf-flashback-event-(bre004)","version":"d8106d2ce2fc4fb5ea687b881a3a8970"}];
+window.snapshotVersions = [{"url":"challenge","name":"incursion","version":"5c2218c179f566a18c5d0e06e8fbeadf"},{"url":"challengehc","name":"hardcore-incursion","version":"4aa5c997edb23d747ba6dd368bf1f16a"},{"url":"challengessf","name":"ssf-incursion","version":"9dd431e76665a44668fce57f8bd343cc"},{"url":"challengehcssf","name":"ssf-incursion-hc","version":"daf914f74b6c5ea82b7a22cedbf7b1d3"},{"url":"bestiary","name":"bestiary","version":"5c39c3868ad0a49ad8435f0b0bef7653"},{"url":"bestiaryhc","name":"hardcore-bestiary","version":"50e62c79df17c852c03e4e90f64d02d0"},{"url":"bestiaryssf","name":"ssf-bestiary","version":"5414ad6eaa52199587782a6a29907be5"},{"url":"bestiaryhcssf","name":"ssf-bestiary-hc","version":"d2a5aaf48bdbfdd64a5ead09d7a44225"},{"url":"flashback","name":"flashback-event-(bre001)","version":"253074823c1c9cf053bd18360019df30"},{"url":"flashbackhc","name":"hc-flashback-event-(bre002)","version":"28a74b0e09f35813387a0063c8babe00"},{"url":"flashbackssf","name":"ssf-flashback-event-(bre003)","version":"156bb747760f6a780808b557a2975349"},{"url":"flashbackhcssf","name":"hc-ssf-flashback-event-(bre004)","version":"80b4388dcecabad9dd2ca50961afae30"}];
+//window.snapshotVersions = [{"url":"challenge","name":"incursion","version":"fd41e2f616c495a2abe524cc7ea8a703"},{"url":"challengehc","name":"hardcore-incursion","version":"328e38b5f2bcf881bd7c0bb4ba410afe"},{"url":"challengessf","name":"ssf-incursion","version":"30ae830495f2299b8111772d8276f3a5"},{"url":"challengehcssf","name":"ssf-incursion-hc","version":"478c5c2e9486f0e9b21750d79c7659dd"},{"url":"bestiary","name":"bestiary","version":"ca64a7c0e2e8c44e403c7f61dd9a0f98"},{"url":"bestiaryhc","name":"hardcore-bestiary","version":"99e498bcab1428e147ac1bd4b70759d8"},{"url":"bestiaryssf","name":"ssf-bestiary","version":"0320672171c2206ba882e34e9264678a"},{"url":"bestiaryhcssf","name":"ssf-bestiary-hc","version":"7a56b19d73f8f657e21a716e1e9eff5f"},{"url":"flashback","name":"flashback-event-(bre001)","version":"5d1aafd565170be045a711a2fa1651b7"},{"url":"flashbackhc","name":"hc-flashback-event-(bre002)","version":"bb25db6d235635d89d39b311275ba982"},{"url":"flashbackssf","name":"ssf-flashback-event-(bre003)","version":"7df1babdf7cc55be6124ec8c99d36410"},{"url":"flashbackhcssf","name":"hc-ssf-flashback-event-(bre004)","version":"d8106d2ce2fc4fb5ea687b881a3a8970"}];
 window.leagues = [{
     "name": "Incursion",
     "url": "challenge",
@@ -100,6 +103,9 @@ window.oldLeagues = [{
 }]
 !
 function(n) {
+
+
+
     var t = {};
     function e(a) {
         if (t[a]) return t[a].exports;
@@ -7252,6 +7258,8 @@ function(n, t, e) {
         t
     } (s.Component),
     f = function(n) {
+
+ 
         function t() {
             return null !== n && n.apply(this, arguments) || this
         }
@@ -7264,6 +7272,9 @@ function(n, t, e) {
 		{
 			headerDiv.removeChild(headerDiv.firstChild);
 		}
+
+	 
+
 
             return i.createPortal(s.createElement("div", {
                 className: "site-header"
@@ -33255,3 +33266,5 @@ function RepItemNinja(charactersData) {
 
     return charactersData;
 }
+
+
