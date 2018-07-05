@@ -156,7 +156,7 @@ var gemJson=[
 {"en":/Bloodlust Support/g,"cn":"嗜血(辅)"},
 {"en":/WIP Support/g,"cn":"WIP Support"},
 {"en":/Enlighten Support/g,"cn":"启蒙(辅)"},
-{"en":/Innervate Support/g,"cn":"亢奋(辅)"},
+{"en":/Innervate Support/g,"cn":"闪电支配(辅)"},
 {"en":/Brutality Support/g,"cn":"残暴(辅)"},
 {"en":/Onslaught Support/g,"cn":"猛攻(辅)"},
 {"en":/Herald of Thunder/g,"cn":"闪电之捷"},
