@@ -1,5 +1,10 @@
 ﻿ 
  var keyStonesJson= [ 
+
+{"en":/Radiant Crusade/g,"cn":"光明圣战"},
+{"en":/Unwavering Crusade/g,"cn":"坚定圣战"},
+{"en":/Nature's Reprisal/g,"cn":"大自然的报仇"},
+{"en":/Master Toxicist/g,"cn":"毒物大师"},
 {"en":/Templar Ascendancy/g,"cn":"圣堂武僧升华职业"},
 {"en":/Witch Ascendancy/g,"cn":"女巫升华职业"},
 {"en":/Path of the Witch/g,"cn":"女巫之道"},

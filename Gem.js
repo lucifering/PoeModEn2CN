@@ -1,4 +1,26 @@
 var gemJson=[
+
+
+
+
+{"en":/Envy/g,"cn":"嫉妒"},
+{"en":/Summon Doedre's Effigy/g,"cn":"召唤德瑞的雕像"},
+{"en":/Aspect of the Crab/g,"cn":"蟹之势"},
+{"en":/Aspect of the Spider/g,"cn":"蛛之势"},
+{"en":/Aspect of the Avian/g,"cn":"鸟之势"},
+{"en":/Aspect of the Cat/g,"cn":"猫之势"},
+{"en":/Petrification Statue/g,"cn":"召唤石化雕像"},
+
+
+{"en":/Herald of Agony/g,"cn":"苦痛之捷"},
+{"en":/Scourge Arrow/g,"cn":"灾厄之箭"},
+{"en":/Toxic Rain/g,"cn":"腐蚀毒雨"},
+{"en":/Withering Touch Support /g,"cn":"凋零之触(辅)"},
+{"en":/Consecrated Path/g,"cn":"奉献之路"},
+{"en":/Herald of Purity/g,"cn":"纯净之捷"},
+{"en":/Smite/g,"cn":"雷鸣重击"},
+{"en":/Vaal Ancestral Warchief/g,"cn":"瓦尔.先祖战士长"},
+{"en":/Summon Holy Relic/g,"cn":"召唤圣物"},
 {"en":/Advanced Traps Support/g,"cn":"陷阱冷却(辅)"},
 {"en":/Elemental Penetration Support/g,"cn":"元素穿透(辅)"},
 {"en":/Doryani's Touch/g,"cn":"多里亚尼之触"},
