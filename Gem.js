@@ -2,7 +2,7 @@ var gemJson=[
 
 
 
-
+{"en":/Vicious Projectiles Support/g,"cn":"邪恶投掷(辅)"},
 {"en":/Envy/g,"cn":"嫉妒"},
 {"en":/Summon Doedre's Effigy/g,"cn":"召唤德瑞的雕像"},
 {"en":/Aspect of the Crab/g,"cn":"蟹之势"},
