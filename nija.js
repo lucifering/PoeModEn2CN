@@ -1,174 +1,122 @@
-window.ga = window.ga ||
-function() { (ga.q = ga.q || []).push(arguments)
-};
-ga.l = +new Date;
-ga('create', 'UA-84564417-1', 'auto');
-ga('set', 'transport', 'beacon');
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-84564417-1', 'auto');
+        ga('set', 'transport', 'beacon');
 
-window.snapshotVersions = [{
-    "url": "challenge",
-    "name": "delve",
-    "version": "25d02537aa2710c41f835374520504aa"
-},
-{
-    "url": "challengehc",
-    "name": "hardcore-delve",
-    "version": "af965e582ec39e235f1e25b3b686192f"
-},
-{
-    "url": "challengessf",
-    "name": "ssf-delve",
-    "version": "e3f98107e68431913a32a4b6eee1f7d1"
-},
-{
-    "url": "challengehcssf",
-    "name": "ssf-delve-hc",
-    "version": "3e6b6497f989890dea696cf0613f5f3e"
-},
-{
-    "url": "incursion",
-    "name": "incursion",
-    "version": "d0fe36042092b9bdaa42ac5efccda25f"
-},
-{
-    "url": "incursionhc",
-    "name": "hardcore-incursion",
-    "version": "16004f772cef85c5f9ef8390f13ba8fd"
-},
-{
-    "url": "incursionssf",
-    "name": "ssf-incursion",
-    "version": "2da120e53c8005a925d164eb3159247c"
-},
-{
-    "url": "incursionhcssf",
-    "name": "ssf-incursion-hc",
-    "version": "c4150838c2ffb06be9145672acb16d7d"
-},
-{
-    "url": "flashback",
-    "name": "incursion-event-(ire001)",
-    "version": "32840298e66b1f4fed8212d368abfb0c"
-},
-{
-    "url": "flashbackhc",
-    "name": "incursion-event-hc-(ire002)",
-    "version": "e9a3182a1a1f25e458e76985d933026a"
-},
-{
-    "url": "flashbackssf",
-    "name": "ssf-incursion-event-(ire003)",
-    "version": "a4810c5ea626f29165687919708e625d"
-},
-{
-    "url": "flashbackhcssf",
-    "name": "ssf-incursion-event-hc-(ire004)",
-    "version": "976bb996893434af7c793cdb65f1bdcc"
-}];
+window.snapshotVersions = [
+    {
+        "url":"challenge",
+        "name":"betrayal",
+        "version":"4359f45af7d23b626df6adddea9ed370"
+    },
+    {
+        "url":"challengehc",
+        "name":"hardcore-betrayal",
+        "version":"04dc0fcff1983f4a122641a83dfad8e5"
+    },
+    {
+        "url":"challengessf",
+        "name":"ssf-betrayal",
+        "version":"07b78fbc9f01c24877aa977b6b56b29c"
+    },
+    {
+        "url":"challengehcssf",
+        "name":"ssf-betrayal-hc",
+        "version":"d1c6921dda7a275b6909731c7ffb0687"
+    },
+    {
+        "url":"delve",
+        "name":"delve",
+        "version":"252978f141771e00bb0deeae9dea23c6"
+    },
+    {
+        "url":"delvehc",
+        "name":"hardcore-delve",
+        "version":"1f4b95229fe42e8944a6d8379347b046"
+    },
+    {
+        "url":"delvessf",
+        "name":"ssf-delve",
+        "version":"5691dace28392e679d1eb570a477e2e0"
+    },
+    {
+        "url":"delvehcssf",
+        "name":"ssf-delve-hc",
+        "version":"6e26316314c31dbfaed7f4d974a0de50"
+    }
+];
 
-window.leagues = [{
-    "name": "Delve",
-    "url": "challenge",
-    "displayName": "地心",
-    "hardcore": false,
-    "soloSelfFound": false,
-    "snapshotName": "delve"
-},
-{
-    "name": "Hardcore Delve",
-    "url": "challengehc",
-    "displayName": "地心（专家）",
-    "hardcore": true,
-    "soloSelfFound": false,
-    "snapshotName": "hardcore-delve"
-},
-{
-    "name": "SSF Delve",
-    "url": "challengessf",
-    "displayName": "地心（独狼）",
-    "hardcore": false,
-    "soloSelfFound": true,
-    "snapshotName": "ssf-delve"
-},
-{
-    "name": "SSF Delve HC",
-    "url": "challengehcssf",
-    "displayName": "地心（独狼专家）",
-    "hardcore": true,
-    "soloSelfFound": true,
-    "snapshotName": "ssf-delve-hc"
-}];
+window.leagues = [
+    {
+        "name":"Betrayal",
+        "url":"challenge",
+        "displayName":"毁灭不朽",
+        "hardcore":false,
+        "soloSelfFound":false,
+        "snapshotName":"betrayal"
+    },
+    {
+        "name":"Hardcore Betrayal",
+        "url":"challengehc",
+        "displayName":"毁灭不朽（专家）",
+        "hardcore":true,
+        "soloSelfFound":false,
+        "snapshotName":"hardcore-betrayal"
+    },
+    {
+        "name":"SSF Betrayal",
+        "url":"challengessf",
+        "displayName":"毁灭不朽（独狼）",
+        "hardcore":false,
+        "soloSelfFound":true,
+        "snapshotName":"ssf-betrayal"
+    },
+    {
+        "name":"SSF Betrayal HC",
+        "url":"challengehcssf",
+        "displayName":"毁灭不朽（专家独狼）",
+        "hardcore":true,
+        "soloSelfFound":true,
+        "snapshotName":"ssf-betrayal-hc"
+    }
+];
 window.oldLeagues = 
 [
     {
-        "name":"Incursion",
-        "url":"incursion",
-        "displayName":"穿越",
+        "name":"Delve",
+        "url":"delve",
+        "displayName":"地心",
         "hardcore":false,
         "soloSelfFound":false,
-        "snapshotName":"incursion"
+        "snapshotName":"delve"
     },
     {
-        "name":"Hardcore Incursion",
-        "url":"incursionhc",
-        "displayName":"穿越（专家）",
+        "name":"Hardcore Delve",
+        "url":"delvehc",
+        "displayName":"地心（专家）",
         "hardcore":true,
         "soloSelfFound":false,
-        "snapshotName":"hardcore-incursion"
+        "snapshotName":"hardcore-delve"
     },
     {
-        "name":"SSF Incursion",
-        "url":"incursionssf",
-        "displayName":"穿越（独狼）",
+        "name":"SSF Delve",
+        "url":"delvessf",
+        "displayName":"地心（独狼）",
         "hardcore":false,
         "soloSelfFound":true,
-        "snapshotName":"ssf-incursion"
+        "snapshotName":"ssf-delve"
     },
     {
-        "name":"SSF Incursion HC",
-        "url":"incursionhcssf",
-        "displayName":"穿越（独狼专家）",
+        "name":"SSF Delve HC",
+        "url":"delvehcssf",
+        "displayName":"地心（专家独狼）",
         "hardcore":true,
         "soloSelfFound":true,
-        "snapshotName":"ssf-incursion-hc"
-    },
-    {
-        "name":"Incursion Event (IRE001)",
-        "url":"flashback",
-        "displayName":"穿越（闪回）",
-        "hardcore":false,
-        "soloSelfFound":false,
-        "snapshotName":"incursion-event-(ire001)"
-    },
-    {
-        "name":"Incursion Event HC (IRE002)",
-        "url":"flashbackhc",
-        "displayName":"穿越（专家闪回）",
-        "hardcore":true,
-        "soloSelfFound":false,
-        "snapshotName":"incursion-event-hc-(ire002)"
-    },
-    {
-        "name":"SSF Incursion Event (IRE003)",
-        "url":"flashbackssf",
-        "displayName":"穿越（独狼闪回）",
-        "hardcore":false,
-        "soloSelfFound":true,
-        "snapshotName":"ssf-incursion-event-(ire003)"
-    },
-    {
-        "name":"SSF Incursion Event HC (IRE004)",
-        "url":"flashbackhcssf",
-        "displayName":"穿越（独狼专家闪回）",
-        "hardcore":true,
-        "soloSelfFound":true,
-        "snapshotName":"ssf-incursion-event-hc-(ire004)"
+        "snapshotName":"ssf-delve-hc"
     }
 ];
 
 
-
-!
+ !
 function(t) {
     var n = {};
     function e(a) {
@@ -227,10 +175,10 @@ function(t) {
         return Object.prototype.hasOwnProperty.call(t, n)
     },
     e.p = "/dist/",
-    e(e.s = 92)
+    e(e.s = 97)
 } ([function(t, n, e) {
     "use strict";
-    t.exports = e(55)
+    t.exports = e(60)
 },
 function(t, n, e) {
     n.__esModule = !0,
@@ -260,11 +208,11 @@ function(t, n, e) {
         }
     } (),
     i = u(e(0)),
-    s = u(e(35)),
-    c = u(e(30)),
-    r = u(e(27)),
-    d = e(24),
-    l = e(10);
+    s = u(e(42)),
+    c = u(e(37)),
+    r = u(e(34)),
+    d = e(31),
+    l = e(12);
     function u(t) {
         return t && t.__esModule ? t: {
         default:
@@ -499,6 +447,7 @@ default)(d.reducePropsToState, d.handleClientStateChange, d.mapStateOnServer)(fu
     n.
 default = y
 },
+,
 function(t, n) {
     var e;
     e = function() {
@@ -511,7 +460,24 @@ function(t, n) {
     }
     t.exports = e
 },
-,
+function(t, n, e) {
+    "use strict";
+    Object.defineProperty(n, "__esModule", {
+        value: !0
+    }),
+    e(43),
+    n.getJson = function(t, n) {
+        return n && (t += ( - 1 === t.indexOf("?") ? "?": "&") +
+        function(t) {
+            return Object.keys(t).map(function(n) {
+                return encodeURIComponent(n) + "=" + encodeURIComponent(t[n])
+            }).join("&")
+        } (n)),
+        fetch(t).then(function(t) {
+            return t.json()
+        })
+    }
+},
 function(t, n, e) {
     "use strict";
     Object.defineProperty(n, "__esModule", {
@@ -552,25 +518,6 @@ function(t, n, e) {
             return n.resolve(t()).then(function() {
                 return n.reject(e)
             })
-        })
-    }
-},
-,
-function(t, n, e) {
-    "use strict";
-    Object.defineProperty(n, "__esModule", {
-        value: !0
-    }),
-    e(38),
-    n.getJson = function(t, n) {
-        return n && (t += ( - 1 === t.indexOf("?") ? "?": "&") +
-        function(t) {
-            return Object.keys(t).map(function(n) {
-                return encodeURIComponent(n) + "=" + encodeURIComponent(t[n])
-            }).join("&")
-        } (n)),
-        fetch(t).then(function(t) {
-            return t.json()
         })
     }
 },
@@ -617,6 +564,7 @@ object-assign
         return c
     }
 },
+, ,
 function(t, n, e) {
     "use strict"; !
     function t() {
@@ -626,8 +574,9 @@ function(t, n, e) {
             console.error(t)
         }
     } (),
-    t.exports = e(54)
+    t.exports = e(59)
 },
+,
 function(t, n) {
     n.__esModule = !0;
     n.ATTRIBUTE_NAMES = {
@@ -689,7 +638,7 @@ function(t, n) {
 ,
 function(t, n, e) {
     "use strict"; (function(t) {
-        var a = e(5),
+        var a = e(6),
         o = setTimeout;
         function i() {}
         function s(t) {
@@ -833,7 +782,7 @@ function(t, n, e) {
             "undefined" != typeof console && console && console.warn("Possible Unhandled Promise Rejection:", t)
         },
         n.a = s
-    }).call(this, e(45).setImmediate)
+    }).call(this, e(50).setImmediate)
 },
 function(t, n, e) {
     "use strict";
@@ -863,7 +812,7 @@ function(t, n, e) {
         value: !0
     });
     var o = e(0);
-    e(23);
+    e(29);
     var i = function(t) {
         function n(n) {
             return t.call(this, n) || this
@@ -922,7 +871,7 @@ function(t, n, e) {
                 disabled: !0,
                 hidden: !0
             },
-			//lucifer-1
+					//lucifer-1
             "选择 联盟"), this.props.leagues.map(function(t, n) {
                 return o.createElement("option", {
                     key: n,
@@ -944,6 +893,119 @@ function(t, n, e) {
         n
     } (o.Component);
     n.LeagueSelector = i
+},
+, , ,
+function(t, n) {
+    var e, a, o = t.exports = {};
+    function i() {
+        throw new Error("setTimeout has not been defined")
+    }
+    function s() {
+        throw new Error("clearTimeout has not been defined")
+    }
+    function c(t) {
+        if (e === setTimeout) return setTimeout(t, 0);
+        if ((e === i || !e) && setTimeout) return e = setTimeout,
+        setTimeout(t, 0);
+        try {
+            return e(t, 0)
+        } catch(n) {
+            try {
+                return e.call(null, t, 0)
+            } catch(n) {
+                return e.call(this, t, 0)
+            }
+        }
+    } !
+    function() {
+        try {
+            e = "function" == typeof setTimeout ? setTimeout: i
+        } catch(t) {
+            e = i
+        }
+        try {
+            a = "function" == typeof clearTimeout ? clearTimeout: s
+        } catch(t) {
+            a = s
+        }
+    } ();
+    var r, d = [],
+    l = !1,
+    u = -1;
+    function m() {
+        l && r && (l = !1, r.length ? d = r.concat(d) : u = -1, d.length && y())
+    }
+    function y() {
+        if (!l) {
+            var t = c(m);
+            l = !0;
+            for (var n = d.length; n;) {
+                for (r = d, d = []; ++u < n;) r && r[u].run();
+                u = -1,
+                n = d.length
+            }
+            r = null,
+            l = !1,
+            function(t) {
+                if (a === clearTimeout) return clearTimeout(t);
+                if ((a === s || !a) && clearTimeout) return a = clearTimeout,
+                clearTimeout(t);
+                try {
+                    a(t)
+                } catch(n) {
+                    try {
+                        return a.call(null, t)
+                    } catch(n) {
+                        return a.call(this, t)
+                    }
+                }
+            } (t)
+        }
+    }
+    function f(t, n) {
+        this.fun = t,
+        this.array = n
+    }
+    function p() {}
+    o.nextTick = function(t) {
+        var n = new Array(arguments.length - 1);
+        if (arguments.length > 1) for (var e = 1; e < arguments.length; e++) n[e - 1] = arguments[e];
+        d.push(new f(t, n)),
+        1 !== d.length || l || c(y)
+    },
+    f.prototype.run = function() {
+        this.fun.apply(null, this.array)
+    },
+    o.title = "browser",
+    o.browser = !0,
+    o.env = {},
+    o.argv = [],
+    o.version = "",
+    o.versions = {},
+    o.on = p,
+    o.addListener = p,
+    o.once = p,
+    o.off = p,
+    o.removeListener = p,
+    o.removeAllListeners = p,
+    o.emit = p,
+    o.prependListener = p,
+    o.prependOnceListener = p,
+    o.listeners = function(t) {
+        return []
+    },
+    o.binding = function(t) {
+        throw new Error("process.binding is not supported")
+    },
+    o.cwd = function() {
+        return "/"
+    },
+    o.chdir = function(t) {
+        throw new Error("process.chdir is not supported")
+    },
+    o.umask = function() {
+        return 0
+    }
 },
 , , ,
 function(t, n, e) {
@@ -1000,663 +1062,21 @@ function(t, n, e) {
 },
 function(t, n, e) {
     "use strict";
-    t.exports = e(17)
+    t.exports = e(23)
 },
 function(t, n, e) {
     "use strict";
-    t.exports.AppContainer = e(18)
+    t.exports.AppContainer = e(24)
 },
 function(t, n, e) {
     "use strict";
-    t.exports = e(19)
+    t.exports = e(25)
 },
 function(t, n, e) {
-    t.exports = e(20)
+    t.exports = e(26)
 },
 ,
 function(t, n, e) {},
-function(t, n, e) { (function(t) {
-        n.__esModule = !0,
-        n.warn = n.requestAnimationFrame = n.reducePropsToState = n.mapStateOnServer = n.handleClientStateChange = n.convertReactPropstoHtmlAttributes = void 0;
-        var a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ?
-        function(t) {
-            return typeof t
-        }: function(t) {
-            return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol": typeof t
-        },
-        o = Object.assign ||
-        function(t) {
-            for (var n = 1; n < arguments.length; n++) {
-                var e = arguments[n];
-                for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && (t[a] = e[a])
-            }
-            return t
-        },
-        i = r(e(0)),
-        s = r(e(8)),
-        c = e(10);
-        function r(t) {
-            return t && t.__esModule ? t: {
-            default:
-                t
-            }
-        }
-        var d = function(t) {
-            return ! 1 === (!(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1]) ? String(t) : String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;")
-        },
-        l = function(t, n) {
-            return n.filter(function(n) {
-                return void 0 !== n[t]
-            }).map(function(n) {
-                return n[t]
-            }).reduce(function(t, n) {
-                return o({},
-                t, n)
-            },
-            {})
-        },
-        u = function(t, n, e) {
-            var o = {};
-            return e.filter(function(n) {
-                return !! Array.isArray(n[t]) || (void 0 !== n[t] && h("Helmet: " + t + ' should be of type "Array". Instead found type "' + a(n[t]) + '"'), !1)
-            }).map(function(n) {
-                return n[t]
-            }).reverse().reduce(function(t, e) {
-                var a = {};
-                e.filter(function(t) {
-                    for (var e = void 0,
-                    i = Object.keys(t), s = 0; s < i.length; s++) {
-                        var r = i[s],
-                        d = r.toLowerCase(); - 1 === n.indexOf(d) || e === c.TAG_PROPERTIES.REL && "canonical" === t[e].toLowerCase() || d === c.TAG_PROPERTIES.REL && "stylesheet" === t[d].toLowerCase() || (e = d),
-                        -1 === n.indexOf(r) || r !== c.TAG_PROPERTIES.INNER_HTML && r !== c.TAG_PROPERTIES.CSS_TEXT && r !== c.TAG_PROPERTIES.ITEM_PROP || (e = r)
-                    }
-                    if (!e || !t[e]) return ! 1;
-                    var l = t[e].toLowerCase();
-                    return o[e] || (o[e] = {}),
-                    a[e] || (a[e] = {}),
-                    !o[e][l] && (a[e][l] = !0, !0)
-                }).reverse().forEach(function(n) {
-                    return t.push(n)
-                });
-                for (var i = Object.keys(a), r = 0; r < i.length; r++) {
-                    var d = i[r],
-                    l = (0, s.
-                default)({},
-                    o[d], a[d]);
-                    o[d] = l
-                }
-                return t
-            },
-            []).reverse()
-        },
-        m = function(t, n) {
-            for (var e = t.length - 1; e >= 0; e--) {
-                var a = t[e];
-                if (a.hasOwnProperty(n)) return a[n]
-            }
-            return null
-        },
-        y = function() {
-            var t = Date.now();
-            return function(n) {
-                var e = Date.now();
-                e - t > 16 ? (t = e, n(e)) : setTimeout(function() {
-                    y(n)
-                },
-                0)
-            }
-        } (),
-        f = function(t) {
-            return clearTimeout(t)
-        },
-        p = "undefined" != typeof window ? window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || y: t.requestAnimationFrame || y,
-        g = "undefined" != typeof window ? window.cancelAnimationFrame || window.webkitCancelAnimationFrame || window.mozCancelAnimationFrame || f: t.cancelAnimationFrame || f,
-        h = function(t) {
-            return console && "function" == typeof console.warn && console.warn(t)
-        },
-        x = null,
-        k = function(t, n) {
-            var e = t.baseTag,
-            a = t.bodyAttributes,
-            o = t.htmlAttributes,
-            i = t.linkTags,
-            s = t.metaTags,
-            r = t.noscriptTags,
-            d = t.onChangeClientState,
-            l = t.scriptTags,
-            u = t.styleTags,
-            m = t.title,
-            y = t.titleAttributes;
-            N(c.TAG_NAMES.BODY, a),
-            N(c.TAG_NAMES.HTML, o),
-            A(m, y);
-            var f = {
-                baseTag: v(c.TAG_NAMES.BASE, e),
-                linkTags: v(c.TAG_NAMES.LINK, i),
-                metaTags: v(c.TAG_NAMES.META, s),
-                noscriptTags: v(c.TAG_NAMES.NOSCRIPT, r),
-                scriptTags: v(c.TAG_NAMES.SCRIPT, l),
-                styleTags: v(c.TAG_NAMES.STYLE, u)
-            },
-            p = {},
-            g = {};
-            Object.keys(f).forEach(function(t) {
-                var n = f[t],
-                e = n.newTags,
-                a = n.oldTags;
-                e.length && (p[t] = e),
-                a.length && (g[t] = f[t].oldTags)
-            }),
-            n && n(),
-            d(t, p, g)
-        },
-        S = function(t) {
-            return Array.isArray(t) ? t.join("") : t
-        },
-        A = function(t, n) {
-            void 0 !== t && document.title !== t && (document.title = S(t)),
-            N(c.TAG_NAMES.TITLE, n)
-        },
-        N = function(t, n) {
-            var e = document.getElementsByTagName(t)[0];
-            if (e) {
-                for (var a = e.getAttribute(c.HELMET_ATTRIBUTE), o = a ? a.split(",") : [], i = [].concat(o), s = Object.keys(n), r = 0; r < s.length; r++) {
-                    var d = s[r],
-                    l = n[d] || "";
-                    e.getAttribute(d) !== l && e.setAttribute(d, l),
-                    -1 === o.indexOf(d) && o.push(d);
-                    var u = i.indexOf(d); - 1 !== u && i.splice(u, 1)
-                }
-                for (var m = i.length - 1; m >= 0; m--) e.removeAttribute(i[m]);
-                o.length === i.length ? e.removeAttribute(c.HELMET_ATTRIBUTE) : e.getAttribute(c.HELMET_ATTRIBUTE) !== s.join(",") && e.setAttribute(c.HELMET_ATTRIBUTE, s.join(","))
-            }
-        },
-        v = function(t, n) {
-            var e = document.head || document.querySelector(c.TAG_NAMES.HEAD),
-            a = e.querySelectorAll(t + "[" + c.HELMET_ATTRIBUTE + "]"),
-            o = Array.prototype.slice.call(a),
-            i = [],
-            s = void 0;
-            return n && n.length && n.forEach(function(n) {
-                var e = document.createElement(t);
-                for (var a in n) if (n.hasOwnProperty(a)) if (a === c.TAG_PROPERTIES.INNER_HTML) e.innerHTML = n.innerHTML;
-                else if (a === c.TAG_PROPERTIES.CSS_TEXT) e.styleSheet ? e.styleSheet.cssText = n.cssText: e.appendChild(document.createTextNode(n.cssText));
-                else {
-                    var r = void 0 === n[a] ? "": n[a];
-                    e.setAttribute(a, r)
-                }
-                e.setAttribute(c.HELMET_ATTRIBUTE, "true"),
-                o.some(function(t, n) {
-                    return s = n,
-                    e.isEqualNode(t)
-                }) ? o.splice(s, 1) : i.push(e)
-            }),
-            o.forEach(function(t) {
-                return t.parentNode.removeChild(t)
-            }),
-            i.forEach(function(t) {
-                return e.appendChild(t)
-            }),
-            {
-                oldTags: o,
-                newTags: i
-            }
-        },
-        b = function(t) {
-            return Object.keys(t).reduce(function(n, e) {
-                var a = void 0 !== t[e] ? e + '="' + t[e] + '"': "" + e;
-                return n ? n + " " + a: a
-            },
-            "")
-        },
-        w = function(t) {
-            var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-            return Object.keys(t).reduce(function(n, e) {
-                return n[c.REACT_TAG_MAP[e] || e] = t[e],
-                n
-            },
-            n)
-        },
-        E = function(t, n, e) {
-            switch (t) {
-            case c.TAG_NAMES.TITLE:
-                return {
-                    toComponent:
-                    function() {
-                        return function(t, n, e) {
-                            var a, o = ((a = {
-                                key: n
-                            })[c.HELMET_ATTRIBUTE] = !0, a),
-                            s = w(e, o);
-                            return [i.
-                        default.createElement(c.TAG_NAMES.TITLE, s, n)]
-                        } (0, n.title, n.titleAttributes)
-                    },
-                    toString: function() {
-                        return function(t, n, e, a) {
-                            var o = b(e),
-                            i = S(n);
-                            return o ? "<" + t + " " + c.HELMET_ATTRIBUTE + '="true" ' + o + ">" + d(i, a) + "</" + t + ">": "<" + t + " " + c.HELMET_ATTRIBUTE + '="true">' + d(i, a) + "</" + t + ">"
-                        } (t, n.title, n.titleAttributes, e)
-                    }
-                };
-            case c.ATTRIBUTE_NAMES.BODY:
-            case c.ATTRIBUTE_NAMES.HTML:
-                return {
-                    toComponent:
-                    function() {
-                        return w(n)
-                    },
-                    toString: function() {
-                        return b(n)
-                    }
-                };
-            default:
-                return {
-                    toComponent:
-                    function() {
-                        return function(t, n) {
-                            return n.map(function(n, e) {
-                                var a, o = ((a = {
-                                    key: e
-                                })[c.HELMET_ATTRIBUTE] = !0, a);
-                                return Object.keys(n).forEach(function(t) {
-                                    var e = c.REACT_TAG_MAP[t] || t;
-                                    if (e === c.TAG_PROPERTIES.INNER_HTML || e === c.TAG_PROPERTIES.CSS_TEXT) {
-                                        var a = n.innerHTML || n.cssText;
-                                        o.dangerouslySetInnerHTML = {
-                                            __html: a
-                                        }
-                                    } else o[e] = n[t]
-                                }),
-                                i.
-                            default.createElement(t, o)
-                            })
-                        } (t, n)
-                    },
-                    toString: function() {
-                        return function(t, n, e) {
-                            return n.reduce(function(n, a) {
-                                var o = Object.keys(a).filter(function(t) {
-                                    return ! (t === c.TAG_PROPERTIES.INNER_HTML || t === c.TAG_PROPERTIES.CSS_TEXT)
-                                }).reduce(function(t, n) {
-                                    var o = void 0 === a[n] ? n: n + '="' + d(a[n], e) + '"';
-                                    return t ? t + " " + o: o
-                                },
-                                ""),
-                                i = a.innerHTML || a.cssText || "",
-                                s = -1 === c.SELF_CLOSING_TAGS.indexOf(t);
-                                return n + "<" + t + " " + c.HELMET_ATTRIBUTE + '="true" ' + o + (s ? "/>": ">" + i + "</" + t + ">")
-                            },
-                            "")
-                        } (t, n, e)
-                    }
-                }
-            }
-        };
-        n.convertReactPropstoHtmlAttributes = function(t) {
-            var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-            return Object.keys(t).reduce(function(n, e) {
-                return n[c.HTML_TAG_MAP[e] || e] = t[e],
-                n
-            },
-            n)
-        },
-        n.handleClientStateChange = function(t) {
-            x && g(x),
-            t.defer ? x = p(function() {
-                k(t,
-                function() {
-                    x = null
-                })
-            }) : (k(t), x = null)
-        },
-        n.mapStateOnServer = function(t) {
-            var n = t.baseTag,
-            e = t.bodyAttributes,
-            a = t.encode,
-            o = t.htmlAttributes,
-            i = t.linkTags,
-            s = t.metaTags,
-            r = t.noscriptTags,
-            d = t.scriptTags,
-            l = t.styleTags,
-            u = t.title,
-            m = void 0 === u ? "": u,
-            y = t.titleAttributes;
-            return {
-                base: E(c.TAG_NAMES.BASE, n, a),
-                bodyAttributes: E(c.ATTRIBUTE_NAMES.BODY, e, a),
-                htmlAttributes: E(c.ATTRIBUTE_NAMES.HTML, o, a),
-                link: E(c.TAG_NAMES.LINK, i, a),
-                meta: E(c.TAG_NAMES.META, s, a),
-                noscript: E(c.TAG_NAMES.NOSCRIPT, r, a),
-                script: E(c.TAG_NAMES.SCRIPT, d, a),
-                style: E(c.TAG_NAMES.STYLE, l, a),
-                title: E(c.TAG_NAMES.TITLE, {
-                    title: m,
-                    titleAttributes: y
-                },
-                a)
-            }
-        },
-        n.reducePropsToState = function(t) {
-            return {
-                baseTag: function(t, n) {
-                    return n.filter(function(t) {
-                        return void 0 !== t[c.TAG_NAMES.BASE]
-                    }).map(function(t) {
-                        return t[c.TAG_NAMES.BASE]
-                    }).reverse().reduce(function(n, e) {
-                        if (!n.length) for (var a = Object.keys(e), o = 0; o < a.length; o++) {
-                            var i = a[o].toLowerCase();
-                            if ( - 1 !== t.indexOf(i) && e[i]) return n.concat(e)
-                        }
-                        return n
-                    },
-                    [])
-                } ([c.TAG_PROPERTIES.HREF], t),
-                bodyAttributes: l(c.ATTRIBUTE_NAMES.BODY, t),
-                defer: m(t, c.HELMET_PROPS.DEFER),
-                encode: m(t, c.HELMET_PROPS.ENCODE_SPECIAL_CHARACTERS),
-                htmlAttributes: l(c.ATTRIBUTE_NAMES.HTML, t),
-                linkTags: u(c.TAG_NAMES.LINK, [c.TAG_PROPERTIES.REL, c.TAG_PROPERTIES.HREF], t),
-                metaTags: u(c.TAG_NAMES.META, [c.TAG_PROPERTIES.NAME, c.TAG_PROPERTIES.CHARSET, c.TAG_PROPERTIES.HTTPEQUIV, c.TAG_PROPERTIES.PROPERTY, c.TAG_PROPERTIES.ITEM_PROP], t),
-                noscriptTags: u(c.TAG_NAMES.NOSCRIPT, [c.TAG_PROPERTIES.INNER_HTML], t),
-                onChangeClientState: function(t) {
-                    return m(t, c.HELMET_PROPS.ON_CHANGE_CLIENT_STATE) ||
-                    function() {}
-                } (t),
-                scriptTags: u(c.TAG_NAMES.SCRIPT, [c.TAG_PROPERTIES.SRC, c.TAG_PROPERTIES.INNER_HTML], t),
-                styleTags: u(c.TAG_NAMES.STYLE, [c.TAG_PROPERTIES.CSS_TEXT], t),
-                title: function(t) {
-                    var n = m(t, c.TAG_NAMES.TITLE),
-                    e = m(t, c.HELMET_PROPS.TITLE_TEMPLATE);
-                    if (e && n) return e.replace(/%s/g,
-                    function() {
-                        return n
-                    });
-                    var a = m(t, c.HELMET_PROPS.DEFAULT_TITLE);
-                    return n || a || void 0
-                } (t),
-                titleAttributes: l(c.ATTRIBUTE_NAMES.TITLE, t)
-            }
-        },
-        n.requestAnimationFrame = p,
-        n.warn = h
-    }).call(this, e(2))
-},
-function(t, n) {
-    var e = "[object Arguments]" ==
-    function() {
-        return Object.prototype.toString.call(arguments)
-    } ();
-    function a(t) {
-        return "[object Arguments]" == Object.prototype.toString.call(t)
-    }
-    function o(t) {
-        return t && "object" == typeof t && "number" == typeof t.length && Object.prototype.hasOwnProperty.call(t, "callee") && !Object.prototype.propertyIsEnumerable.call(t, "callee") || !1
-    } (n = t.exports = e ? a: o).supported = a,
-    n.unsupported = o
-},
-function(t, n) {
-    function e(t) {
-        var n = [];
-        for (var e in t) n.push(e);
-        return n
-    } (t.exports = "function" == typeof Object.keys ? Object.keys: e).shim = e
-},
-function(t, n, e) {
-    var a = Array.prototype.slice,
-    o = e(26),
-    i = e(25),
-    s = t.exports = function(t, n, e) {
-        return e || (e = {}),
-        t === n || (t instanceof Date && n instanceof Date ? t.getTime() === n.getTime() : !t || !n || "object" != typeof t && "object" != typeof n ? e.strict ? t === n: t == n: function(t, n, e) {
-            var d, l;
-            if (c(t) || c(n)) return ! 1;
-            if (t.prototype !== n.prototype) return ! 1;
-            if (i(t)) return !! i(n) && (t = a.call(t), n = a.call(n), s(t, n, e));
-            if (r(t)) {
-                if (!r(n)) return ! 1;
-                if (t.length !== n.length) return ! 1;
-                for (d = 0; d < t.length; d++) if (t[d] !== n[d]) return ! 1;
-                return ! 0
-            }
-            try {
-                var u = o(t),
-                m = o(n)
-            } catch(t) {
-                return ! 1
-            }
-            if (u.length != m.length) return ! 1;
-            for (u.sort(), m.sort(), d = u.length - 1; d >= 0; d--) if (u[d] != m[d]) return ! 1;
-            for (d = u.length - 1; d >= 0; d--) if (l = u[d], !s(t[l], n[l], e)) return ! 1;
-            return typeof t == typeof n
-        } (t, n, e))
-    };
-    function c(t) {
-        return null === t || void 0 === t
-    }
-    function r(t) {
-        return ! (!t || "object" != typeof t || "number" != typeof t.length) && ("function" == typeof t.copy && "function" == typeof t.slice && !(t.length > 0 && "number" != typeof t[0]))
-    }
-},
-function(t, n) {
-    t.exports = function(t, n, e, a) {
-        var o = e ? e.call(a, t, n) : void 0;
-        if (void 0 !== o) return !! o;
-        if (t === n) return ! 0;
-        if ("object" != typeof t || !t || "object" != typeof n || !n) return ! 1;
-        var i = Object.keys(t),
-        s = Object.keys(n);
-        if (i.length !== s.length) return ! 1;
-        for (var c = Object.prototype.hasOwnProperty.bind(n), r = 0; r < i.length; r++) {
-            var d = i[r];
-            if (!c(d)) return ! 1;
-            var l = t[d],
-            u = n[d];
-            if (!1 === (o = e ? e.call(a, l, u, d) : void 0) || void 0 === o && l !== u) return ! 1
-        }
-        return ! 0
-    }
-},
-function(t, n, e) {
-    var a;
-    /*!
-  Copyright (c) 2015 Jed Watson.
-  Based on code that is Copyright 2013-2015, Facebook, Inc.
-  All rights reserved.
-*/
-    /*!
-  Copyright (c) 2015 Jed Watson.
-  Based on code that is Copyright 2013-2015, Facebook, Inc.
-  All rights reserved.
-*/
-    !
-    function() {
-        "use strict";
-        var o = !("undefined" == typeof window || !window.document || !window.document.createElement),
-        i = {
-            canUseDOM: o,
-            canUseWorkers: "undefined" != typeof Worker,
-            canUseEventListeners: o && !(!window.addEventListener && !window.attachEvent),
-            canUseViewport: o && !!window.screen
-        };
-        void 0 === (a = function() {
-            return i
-        }.call(n, e, n, t)) || (t.exports = a)
-    } ()
-},
-function(t, n, e) {
-    "use strict";
-    function a(t) {
-        return t && "object" == typeof t && "default" in t ? t.
-    default:
-        t
-    }
-    var o = e(0),
-    i = a(o),
-    s = a(e(29)),
-    c = a(e(28));
-    t.exports = function(t, n, e) {
-        if ("function" != typeof t) throw new Error("Expected reducePropsToState to be a function.");
-        if ("function" != typeof n) throw new Error("Expected handleStateChangeOnClient to be a function.");
-        if (void 0 !== e && "function" != typeof e) throw new Error("Expected mapStateOnServer to either be undefined or a function.");
-        return function(a) {
-            if ("function" != typeof a) throw new Error("Expected WrappedComponent to be a React component.");
-            var r = [],
-            d = void 0;
-            function l() {
-                d = t(r.map(function(t) {
-                    return t.props
-                })),
-                u.canUseDOM ? n(d) : e && (d = e(d))
-            }
-            var u = function(t) {
-                function n() {
-                    return function(t, n) {
-                        if (! (t instanceof n)) throw new TypeError("Cannot call a class as a function")
-                    } (this, n),
-                    function(t, n) {
-                        if (!t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-                        return ! n || "object" != typeof n && "function" != typeof n ? t: n
-                    } (this, t.apply(this, arguments))
-                }
-                return function(t, n) {
-                    if ("function" != typeof n && null !== n) throw new TypeError("Super expression must either be null or a function, not " + typeof n);
-                    t.prototype = Object.create(n && n.prototype, {
-                        constructor: {
-                            value: t,
-                            enumerable: !1,
-                            writable: !0,
-                            configurable: !0
-                        }
-                    }),
-                    n && (Object.setPrototypeOf ? Object.setPrototypeOf(t, n) : t.__proto__ = n)
-                } (n, t),
-                n.peek = function() {
-                    return d
-                },
-                n.rewind = function() {
-                    if (n.canUseDOM) throw new Error("You may only call rewind() on the server. Call peek() to read the current state.");
-                    var t = d;
-                    return d = void 0,
-                    r = [],
-                    t
-                },
-                n.prototype.shouldComponentUpdate = function(t) {
-                    return ! c(t, this.props)
-                },
-                n.prototype.componentWillMount = function() {
-                    r.push(this),
-                    l()
-                },
-                n.prototype.componentDidUpdate = function() {
-                    l()
-                },
-                n.prototype.componentWillUnmount = function() {
-                    var t = r.indexOf(this);
-                    r.splice(t, 1),
-                    l()
-                },
-                n.prototype.render = function() {
-                    return i.createElement(a, this.props)
-                },
-                n
-            } (o.Component);
-            return u.displayName = "SideEffect(" +
-            function(t) {
-                return t.displayName || t.name || "Component"
-            } (a) + ")",
-            u.canUseDOM = s.canUseDOM,
-            u
-        }
-    }
-},
-function(t, n, e) {
-    "use strict";
-    t.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
-},
-function(t, n, e) {
-    "use strict";
-    var a = function(t) {};
-    t.exports = function(t, n, e, o, i, s, c, r) {
-        if (a(n), !t) {
-            var d;
-            if (void 0 === n) d = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");
-            else {
-                var l = [e, o, i, s, c, r],
-                u = 0; (d = new Error(n.replace(/%s/g,
-                function() {
-                    return l[u++]
-                }))).name = "Invariant Violation"
-            }
-            throw d.framesToPop = 1,
-            d
-        }
-    }
-},
-function(t, n, e) {
-    "use strict";
-    function a(t) {
-        return function() {
-            return t
-        }
-    }
-    var o = function() {};
-    o.thatReturns = a,
-    o.thatReturnsFalse = a(!1),
-    o.thatReturnsTrue = a(!0),
-    o.thatReturnsNull = a(null),
-    o.thatReturnsThis = function() {
-        return this
-    },
-    o.thatReturnsArgument = function(t) {
-        return t
-    },
-    t.exports = o
-},
-function(t, n, e) {
-    "use strict";
-    var a = e(33),
-    o = e(32),
-    i = e(31);
-    t.exports = function() {
-        function t(t, n, e, a, s, c) {
-            c !== i && o(!1, "Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types")
-        }
-        function n() {
-            return t
-        }
-        t.isRequired = t;
-        var e = {
-            array: t,
-            bool: t,
-            func: t,
-            number: t,
-            object: t,
-            string: t,
-            symbol: t,
-            any: t,
-            arrayOf: n,
-            element: t,
-            instanceOf: n,
-            node: t,
-            objectOf: n,
-            oneOf: n,
-            oneOfType: n,
-            shape: n,
-            exact: n
-        };
-        return e.checkPropTypes = a,
-        e.PropTypes = e,
-        e
-    }
-},
-function(t, n, e) {
-    t.exports = e(34)()
-},
 function(t, n, e) {
     var a, o;
     /*! tether 1.4.3 */
@@ -2743,7 +2163,648 @@ function(t, n, e) {
         W
     }) ? a.call(n, e, n, t) : a) || (t.exports = o)
 },
-,
+function(t, n, e) { (function(t) {
+        n.__esModule = !0,
+        n.warn = n.requestAnimationFrame = n.reducePropsToState = n.mapStateOnServer = n.handleClientStateChange = n.convertReactPropstoHtmlAttributes = void 0;
+        var a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ?
+        function(t) {
+            return typeof t
+        }: function(t) {
+            return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol": typeof t
+        },
+        o = Object.assign ||
+        function(t) {
+            for (var n = 1; n < arguments.length; n++) {
+                var e = arguments[n];
+                for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && (t[a] = e[a])
+            }
+            return t
+        },
+        i = r(e(0)),
+        s = r(e(7)),
+        c = e(12);
+        function r(t) {
+            return t && t.__esModule ? t: {
+            default:
+                t
+            }
+        }
+        var d = function(t) {
+            return ! 1 === (!(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1]) ? String(t) : String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;")
+        },
+        l = function(t, n) {
+            return n.filter(function(n) {
+                return void 0 !== n[t]
+            }).map(function(n) {
+                return n[t]
+            }).reduce(function(t, n) {
+                return o({},
+                t, n)
+            },
+            {})
+        },
+        u = function(t, n, e) {
+            var o = {};
+            return e.filter(function(n) {
+                return !! Array.isArray(n[t]) || (void 0 !== n[t] && h("Helmet: " + t + ' should be of type "Array". Instead found type "' + a(n[t]) + '"'), !1)
+            }).map(function(n) {
+                return n[t]
+            }).reverse().reduce(function(t, e) {
+                var a = {};
+                e.filter(function(t) {
+                    for (var e = void 0,
+                    i = Object.keys(t), s = 0; s < i.length; s++) {
+                        var r = i[s],
+                        d = r.toLowerCase(); - 1 === n.indexOf(d) || e === c.TAG_PROPERTIES.REL && "canonical" === t[e].toLowerCase() || d === c.TAG_PROPERTIES.REL && "stylesheet" === t[d].toLowerCase() || (e = d),
+                        -1 === n.indexOf(r) || r !== c.TAG_PROPERTIES.INNER_HTML && r !== c.TAG_PROPERTIES.CSS_TEXT && r !== c.TAG_PROPERTIES.ITEM_PROP || (e = r)
+                    }
+                    if (!e || !t[e]) return ! 1;
+                    var l = t[e].toLowerCase();
+                    return o[e] || (o[e] = {}),
+                    a[e] || (a[e] = {}),
+                    !o[e][l] && (a[e][l] = !0, !0)
+                }).reverse().forEach(function(n) {
+                    return t.push(n)
+                });
+                for (var i = Object.keys(a), r = 0; r < i.length; r++) {
+                    var d = i[r],
+                    l = (0, s.
+                default)({},
+                    o[d], a[d]);
+                    o[d] = l
+                }
+                return t
+            },
+            []).reverse()
+        },
+        m = function(t, n) {
+            for (var e = t.length - 1; e >= 0; e--) {
+                var a = t[e];
+                if (a.hasOwnProperty(n)) return a[n]
+            }
+            return null
+        },
+        y = function() {
+            var t = Date.now();
+            return function(n) {
+                var e = Date.now();
+                e - t > 16 ? (t = e, n(e)) : setTimeout(function() {
+                    y(n)
+                },
+                0)
+            }
+        } (),
+        f = function(t) {
+            return clearTimeout(t)
+        },
+        p = "undefined" != typeof window ? window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || y: t.requestAnimationFrame || y,
+        g = "undefined" != typeof window ? window.cancelAnimationFrame || window.webkitCancelAnimationFrame || window.mozCancelAnimationFrame || f: t.cancelAnimationFrame || f,
+        h = function(t) {
+            return console && "function" == typeof console.warn && console.warn(t)
+        },
+        x = null,
+        k = function(t, n) {
+            var e = t.baseTag,
+            a = t.bodyAttributes,
+            o = t.htmlAttributes,
+            i = t.linkTags,
+            s = t.metaTags,
+            r = t.noscriptTags,
+            d = t.onChangeClientState,
+            l = t.scriptTags,
+            u = t.styleTags,
+            m = t.title,
+            y = t.titleAttributes;
+            N(c.TAG_NAMES.BODY, a),
+            N(c.TAG_NAMES.HTML, o),
+            A(m, y);
+            var f = {
+                baseTag: v(c.TAG_NAMES.BASE, e),
+                linkTags: v(c.TAG_NAMES.LINK, i),
+                metaTags: v(c.TAG_NAMES.META, s),
+                noscriptTags: v(c.TAG_NAMES.NOSCRIPT, r),
+                scriptTags: v(c.TAG_NAMES.SCRIPT, l),
+                styleTags: v(c.TAG_NAMES.STYLE, u)
+            },
+            p = {},
+            g = {};
+            Object.keys(f).forEach(function(t) {
+                var n = f[t],
+                e = n.newTags,
+                a = n.oldTags;
+                e.length && (p[t] = e),
+                a.length && (g[t] = f[t].oldTags)
+            }),
+            n && n(),
+            d(t, p, g)
+        },
+        S = function(t) {
+            return Array.isArray(t) ? t.join("") : t
+        },
+        A = function(t, n) {
+            void 0 !== t && document.title !== t && (document.title = S(t)),
+            N(c.TAG_NAMES.TITLE, n)
+        },
+        N = function(t, n) {
+            var e = document.getElementsByTagName(t)[0];
+            if (e) {
+                for (var a = e.getAttribute(c.HELMET_ATTRIBUTE), o = a ? a.split(",") : [], i = [].concat(o), s = Object.keys(n), r = 0; r < s.length; r++) {
+                    var d = s[r],
+                    l = n[d] || "";
+                    e.getAttribute(d) !== l && e.setAttribute(d, l),
+                    -1 === o.indexOf(d) && o.push(d);
+                    var u = i.indexOf(d); - 1 !== u && i.splice(u, 1)
+                }
+                for (var m = i.length - 1; m >= 0; m--) e.removeAttribute(i[m]);
+                o.length === i.length ? e.removeAttribute(c.HELMET_ATTRIBUTE) : e.getAttribute(c.HELMET_ATTRIBUTE) !== s.join(",") && e.setAttribute(c.HELMET_ATTRIBUTE, s.join(","))
+            }
+        },
+        v = function(t, n) {
+            var e = document.head || document.querySelector(c.TAG_NAMES.HEAD),
+            a = e.querySelectorAll(t + "[" + c.HELMET_ATTRIBUTE + "]"),
+            o = Array.prototype.slice.call(a),
+            i = [],
+            s = void 0;
+            return n && n.length && n.forEach(function(n) {
+                var e = document.createElement(t);
+                for (var a in n) if (n.hasOwnProperty(a)) if (a === c.TAG_PROPERTIES.INNER_HTML) e.innerHTML = n.innerHTML;
+                else if (a === c.TAG_PROPERTIES.CSS_TEXT) e.styleSheet ? e.styleSheet.cssText = n.cssText: e.appendChild(document.createTextNode(n.cssText));
+                else {
+                    var r = void 0 === n[a] ? "": n[a];
+                    e.setAttribute(a, r)
+                }
+                e.setAttribute(c.HELMET_ATTRIBUTE, "true"),
+                o.some(function(t, n) {
+                    return s = n,
+                    e.isEqualNode(t)
+                }) ? o.splice(s, 1) : i.push(e)
+            }),
+            o.forEach(function(t) {
+                return t.parentNode.removeChild(t)
+            }),
+            i.forEach(function(t) {
+                return e.appendChild(t)
+            }),
+            {
+                oldTags: o,
+                newTags: i
+            }
+        },
+        b = function(t) {
+            return Object.keys(t).reduce(function(n, e) {
+                var a = void 0 !== t[e] ? e + '="' + t[e] + '"': "" + e;
+                return n ? n + " " + a: a
+            },
+            "")
+        },
+        w = function(t) {
+            var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+            return Object.keys(t).reduce(function(n, e) {
+                return n[c.REACT_TAG_MAP[e] || e] = t[e],
+                n
+            },
+            n)
+        },
+        E = function(t, n, e) {
+            switch (t) {
+            case c.TAG_NAMES.TITLE:
+                return {
+                    toComponent:
+                    function() {
+                        return function(t, n, e) {
+                            var a, o = ((a = {
+                                key: n
+                            })[c.HELMET_ATTRIBUTE] = !0, a),
+                            s = w(e, o);
+                            return [i.
+                        default.createElement(c.TAG_NAMES.TITLE, s, n)]
+                        } (0, n.title, n.titleAttributes)
+                    },
+                    toString: function() {
+                        return function(t, n, e, a) {
+                            var o = b(e),
+                            i = S(n);
+                            return o ? "<" + t + " " + c.HELMET_ATTRIBUTE + '="true" ' + o + ">" + d(i, a) + "</" + t + ">": "<" + t + " " + c.HELMET_ATTRIBUTE + '="true">' + d(i, a) + "</" + t + ">"
+                        } (t, n.title, n.titleAttributes, e)
+                    }
+                };
+            case c.ATTRIBUTE_NAMES.BODY:
+            case c.ATTRIBUTE_NAMES.HTML:
+                return {
+                    toComponent:
+                    function() {
+                        return w(n)
+                    },
+                    toString: function() {
+                        return b(n)
+                    }
+                };
+            default:
+                return {
+                    toComponent:
+                    function() {
+                        return function(t, n) {
+                            return n.map(function(n, e) {
+                                var a, o = ((a = {
+                                    key: e
+                                })[c.HELMET_ATTRIBUTE] = !0, a);
+                                return Object.keys(n).forEach(function(t) {
+                                    var e = c.REACT_TAG_MAP[t] || t;
+                                    if (e === c.TAG_PROPERTIES.INNER_HTML || e === c.TAG_PROPERTIES.CSS_TEXT) {
+                                        var a = n.innerHTML || n.cssText;
+                                        o.dangerouslySetInnerHTML = {
+                                            __html: a
+                                        }
+                                    } else o[e] = n[t]
+                                }),
+                                i.
+                            default.createElement(t, o)
+                            })
+                        } (t, n)
+                    },
+                    toString: function() {
+                        return function(t, n, e) {
+                            return n.reduce(function(n, a) {
+                                var o = Object.keys(a).filter(function(t) {
+                                    return ! (t === c.TAG_PROPERTIES.INNER_HTML || t === c.TAG_PROPERTIES.CSS_TEXT)
+                                }).reduce(function(t, n) {
+                                    var o = void 0 === a[n] ? n: n + '="' + d(a[n], e) + '"';
+                                    return t ? t + " " + o: o
+                                },
+                                ""),
+                                i = a.innerHTML || a.cssText || "",
+                                s = -1 === c.SELF_CLOSING_TAGS.indexOf(t);
+                                return n + "<" + t + " " + c.HELMET_ATTRIBUTE + '="true" ' + o + (s ? "/>": ">" + i + "</" + t + ">")
+                            },
+                            "")
+                        } (t, n, e)
+                    }
+                }
+            }
+        };
+        n.convertReactPropstoHtmlAttributes = function(t) {
+            var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+            return Object.keys(t).reduce(function(n, e) {
+                return n[c.HTML_TAG_MAP[e] || e] = t[e],
+                n
+            },
+            n)
+        },
+        n.handleClientStateChange = function(t) {
+            x && g(x),
+            t.defer ? x = p(function() {
+                k(t,
+                function() {
+                    x = null
+                })
+            }) : (k(t), x = null)
+        },
+        n.mapStateOnServer = function(t) {
+            var n = t.baseTag,
+            e = t.bodyAttributes,
+            a = t.encode,
+            o = t.htmlAttributes,
+            i = t.linkTags,
+            s = t.metaTags,
+            r = t.noscriptTags,
+            d = t.scriptTags,
+            l = t.styleTags,
+            u = t.title,
+            m = void 0 === u ? "": u,
+            y = t.titleAttributes;
+            return {
+                base: E(c.TAG_NAMES.BASE, n, a),
+                bodyAttributes: E(c.ATTRIBUTE_NAMES.BODY, e, a),
+                htmlAttributes: E(c.ATTRIBUTE_NAMES.HTML, o, a),
+                link: E(c.TAG_NAMES.LINK, i, a),
+                meta: E(c.TAG_NAMES.META, s, a),
+                noscript: E(c.TAG_NAMES.NOSCRIPT, r, a),
+                script: E(c.TAG_NAMES.SCRIPT, d, a),
+                style: E(c.TAG_NAMES.STYLE, l, a),
+                title: E(c.TAG_NAMES.TITLE, {
+                    title: m,
+                    titleAttributes: y
+                },
+                a)
+            }
+        },
+        n.reducePropsToState = function(t) {
+            return {
+                baseTag: function(t, n) {
+                    return n.filter(function(t) {
+                        return void 0 !== t[c.TAG_NAMES.BASE]
+                    }).map(function(t) {
+                        return t[c.TAG_NAMES.BASE]
+                    }).reverse().reduce(function(n, e) {
+                        if (!n.length) for (var a = Object.keys(e), o = 0; o < a.length; o++) {
+                            var i = a[o].toLowerCase();
+                            if ( - 1 !== t.indexOf(i) && e[i]) return n.concat(e)
+                        }
+                        return n
+                    },
+                    [])
+                } ([c.TAG_PROPERTIES.HREF], t),
+                bodyAttributes: l(c.ATTRIBUTE_NAMES.BODY, t),
+                defer: m(t, c.HELMET_PROPS.DEFER),
+                encode: m(t, c.HELMET_PROPS.ENCODE_SPECIAL_CHARACTERS),
+                htmlAttributes: l(c.ATTRIBUTE_NAMES.HTML, t),
+                linkTags: u(c.TAG_NAMES.LINK, [c.TAG_PROPERTIES.REL, c.TAG_PROPERTIES.HREF], t),
+                metaTags: u(c.TAG_NAMES.META, [c.TAG_PROPERTIES.NAME, c.TAG_PROPERTIES.CHARSET, c.TAG_PROPERTIES.HTTPEQUIV, c.TAG_PROPERTIES.PROPERTY, c.TAG_PROPERTIES.ITEM_PROP], t),
+                noscriptTags: u(c.TAG_NAMES.NOSCRIPT, [c.TAG_PROPERTIES.INNER_HTML], t),
+                onChangeClientState: function(t) {
+                    return m(t, c.HELMET_PROPS.ON_CHANGE_CLIENT_STATE) ||
+                    function() {}
+                } (t),
+                scriptTags: u(c.TAG_NAMES.SCRIPT, [c.TAG_PROPERTIES.SRC, c.TAG_PROPERTIES.INNER_HTML], t),
+                styleTags: u(c.TAG_NAMES.STYLE, [c.TAG_PROPERTIES.CSS_TEXT], t),
+                title: function(t) {
+                    var n = m(t, c.TAG_NAMES.TITLE),
+                    e = m(t, c.HELMET_PROPS.TITLE_TEMPLATE);
+                    if (e && n) return e.replace(/%s/g,
+                    function() {
+                        return n
+                    });
+                    var a = m(t, c.HELMET_PROPS.DEFAULT_TITLE);
+                    return n || a || void 0
+                } (t),
+                titleAttributes: l(c.ATTRIBUTE_NAMES.TITLE, t)
+            }
+        },
+        n.requestAnimationFrame = p,
+        n.warn = h
+    }).call(this, e(3))
+},
+function(t, n) {
+    var e = "[object Arguments]" ==
+    function() {
+        return Object.prototype.toString.call(arguments)
+    } ();
+    function a(t) {
+        return "[object Arguments]" == Object.prototype.toString.call(t)
+    }
+    function o(t) {
+        return t && "object" == typeof t && "number" == typeof t.length && Object.prototype.hasOwnProperty.call(t, "callee") && !Object.prototype.propertyIsEnumerable.call(t, "callee") || !1
+    } (n = t.exports = e ? a: o).supported = a,
+    n.unsupported = o
+},
+function(t, n) {
+    function e(t) {
+        var n = [];
+        for (var e in t) n.push(e);
+        return n
+    } (t.exports = "function" == typeof Object.keys ? Object.keys: e).shim = e
+},
+function(t, n, e) {
+    var a = Array.prototype.slice,
+    o = e(33),
+    i = e(32),
+    s = t.exports = function(t, n, e) {
+        return e || (e = {}),
+        t === n || (t instanceof Date && n instanceof Date ? t.getTime() === n.getTime() : !t || !n || "object" != typeof t && "object" != typeof n ? e.strict ? t === n: t == n: function(t, n, e) {
+            var d, l;
+            if (c(t) || c(n)) return ! 1;
+            if (t.prototype !== n.prototype) return ! 1;
+            if (i(t)) return !! i(n) && (t = a.call(t), n = a.call(n), s(t, n, e));
+            if (r(t)) {
+                if (!r(n)) return ! 1;
+                if (t.length !== n.length) return ! 1;
+                for (d = 0; d < t.length; d++) if (t[d] !== n[d]) return ! 1;
+                return ! 0
+            }
+            try {
+                var u = o(t),
+                m = o(n)
+            } catch(t) {
+                return ! 1
+            }
+            if (u.length != m.length) return ! 1;
+            for (u.sort(), m.sort(), d = u.length - 1; d >= 0; d--) if (u[d] != m[d]) return ! 1;
+            for (d = u.length - 1; d >= 0; d--) if (l = u[d], !s(t[l], n[l], e)) return ! 1;
+            return typeof t == typeof n
+        } (t, n, e))
+    };
+    function c(t) {
+        return null === t || void 0 === t
+    }
+    function r(t) {
+        return ! (!t || "object" != typeof t || "number" != typeof t.length) && ("function" == typeof t.copy && "function" == typeof t.slice && !(t.length > 0 && "number" != typeof t[0]))
+    }
+},
+function(t, n) {
+    t.exports = function(t, n, e, a) {
+        var o = e ? e.call(a, t, n) : void 0;
+        if (void 0 !== o) return !! o;
+        if (t === n) return ! 0;
+        if ("object" != typeof t || !t || "object" != typeof n || !n) return ! 1;
+        var i = Object.keys(t),
+        s = Object.keys(n);
+        if (i.length !== s.length) return ! 1;
+        for (var c = Object.prototype.hasOwnProperty.bind(n), r = 0; r < i.length; r++) {
+            var d = i[r];
+            if (!c(d)) return ! 1;
+            var l = t[d],
+            u = n[d];
+            if (!1 === (o = e ? e.call(a, l, u, d) : void 0) || void 0 === o && l !== u) return ! 1
+        }
+        return ! 0
+    }
+},
+function(t, n, e) {
+    var a;
+    /*!
+  Copyright (c) 2015 Jed Watson.
+  Based on code that is Copyright 2013-2015, Facebook, Inc.
+  All rights reserved.
+*/
+    /*!
+  Copyright (c) 2015 Jed Watson.
+  Based on code that is Copyright 2013-2015, Facebook, Inc.
+  All rights reserved.
+*/
+    !
+    function() {
+        "use strict";
+        var o = !("undefined" == typeof window || !window.document || !window.document.createElement),
+        i = {
+            canUseDOM: o,
+            canUseWorkers: "undefined" != typeof Worker,
+            canUseEventListeners: o && !(!window.addEventListener && !window.attachEvent),
+            canUseViewport: o && !!window.screen
+        };
+        void 0 === (a = function() {
+            return i
+        }.call(n, e, n, t)) || (t.exports = a)
+    } ()
+},
+function(t, n, e) {
+    "use strict";
+    function a(t) {
+        return t && "object" == typeof t && "default" in t ? t.
+    default:
+        t
+    }
+    var o = e(0),
+    i = a(o),
+    s = a(e(36)),
+    c = a(e(35));
+    t.exports = function(t, n, e) {
+        if ("function" != typeof t) throw new Error("Expected reducePropsToState to be a function.");
+        if ("function" != typeof n) throw new Error("Expected handleStateChangeOnClient to be a function.");
+        if (void 0 !== e && "function" != typeof e) throw new Error("Expected mapStateOnServer to either be undefined or a function.");
+        return function(a) {
+            if ("function" != typeof a) throw new Error("Expected WrappedComponent to be a React component.");
+            var r = [],
+            d = void 0;
+            function l() {
+                d = t(r.map(function(t) {
+                    return t.props
+                })),
+                u.canUseDOM ? n(d) : e && (d = e(d))
+            }
+            var u = function(t) {
+                function n() {
+                    return function(t, n) {
+                        if (! (t instanceof n)) throw new TypeError("Cannot call a class as a function")
+                    } (this, n),
+                    function(t, n) {
+                        if (!t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+                        return ! n || "object" != typeof n && "function" != typeof n ? t: n
+                    } (this, t.apply(this, arguments))
+                }
+                return function(t, n) {
+                    if ("function" != typeof n && null !== n) throw new TypeError("Super expression must either be null or a function, not " + typeof n);
+                    t.prototype = Object.create(n && n.prototype, {
+                        constructor: {
+                            value: t,
+                            enumerable: !1,
+                            writable: !0,
+                            configurable: !0
+                        }
+                    }),
+                    n && (Object.setPrototypeOf ? Object.setPrototypeOf(t, n) : t.__proto__ = n)
+                } (n, t),
+                n.peek = function() {
+                    return d
+                },
+                n.rewind = function() {
+                    if (n.canUseDOM) throw new Error("You may only call rewind() on the server. Call peek() to read the current state.");
+                    var t = d;
+                    return d = void 0,
+                    r = [],
+                    t
+                },
+                n.prototype.shouldComponentUpdate = function(t) {
+                    return ! c(t, this.props)
+                },
+                n.prototype.componentWillMount = function() {
+                    r.push(this),
+                    l()
+                },
+                n.prototype.componentDidUpdate = function() {
+                    l()
+                },
+                n.prototype.componentWillUnmount = function() {
+                    var t = r.indexOf(this);
+                    r.splice(t, 1),
+                    l()
+                },
+                n.prototype.render = function() {
+                    return i.createElement(a, this.props)
+                },
+                n
+            } (o.Component);
+            return u.displayName = "SideEffect(" +
+            function(t) {
+                return t.displayName || t.name || "Component"
+            } (a) + ")",
+            u.canUseDOM = s.canUseDOM,
+            u
+        }
+    }
+},
+function(t, n, e) {
+    "use strict";
+    t.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
+},
+function(t, n, e) {
+    "use strict";
+    var a = function(t) {};
+    t.exports = function(t, n, e, o, i, s, c, r) {
+        if (a(n), !t) {
+            var d;
+            if (void 0 === n) d = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");
+            else {
+                var l = [e, o, i, s, c, r],
+                u = 0; (d = new Error(n.replace(/%s/g,
+                function() {
+                    return l[u++]
+                }))).name = "Invariant Violation"
+            }
+            throw d.framesToPop = 1,
+            d
+        }
+    }
+},
+function(t, n, e) {
+    "use strict";
+    function a(t) {
+        return function() {
+            return t
+        }
+    }
+    var o = function() {};
+    o.thatReturns = a,
+    o.thatReturnsFalse = a(!1),
+    o.thatReturnsTrue = a(!0),
+    o.thatReturnsNull = a(null),
+    o.thatReturnsThis = function() {
+        return this
+    },
+    o.thatReturnsArgument = function(t) {
+        return t
+    },
+    t.exports = o
+},
+function(t, n, e) {
+    "use strict";
+    var a = e(40),
+    o = e(39),
+    i = e(38);
+    t.exports = function() {
+        function t(t, n, e, a, s, c) {
+            c !== i && o(!1, "Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types")
+        }
+        function n() {
+            return t
+        }
+        t.isRequired = t;
+        var e = {
+            array: t,
+            bool: t,
+            func: t,
+            number: t,
+            object: t,
+            string: t,
+            symbol: t,
+            any: t,
+            arrayOf: n,
+            element: t,
+            instanceOf: n,
+            node: t,
+            objectOf: n,
+            oneOf: n,
+            oneOfType: n,
+            shape: n,
+            exact: n
+        };
+        return e.checkPropTypes = a,
+        e.PropTypes = e,
+        e
+    }
+},
+function(t, n, e) {
+    t.exports = e(41)()
+},
 function(t, n, e) {
     "use strict";
     e.r(n),
@@ -3076,6 +3137,56 @@ function(t, n, e) {
     A.polyfill = !0,
     self.fetch || (self.fetch = A, self.Headers = d, self.Request = g, self.Response = x)
 },
+function(t, n, e) {
+    "use strict"; !
+    function() {
+        var t = window.nads;
+        if (t) {
+            t.createAd("top-ad", {
+                sizes: [[728, 90], [320, 50]],
+                refreshTime: 90,
+                floor: .05,
+                report: {
+                    enabled: !0,
+                    wording: "Report Ad",
+                    position: "fixed-bottom-right"
+                }
+            }),
+            t.createAd("bottom-ad", {
+                sizes: [[970, 250], [728, 90], [320, 50]],
+                refreshTime: 90,
+                floor: .05,
+                report: {
+                    enabled: !0,
+                    wording: "Report Ad",
+                    position: "fixed-bottom-right"
+                }
+            });
+            var n = [];
+            window.matchMedia("(min-width: 1810px)").matches && (n.push([300, 250]), n.push([300, 600])),
+            window.matchMedia("(min-width: 1530px)").matches && n.push([160, 600]),
+            n.length && (t.createAd("right-ad", {
+                sizes: n,
+                refreshTime: 90,
+                floor: .05,
+                report: {
+                    enabled: !0,
+                    wording: "Report Ad",
+                    position: "fixed-bottom-right"
+                }
+            }), t.createAd("left-ad", {
+                sizes: n,
+                refreshTime: 90,
+                floor: .05,
+                report: {
+                    enabled: !0,
+                    wording: "Report Ad",
+                    position: "fixed-bottom-right"
+                }
+            }))
+        }
+    } ()
+},
 ,
 function(t, n, e) {},
 function(t, n) {
@@ -3143,119 +3254,7 @@ function(t, n) {
     } ()
 },
 function(t, n, e) {
-    t.exports = "function" == typeof Array.from ? Array.from: e(41)
-},
-function(t, n) {
-    var e, a, o = t.exports = {};
-    function i() {
-        throw new Error("setTimeout has not been defined")
-    }
-    function s() {
-        throw new Error("clearTimeout has not been defined")
-    }
-    function c(t) {
-        if (e === setTimeout) return setTimeout(t, 0);
-        if ((e === i || !e) && setTimeout) return e = setTimeout,
-        setTimeout(t, 0);
-        try {
-            return e(t, 0)
-        } catch(n) {
-            try {
-                return e.call(null, t, 0)
-            } catch(n) {
-                return e.call(this, t, 0)
-            }
-        }
-    } !
-    function() {
-        try {
-            e = "function" == typeof setTimeout ? setTimeout: i
-        } catch(t) {
-            e = i
-        }
-        try {
-            a = "function" == typeof clearTimeout ? clearTimeout: s
-        } catch(t) {
-            a = s
-        }
-    } ();
-    var r, d = [],
-    l = !1,
-    u = -1;
-    function m() {
-        l && r && (l = !1, r.length ? d = r.concat(d) : u = -1, d.length && y())
-    }
-    function y() {
-        if (!l) {
-            var t = c(m);
-            l = !0;
-            for (var n = d.length; n;) {
-                for (r = d, d = []; ++u < n;) r && r[u].run();
-                u = -1,
-                n = d.length
-            }
-            r = null,
-            l = !1,
-            function(t) {
-                if (a === clearTimeout) return clearTimeout(t);
-                if ((a === s || !a) && clearTimeout) return a = clearTimeout,
-                clearTimeout(t);
-                try {
-                    a(t)
-                } catch(n) {
-                    try {
-                        return a.call(null, t)
-                    } catch(n) {
-                        return a.call(this, t)
-                    }
-                }
-            } (t)
-        }
-    }
-    function f(t, n) {
-        this.fun = t,
-        this.array = n
-    }
-    function p() {}
-    o.nextTick = function(t) {
-        var n = new Array(arguments.length - 1);
-        if (arguments.length > 1) for (var e = 1; e < arguments.length; e++) n[e - 1] = arguments[e];
-        d.push(new f(t, n)),
-        1 !== d.length || l || c(y)
-    },
-    f.prototype.run = function() {
-        this.fun.apply(null, this.array)
-    },
-    o.title = "browser",
-    o.browser = !0,
-    o.env = {},
-    o.argv = [],
-    o.version = "",
-    o.versions = {},
-    o.on = p,
-    o.addListener = p,
-    o.once = p,
-    o.off = p,
-    o.removeListener = p,
-    o.removeAllListeners = p,
-    o.emit = p,
-    o.prependListener = p,
-    o.prependOnceListener = p,
-    o.listeners = function(t) {
-        return []
-    },
-    o.binding = function(t) {
-        throw new Error("process.binding is not supported")
-    },
-    o.cwd = function() {
-        return "/"
-    },
-    o.chdir = function(t) {
-        throw new Error("process.chdir is not supported")
-    },
-    o.umask = function() {
-        return 0
-    }
+    t.exports = "function" == typeof Array.from ? Array.from: e(47)
 },
 function(t, n, e) { (function(t, n) { !
         function(t, e) {
@@ -3368,7 +3367,7 @@ function(t, n, e) { (function(t, n) { !
                 }
             }
         } ("undefined" == typeof self ? void 0 === t ? this: t: self)
-    }).call(this, e(2), e(43))
+    }).call(this, e(3), e(19))
 },
 function(t, n, e) { (function(t) {
         var a = void 0 !== t && t || "undefined" != typeof self && self || window,
@@ -3406,17 +3405,17 @@ function(t, n, e) { (function(t) {
             },
             n))
         },
-        e(44),
+        e(49),
         n.setImmediate = "undefined" != typeof self && self.setImmediate || void 0 !== t && t.setImmediate || this && this.setImmediate,
         n.clearImmediate = "undefined" != typeof self && self.clearImmediate || void 0 !== t && t.clearImmediate || this && this.clearImmediate
-    }).call(this, e(2))
+    }).call(this, e(3))
 },
 function(t, n, e) {
     "use strict";
     e.r(n),
     function(t) {
-        var n = e(12),
-        a = e(5),
+        var n = e(14),
+        a = e(6),
         o = function() {
             if ("undefined" != typeof self) return self;
             if ("undefined" != typeof window) return window;
@@ -3426,7 +3425,7 @@ function(t, n, e) {
         "Promise" in o ? o.Promise.prototype.
         finally || (o.Promise.prototype.
         finally = a.a) : o.Promise = n.a
-    }.call(this, e(2))
+    }.call(this, e(3))
 },
 function(t, n) {
     try {
@@ -3630,7 +3629,7 @@ function(t, n, e) { (function(t) { !
                 n in t ? t[n].push("" + e) : t[n] = ["" + e]
             }
         } (void 0 !== t ? t: "undefined" != typeof window ? window: this)
-    }).call(this, e(2))
+    }).call(this, e(3))
 },
 ,
 function(t, n, e) {
@@ -3785,7 +3784,7 @@ function(t, n, e) {
 },
 function(t, n, e) {
     "use strict";
-    t.exports = e(52)
+    t.exports = e(57)
 },
 function(t, n, e) {
     "use strict";
@@ -3798,8 +3797,8 @@ function(t, n, e) {
  * LICENSE file in the root directory of this source tree.
  */
     var a = e(0),
-    o = e(8),
-    i = e(53);
+    o = e(7),
+    i = e(58);
     function s(t) {
         for (var n = arguments.length - 1,
         e = "https://reactjs.org/docs/error-decoder.html?invariant=" + t,
@@ -8294,7 +8293,7 @@ function(t, n, e) {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-    var a = e(8),
+    var a = e(7),
     o = "function" == typeof Symbol && Symbol.
     for,
     i = o ? Symbol.
@@ -8630,10 +8629,10 @@ function(t, n, e) {
 },
 function(t, n, e) {
     "use strict";
-    t.exports = e(56)
+    t.exports = e(61)
 },
 function(t, n, e) {
-    t.exports = e(57)
+    t.exports = e(62)
 },
 function(t, n, e) {
     "use strict";
@@ -8663,7 +8662,7 @@ function(t, n, e) {
         value: !0
     });
     var o = e(0),
-    i = e(79),
+    i = e(84),
     s = [];
     for (var c in i.groups) i.groups[c].id = c,
     s.push(i.groups[c]);
@@ -8880,7 +8879,7 @@ function(t, n, e) {
         value: !0
     });
     var o = e(0);
-    e(83);
+    e(88);
 		//lucifer-3
     var i = function(t) {
         function n() {
@@ -9134,13 +9133,13 @@ function(t, n, e) {
         value: !0
     });
     var i = e(0),
-    s = e(71),
-    c = e(60),
-    r = e(59);
-    e(70);
-    var d, l = e(13),
-    u = e(4),
-    m = e(7),
+    s = e(76),
+    c = e(65),
+    r = e(64);
+    e(75);
+    var d, l = e(15),
+    u = e(5),
+    m = e(4),
     y = e(1); !
     function(t) {
         t[t.Union = 0] = "Union",
@@ -9164,7 +9163,7 @@ function(t, n, e) {
             e.resultPercent = function(t, n) {
                 if (void 0 === n && (n = !1), 0 === t) return n ? "0%": "";
                 var a = 100 * t / e.state.resultCount;
-                return a < 1 ? "<1%": a.toFixed(0) + "%"
+                return a < 1 ? a.toFixed(1) + "%": a.toFixed(0) + "%"
             };
             var a = new f("classFilter", d.Union),
             o = new f("itemFilter", d.Intersection),
@@ -9223,12 +9222,12 @@ function(t, n, e) {
                 treeExpanded: t
             }))
         },
-		//lucifer-7
+						//lucifer-7
         n.prototype.fetchOverview = function() {
             var t = this;
             m.getJson("/api/data/" + this.props.snapshotVersion.version + "/getbuildoverview?overview=" + this.props.snapshotVersion.name).then(function(n) {
-					n=RepItemNinja_getbuildoverview(n);
-                t.state.classFilter.names = n.classNames.map(function(t) {
+                	n=RepItemNinja_getbuildoverview(n);
+				t.state.classFilter.names = n.classNames.map(function(t) {
                     return {
                         name: t
                     }
@@ -10090,8 +10089,8 @@ function(t, n, e) {
                     fontSize: 18
                 }
             },
-				//lucifer-20
-            "这个联盟目前还没有Build数据： ", i.createElement("b", null, this.props.activeLeague.displayName), " （过段时间再查看吧）"), i.createElement("div", {
+					//lucifer-20
+            "这个联盟目前还没有Build数据： ", i.createElement("b", null, this.props.activeLeague.displayName), " （过段时间再查看吧）."), i.createElement("div", {
                 style: {
                     textAlign: "center",
                     marginBottom: 20
@@ -10118,14 +10117,16 @@ function(t, n, e) {
                 },
                 n))
             },
-				//lucifer-3
-            a = this.renderClassFilterBuilder(this.state.classFilter), 
-			s = e("传奇物品", this.renderFilterBuilder(this.state.itemFilter)), 
-			d = e("技能 (5L或以上)", this.renderFilterBuilder(this.state.skillFilter)),
-			u = e("技能模式 (5L或以上)", this.renderFilterBuilder(this.state.skillModeFilter)), 
-			m = e("天赋大点 / 升华", this.renderFilterBuilder(this.state.keystoneFilter)),
-			f = e("所有技能(任意连接数)", this.renderFilterBuilder(this.state.allSkillFilter)), 
-			p = e("武器类型", this.renderFilterBuilder(this.state.weaponConfFilter)), g = [], h = 0, x = this.state.skillDetails; h < x.length; h++) {
+						//lucifer-3
+            a = this.renderClassFilterBuilder(this.state.classFilter),
+				s = e("传奇物品", this.renderFilterBuilder(this.state.itemFilter)),
+				d = e("技能 (5L或以上)", this.renderFilterBuilder(this.state.skillFilter)),
+				u = e("技能模式 (5L或以上)", this.renderFilterBuilder(this.state.skillModeFilter)),
+				m = e("天赋大点 / 升华", 
+				this.renderFilterBuilder(this.state.keystoneFilter)),
+				f = e("所有技能(任意连接数)", this.renderFilterBuilder(this.state.allSkillFilter)), 
+				p = e("武器类型", this.renderFilterBuilder(this.state.weaponConfFilter)), 
+				g = [], h = 0, x = this.state.skillDetails; h < x.length; h++) {
                 var k = x[h];
                 this.isSkillDetailsActive(k) && g.push(e(k.result.name + " 常用辅助技能", this.renderFilterBuilder(k.supportFilter)))
             }
@@ -10164,7 +10165,7 @@ function(t, n, e) {
             this.sortProps("energy-shield")), "能量护盾"), i.createElement("th", o({
                 title: "地心深度"
             },
-            this.sortProps("depth")), "深度"), i.createElement("th", o({
+            this.sortProps("depth")), "Depth"), i.createElement("th", o({
                 title: "单人地心深度"
             },
             this.sortProps("depth-solo")), "单人"), i.createElement("th", {
@@ -10282,7 +10283,7 @@ function(t, n, e) {
                     border: "1px solid #555"
                 }
             },
-			//lucifer
+				//lucifer
             i.createElement("input", {
                 type: "search",
                 placeholder: "关键词过滤...",
@@ -10304,7 +10305,7 @@ function(t, n, e) {
             i.createElement("div", {
                 className: "quick-filter"
             },
-			//lucifer-4
+				//lucifer-4
             i.createElement("div", null, "选择等级"), i.createElement("select", {
                 value: this.state.minLevel,
                 onChange: this.onMinLevelChange
@@ -10385,7 +10386,7 @@ function(t, n) {
 },
 function(t, n, e) {
     "use strict";
-    var a = e(73),
+    var a = e(78),
     o = "Copy to clipboard: #{key}, Enter";
     t.exports = function(t, n) {
         var e, i, s, c, r, d, l = !1;
@@ -10445,7 +10446,7 @@ function(t, n, e) {
         value: !0
     });
     var o = e(0),
-    i = e(74),
+    i = e(79),
     s = function(t) {
         function n(n) {
             var e = t.call(this, n) || this;
@@ -10467,13 +10468,12 @@ function(t, n, e) {
             },
             5e3))
         },
-			//lucifer-2
         n.prototype.render = function() {
             return o.createElement("div", {
                 className: "bg-teal border-light-grey py3 px6 hover:glow-teal cursor-pointer",
                 onClick: this.onCopyClick
             },
-            this.state.copied ? "代码已复制": "复制POB代码")
+            this.state.copied ?"代码已复制": "复制POB代码")
         },
         n
     } (o.Component);
@@ -10509,9 +10509,9 @@ function(t, n, e) {
         value: !0
     });
     var o = e(0),
-    i = e(9),
-    s = e(36);
-    e(77);
+    i = e(10),
+    s = e(30);
+    e(82);
     var c = function(t) {
         function n(n) {
             var e = t.call(this, n) || this;
@@ -10557,20 +10557,39 @@ function(t, n, e) {
             if (t.properties.length) {
                 for (var e = [], a = function(t) {
                     if (t.values.length) {
-                        var n = t.values.map(function(t, n) {
-                            return o.createElement("span", {
-                                key: "m-" + n,
-                                className: function(t) {
-                                    return "1" === t ? "magic": "4" === t ? "fire": "5" === t ? "cold": "6" === t ? "lightning": "7" === t ? "chaos": "default"
-                                } (t[1])
+                        var n = function(t) {
+                            return "1" === t ? "magic": "4" === t ? "fire": "5" === t ? "cold": "6" === t ? "lightning": "7" === t ? "chaos": "default"
+                        };
+                        if ( - 1 === t.name.indexOf("%0")) {
+                            var a = t.values.map(function(t, e) {
+                                return o.createElement("span", {
+                                    key: "m-" + e,
+                                    className: n(t[1])
+                                },
+                                e > 0 ? ", ": null, t[0])
+                            });
+                            e.push(o.createElement("div", {
+                                key: "prop-" + t.name,
+                                className: "property"
                             },
-                            n > 0 ? ", ": null, t[0])
-                        });
-                        e.push(o.createElement("div", {
-                            key: "prop-" + t.name,
-                            className: "property"
-                        },
-                        t.name, ": ", n))
+                            t.name, ": ", a))
+                        } else {
+                            var i = t.name.split(" ").map(function(e) {
+                                if (e.startsWith("%")) {
+                                    var a = t.values[parseInt(e.replace("%", ""))];
+                                    return o.createElement("span", {
+                                        className: n(a[1])
+                                    },
+                                    a[0], " ")
+                                }
+                                return o.createElement("span", null, e, " ")
+                            });
+                            e.push(o.createElement("div", {
+                                key: "prop-" + t.name,
+                                className: "property"
+                            },
+                            i))
+                        }
                     } else e.push(o.createElement("div", {
                         key: "prop-" + t.name,
                         className: "property"
@@ -10618,16 +10637,16 @@ function(t, n, e) {
                 "Corrupted")),
                 n.push(r)
             }
-            var f = "";
+            var f = "x";
             return f = 3 === this.props.item.itemClass ? "unique": 2 === this.props.item.itemClass ? "rare": 9 === this.props.item.itemClass ? "relic": "magic",
             i.createPortal(o.createElement("div", {
                 className: "tooltip"
             },
             o.createElement("div", {
-                className: "header " + f
+                className: "tooltip-header " + f
             },
             o.createElement("div", null, t.name), o.createElement("div", null, t.typeLine)), o.createElement("div", {
-                className: "body"
+                className: "tooltip-body"
             },
             n.map(function(t, n) {
                 return n > 0 ? [o.createElement("hr", {
@@ -10645,7 +10664,7 @@ function(t) {
         nodes: {
             6 : {
                 id: "6",
-                g: 116,
+                g: 53,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -10657,7 +10676,7 @@ function(t) {
             },
             94 : {
                 id: "94",
-                g: 125,
+                g: 135,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -10669,7 +10688,7 @@ function(t) {
             },
             106 : {
                 id: "106",
-                g: 90,
+                g: 10,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -10681,7 +10700,7 @@ function(t) {
             },
             128 : {
                 id: "128",
-                g: 358,
+                g: 348,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -10693,7 +10712,7 @@ function(t) {
             },
             193 : {
                 id: "193",
-                g: 88,
+                g: 166,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -10705,7 +10724,7 @@ function(t) {
             },
             238 : {
                 id: "238",
-                g: 49,
+                g: 469,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -10717,7 +10736,7 @@ function(t) {
             },
             258 : {
                 id: "258",
-                g: 382,
+                g: 340,
                 o: 4,
                 m: !1,
                 oidx: 18,
@@ -10729,7 +10748,7 @@ function(t) {
             },
             265 : {
                 id: "265",
-                g: 20,
+                g: 101,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -10741,7 +10760,7 @@ function(t) {
             },
             367 : {
                 id: "367",
-                g: 78,
+                g: 201,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -10753,7 +10772,7 @@ function(t) {
             },
             401 : {
                 id: "401",
-                g: 79,
+                g: 24,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -10765,7 +10784,7 @@ function(t) {
             },
             409 : {
                 id: "409",
-                g: 277,
+                g: 165,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -10777,7 +10796,7 @@ function(t) {
             },
             420 : {
                 id: "420",
-                g: 210,
+                g: 13,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -10789,7 +10808,7 @@ function(t) {
             },
             444 : {
                 id: "444",
-                g: 333,
+                g: 389,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -10801,7 +10820,7 @@ function(t) {
             },
             465 : {
                 id: "465",
-                g: 31,
+                g: 422,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -10813,7 +10832,7 @@ function(t) {
             },
             476 : {
                 id: "476",
-                g: 1,
+                g: 204,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -10825,7 +10844,7 @@ function(t) {
             },
             487 : {
                 id: "487",
-                g: 351,
+                g: 338,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -10837,7 +10856,7 @@ function(t) {
             },
             529 : {
                 id: "529",
-                g: 332,
+                g: 317,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -10849,7 +10868,7 @@ function(t) {
             },
             590 : {
                 id: "590",
-                g: 82,
+                g: 62,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -10861,7 +10880,7 @@ function(t) {
             },
             607 : {
                 id: "607",
-                g: 29,
+                g: 163,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -10873,7 +10892,7 @@ function(t) {
             },
             662 : {
                 id: "662",
-                g: 231,
+                g: 169,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -10885,7 +10904,7 @@ function(t) {
             },
             720 : {
                 id: "720",
-                g: 125,
+                g: 135,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -10897,7 +10916,7 @@ function(t) {
             },
             739 : {
                 id: "739",
-                g: 313,
+                g: 300,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -10909,7 +10928,7 @@ function(t) {
             },
             772 : {
                 id: "772",
-                g: 330,
+                g: 65,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -10921,7 +10940,7 @@ function(t) {
             },
             798 : {
                 id: "798",
-                g: 261,
+                g: 364,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -10933,7 +10952,7 @@ function(t) {
             },
             869 : {
                 id: "869",
-                g: 48,
+                g: 312,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -10945,7 +10964,7 @@ function(t) {
             },
             885 : {
                 id: "885",
-                g: 169,
+                g: 308,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -10957,7 +10976,7 @@ function(t) {
             },
             903 : {
                 id: "903",
-                g: 25,
+                g: 56,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -10969,7 +10988,7 @@ function(t) {
             },
             918 : {
                 id: "918",
-                g: 21,
+                g: 61,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -10981,7 +11000,7 @@ function(t) {
             },
             922 : {
                 id: "922",
-                g: 182,
+                g: 94,
                 o: 4,
                 m: !1,
                 oidx: 17,
@@ -10993,7 +11012,7 @@ function(t) {
             },
             982 : {
                 id: "982",
-                g: 34,
+                g: 316,
                 o: 4,
                 m: !1,
                 oidx: 6,
@@ -11005,7 +11024,7 @@ function(t) {
             },
             1006 : {
                 id: "1006",
-                g: 394,
+                g: 374,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -11017,7 +11036,7 @@ function(t) {
             },
             1031 : {
                 id: "1031",
-                g: 7,
+                g: 67,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -11029,7 +11048,7 @@ function(t) {
             },
             1105 : {
                 id: "1105",
-                g: 182,
+                g: 94,
                 o: 4,
                 m: !1,
                 oidx: 13,
@@ -11041,7 +11060,7 @@ function(t) {
             },
             1159 : {
                 id: "1159",
-                g: 101,
+                g: 59,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -11053,7 +11072,7 @@ function(t) {
             },
             1201 : {
                 id: "1201",
-                g: 419,
+                g: 292,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -11065,7 +11084,7 @@ function(t) {
             },
             1203 : {
                 id: "1203",
-                g: 254,
+                g: 438,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -11077,7 +11096,7 @@ function(t) {
             },
             1252 : {
                 id: "1252",
-                g: 143,
+                g: 153,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -11089,7 +11108,7 @@ function(t) {
             },
             1325 : {
                 id: "1325",
-                g: 153,
+                g: 404,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -11101,7 +11120,7 @@ function(t) {
             },
             1340 : {
                 id: "1340",
-                g: 237,
+                g: 457,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -11113,7 +11132,7 @@ function(t) {
             },
             1346 : {
                 id: "1346",
-                g: 378,
+                g: 391,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -11125,7 +11144,7 @@ function(t) {
             },
             1382 : {
                 id: "1382",
-                g: 35,
+                g: 89,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -11137,7 +11156,7 @@ function(t) {
             },
             1403 : {
                 id: "1403",
-                g: 169,
+                g: 308,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -11149,7 +11168,7 @@ function(t) {
             },
             1405 : {
                 id: "1405",
-                g: 322,
+                g: 186,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -11161,7 +11180,7 @@ function(t) {
             },
             1427 : {
                 id: "1427",
-                g: 335,
+                g: 45,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -11173,7 +11192,7 @@ function(t) {
             },
             1461 : {
                 id: "1461",
-                g: 84,
+                g: 183,
                 o: 4,
                 m: !1,
                 oidx: 10,
@@ -11185,7 +11204,7 @@ function(t) {
             },
             1529 : {
                 id: "1529",
-                g: 476,
+                g: 495,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -11197,7 +11216,7 @@ function(t) {
             },
             1550 : {
                 id: "1550",
-                g: 269,
+                g: 262,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -11209,7 +11228,7 @@ function(t) {
             },
             1568 : {
                 id: "1568",
-                g: 196,
+                g: 188,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -11221,7 +11240,7 @@ function(t) {
             },
             1571 : {
                 id: "1571",
-                g: 213,
+                g: 437,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -11233,7 +11252,7 @@ function(t) {
             },
             1593 : {
                 id: "1593",
-                g: 38,
+                g: 108,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -11245,7 +11264,7 @@ function(t) {
             },
             1600 : {
                 id: "1600",
-                g: 19,
+                g: 286,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -11257,7 +11276,7 @@ function(t) {
             },
             1609 : {
                 id: "1609",
-                g: 75,
+                g: 99,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -11269,7 +11288,7 @@ function(t) {
             },
             1648 : {
                 id: "1648",
-                g: 224,
+                g: 254,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -11281,7 +11300,7 @@ function(t) {
             },
             1655 : {
                 id: "1655",
-                g: 137,
+                g: 170,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -11293,7 +11312,7 @@ function(t) {
             },
             1675 : {
                 id: "1675",
-                g: 118,
+                g: 140,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -11305,7 +11324,7 @@ function(t) {
             },
             1696 : {
                 id: "1696",
-                g: 364,
+                g: 353,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -11317,7 +11336,7 @@ function(t) {
             },
             1697 : {
                 id: "1697",
-                g: 61,
+                g: 216,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -11329,7 +11348,7 @@ function(t) {
             },
             1698 : {
                 id: "1698",
-                g: 196,
+                g: 188,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -11341,7 +11360,7 @@ function(t) {
             },
             1731 : {
                 id: "1731",
-                g: 34,
+                g: 316,
                 o: 4,
                 m: !1,
                 oidx: 8,
@@ -11353,7 +11372,7 @@ function(t) {
             },
             1734 : {
                 id: "1734",
-                g: 246,
+                g: 237,
                 o: 4,
                 m: !1,
                 oidx: 10,
@@ -11365,7 +11384,7 @@ function(t) {
             },
             1822 : {
                 id: "1822",
-                g: 392,
+                g: 64,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -11377,7 +11396,7 @@ function(t) {
             },
             1891 : {
                 id: "1891",
-                g: 239,
+                g: 223,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -11389,7 +11408,7 @@ function(t) {
             },
             1909 : {
                 id: "1909",
-                g: 72,
+                g: 91,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -11401,7 +11420,7 @@ function(t) {
             },
             1945 : {
                 id: "1945",
-                g: 173,
+                g: 244,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -11413,7 +11432,7 @@ function(t) {
             },
             1957 : {
                 id: "1957",
-                g: 313,
+                g: 300,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -11425,7 +11444,7 @@ function(t) {
             },
             2021 : {
                 id: "2021",
-                g: 196,
+                g: 188,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -11437,7 +11456,7 @@ function(t) {
             },
             2047 : {
                 id: "2047",
-                g: 410,
+                g: 425,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -11449,7 +11468,7 @@ function(t) {
             },
             2094 : {
                 id: "2094",
-                g: 115,
+                g: 347,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -11461,7 +11480,7 @@ function(t) {
             },
             2121 : {
                 id: "2121",
-                g: 74,
+                g: 129,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -11473,7 +11492,7 @@ function(t) {
             },
             2151 : {
                 id: "2151",
-                g: 91,
+                g: 350,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -11485,7 +11504,7 @@ function(t) {
             },
             2185 : {
                 id: "2185",
-                g: 334,
+                g: 46,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -11497,7 +11516,7 @@ function(t) {
             },
             2224 : {
                 id: "2224",
-                g: 243,
+                g: 324,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -11509,7 +11528,7 @@ function(t) {
             },
             2225 : {
                 id: "2225",
-                g: 65,
+                g: 177,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -11521,7 +11540,7 @@ function(t) {
             },
             2260 : {
                 id: "2260",
-                g: 221,
+                g: 123,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -11533,7 +11552,7 @@ function(t) {
             },
             2292 : {
                 id: "2292",
-                g: 399,
+                g: 426,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -11545,7 +11564,7 @@ function(t) {
             },
             2320 : {
                 id: "2320",
-                g: 108,
+                g: 119,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -11557,7 +11576,7 @@ function(t) {
             },
             2336 : {
                 id: "2336",
-                g: 41,
+                g: 263,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -11569,7 +11588,7 @@ function(t) {
             },
             2355 : {
                 id: "2355",
-                g: 405,
+                g: 359,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -11581,7 +11600,7 @@ function(t) {
             },
             2392 : {
                 id: "2392",
-                g: 201,
+                g: 191,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -11593,7 +11612,7 @@ function(t) {
             },
             2454 : {
                 id: "2454",
-                g: 11,
+                g: 71,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -11605,7 +11624,7 @@ function(t) {
             },
             2464 : {
                 id: "2464",
-                g: 300,
+                g: 117,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -11617,7 +11636,7 @@ function(t) {
             },
             2491 : {
                 id: "2491",
-                g: 195,
+                g: 417,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -11629,7 +11648,7 @@ function(t) {
             },
             2521 : {
                 id: "2521",
-                g: 180,
+                g: 193,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -11641,7 +11660,7 @@ function(t) {
             },
             2550 : {
                 id: "2550",
-                g: 269,
+                g: 262,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -11653,7 +11672,7 @@ function(t) {
             },
             2598 : {
                 id: "2598",
-                g: 118,
+                g: 140,
                 o: 4,
                 m: !1,
                 oidx: 29,
@@ -11665,7 +11684,7 @@ function(t) {
             },
             2715 : {
                 id: "2715",
-                g: 223,
+                g: 339,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -11677,7 +11696,7 @@ function(t) {
             },
             2821 : {
                 id: "2821",
-                g: 271,
+                g: 259,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -11689,7 +11708,7 @@ function(t) {
             },
             2897 : {
                 id: "2897",
-                g: 78,
+                g: 201,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -11701,7 +11720,7 @@ function(t) {
             },
             2913 : {
                 id: "2913",
-                g: 412,
+                g: 492,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -11713,7 +11732,7 @@ function(t) {
             },
             3009 : {
                 id: "3009",
-                g: 86,
+                g: 54,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -11725,7 +11744,7 @@ function(t) {
             },
             3154 : {
                 id: "3154",
-                g: 231,
+                g: 169,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -11737,7 +11756,7 @@ function(t) {
             },
             3167 : {
                 id: "3167",
-                g: 166,
+                g: 234,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -11749,7 +11768,7 @@ function(t) {
             },
             3184 : {
                 id: "3184",
-                g: 233,
+                g: 304,
                 o: 4,
                 m: !1,
                 oidx: 38,
@@ -11761,7 +11780,7 @@ function(t) {
             },
             3187 : {
                 id: "3187",
-                g: 25,
+                g: 56,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -11773,7 +11792,7 @@ function(t) {
             },
             3314 : {
                 id: "3314",
-                g: 377,
+                g: 14,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -11785,7 +11804,7 @@ function(t) {
             },
             3319 : {
                 id: "3319",
-                g: 101,
+                g: 59,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -11797,7 +11816,7 @@ function(t) {
             },
             3359 : {
                 id: "3359",
-                g: 53,
+                g: 113,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -11809,7 +11828,7 @@ function(t) {
             },
             3452 : {
                 id: "3452",
-                g: 358,
+                g: 348,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -11821,7 +11840,7 @@ function(t) {
             },
             3469 : {
                 id: "3469",
-                g: 56,
+                g: 23,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -11833,7 +11852,7 @@ function(t) {
             },
             3533 : {
                 id: "3533",
-                g: 338,
+                g: 435,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -11845,7 +11864,7 @@ function(t) {
             },
             3537 : {
                 id: "3537",
-                g: 325,
+                g: 148,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -11857,7 +11876,7 @@ function(t) {
             },
             3554 : {
                 id: "3554",
-                g: 318,
+                g: 253,
                 o: 4,
                 m: !1,
                 oidx: 23,
@@ -11869,7 +11888,7 @@ function(t) {
             },
             3644 : {
                 id: "3644",
-                g: 275,
+                g: 447,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -11881,7 +11900,7 @@ function(t) {
             },
             3651 : {
                 id: "3651",
-                g: 118,
+                g: 140,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -11893,7 +11912,7 @@ function(t) {
             },
             3656 : {
                 id: "3656",
-                g: 138,
+                g: 489,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -11905,7 +11924,7 @@ function(t) {
             },
             3676 : {
                 id: "3676",
-                g: 368,
+                g: 361,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -11917,7 +11936,7 @@ function(t) {
             },
             3726 : {
                 id: "3726",
-                g: 192,
+                g: 410,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -11929,7 +11948,7 @@ function(t) {
             },
             3951 : {
                 id: "3951",
-                g: 120,
+                g: 128,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -11941,7 +11960,7 @@ function(t) {
             },
             4011 : {
                 id: "4011",
-                g: 472,
+                g: 494,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -11953,7 +11972,7 @@ function(t) {
             },
             4036 : {
                 id: "4036",
-                g: 81,
+                g: 41,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -11965,7 +11984,7 @@ function(t) {
             },
             4177 : {
                 id: "4177",
-                g: 9,
+                g: 90,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -11977,7 +11996,7 @@ function(t) {
             },
             4184 : {
                 id: "4184",
-                g: 7,
+                g: 67,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -11989,7 +12008,7 @@ function(t) {
             },
             4194 : {
                 id: "4194",
-                g: 245,
+                g: 351,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12001,7 +12020,7 @@ function(t) {
             },
             4219 : {
                 id: "4219",
-                g: 99,
+                g: 85,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -12013,7 +12032,7 @@ function(t) {
             },
             4242 : {
                 id: "4242",
-                g: 173,
+                g: 244,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -12025,7 +12044,7 @@ function(t) {
             },
             4247 : {
                 id: "4247",
-                g: 76,
+                g: 100,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -12037,7 +12056,7 @@ function(t) {
             },
             4300 : {
                 id: "4300",
-                g: 140,
+                g: 111,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -12049,7 +12068,7 @@ function(t) {
             },
             4336 : {
                 id: "4336",
-                g: 67,
+                g: 28,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -12061,7 +12080,7 @@ function(t) {
             },
             4367 : {
                 id: "4367",
-                g: 418,
+                g: 15,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12073,7 +12092,7 @@ function(t) {
             },
             4378 : {
                 id: "4378",
-                g: 112,
+                g: 202,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -12085,7 +12104,7 @@ function(t) {
             },
             4397 : {
                 id: "4397",
-                g: 393,
+                g: 414,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12097,7 +12116,7 @@ function(t) {
             },
             4398 : {
                 id: "4398",
-                g: 338,
+                g: 435,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -12109,7 +12128,7 @@ function(t) {
             },
             4399 : {
                 id: "4399",
-                g: 261,
+                g: 364,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -12121,7 +12140,7 @@ function(t) {
             },
             4432 : {
                 id: "4432",
-                g: 298,
+                g: 289,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -12133,7 +12152,7 @@ function(t) {
             },
             4481 : {
                 id: "4481",
-                g: 492,
+                g: 5,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -12145,7 +12164,7 @@ function(t) {
             },
             4494 : {
                 id: "4494",
-                g: 277,
+                g: 165,
                 o: 4,
                 m: !1,
                 oidx: 13,
@@ -12157,7 +12176,7 @@ function(t) {
             },
             4502 : {
                 id: "4502",
-                g: 149,
+                g: 483,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12165,11 +12184,11 @@ function(t) {
                 ks: !1,
                 ascendancyName: null,
                 isAscendancyStart: !1,
-                out: ["3656", "265"]
+                out: ["3656", "265", "40776"]
             },
             4546 : {
                 id: "4546",
-                g: 192,
+                g: 410,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -12181,7 +12200,7 @@ function(t) {
             },
             4565 : {
                 id: "4565",
-                g: 86,
+                g: 54,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -12193,7 +12212,7 @@ function(t) {
             },
             4568 : {
                 id: "4568",
-                g: 210,
+                g: 13,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -12205,7 +12224,7 @@ function(t) {
             },
             4713 : {
                 id: "4713",
-                g: 315,
+                g: 307,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -12217,7 +12236,7 @@ function(t) {
             },
             4833 : {
                 id: "4833",
-                g: 158,
+                g: 27,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -12229,7 +12248,7 @@ function(t) {
             },
             4849 : {
                 id: "4849",
-                g: 362,
+                g: 178,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -12241,7 +12260,7 @@ function(t) {
             },
             4917 : {
                 id: "4917",
-                g: 382,
+                g: 340,
                 o: 4,
                 m: !1,
                 oidx: 10,
@@ -12253,7 +12272,7 @@ function(t) {
             },
             4940 : {
                 id: "4940",
-                g: 82,
+                g: 62,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -12265,7 +12284,7 @@ function(t) {
             },
             4944 : {
                 id: "4944",
-                g: 200,
+                g: 203,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -12277,7 +12296,7 @@ function(t) {
             },
             4972 : {
                 id: "4972",
-                g: 75,
+                g: 99,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -12289,7 +12308,7 @@ function(t) {
             },
             4973 : {
                 id: "4973",
-                g: 26,
+                g: 293,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -12301,7 +12320,7 @@ function(t) {
             },
             4977 : {
                 id: "4977",
-                g: 3,
+                g: 147,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -12313,7 +12332,7 @@ function(t) {
             },
             4995 : {
                 id: "4995",
-                g: 192,
+                g: 410,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -12325,7 +12344,7 @@ function(t) {
             },
             5029 : {
                 id: "5029",
-                g: 34,
+                g: 316,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -12337,7 +12356,7 @@ function(t) {
             },
             5065 : {
                 id: "5065",
-                g: 205,
+                g: 194,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -12349,7 +12368,7 @@ function(t) {
             },
             5068 : {
                 id: "5068",
-                g: 66,
+                g: 72,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -12361,7 +12380,7 @@ function(t) {
             },
             5082 : {
                 id: "5082",
-                g: 93,
+                g: 11,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -12373,7 +12392,7 @@ function(t) {
             },
             5087 : {
                 id: "5087",
-                g: 48,
+                g: 312,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -12385,7 +12404,7 @@ function(t) {
             },
             5129 : {
                 id: "5129",
-                g: 26,
+                g: 293,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -12397,7 +12416,7 @@ function(t) {
             },
             5152 : {
                 id: "5152",
-                g: 124,
+                g: 132,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -12409,7 +12428,7 @@ function(t) {
             },
             5197 : {
                 id: "5197",
-                g: 212,
+                g: 197,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -12421,7 +12440,7 @@ function(t) {
             },
             5233 : {
                 id: "5233",
-                g: 33,
+                g: 151,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12433,7 +12452,7 @@ function(t) {
             },
             5237 : {
                 id: "5237",
-                g: 404,
+                g: 238,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12445,7 +12464,7 @@ function(t) {
             },
             5262 : {
                 id: "5262",
-                g: 113,
+                g: 125,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -12457,7 +12476,7 @@ function(t) {
             },
             5289 : {
                 id: "5289",
-                g: 42,
+                g: 4,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -12469,7 +12488,7 @@ function(t) {
             },
             5296 : {
                 id: "5296",
-                g: 462,
+                g: 154,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12481,7 +12500,7 @@ function(t) {
             },
             5366 : {
                 id: "5366",
-                g: 430,
+                g: 190,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -12493,7 +12512,7 @@ function(t) {
             },
             5408 : {
                 id: "5408",
-                g: 440,
+                g: 470,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12505,7 +12524,7 @@ function(t) {
             },
             5415 : {
                 id: "5415",
-                g: 318,
+                g: 253,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -12517,7 +12536,7 @@ function(t) {
             },
             5443 : {
                 id: "5443",
-                g: 93,
+                g: 11,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -12529,7 +12548,7 @@ function(t) {
             },
             5456 : {
                 id: "5456",
-                g: 4,
+                g: 26,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12541,10 +12560,10 @@ function(t) {
             },
             5502 : {
                 id: "5502",
-                g: 326,
+                g: 78,
                 o: 4,
                 m: !1,
-                oidx: 17,
+                oidx: 14,
                 not: !0,
                 ks: !1,
                 ascendancyName: "Occultist",
@@ -12553,7 +12572,7 @@ function(t) {
             },
             5560 : {
                 id: "5560",
-                g: 181,
+                g: 79,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -12565,7 +12584,7 @@ function(t) {
             },
             5612 : {
                 id: "5612",
-                g: 117,
+                g: 127,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -12577,7 +12596,7 @@ function(t) {
             },
             5613 : {
                 id: "5613",
-                g: 130,
+                g: 149,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -12589,7 +12608,7 @@ function(t) {
             },
             5616 : {
                 id: "5616",
-                g: 476,
+                g: 495,
                 o: 4,
                 m: !1,
                 oidx: 10,
@@ -12601,7 +12620,7 @@ function(t) {
             },
             5622 : {
                 id: "5622",
-                g: 116,
+                g: 53,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -12613,7 +12632,7 @@ function(t) {
             },
             5629 : {
                 id: "5629",
-                g: 332,
+                g: 317,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -12625,7 +12644,7 @@ function(t) {
             },
             5643 : {
                 id: "5643",
-                g: 34,
+                g: 316,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -12637,7 +12656,7 @@ function(t) {
             },
             5696 : {
                 id: "5696",
-                g: 319,
+                g: 311,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -12649,7 +12668,7 @@ function(t) {
             },
             5743 : {
                 id: "5743",
-                g: 39,
+                g: 155,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -12661,7 +12680,7 @@ function(t) {
             },
             5802 : {
                 id: "5802",
-                g: 322,
+                g: 186,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -12673,7 +12692,7 @@ function(t) {
             },
             5819 : {
                 id: "5819",
-                g: 247,
+                g: 103,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -12685,7 +12704,7 @@ function(t) {
             },
             5823 : {
                 id: "5823",
-                g: 470,
+                g: 337,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12697,7 +12716,7 @@ function(t) {
             },
             5865 : {
                 id: "5865",
-                g: 132,
+                g: 305,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -12709,7 +12728,7 @@ function(t) {
             },
             5875 : {
                 id: "5875",
-                g: 37,
+                g: 406,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -12721,7 +12740,7 @@ function(t) {
             },
             5916 : {
                 id: "5916",
-                g: 315,
+                g: 307,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -12733,7 +12752,7 @@ function(t) {
             },
             5926 : {
                 id: "5926",
-                g: 362,
+                g: 178,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -12745,7 +12764,7 @@ function(t) {
             },
             5935 : {
                 id: "5935",
-                g: 164,
+                g: 205,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -12757,7 +12776,7 @@ function(t) {
             },
             5950 : {
                 id: "5950",
-                g: 113,
+                g: 125,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -12769,7 +12788,7 @@ function(t) {
             },
             5972 : {
                 id: "5972",
-                g: 14,
+                g: 379,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -12781,7 +12800,7 @@ function(t) {
             },
             6028 : {
                 id: "6028",
-                g: 34,
+                g: 316,
                 o: 4,
                 m: !1,
                 oidx: 14,
@@ -12793,7 +12812,7 @@ function(t) {
             },
             6038 : {
                 id: "6038",
-                g: 311,
+                g: 93,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -12805,7 +12824,7 @@ function(t) {
             },
             6052 : {
                 id: "6052",
-                g: 382,
+                g: 340,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -12817,7 +12836,7 @@ function(t) {
             },
             6064 : {
                 id: "6064",
-                g: 173,
+                g: 244,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -12829,7 +12848,7 @@ function(t) {
             },
             6108 : {
                 id: "6108",
-                g: 196,
+                g: 188,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -12841,7 +12860,7 @@ function(t) {
             },
             6113 : {
                 id: "6113",
-                g: 82,
+                g: 62,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -12853,7 +12872,7 @@ function(t) {
             },
             6204 : {
                 id: "6204",
-                g: 181,
+                g: 79,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -12865,7 +12884,7 @@ function(t) {
             },
             6230 : {
                 id: "6230",
-                g: 181,
+                g: 79,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12877,7 +12896,7 @@ function(t) {
             },
             6237 : {
                 id: "6237",
-                g: 254,
+                g: 438,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -12889,7 +12908,7 @@ function(t) {
             },
             6245 : {
                 id: "6245",
-                g: 315,
+                g: 307,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -12901,7 +12920,7 @@ function(t) {
             },
             6250 : {
                 id: "6250",
-                g: 271,
+                g: 259,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -12913,7 +12932,7 @@ function(t) {
             },
             6288 : {
                 id: "6288",
-                g: 99,
+                g: 85,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -12925,7 +12944,7 @@ function(t) {
             },
             6289 : {
                 id: "6289",
-                g: 212,
+                g: 197,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -12937,7 +12956,7 @@ function(t) {
             },
             6359 : {
                 id: "6359",
-                g: 166,
+                g: 234,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -12949,7 +12968,7 @@ function(t) {
             },
             6363 : {
                 id: "6363",
-                g: 365,
+                g: 354,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12961,7 +12980,7 @@ function(t) {
             },
             6446 : {
                 id: "6446",
-                g: 98,
+                g: 412,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -12973,7 +12992,7 @@ function(t) {
             },
             6534 : {
                 id: "6534",
-                g: 90,
+                g: 10,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -12985,7 +13004,7 @@ function(t) {
             },
             6538 : {
                 id: "6538",
-                g: 468,
+                g: 320,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -12997,7 +13016,7 @@ function(t) {
             },
             6542 : {
                 id: "6542",
-                g: 125,
+                g: 135,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -13009,7 +13028,7 @@ function(t) {
             },
             6580 : {
                 id: "6580",
-                g: 240,
+                g: 225,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -13021,7 +13040,7 @@ function(t) {
             },
             6615 : {
                 id: "6615",
-                g: 294,
+                g: 239,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -13033,7 +13052,7 @@ function(t) {
             },
             6633 : {
                 id: "6633",
-                g: 144,
+                g: 6,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -13045,7 +13064,7 @@ function(t) {
             },
             6654 : {
                 id: "6654",
-                g: 383,
+                g: 394,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -13057,7 +13076,7 @@ function(t) {
             },
             6712 : {
                 id: "6712",
-                g: 79,
+                g: 24,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -13069,7 +13088,7 @@ function(t) {
             },
             6718 : {
                 id: "6718",
-                g: 28,
+                g: 97,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -13081,7 +13100,7 @@ function(t) {
             },
             6728 : {
                 id: "6728",
-                g: 326,
+                g: 78,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -13093,7 +13112,7 @@ function(t) {
             },
             6741 : {
                 id: "6741",
-                g: 373,
+                g: 381,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -13105,7 +13124,7 @@ function(t) {
             },
             6764 : {
                 id: "6764",
-                g: 422,
+                g: 242,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -13117,7 +13136,7 @@ function(t) {
             },
             6778 : {
                 id: "6778",
-                g: 500,
+                g: 512,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -13129,7 +13148,7 @@ function(t) {
             },
             6785 : {
                 id: "6785",
-                g: 77,
+                g: 33,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -13141,7 +13160,7 @@ function(t) {
             },
             6797 : {
                 id: "6797",
-                g: 109,
+                g: 21,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -13153,7 +13172,7 @@ function(t) {
             },
             6799 : {
                 id: "6799",
-                g: 353,
+                g: 427,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -13165,7 +13184,7 @@ function(t) {
             },
             6814 : {
                 id: "6814",
-                g: 15,
+                g: 19,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -13177,7 +13196,7 @@ function(t) {
             },
             6884 : {
                 id: "6884",
-                g: 24,
+                g: 50,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -13189,7 +13208,7 @@ function(t) {
             },
             6913 : {
                 id: "6913",
-                g: 383,
+                g: 394,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -13201,7 +13220,7 @@ function(t) {
             },
             6949 : {
                 id: "6949",
-                g: 218,
+                g: 341,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -13213,7 +13232,7 @@ function(t) {
             },
             6981 : {
                 id: "6981",
-                g: 185,
+                g: 455,
                 o: 4,
                 m: !1,
                 oidx: 10,
@@ -13225,10 +13244,10 @@ function(t) {
             },
             6982 : {
                 id: "6982",
-                g: 284,
-                o: 2,
+                g: 16,
+                o: 3,
                 m: !1,
-                oidx: 1,
+                oidx: 0,
                 not: !1,
                 ks: !1,
                 ascendancyName: "Champion",
@@ -13237,7 +13256,7 @@ function(t) {
             },
             7063 : {
                 id: "7063",
-                g: 101,
+                g: 59,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -13249,7 +13268,7 @@ function(t) {
             },
             7082 : {
                 id: "7082",
-                g: 67,
+                g: 28,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -13261,7 +13280,7 @@ function(t) {
             },
             7085 : {
                 id: "7085",
-                g: 419,
+                g: 292,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -13273,7 +13292,7 @@ function(t) {
             },
             7112 : {
                 id: "7112",
-                g: 274,
+                g: 266,
                 o: 4,
                 m: !1,
                 oidx: 10,
@@ -13285,7 +13304,7 @@ function(t) {
             },
             7136 : {
                 id: "7136",
-                g: 96,
+                g: 475,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -13297,7 +13316,7 @@ function(t) {
             },
             7153 : {
                 id: "7153",
-                g: 283,
+                g: 377,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -13309,7 +13328,7 @@ function(t) {
             },
             7162 : {
                 id: "7162",
-                g: 120,
+                g: 128,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -13321,7 +13340,7 @@ function(t) {
             },
             7285 : {
                 id: "7285",
-                g: 40,
+                g: 75,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -13333,7 +13352,7 @@ function(t) {
             },
             7335 : {
                 id: "7335",
-                g: 166,
+                g: 234,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -13345,7 +13364,7 @@ function(t) {
             },
             7374 : {
                 id: "7374",
-                g: 338,
+                g: 435,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -13357,7 +13376,7 @@ function(t) {
             },
             7388 : {
                 id: "7388",
-                g: 449,
+                g: 477,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -13369,7 +13388,7 @@ function(t) {
             },
             7399 : {
                 id: "7399",
-                g: 28,
+                g: 97,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -13381,7 +13400,7 @@ function(t) {
             },
             7444 : {
                 id: "7444",
-                g: 348,
+                g: 334,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -13393,7 +13412,7 @@ function(t) {
             },
             7503 : {
                 id: "7503",
-                g: 298,
+                g: 289,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -13405,7 +13424,7 @@ function(t) {
             },
             7555 : {
                 id: "7555",
-                g: 294,
+                g: 239,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -13417,7 +13436,7 @@ function(t) {
             },
             7594 : {
                 id: "7594",
-                g: 162,
+                g: 291,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -13429,7 +13448,7 @@ function(t) {
             },
             7614 : {
                 id: "7614",
-                g: 394,
+                g: 374,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -13441,7 +13460,7 @@ function(t) {
             },
             7618 : {
                 id: "7618",
-                g: 147,
+                g: 380,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -13453,7 +13472,7 @@ function(t) {
             },
             7641 : {
                 id: "7641",
-                g: 80,
+                g: 104,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -13465,7 +13484,7 @@ function(t) {
             },
             7828 : {
                 id: "7828",
-                g: 278,
+                g: 465,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -13477,7 +13496,7 @@ function(t) {
             },
             7903 : {
                 id: "7903",
-                g: 396,
+                g: 415,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -13489,7 +13508,7 @@ function(t) {
             },
             7920 : {
                 id: "7920",
-                g: 211,
+                g: 431,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -13501,7 +13520,7 @@ function(t) {
             },
             7938 : {
                 id: "7938",
-                g: 7,
+                g: 67,
                 o: 4,
                 m: !1,
                 oidx: 37,
@@ -13513,7 +13532,7 @@ function(t) {
             },
             7960 : {
                 id: "7960",
-                g: 83,
+                g: 102,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -13525,7 +13544,7 @@ function(t) {
             },
             7977 : {
                 id: "7977",
-                g: 405,
+                g: 359,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -13537,7 +13556,7 @@ function(t) {
             },
             7997 : {
                 id: "7997",
-                g: 116,
+                g: 53,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -13549,7 +13568,7 @@ function(t) {
             },
             8001 : {
                 id: "8001",
-                g: 261,
+                g: 364,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -13561,7 +13580,7 @@ function(t) {
             },
             8027 : {
                 id: "8027",
-                g: 137,
+                g: 170,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -13573,7 +13592,7 @@ function(t) {
             },
             8135 : {
                 id: "8135",
-                g: 399,
+                g: 426,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -13585,7 +13604,7 @@ function(t) {
             },
             8281 : {
                 id: "8281",
-                g: 251,
+                g: 510,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -13597,7 +13616,7 @@ function(t) {
             },
             8302 : {
                 id: "8302",
-                g: 304,
+                g: 297,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -13609,7 +13628,7 @@ function(t) {
             },
             8348 : {
                 id: "8348",
-                g: 90,
+                g: 10,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -13621,7 +13640,7 @@ function(t) {
             },
             8419 : {
                 id: "8419",
-                g: 118,
+                g: 140,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -13633,7 +13652,7 @@ function(t) {
             },
             8434 : {
                 id: "8434",
-                g: 242,
+                g: 37,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -13645,7 +13664,7 @@ function(t) {
             },
             8500 : {
                 id: "8500",
-                g: 94,
+                g: 34,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -13657,7 +13676,7 @@ function(t) {
             },
             8533 : {
                 id: "8533",
-                g: 72,
+                g: 91,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -13669,7 +13688,7 @@ function(t) {
             },
             8544 : {
                 id: "8544",
-                g: 10,
+                g: 467,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -13681,7 +13700,7 @@ function(t) {
             },
             8566 : {
                 id: "8566",
-                g: 314,
+                g: 302,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -13693,7 +13712,7 @@ function(t) {
             },
             8592 : {
                 id: "8592",
-                g: 132,
+                g: 305,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -13705,7 +13724,7 @@ function(t) {
             },
             8624 : {
                 id: "8624",
-                g: 203,
+                g: 192,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -13717,7 +13736,7 @@ function(t) {
             },
             8640 : {
                 id: "8640",
-                g: 87,
+                g: 39,
                 o: 4,
                 m: !1,
                 oidx: 23,
@@ -13729,7 +13748,7 @@ function(t) {
             },
             8643 : {
                 id: "8643",
-                g: 222,
+                g: 343,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -13741,7 +13760,7 @@ function(t) {
             },
             8656 : {
                 id: "8656",
-                g: 506,
+                g: 441,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -13753,7 +13772,7 @@ function(t) {
             },
             8742 : {
                 id: "8742",
-                g: 21,
+                g: 61,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -13765,7 +13784,7 @@ function(t) {
             },
             8833 : {
                 id: "8833",
-                g: 14,
+                g: 379,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -13777,7 +13796,7 @@ function(t) {
             },
             8879 : {
                 id: "8879",
-                g: 47,
+                g: 2,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -13789,7 +13808,7 @@ function(t) {
             },
             8930 : {
                 id: "8930",
-                g: 355,
+                g: 73,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -13801,7 +13820,7 @@ function(t) {
             },
             8938 : {
                 id: "8938",
-                g: 264,
+                g: 252,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -13813,7 +13832,7 @@ function(t) {
             },
             8948 : {
                 id: "8948",
-                g: 331,
+                g: 36,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -13825,7 +13844,7 @@ function(t) {
             },
             9009 : {
                 id: "9009",
-                g: 188,
+                g: 356,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -13837,7 +13856,7 @@ function(t) {
             },
             9014 : {
                 id: "9014",
-                g: 173,
+                g: 244,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -13849,7 +13868,7 @@ function(t) {
             },
             9055 : {
                 id: "9055",
-                g: 192,
+                g: 410,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -13861,7 +13880,7 @@ function(t) {
             },
             9171 : {
                 id: "9171",
-                g: 35,
+                g: 89,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -13873,7 +13892,7 @@ function(t) {
             },
             9206 : {
                 id: "9206",
-                g: 145,
+                g: 84,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -13885,7 +13904,7 @@ function(t) {
             },
             9271 : {
                 id: "9271",
-                g: 132,
+                g: 305,
                 o: 4,
                 m: !1,
                 oidx: 37,
@@ -13897,7 +13916,7 @@ function(t) {
             },
             9294 : {
                 id: "9294",
-                g: 210,
+                g: 13,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -13909,7 +13928,7 @@ function(t) {
             },
             9327 : {
                 id: "9327",
-                g: 434,
+                g: 367,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -13921,7 +13940,7 @@ function(t) {
             },
             9355 : {
                 id: "9355",
-                g: 370,
+                g: 369,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -13933,7 +13952,7 @@ function(t) {
             },
             9371 : {
                 id: "9371",
-                g: 36,
+                g: 77,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -13945,7 +13964,7 @@ function(t) {
             },
             9373 : {
                 id: "9373",
-                g: 343,
+                g: 328,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -13957,7 +13976,7 @@ function(t) {
             },
             9386 : {
                 id: "9386",
-                g: 39,
+                g: 155,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -13969,7 +13988,7 @@ function(t) {
             },
             9392 : {
                 id: "9392",
-                g: 164,
+                g: 205,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -13981,7 +14000,7 @@ function(t) {
             },
             9432 : {
                 id: "9432",
-                g: 320,
+                g: 231,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -13993,7 +14012,7 @@ function(t) {
             },
             9469 : {
                 id: "9469",
-                g: 256,
+                g: 243,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -14005,7 +14024,7 @@ function(t) {
             },
             9505 : {
                 id: "9505",
-                g: 23,
+                g: 331,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -14017,7 +14036,7 @@ function(t) {
             },
             9511 : {
                 id: "9511",
-                g: 286,
+                g: 274,
                 o: 4,
                 m: !1,
                 oidx: 3,
@@ -14029,7 +14048,7 @@ function(t) {
             },
             9535 : {
                 id: "9535",
-                g: 105,
+                g: 212,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -14041,7 +14060,7 @@ function(t) {
             },
             9562 : {
                 id: "9562",
-                g: 171,
+                g: 52,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -14053,7 +14072,7 @@ function(t) {
             },
             9650 : {
                 id: "9650",
-                g: 218,
+                g: 341,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -14065,7 +14084,7 @@ function(t) {
             },
             9660 : {
                 id: "9660",
-                g: 366,
+                g: 171,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -14077,7 +14096,7 @@ function(t) {
             },
             9695 : {
                 id: "9695",
-                g: 120,
+                g: 128,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -14089,7 +14108,7 @@ function(t) {
             },
             9788 : {
                 id: "9788",
-                g: 37,
+                g: 406,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -14101,7 +14120,7 @@ function(t) {
             },
             9864 : {
                 id: "9864",
-                g: 26,
+                g: 293,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -14113,7 +14132,7 @@ function(t) {
             },
             9877 : {
                 id: "9877",
-                g: 239,
+                g: 223,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -14125,7 +14144,7 @@ function(t) {
             },
             9971 : {
                 id: "9971",
-                g: 34,
+                g: 316,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -14137,7 +14156,7 @@ function(t) {
             },
             9976 : {
                 id: "9976",
-                g: 82,
+                g: 62,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -14149,7 +14168,7 @@ function(t) {
             },
             9995 : {
                 id: "9995",
-                g: 317,
+                g: 88,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -14161,7 +14180,7 @@ function(t) {
             },
             10016 : {
                 id: "10016",
-                g: 72,
+                g: 91,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -14173,7 +14192,7 @@ function(t) {
             },
             10017 : {
                 id: "10017",
-                g: 303,
+                g: 175,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -14185,7 +14204,7 @@ function(t) {
             },
             10031 : {
                 id: "10031",
-                g: 79,
+                g: 24,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -14197,7 +14216,7 @@ function(t) {
             },
             10099 : {
                 id: "10099",
-                g: 146,
+                g: 55,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -14209,7 +14228,7 @@ function(t) {
             },
             10143 : {
                 id: "10143",
-                g: 233,
+                g: 304,
                 o: 4,
                 m: !1,
                 oidx: 2,
@@ -14221,7 +14240,7 @@ function(t) {
             },
             10153 : {
                 id: "10153",
-                g: 436,
+                g: 460,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -14233,7 +14252,7 @@ function(t) {
             },
             10221 : {
                 id: "10221",
-                g: 416,
+                g: 430,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -14245,7 +14264,7 @@ function(t) {
             },
             10282 : {
                 id: "10282",
-                g: 11,
+                g: 71,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -14257,7 +14276,7 @@ function(t) {
             },
             10448 : {
                 id: "10448",
-                g: 385,
+                g: 398,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -14269,7 +14288,7 @@ function(t) {
             },
             10490 : {
                 id: "10490",
-                g: 152,
+                g: 160,
                 o: 4,
                 m: !1,
                 oidx: 7,
@@ -14281,7 +14300,7 @@ function(t) {
             },
             10542 : {
                 id: "10542",
-                g: 28,
+                g: 97,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -14293,7 +14312,7 @@ function(t) {
             },
             10575 : {
                 id: "10575",
-                g: 225,
+                g: 209,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -14305,7 +14324,7 @@ function(t) {
             },
             10635 : {
                 id: "10635",
-                g: 231,
+                g: 169,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -14317,7 +14336,7 @@ function(t) {
             },
             10661 : {
                 id: "10661",
-                g: 488,
+                g: 221,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -14329,7 +14348,7 @@ function(t) {
             },
             10763 : {
                 id: "10763",
-                g: 211,
+                g: 431,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -14341,7 +14360,7 @@ function(t) {
             },
             10771 : {
                 id: "10771",
-                g: 18,
+                g: 63,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -14353,7 +14372,7 @@ function(t) {
             },
             10808 : {
                 id: "10808",
-                g: 494,
+                g: 157,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -14365,7 +14384,7 @@ function(t) {
             },
             10829 : {
                 id: "10829",
-                g: 207,
+                g: 195,
                 o: 4,
                 m: !1,
                 oidx: 7,
@@ -14377,7 +14396,7 @@ function(t) {
             },
             10835 : {
                 id: "10835",
-                g: 290,
+                g: 280,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -14389,7 +14408,7 @@ function(t) {
             },
             10843 : {
                 id: "10843",
-                g: 191,
+                g: 393,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -14401,7 +14420,7 @@ function(t) {
             },
             10893 : {
                 id: "10893",
-                g: 203,
+                g: 192,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -14413,7 +14432,7 @@ function(t) {
             },
             10904 : {
                 id: "10904",
-                g: 108,
+                g: 119,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -14425,7 +14444,7 @@ function(t) {
             },
             11018 : {
                 id: "11018",
-                g: 261,
+                g: 364,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -14437,7 +14456,7 @@ function(t) {
             },
             11046 : {
                 id: "11046",
-                g: 182,
+                g: 94,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -14449,7 +14468,7 @@ function(t) {
             },
             11088 : {
                 id: "11088",
-                g: 338,
+                g: 435,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -14461,7 +14480,7 @@ function(t) {
             },
             11128 : {
                 id: "11128",
-                g: 399,
+                g: 426,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -14471,9 +14490,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["11420"]
             },
+            11162 : {
+                id: "11162",
+                g: 218,
+                o: 2,
+                m: !1,
+                oidx: 10,
+                not: !1,
+                ks: !1,
+                ascendancyName: null,
+                isAscendancyStart: !1,
+                out: ["58198"]
+            },
             11190 : {
                 id: "11190",
-                g: 140,
+                g: 111,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -14485,7 +14516,7 @@ function(t) {
             },
             11334 : {
                 id: "11334",
-                g: 19,
+                g: 286,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -14497,7 +14528,7 @@ function(t) {
             },
             11364 : {
                 id: "11364",
-                g: 155,
+                g: 388,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -14521,10 +14552,10 @@ function(t) {
             },
             11412 : {
                 id: "11412",
-                g: 284,
-                o: 4,
+                g: 16,
+                o: 3,
                 m: !1,
-                oidx: 0,
+                oidx: 2,
                 not: !0,
                 ks: !1,
                 ascendancyName: "Champion",
@@ -14533,7 +14564,7 @@ function(t) {
             },
             11420 : {
                 id: "11420",
-                g: 454,
+                g: 1,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -14545,7 +14576,7 @@ function(t) {
             },
             11430 : {
                 id: "11430",
-                g: 358,
+                g: 348,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -14557,7 +14588,7 @@ function(t) {
             },
             11431 : {
                 id: "11431",
-                g: 57,
+                g: 43,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -14569,7 +14600,7 @@ function(t) {
             },
             11455 : {
                 id: "11455",
-                g: 408,
+                g: 372,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -14581,7 +14612,7 @@ function(t) {
             },
             11489 : {
                 id: "11489",
-                g: 194,
+                g: 184,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -14593,7 +14624,7 @@ function(t) {
             },
             11490 : {
                 id: "11490",
-                g: 318,
+                g: 253,
                 o: 4,
                 m: !1,
                 oidx: 10,
@@ -14605,7 +14636,7 @@ function(t) {
             },
             11497 : {
                 id: "11497",
-                g: 49,
+                g: 469,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -14617,7 +14648,7 @@ function(t) {
             },
             11515 : {
                 id: "11515",
-                g: 72,
+                g: 91,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -14629,7 +14660,7 @@ function(t) {
             },
             11551 : {
                 id: "11551",
-                g: 265,
+                g: 355,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -14641,7 +14672,7 @@ function(t) {
             },
             11568 : {
                 id: "11568",
-                g: 273,
+                g: 38,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -14653,7 +14684,7 @@ function(t) {
             },
             11597 : {
                 id: "11597",
-                g: 362,
+                g: 178,
                 o: 4,
                 m: !1,
                 oidx: 2,
@@ -14665,7 +14696,7 @@ function(t) {
             },
             11645 : {
                 id: "11645",
-                g: 44,
+                g: 25,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -14677,7 +14708,7 @@ function(t) {
             },
             11651 : {
                 id: "11651",
-                g: 102,
+                g: 208,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -14689,7 +14720,7 @@ function(t) {
             },
             11659 : {
                 id: "11659",
-                g: 399,
+                g: 426,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -14701,7 +14732,7 @@ function(t) {
             },
             11688 : {
                 id: "11688",
-                g: 21,
+                g: 61,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -14713,7 +14744,7 @@ function(t) {
             },
             11730 : {
                 id: "11730",
-                g: 79,
+                g: 24,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -14725,7 +14756,7 @@ function(t) {
             },
             11765 : {
                 id: "11765",
-                g: 296,
+                g: 288,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -14737,7 +14768,7 @@ function(t) {
             },
             11784 : {
                 id: "11784",
-                g: 385,
+                g: 398,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -14749,7 +14780,7 @@ function(t) {
             },
             11811 : {
                 id: "11811",
-                g: 224,
+                g: 254,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -14761,7 +14792,7 @@ function(t) {
             },
             11859 : {
                 id: "11859",
-                g: 153,
+                g: 404,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -14773,7 +14804,7 @@ function(t) {
             },
             11924 : {
                 id: "11924",
-                g: 203,
+                g: 192,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -14785,7 +14816,7 @@ function(t) {
             },
             12143 : {
                 id: "12143",
-                g: 285,
+                g: 290,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -14797,7 +14828,7 @@ function(t) {
             },
             12146 : {
                 id: "12146",
-                g: 362,
+                g: 178,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -14809,7 +14840,7 @@ function(t) {
             },
             12189 : {
                 id: "12189",
-                g: 37,
+                g: 406,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -14821,7 +14852,7 @@ function(t) {
             },
             12236 : {
                 id: "12236",
-                g: 229,
+                g: 278,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -14833,7 +14864,7 @@ function(t) {
             },
             12247 : {
                 id: "12247",
-                g: 40,
+                g: 75,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -14845,7 +14876,7 @@ function(t) {
             },
             12379 : {
                 id: "12379",
-                g: 294,
+                g: 239,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -14857,7 +14888,7 @@ function(t) {
             },
             12401 : {
                 id: "12401",
-                g: 444,
+                g: 172,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -14869,7 +14900,7 @@ function(t) {
             },
             12407 : {
                 id: "12407",
-                g: 82,
+                g: 62,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -14881,7 +14912,7 @@ function(t) {
             },
             12412 : {
                 id: "12412",
-                g: 443,
+                g: 471,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -14893,7 +14924,7 @@ function(t) {
             },
             12439 : {
                 id: "12439",
-                g: 106,
+                g: 30,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -14905,7 +14936,7 @@ function(t) {
             },
             12536 : {
                 id: "12536",
-                g: 32,
+                g: 296,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -14917,7 +14948,7 @@ function(t) {
             },
             12597 : {
                 id: "12597",
-                g: 463,
+                g: 509,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -14929,7 +14960,7 @@ function(t) {
             },
             12702 : {
                 id: "12702",
-                g: 253,
+                g: 240,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -14941,7 +14972,7 @@ function(t) {
             },
             12720 : {
                 id: "12720",
-                g: 196,
+                g: 188,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -14953,7 +14984,7 @@ function(t) {
             },
             12794 : {
                 id: "12794",
-                g: 342,
+                g: 327,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -14965,7 +14996,7 @@ function(t) {
             },
             12795 : {
                 id: "12795",
-                g: 124,
+                g: 132,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -14977,7 +15008,7 @@ function(t) {
             },
             12801 : {
                 id: "12801",
-                g: 439,
+                g: 17,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -14989,7 +15020,7 @@ function(t) {
             },
             12809 : {
                 id: "12809",
-                g: 163,
+                g: 167,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -15001,7 +15032,7 @@ function(t) {
             },
             12824 : {
                 id: "12824",
-                g: 137,
+                g: 170,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -15013,7 +15044,7 @@ function(t) {
             },
             12850 : {
                 id: "12850",
-                g: 173,
+                g: 244,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -15025,7 +15056,7 @@ function(t) {
             },
             12852 : {
                 id: "12852",
-                g: 7,
+                g: 67,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -15037,7 +15068,7 @@ function(t) {
             },
             12878 : {
                 id: "12878",
-                g: 101,
+                g: 59,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -15049,7 +15080,7 @@ function(t) {
             },
             12926 : {
                 id: "12926",
-                g: 64,
+                g: 409,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -15061,7 +15092,7 @@ function(t) {
             },
             12948 : {
                 id: "12948",
-                g: 334,
+                g: 46,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -15073,7 +15104,7 @@ function(t) {
             },
             13009 : {
                 id: "13009",
-                g: 17,
+                g: 74,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -15085,7 +15116,7 @@ function(t) {
             },
             13176 : {
                 id: "13176",
-                g: 96,
+                g: 475,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -15097,7 +15128,7 @@ function(t) {
             },
             13191 : {
                 id: "13191",
-                g: 394,
+                g: 374,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -15109,7 +15140,7 @@ function(t) {
             },
             13202 : {
                 id: "13202",
-                g: 376,
+                g: 384,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -15121,7 +15152,7 @@ function(t) {
             },
             13219 : {
                 id: "13219",
-                g: 41,
+                g: 263,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -15133,7 +15164,7 @@ function(t) {
             },
             13273 : {
                 id: "13273",
-                g: 155,
+                g: 388,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -15145,7 +15176,7 @@ function(t) {
             },
             13322 : {
                 id: "13322",
-                g: 358,
+                g: 348,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -15157,7 +15188,7 @@ function(t) {
             },
             13344 : {
                 id: "13344",
-                g: 21,
+                g: 61,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -15169,7 +15200,7 @@ function(t) {
             },
             13361 : {
                 id: "13361",
-                g: 3,
+                g: 147,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -15179,9 +15210,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["22702"]
             },
+            13374 : {
+                id: "13374",
+                g: 16,
+                o: 3,
+                m: !1,
+                oidx: 8,
+                not: !0,
+                ks: !1,
+                ascendancyName: "Champion",
+                isAscendancyStart: !1,
+                out: []
+            },
             13454 : {
                 id: "13454",
-                g: 430,
+                g: 190,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -15193,7 +15236,7 @@ function(t) {
             },
             13559 : {
                 id: "13559",
-                g: 203,
+                g: 192,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -15205,7 +15248,7 @@ function(t) {
             },
             13676 : {
                 id: "13676",
-                g: 221,
+                g: 123,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -15217,7 +15260,7 @@ function(t) {
             },
             13714 : {
                 id: "13714",
-                g: 253,
+                g: 240,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -15229,7 +15272,7 @@ function(t) {
             },
             13753 : {
                 id: "13753",
-                g: 298,
+                g: 289,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -15241,7 +15284,7 @@ function(t) {
             },
             13782 : {
                 id: "13782",
-                g: 295,
+                g: 260,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -15253,7 +15296,7 @@ function(t) {
             },
             13807 : {
                 id: "13807",
-                g: 201,
+                g: 191,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -15265,7 +15308,7 @@ function(t) {
             },
             13885 : {
                 id: "13885",
-                g: 274,
+                g: 266,
                 o: 4,
                 m: !1,
                 oidx: 13,
@@ -15277,7 +15320,7 @@ function(t) {
             },
             13910 : {
                 id: "13910",
-                g: 5,
+                g: 226,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -15289,7 +15332,7 @@ function(t) {
             },
             13961 : {
                 id: "13961",
-                g: 141,
+                g: 150,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -15301,7 +15344,7 @@ function(t) {
             },
             14003 : {
                 id: "14003",
-                g: 386,
+                g: 12,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -15313,7 +15356,7 @@ function(t) {
             },
             14021 : {
                 id: "14021",
-                g: 219,
+                g: 200,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -15325,7 +15368,7 @@ function(t) {
             },
             14040 : {
                 id: "14040",
-                g: 203,
+                g: 192,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -15337,7 +15380,7 @@ function(t) {
             },
             14056 : {
                 id: "14056",
-                g: 369,
+                g: 366,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -15349,7 +15392,7 @@ function(t) {
             },
             14057 : {
                 id: "14057",
-                g: 39,
+                g: 155,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -15361,7 +15404,7 @@ function(t) {
             },
             14103 : {
                 id: "14103",
-                g: 48,
+                g: 312,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -15373,7 +15416,7 @@ function(t) {
             },
             14151 : {
                 id: "14151",
-                g: 95,
+                g: 112,
                 o: 4,
                 m: !1,
                 oidx: 10,
@@ -15385,7 +15428,7 @@ function(t) {
             },
             14156 : {
                 id: "14156",
-                g: 311,
+                g: 93,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -15397,7 +15440,7 @@ function(t) {
             },
             14182 : {
                 id: "14182",
-                g: 358,
+                g: 348,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -15407,21 +15450,9 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["11430"]
             },
-            14209 : {
-                id: "14209",
-                g: 236,
-                o: 2,
-                m: !1,
-                oidx: 3,
-                not: !1,
-                ks: !1,
-                ascendancyName: null,
-                isAscendancyStart: !1,
-                out: ["21170", "58603"]
-            },
             14211 : {
                 id: "14211",
-                g: 358,
+                g: 348,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -15433,7 +15464,7 @@ function(t) {
             },
             14292 : {
                 id: "14292",
-                g: 179,
+                g: 386,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -15445,7 +15476,7 @@ function(t) {
             },
             14419 : {
                 id: "14419",
-                g: 47,
+                g: 2,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -15457,7 +15488,7 @@ function(t) {
             },
             14486 : {
                 id: "14486",
-                g: 266,
+                g: 255,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -15469,7 +15500,7 @@ function(t) {
             },
             14603 : {
                 id: "14603",
-                g: 318,
+                g: 253,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -15481,7 +15512,7 @@ function(t) {
             },
             14606 : {
                 id: "14606",
-                g: 11,
+                g: 71,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -15493,7 +15524,7 @@ function(t) {
             },
             14629 : {
                 id: "14629",
-                g: 155,
+                g: 388,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -15505,7 +15536,7 @@ function(t) {
             },
             14674 : {
                 id: "14674",
-                g: 271,
+                g: 259,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -15517,7 +15548,7 @@ function(t) {
             },
             14730 : {
                 id: "14730",
-                g: 106,
+                g: 30,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -15529,7 +15560,7 @@ function(t) {
             },
             14804 : {
                 id: "14804",
-                g: 342,
+                g: 327,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -15541,7 +15572,7 @@ function(t) {
             },
             14813 : {
                 id: "14813",
-                g: 158,
+                g: 27,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -15553,7 +15584,7 @@ function(t) {
             },
             14870 : {
                 id: "14870",
-                g: 182,
+                g: 94,
                 o: 4,
                 m: !1,
                 oidx: 11,
@@ -15565,7 +15596,7 @@ function(t) {
             },
             14914 : {
                 id: "14914",
-                g: 452,
+                g: 9,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -15577,7 +15608,7 @@ function(t) {
             },
             14923 : {
                 id: "14923",
-                g: 269,
+                g: 262,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -15589,7 +15620,7 @@ function(t) {
             },
             14930 : {
                 id: "14930",
-                g: 423,
+                g: 436,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -15601,7 +15632,7 @@ function(t) {
             },
             14936 : {
                 id: "14936",
-                g: 243,
+                g: 324,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -15613,7 +15644,7 @@ function(t) {
             },
             15005 : {
                 id: "15005",
-                g: 430,
+                g: 190,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -15625,7 +15656,7 @@ function(t) {
             },
             15021 : {
                 id: "15021",
-                g: 217,
+                g: 330,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -15637,7 +15668,7 @@ function(t) {
             },
             15027 : {
                 id: "15027",
-                g: 69,
+                g: 392,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -15649,7 +15680,7 @@ function(t) {
             },
             15046 : {
                 id: "15046",
-                g: 9,
+                g: 90,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -15661,7 +15692,7 @@ function(t) {
             },
             15064 : {
                 id: "15064",
-                g: 142,
+                g: 81,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -15673,7 +15704,7 @@ function(t) {
             },
             15073 : {
                 id: "15073",
-                g: 253,
+                g: 240,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -15685,7 +15716,7 @@ function(t) {
             },
             15085 : {
                 id: "15085",
-                g: 201,
+                g: 191,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -15697,7 +15728,7 @@ function(t) {
             },
             15117 : {
                 id: "15117",
-                g: 304,
+                g: 297,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -15709,7 +15740,7 @@ function(t) {
             },
             15144 : {
                 id: "15144",
-                g: 91,
+                g: 350,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -15721,7 +15752,7 @@ function(t) {
             },
             15163 : {
                 id: "15163",
-                g: 94,
+                g: 34,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -15733,7 +15764,7 @@ function(t) {
             },
             15211 : {
                 id: "15211",
-                g: 191,
+                g: 393,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -15745,7 +15776,7 @@ function(t) {
             },
             15228 : {
                 id: "15228",
-                g: 81,
+                g: 41,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -15757,7 +15788,7 @@ function(t) {
             },
             15286 : {
                 id: "15286",
-                g: 233,
+                g: 304,
                 o: 4,
                 m: !1,
                 oidx: 36,
@@ -15769,7 +15800,7 @@ function(t) {
             },
             15331 : {
                 id: "15331",
-                g: 171,
+                g: 52,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -15781,7 +15812,7 @@ function(t) {
             },
             15365 : {
                 id: "15365",
-                g: 27,
+                g: 358,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -15793,7 +15824,7 @@ function(t) {
             },
             15400 : {
                 id: "15400",
-                g: 53,
+                g: 113,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -15805,7 +15836,7 @@ function(t) {
             },
             15405 : {
                 id: "15405",
-                g: 388,
+                g: 401,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -15817,7 +15848,7 @@ function(t) {
             },
             15435 : {
                 id: "15435",
-                g: 161,
+                g: 86,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -15829,7 +15860,7 @@ function(t) {
             },
             15510 : {
                 id: "15510",
-                g: 101,
+                g: 59,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -15841,7 +15872,7 @@ function(t) {
             },
             15542 : {
                 id: "15542",
-                g: 41,
+                g: 263,
                 o: 4,
                 m: !1,
                 oidx: 23,
@@ -15853,7 +15884,7 @@ function(t) {
             },
             15549 : {
                 id: "15549",
-                g: 19,
+                g: 286,
                 o: 4,
                 m: !1,
                 oidx: 37,
@@ -15865,7 +15896,7 @@ function(t) {
             },
             15550 : {
                 id: "15550",
-                g: 362,
+                g: 178,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -15877,7 +15908,7 @@ function(t) {
             },
             15599 : {
                 id: "15599",
-                g: 254,
+                g: 438,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -15889,7 +15920,7 @@ function(t) {
             },
             15616 : {
                 id: "15616",
-                g: 118,
+                g: 140,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -15901,7 +15932,7 @@ function(t) {
             },
             15631 : {
                 id: "15631",
-                g: 437,
+                g: 461,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -15913,7 +15944,7 @@ function(t) {
             },
             15678 : {
                 id: "15678",
-                g: 406,
+                g: 228,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -15925,7 +15956,7 @@ function(t) {
             },
             15711 : {
                 id: "15711",
-                g: 485,
+                g: 451,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -15937,7 +15968,7 @@ function(t) {
             },
             15825 : {
                 id: "15825",
-                g: 322,
+                g: 186,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -15949,7 +15980,7 @@ function(t) {
             },
             15835 : {
                 id: "15835",
-                g: 309,
+                g: 95,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -15961,7 +15992,7 @@ function(t) {
             },
             15837 : {
                 id: "15837",
-                g: 336,
+                g: 319,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -15973,7 +16004,7 @@ function(t) {
             },
             15842 : {
                 id: "15842",
-                g: 25,
+                g: 56,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -15985,7 +16016,7 @@ function(t) {
             },
             15868 : {
                 id: "15868",
-                g: 134,
+                g: 144,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -15995,9 +16026,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["22627", "36047"]
             },
+            15973 : {
+                id: "15973",
+                g: 402,
+                o: 2,
+                m: !1,
+                oidx: 10,
+                not: !1,
+                ks: !1,
+                ascendancyName: null,
+                isAscendancyStart: !1,
+                out: ["21389"]
+            },
             16023 : {
                 id: "16023",
-                g: 382,
+                g: 340,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16009,7 +16052,7 @@ function(t) {
             },
             16079 : {
                 id: "16079",
-                g: 179,
+                g: 386,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -16021,7 +16064,7 @@ function(t) {
             },
             16113 : {
                 id: "16113",
-                g: 15,
+                g: 19,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -16033,7 +16076,7 @@ function(t) {
             },
             16167 : {
                 id: "16167",
-                g: 207,
+                g: 195,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -16045,7 +16088,7 @@ function(t) {
             },
             16236 : {
                 id: "16236",
-                g: 379,
+                g: 227,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -16057,7 +16100,7 @@ function(t) {
             },
             16243 : {
                 id: "16243",
-                g: 300,
+                g: 117,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -16069,7 +16112,7 @@ function(t) {
             },
             16354 : {
                 id: "16354",
-                g: 113,
+                g: 125,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -16081,7 +16124,7 @@ function(t) {
             },
             16380 : {
                 id: "16380",
-                g: 65,
+                g: 177,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -16093,7 +16136,7 @@ function(t) {
             },
             16512 : {
                 id: "16512",
-                g: 3,
+                g: 147,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -16105,7 +16148,7 @@ function(t) {
             },
             16544 : {
                 id: "16544",
-                g: 299,
+                g: 294,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16117,7 +16160,7 @@ function(t) {
             },
             16703 : {
                 id: "16703",
-                g: 94,
+                g: 34,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -16129,7 +16172,7 @@ function(t) {
             },
             16745 : {
                 id: "16745",
-                g: 277,
+                g: 165,
                 o: 4,
                 m: !1,
                 oidx: 17,
@@ -16141,7 +16184,7 @@ function(t) {
             },
             16754 : {
                 id: "16754",
-                g: 15,
+                g: 19,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -16153,7 +16196,7 @@ function(t) {
             },
             16756 : {
                 id: "16756",
-                g: 36,
+                g: 77,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -16165,7 +16208,7 @@ function(t) {
             },
             16775 : {
                 id: "16775",
-                g: 433,
+                g: 454,
                 o: 4,
                 m: !1,
                 oidx: 13,
@@ -16177,7 +16220,7 @@ function(t) {
             },
             16790 : {
                 id: "16790",
-                g: 378,
+                g: 391,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -16189,7 +16232,7 @@ function(t) {
             },
             16848 : {
                 id: "16848",
-                g: 362,
+                g: 178,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -16201,7 +16244,7 @@ function(t) {
             },
             16874 : {
                 id: "16874",
-                g: 130,
+                g: 149,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -16213,7 +16256,7 @@ function(t) {
             },
             16940 : {
                 id: "16940",
-                g: 48,
+                g: 312,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -16225,7 +16268,7 @@ function(t) {
             },
             16971 : {
                 id: "16971",
-                g: 220,
+                g: 121,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -16237,10 +16280,10 @@ function(t) {
             },
             17018 : {
                 id: "17018",
-                g: 326,
+                g: 78,
                 o: 4,
                 m: !1,
-                oidx: 26,
+                oidx: 28,
                 not: !1,
                 ks: !1,
                 ascendancyName: "Occultist",
@@ -16249,7 +16292,7 @@ function(t) {
             },
             17038 : {
                 id: "17038",
-                g: 5,
+                g: 226,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -16261,7 +16304,7 @@ function(t) {
             },
             17171 : {
                 id: "17171",
-                g: 376,
+                g: 384,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -16273,7 +16316,7 @@ function(t) {
             },
             17201 : {
                 id: "17201",
-                g: 475,
+                g: 35,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16285,7 +16328,7 @@ function(t) {
             },
             17206 : {
                 id: "17206",
-                g: 191,
+                g: 393,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -16297,7 +16340,7 @@ function(t) {
             },
             17236 : {
                 id: "17236",
-                g: 80,
+                g: 104,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -16309,7 +16352,7 @@ function(t) {
             },
             17251 : {
                 id: "17251",
-                g: 401,
+                g: 421,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -16321,7 +16364,7 @@ function(t) {
             },
             17315 : {
                 id: "17315",
-                g: 233,
+                g: 304,
                 o: 4,
                 m: !1,
                 oidx: 29,
@@ -16333,7 +16376,7 @@ function(t) {
             },
             17352 : {
                 id: "17352",
-                g: 60,
+                g: 420,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16345,7 +16388,7 @@ function(t) {
             },
             17383 : {
                 id: "17383",
-                g: 158,
+                g: 27,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -16357,7 +16400,7 @@ function(t) {
             },
             17412 : {
                 id: "17412",
-                g: 76,
+                g: 100,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -16369,7 +16412,7 @@ function(t) {
             },
             17421 : {
                 id: "17421",
-                g: 223,
+                g: 339,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -16381,7 +16424,7 @@ function(t) {
             },
             17445 : {
                 id: "17445",
-                g: 29,
+                g: 163,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -16393,7 +16436,7 @@ function(t) {
             },
             17546 : {
                 id: "17546",
-                g: 337,
+                g: 179,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -16417,7 +16460,7 @@ function(t) {
             },
             17569 : {
                 id: "17569",
-                g: 136,
+                g: 284,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -16429,7 +16472,7 @@ function(t) {
             },
             17579 : {
                 id: "17579",
-                g: 313,
+                g: 300,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -16441,7 +16484,7 @@ function(t) {
             },
             17659 : {
                 id: "17659",
-                g: 171,
+                g: 52,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -16453,7 +16496,7 @@ function(t) {
             },
             17674 : {
                 id: "17674",
-                g: 295,
+                g: 260,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -16465,7 +16508,7 @@ function(t) {
             },
             17735 : {
                 id: "17735",
-                g: 450,
+                g: 478,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16477,7 +16520,7 @@ function(t) {
             },
             17754 : {
                 id: "17754",
-                g: 323,
+                g: 251,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -16489,7 +16532,7 @@ function(t) {
             },
             17765 : {
                 id: "17765",
-                g: 246,
+                g: 237,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16501,7 +16544,7 @@ function(t) {
             },
             17790 : {
                 id: "17790",
-                g: 368,
+                g: 361,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -16513,7 +16556,7 @@ function(t) {
             },
             17806 : {
                 id: "17806",
-                g: 3,
+                g: 147,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -16525,7 +16568,7 @@ function(t) {
             },
             17814 : {
                 id: "17814",
-                g: 90,
+                g: 10,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -16537,7 +16580,7 @@ function(t) {
             },
             17818 : {
                 id: "17818",
-                g: 345,
+                g: 466,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16549,7 +16592,7 @@ function(t) {
             },
             17821 : {
                 id: "17821",
-                g: 301,
+                g: 363,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -16561,7 +16604,7 @@ function(t) {
             },
             17833 : {
                 id: "17833",
-                g: 273,
+                g: 38,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -16573,7 +16616,7 @@ function(t) {
             },
             17849 : {
                 id: "17849",
-                g: 458,
+                g: 439,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -16585,7 +16628,7 @@ function(t) {
             },
             17908 : {
                 id: "17908",
-                g: 332,
+                g: 317,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -16597,7 +16640,7 @@ function(t) {
             },
             18002 : {
                 id: "18002",
-                g: 382,
+                g: 340,
                 o: 4,
                 m: !1,
                 oidx: 24,
@@ -16609,7 +16652,7 @@ function(t) {
             },
             18025 : {
                 id: "18025",
-                g: 467,
+                g: 371,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16621,7 +16664,7 @@ function(t) {
             },
             18033 : {
                 id: "18033",
-                g: 374,
+                g: 161,
                 o: 4,
                 m: !1,
                 oidx: 27,
@@ -16633,7 +16676,7 @@ function(t) {
             },
             18103 : {
                 id: "18103",
-                g: 153,
+                g: 404,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -16645,7 +16688,7 @@ function(t) {
             },
             18135 : {
                 id: "18135",
-                g: 106,
+                g: 30,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -16657,7 +16700,7 @@ function(t) {
             },
             18182 : {
                 id: "18182",
-                g: 420,
+                g: 486,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16669,7 +16712,7 @@ function(t) {
             },
             18302 : {
                 id: "18302",
-                g: 55,
+                g: 40,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -16681,7 +16724,7 @@ function(t) {
             },
             18309 : {
                 id: "18309",
-                g: 318,
+                g: 253,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -16693,7 +16736,7 @@ function(t) {
             },
             18359 : {
                 id: "18359",
-                g: 495,
+                g: 505,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -16705,7 +16748,7 @@ function(t) {
             },
             18368 : {
                 id: "18368",
-                g: 406,
+                g: 228,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -16717,7 +16760,7 @@ function(t) {
             },
             18378 : {
                 id: "18378",
-                g: 326,
+                g: 78,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16729,7 +16772,7 @@ function(t) {
             },
             18402 : {
                 id: "18402",
-                g: 355,
+                g: 73,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -16741,7 +16784,7 @@ function(t) {
             },
             18552 : {
                 id: "18552",
-                g: 237,
+                g: 457,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -16753,7 +16796,7 @@ function(t) {
             },
             18574 : {
                 id: "18574",
-                g: 318,
+                g: 253,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -16765,7 +16808,7 @@ function(t) {
             },
             18635 : {
                 id: "18635",
-                g: 48,
+                g: 312,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16777,7 +16820,7 @@ function(t) {
             },
             18663 : {
                 id: "18663",
-                g: 347,
+                g: 333,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16789,7 +16832,7 @@ function(t) {
             },
             18670 : {
                 id: "18670",
-                g: 25,
+                g: 56,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -16801,7 +16844,7 @@ function(t) {
             },
             18703 : {
                 id: "18703",
-                g: 200,
+                g: 203,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -16813,7 +16856,7 @@ function(t) {
             },
             18707 : {
                 id: "18707",
-                g: 335,
+                g: 45,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -16825,7 +16868,7 @@ function(t) {
             },
             18715 : {
                 id: "18715",
-                g: 203,
+                g: 192,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -16837,7 +16880,7 @@ function(t) {
             },
             18767 : {
                 id: "18767",
-                g: 469,
+                g: 501,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -16849,7 +16892,7 @@ function(t) {
             },
             18769 : {
                 id: "18769",
-                g: 392,
+                g: 64,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -16861,7 +16904,7 @@ function(t) {
             },
             18865 : {
                 id: "18865",
-                g: 413,
+                g: 76,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -16873,7 +16916,7 @@ function(t) {
             },
             18866 : {
                 id: "18866",
-                g: 313,
+                g: 300,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -16885,7 +16928,7 @@ function(t) {
             },
             18901 : {
                 id: "18901",
-                g: 195,
+                g: 417,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -16897,7 +16940,7 @@ function(t) {
             },
             18974 : {
                 id: "18974",
-                g: 50,
+                g: 70,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -16909,7 +16952,7 @@ function(t) {
             },
             18990 : {
                 id: "18990",
-                g: 15,
+                g: 19,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -16921,7 +16964,7 @@ function(t) {
             },
             19069 : {
                 id: "19069",
-                g: 410,
+                g: 425,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -16933,7 +16976,7 @@ function(t) {
             },
             19083 : {
                 id: "19083",
-                g: 173,
+                g: 244,
                 o: 4,
                 m: !1,
                 oidx: 27,
@@ -16945,7 +16988,7 @@ function(t) {
             },
             19098 : {
                 id: "19098",
-                g: 160,
+                g: 8,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -16957,7 +17000,7 @@ function(t) {
             },
             19103 : {
                 id: "19103",
-                g: 9,
+                g: 90,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -16969,7 +17012,7 @@ function(t) {
             },
             19140 : {
                 id: "19140",
-                g: 57,
+                g: 43,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -16981,7 +17024,7 @@ function(t) {
             },
             19144 : {
                 id: "19144",
-                g: 16,
+                g: 443,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -16993,7 +17036,7 @@ function(t) {
             },
             19210 : {
                 id: "19210",
-                g: 263,
+                g: 488,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -17005,7 +17048,7 @@ function(t) {
             },
             19228 : {
                 id: "19228",
-                g: 332,
+                g: 317,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -17017,7 +17060,7 @@ function(t) {
             },
             19287 : {
                 id: "19287",
-                g: 498,
+                g: 322,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -17029,7 +17072,7 @@ function(t) {
             },
             19320 : {
                 id: "19320",
-                g: 444,
+                g: 172,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -17041,7 +17084,7 @@ function(t) {
             },
             19374 : {
                 id: "19374",
-                g: 218,
+                g: 341,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -17053,7 +17096,7 @@ function(t) {
             },
             19501 : {
                 id: "19501",
-                g: 307,
+                g: 357,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -17065,7 +17108,7 @@ function(t) {
             },
             19506 : {
                 id: "19506",
-                g: 175,
+                g: 493,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -17077,7 +17120,7 @@ function(t) {
             },
             19587 : {
                 id: "19587",
-                g: 41,
+                g: 263,
                 o: 4,
                 m: !1,
                 oidx: 17,
@@ -17089,7 +17132,7 @@ function(t) {
             },
             19595 : {
                 id: "19595",
-                g: 382,
+                g: 340,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -17101,7 +17144,7 @@ function(t) {
             },
             19598 : {
                 id: "19598",
-                g: 173,
+                g: 244,
                 o: 4,
                 m: !1,
                 oidx: 36,
@@ -17113,7 +17156,7 @@ function(t) {
             },
             19635 : {
                 id: "19635",
-                g: 391,
+                g: 408,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -17125,7 +17168,7 @@ function(t) {
             },
             19641 : {
                 id: "19641",
-                g: 277,
+                g: 165,
                 o: 4,
                 m: !1,
                 oidx: 19,
@@ -17135,9 +17178,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: []
             },
+            19679 : {
+                id: "19679",
+                g: 402,
+                o: 2,
+                m: !1,
+                oidx: 3,
+                not: !1,
+                ks: !1,
+                ascendancyName: null,
+                isAscendancyStart: !1,
+                out: ["21389"]
+            },
             19711 : {
                 id: "19711",
-                g: 150,
+                g: 49,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -17149,7 +17204,7 @@ function(t) {
             },
             19782 : {
                 id: "19782",
-                g: 229,
+                g: 278,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -17161,7 +17216,7 @@ function(t) {
             },
             19858 : {
                 id: "19858",
-                g: 145,
+                g: 84,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -17173,7 +17228,7 @@ function(t) {
             },
             19897 : {
                 id: "19897",
-                g: 76,
+                g: 100,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -17185,7 +17240,7 @@ function(t) {
             },
             19939 : {
                 id: "19939",
-                g: 253,
+                g: 240,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -17197,7 +17252,7 @@ function(t) {
             },
             20010 : {
                 id: "20010",
-                g: 446,
+                g: 211,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -17209,7 +17264,7 @@ function(t) {
             },
             20018 : {
                 id: "20018",
-                g: 82,
+                g: 62,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -17221,7 +17276,7 @@ function(t) {
             },
             20050 : {
                 id: "20050",
-                g: 277,
+                g: 165,
                 o: 4,
                 m: !1,
                 oidx: 3,
@@ -17233,7 +17288,7 @@ function(t) {
             },
             20077 : {
                 id: "20077",
-                g: 491,
+                g: 375,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -17245,7 +17300,7 @@ function(t) {
             },
             20127 : {
                 id: "20127",
-                g: 224,
+                g: 254,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -17257,7 +17312,7 @@ function(t) {
             },
             20142 : {
                 id: "20142",
-                g: 136,
+                g: 284,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -17269,7 +17324,7 @@ function(t) {
             },
             20228 : {
                 id: "20228",
-                g: 400,
+                g: 429,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -17281,7 +17336,7 @@ function(t) {
             },
             20310 : {
                 id: "20310",
-                g: 396,
+                g: 415,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -17293,7 +17348,7 @@ function(t) {
             },
             20349 : {
                 id: "20349",
-                g: 38,
+                g: 108,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -17305,7 +17360,7 @@ function(t) {
             },
             20467 : {
                 id: "20467",
-                g: 66,
+                g: 72,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -17317,7 +17372,7 @@ function(t) {
             },
             20480 : {
                 id: "20480",
-                g: 311,
+                g: 93,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -17329,7 +17384,7 @@ function(t) {
             },
             20528 : {
                 id: "20528",
-                g: 304,
+                g: 297,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -17341,7 +17396,7 @@ function(t) {
             },
             20546 : {
                 id: "20546",
-                g: 414,
+                g: 146,
                 o: 4,
                 m: !1,
                 oidx: 37,
@@ -17353,7 +17408,7 @@ function(t) {
             },
             20551 : {
                 id: "20551",
-                g: 124,
+                g: 132,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -17365,7 +17420,7 @@ function(t) {
             },
             20807 : {
                 id: "20807",
-                g: 234,
+                g: 159,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -17377,7 +17432,7 @@ function(t) {
             },
             20812 : {
                 id: "20812",
-                g: 255,
+                g: 424,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -17389,7 +17444,7 @@ function(t) {
             },
             20832 : {
                 id: "20832",
-                g: 38,
+                g: 108,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -17401,7 +17456,7 @@ function(t) {
             },
             20844 : {
                 id: "20844",
-                g: 296,
+                g: 288,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -17413,7 +17468,7 @@ function(t) {
             },
             20852 : {
                 id: "20852",
-                g: 77,
+                g: 33,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -17425,7 +17480,7 @@ function(t) {
             },
             20954 : {
                 id: "20954",
-                g: 233,
+                g: 304,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -17437,7 +17492,7 @@ function(t) {
             },
             20966 : {
                 id: "20966",
-                g: 94,
+                g: 34,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -17449,7 +17504,7 @@ function(t) {
             },
             20987 : {
                 id: "20987",
-                g: 83,
+                g: 102,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -17461,7 +17516,7 @@ function(t) {
             },
             21030 : {
                 id: "21030",
-                g: 300,
+                g: 117,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -17473,7 +17528,7 @@ function(t) {
             },
             21033 : {
                 id: "21033",
-                g: 384,
+                g: 416,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -17485,7 +17540,7 @@ function(t) {
             },
             21075 : {
                 id: "21075",
-                g: 258,
+                g: 249,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -17497,7 +17552,7 @@ function(t) {
             },
             21167 : {
                 id: "21167",
-                g: 386,
+                g: 12,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -17509,7 +17564,7 @@ function(t) {
             },
             21170 : {
                 id: "21170",
-                g: 236,
+                g: 218,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -17517,11 +17572,11 @@ function(t) {
                 ks: !1,
                 ascendancyName: null,
                 isAscendancyStart: !1,
-                out: []
+                out: ["56186", "58603"]
             },
             21228 : {
                 id: "21228",
-                g: 191,
+                g: 393,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -17533,7 +17588,7 @@ function(t) {
             },
             21262 : {
                 id: "21262",
-                g: 32,
+                g: 296,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -17545,7 +17600,7 @@ function(t) {
             },
             21264 : {
                 id: "21264",
-                g: 173,
+                g: 244,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -17557,7 +17612,7 @@ function(t) {
             },
             21297 : {
                 id: "21297",
-                g: 137,
+                g: 170,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -17569,7 +17624,7 @@ function(t) {
             },
             21301 : {
                 id: "21301",
-                g: 431,
+                g: 448,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -17581,7 +17636,7 @@ function(t) {
             },
             21330 : {
                 id: "21330",
-                g: 301,
+                g: 363,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -17591,9 +17646,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["17821"]
             },
+            21389 : {
+                id: "21389",
+                g: 402,
+                o: 2,
+                m: !1,
+                oidx: 0,
+                not: !0,
+                ks: !1,
+                ascendancyName: null,
+                isAscendancyStart: !1,
+                out: []
+            },
             21413 : {
                 id: "21413",
-                g: 166,
+                g: 234,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -17617,7 +17684,7 @@ function(t) {
             },
             21455 : {
                 id: "21455",
-                g: 93,
+                g: 11,
                 o: 4,
                 m: !1,
                 oidx: 28,
@@ -17629,7 +17696,7 @@ function(t) {
             },
             21460 : {
                 id: "21460",
-                g: 14,
+                g: 379,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -17641,7 +17708,7 @@ function(t) {
             },
             21507 : {
                 id: "21507",
-                g: 79,
+                g: 24,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -17653,7 +17720,7 @@ function(t) {
             },
             21524 : {
                 id: "21524",
-                g: 315,
+                g: 307,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -17665,7 +17732,7 @@ function(t) {
             },
             21575 : {
                 id: "21575",
-                g: 211,
+                g: 431,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -17677,7 +17744,7 @@ function(t) {
             },
             21602 : {
                 id: "21602",
-                g: 458,
+                g: 439,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -17689,7 +17756,7 @@ function(t) {
             },
             21634 : {
                 id: "21634",
-                g: 337,
+                g: 179,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -17701,7 +17768,7 @@ function(t) {
             },
             21678 : {
                 id: "21678",
-                g: 459,
+                g: 92,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -17713,7 +17780,7 @@ function(t) {
             },
             21693 : {
                 id: "21693",
-                g: 130,
+                g: 149,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -17725,7 +17792,7 @@ function(t) {
             },
             21758 : {
                 id: "21758",
-                g: 179,
+                g: 386,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -17737,7 +17804,7 @@ function(t) {
             },
             21835 : {
                 id: "21835",
-                g: 239,
+                g: 223,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -17749,7 +17816,7 @@ function(t) {
             },
             21893 : {
                 id: "21893",
-                g: 377,
+                g: 14,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -17761,7 +17828,7 @@ function(t) {
             },
             21929 : {
                 id: "21929",
-                g: 187,
+                g: 182,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -17773,7 +17840,7 @@ function(t) {
             },
             21934 : {
                 id: "21934",
-                g: 313,
+                g: 300,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -17785,7 +17852,7 @@ function(t) {
             },
             21941 : {
                 id: "21941",
-                g: 435,
+                g: 456,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -17797,7 +17864,7 @@ function(t) {
             },
             21958 : {
                 id: "21958",
-                g: 243,
+                g: 324,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -17809,7 +17876,7 @@ function(t) {
             },
             21973 : {
                 id: "21973",
-                g: 495,
+                g: 505,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -17821,7 +17888,7 @@ function(t) {
             },
             21974 : {
                 id: "21974",
-                g: 164,
+                g: 205,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -17833,7 +17900,7 @@ function(t) {
             },
             21984 : {
                 id: "21984",
-                g: 384,
+                g: 416,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -17845,7 +17912,7 @@ function(t) {
             },
             22061 : {
                 id: "22061",
-                g: 42,
+                g: 4,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -17857,7 +17924,7 @@ function(t) {
             },
             22088 : {
                 id: "22088",
-                g: 202,
+                g: 382,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -17869,7 +17936,7 @@ function(t) {
             },
             22090 : {
                 id: "22090",
-                g: 14,
+                g: 379,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -17881,7 +17948,7 @@ function(t) {
             },
             22248 : {
                 id: "22248",
-                g: 74,
+                g: 129,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -17893,7 +17960,7 @@ function(t) {
             },
             22261 : {
                 id: "22261",
-                g: 194,
+                g: 184,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -17905,7 +17972,7 @@ function(t) {
             },
             22266 : {
                 id: "22266",
-                g: 206,
+                g: 476,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -17917,7 +17984,7 @@ function(t) {
             },
             22285 : {
                 id: "22285",
-                g: 129,
+                g: 387,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -17929,7 +17996,7 @@ function(t) {
             },
             22313 : {
                 id: "22313",
-                g: 106,
+                g: 30,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -17941,7 +18008,7 @@ function(t) {
             },
             22356 : {
                 id: "22356",
-                g: 112,
+                g: 202,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -17953,7 +18020,7 @@ function(t) {
             },
             22407 : {
                 id: "22407",
-                g: 160,
+                g: 8,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -17965,7 +18032,7 @@ function(t) {
             },
             22423 : {
                 id: "22423",
-                g: 86,
+                g: 54,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -17977,7 +18044,7 @@ function(t) {
             },
             22473 : {
                 id: "22473",
-                g: 249,
+                g: 352,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -17989,7 +18056,7 @@ function(t) {
             },
             22488 : {
                 id: "22488",
-                g: 96,
+                g: 475,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -18001,7 +18068,7 @@ function(t) {
             },
             22497 : {
                 id: "22497",
-                g: 222,
+                g: 343,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -18013,7 +18080,7 @@ function(t) {
             },
             22535 : {
                 id: "22535",
-                g: 271,
+                g: 259,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -18025,7 +18092,7 @@ function(t) {
             },
             22551 : {
                 id: "22551",
-                g: 161,
+                g: 86,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -18037,7 +18104,7 @@ function(t) {
             },
             22618 : {
                 id: "22618",
-                g: 384,
+                g: 416,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -18049,7 +18116,7 @@ function(t) {
             },
             22627 : {
                 id: "22627",
-                g: 262,
+                g: 105,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18061,7 +18128,7 @@ function(t) {
             },
             22637 : {
                 id: "22637",
-                g: 182,
+                g: 94,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -18073,7 +18140,7 @@ function(t) {
             },
             22702 : {
                 id: "22702",
-                g: 3,
+                g: 147,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -18085,7 +18152,7 @@ function(t) {
             },
             22703 : {
                 id: "22703",
-                g: 248,
+                g: 235,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18097,7 +18164,7 @@ function(t) {
             },
             22755 : {
                 id: "22755",
-                g: 342,
+                g: 327,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -18109,7 +18176,7 @@ function(t) {
             },
             22757 : {
                 id: "22757",
-                g: 18,
+                g: 63,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -18121,7 +18188,7 @@ function(t) {
             },
             22893 : {
                 id: "22893",
-                g: 293,
+                g: 332,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -18133,7 +18200,7 @@ function(t) {
             },
             22972 : {
                 id: "22972",
-                g: 126,
+                g: 136,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -18145,7 +18212,7 @@ function(t) {
             },
             23024 : {
                 id: "23024",
-                g: 173,
+                g: 244,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -18157,7 +18224,7 @@ function(t) {
             },
             23027 : {
                 id: "23027",
-                g: 403,
+                g: 110,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18169,7 +18236,7 @@ function(t) {
             },
             23036 : {
                 id: "23036",
-                g: 100,
+                g: 299,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -18181,7 +18248,7 @@ function(t) {
             },
             23038 : {
                 id: "23038",
-                g: 82,
+                g: 62,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -18205,7 +18272,7 @@ function(t) {
             },
             23083 : {
                 id: "23083",
-                g: 18,
+                g: 63,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -18217,7 +18284,7 @@ function(t) {
             },
             23122 : {
                 id: "23122",
-                g: 396,
+                g: 415,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -18229,7 +18296,7 @@ function(t) {
             },
             23185 : {
                 id: "23185",
-                g: 75,
+                g: 99,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -18241,7 +18308,7 @@ function(t) {
             },
             23199 : {
                 id: "23199",
-                g: 273,
+                g: 38,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -18253,7 +18320,7 @@ function(t) {
             },
             23225 : {
                 id: "23225",
-                g: 41,
+                g: 263,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -18265,7 +18332,7 @@ function(t) {
             },
             23334 : {
                 id: "23334",
-                g: 109,
+                g: 21,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -18277,7 +18344,7 @@ function(t) {
             },
             23407 : {
                 id: "23407",
-                g: 346,
+                g: 513,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18289,7 +18356,7 @@ function(t) {
             },
             23456 : {
                 id: "23456",
-                g: 401,
+                g: 421,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -18301,7 +18368,7 @@ function(t) {
             },
             23471 : {
                 id: "23471",
-                g: 448,
+                g: 69,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18313,7 +18380,7 @@ function(t) {
             },
             23507 : {
                 id: "23507",
-                g: 87,
+                g: 39,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -18325,7 +18392,7 @@ function(t) {
             },
             23540 : {
                 id: "23540",
-                g: 486,
+                g: 122,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18337,7 +18404,7 @@ function(t) {
             },
             23616 : {
                 id: "23616",
-                g: 130,
+                g: 149,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -18349,7 +18416,7 @@ function(t) {
             },
             23659 : {
                 id: "23659",
-                g: 78,
+                g: 201,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -18361,7 +18428,7 @@ function(t) {
             },
             23690 : {
                 id: "23690",
-                g: 189,
+                g: 407,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18373,7 +18440,7 @@ function(t) {
             },
             23801 : {
                 id: "23801",
-                g: 266,
+                g: 255,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -18385,7 +18452,7 @@ function(t) {
             },
             23881 : {
                 id: "23881",
-                g: 286,
+                g: 274,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -18397,7 +18464,7 @@ function(t) {
             },
             23912 : {
                 id: "23912",
-                g: 334,
+                g: 46,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -18409,7 +18476,7 @@ function(t) {
             },
             23972 : {
                 id: "23972",
-                g: 246,
+                g: 237,
                 o: 4,
                 m: !1,
                 oidx: 12,
@@ -18421,7 +18488,7 @@ function(t) {
             },
             24050 : {
                 id: "24050",
-                g: 493,
+                g: 503,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18433,7 +18500,7 @@ function(t) {
             },
             24083 : {
                 id: "24083",
-                g: 480,
+                g: 497,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18445,7 +18512,7 @@ function(t) {
             },
             24133 : {
                 id: "24133",
-                g: 312,
+                g: 500,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -18457,7 +18524,7 @@ function(t) {
             },
             24157 : {
                 id: "24157",
-                g: 257,
+                g: 248,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -18469,7 +18536,7 @@ function(t) {
             },
             24203 : {
                 id: "24203",
-                g: 92,
+                g: 18,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -18481,7 +18548,7 @@ function(t) {
             },
             24229 : {
                 id: "24229",
-                g: 3,
+                g: 147,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -18493,7 +18560,7 @@ function(t) {
             },
             24256 : {
                 id: "24256",
-                g: 58,
+                g: 44,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -18505,7 +18572,7 @@ function(t) {
             },
             24324 : {
                 id: "24324",
-                g: 169,
+                g: 308,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -18517,7 +18584,7 @@ function(t) {
             },
             24362 : {
                 id: "24362",
-                g: 243,
+                g: 324,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -18529,7 +18596,7 @@ function(t) {
             },
             24377 : {
                 id: "24377",
-                g: 409,
+                g: 265,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -18541,7 +18608,7 @@ function(t) {
             },
             24383 : {
                 id: "24383",
-                g: 282,
+                g: 273,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18553,7 +18620,7 @@ function(t) {
             },
             24426 : {
                 id: "24426",
-                g: 352,
+                g: 342,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18565,7 +18632,7 @@ function(t) {
             },
             24432 : {
                 id: "24432",
-                g: 362,
+                g: 178,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -18577,7 +18644,7 @@ function(t) {
             },
             24472 : {
                 id: "24472",
-                g: 293,
+                g: 332,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -18589,7 +18656,7 @@ function(t) {
             },
             24496 : {
                 id: "24496",
-                g: 30,
+                g: 51,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -18601,7 +18668,7 @@ function(t) {
             },
             24528 : {
                 id: "24528",
-                g: 132,
+                g: 305,
                 o: 4,
                 m: !1,
                 oidx: 13,
@@ -18613,7 +18680,7 @@ function(t) {
             },
             24538 : {
                 id: "24538",
-                g: 118,
+                g: 140,
                 o: 4,
                 m: !1,
                 oidx: 31,
@@ -18625,7 +18692,7 @@ function(t) {
             },
             24641 : {
                 id: "24641",
-                g: 86,
+                g: 54,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -18637,7 +18704,7 @@ function(t) {
             },
             24643 : {
                 id: "24643",
-                g: 21,
+                g: 61,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -18649,7 +18716,7 @@ function(t) {
             },
             24677 : {
                 id: "24677",
-                g: 66,
+                g: 72,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -18661,7 +18728,7 @@ function(t) {
             },
             24691 : {
                 id: "24691",
-                g: 113,
+                g: 125,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -18673,7 +18740,7 @@ function(t) {
             },
             24704 : {
                 id: "24704",
-                g: 34,
+                g: 316,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18685,7 +18752,7 @@ function(t) {
             },
             24721 : {
                 id: "24721",
-                g: 144,
+                g: 6,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -18697,7 +18764,7 @@ function(t) {
             },
             24755 : {
                 id: "24755",
-                g: 88,
+                g: 166,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -18709,7 +18776,7 @@ function(t) {
             },
             24772 : {
                 id: "24772",
-                g: 144,
+                g: 6,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -18721,7 +18788,7 @@ function(t) {
             },
             24798 : {
                 id: "24798",
-                g: 29,
+                g: 163,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -18733,7 +18800,7 @@ function(t) {
             },
             24824 : {
                 id: "24824",
-                g: 23,
+                g: 331,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -18745,7 +18812,7 @@ function(t) {
             },
             24848 : {
                 id: "24848",
-                g: 93,
+                g: 11,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -18757,7 +18824,7 @@ function(t) {
             },
             24865 : {
                 id: "24865",
-                g: 123,
+                g: 362,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18769,7 +18836,7 @@ function(t) {
             },
             24914 : {
                 id: "24914",
-                g: 356,
+                g: 411,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18781,7 +18848,7 @@ function(t) {
             },
             24984 : {
                 id: "24984",
-                g: 284,
+                g: 16,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -18789,11 +18856,11 @@ function(t) {
                 ks: !1,
                 ascendancyName: "Champion",
                 isAscendancyStart: !0,
-                out: ["6982", "60508", "25111", "43725"]
+                out: ["6982", "60508", "25111", "43725", "41433"]
             },
             25058 : {
                 id: "25058",
-                g: 239,
+                g: 223,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -18805,7 +18872,7 @@ function(t) {
             },
             25067 : {
                 id: "25067",
-                g: 439,
+                g: 17,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -18817,10 +18884,10 @@ function(t) {
             },
             25111 : {
                 id: "25111",
-                g: 284,
+                g: 16,
                 o: 3,
                 m: !1,
-                oidx: 0,
+                oidx: 1,
                 not: !1,
                 ks: !1,
                 ascendancyName: "Champion",
@@ -18829,7 +18896,7 @@ function(t) {
             },
             25167 : {
                 id: "25167",
-                g: 48,
+                g: 312,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -18841,7 +18908,7 @@ function(t) {
             },
             25178 : {
                 id: "25178",
-                g: 343,
+                g: 328,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -18853,7 +18920,7 @@ function(t) {
             },
             25209 : {
                 id: "25209",
-                g: 116,
+                g: 53,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -18865,7 +18932,7 @@ function(t) {
             },
             25222 : {
                 id: "25222",
-                g: 218,
+                g: 341,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -18877,7 +18944,7 @@ function(t) {
             },
             25237 : {
                 id: "25237",
-                g: 290,
+                g: 280,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -18889,7 +18956,7 @@ function(t) {
             },
             25260 : {
                 id: "25260",
-                g: 377,
+                g: 14,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -18899,9 +18966,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["46277"]
             },
+            25309 : {
+                id: "25309",
+                g: 78,
+                o: 4,
+                m: !1,
+                oidx: 23,
+                not: !0,
+                ks: !1,
+                ascendancyName: "Occultist",
+                isAscendancyStart: !1,
+                out: []
+            },
             25324 : {
                 id: "25324",
-                g: 229,
+                g: 278,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -18913,7 +18992,7 @@ function(t) {
             },
             25332 : {
                 id: "25332",
-                g: 9,
+                g: 90,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -18925,7 +19004,7 @@ function(t) {
             },
             25367 : {
                 id: "25367",
-                g: 67,
+                g: 28,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -18937,7 +19016,7 @@ function(t) {
             },
             25411 : {
                 id: "25411",
-                g: 325,
+                g: 148,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -18949,7 +19028,7 @@ function(t) {
             },
             25456 : {
                 id: "25456",
-                g: 86,
+                g: 54,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -18961,7 +19040,7 @@ function(t) {
             },
             25511 : {
                 id: "25511",
-                g: 492,
+                g: 5,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -18973,7 +19052,7 @@ function(t) {
             },
             25597 : {
                 id: "25597",
-                g: 106,
+                g: 30,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -18985,7 +19064,7 @@ function(t) {
             },
             25609 : {
                 id: "25609",
-                g: 171,
+                g: 52,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -18997,7 +19076,7 @@ function(t) {
             },
             25651 : {
                 id: "25651",
-                g: 182,
+                g: 94,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -19009,7 +19088,7 @@ function(t) {
             },
             25682 : {
                 id: "25682",
-                g: 82,
+                g: 62,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -19021,7 +19100,7 @@ function(t) {
             },
             25690 : {
                 id: "25690",
-                g: 266,
+                g: 255,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -19033,7 +19112,7 @@ function(t) {
             },
             25732 : {
                 id: "25732",
-                g: 364,
+                g: 353,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -19045,7 +19124,7 @@ function(t) {
             },
             25757 : {
                 id: "25757",
-                g: 289,
+                g: 222,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -19057,7 +19136,7 @@ function(t) {
             },
             25763 : {
                 id: "25763",
-                g: 398,
+                g: 419,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -19069,7 +19148,7 @@ function(t) {
             },
             25766 : {
                 id: "25766",
-                g: 379,
+                g: 227,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -19081,7 +19160,7 @@ function(t) {
             },
             25770 : {
                 id: "25770",
-                g: 344,
+                g: 134,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -19093,7 +19172,7 @@ function(t) {
             },
             25775 : {
                 id: "25775",
-                g: 332,
+                g: 317,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -19105,7 +19184,7 @@ function(t) {
             },
             25814 : {
                 id: "25814",
-                g: 164,
+                g: 205,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -19117,7 +19196,7 @@ function(t) {
             },
             25816 : {
                 id: "25816",
-                g: 9,
+                g: 90,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -19129,7 +19208,7 @@ function(t) {
             },
             25818 : {
                 id: "25818",
-                g: 57,
+                g: 43,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -19141,7 +19220,7 @@ function(t) {
             },
             25831 : {
                 id: "25831",
-                g: 164,
+                g: 205,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -19153,7 +19232,7 @@ function(t) {
             },
             25933 : {
                 id: "25933",
-                g: 55,
+                g: 40,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -19165,7 +19244,7 @@ function(t) {
             },
             26023 : {
                 id: "26023",
-                g: 205,
+                g: 194,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -19177,7 +19256,7 @@ function(t) {
             },
             26067 : {
                 id: "26067",
-                g: 93,
+                g: 11,
                 o: 4,
                 m: !1,
                 oidx: 3,
@@ -19189,7 +19268,7 @@ function(t) {
             },
             26096 : {
                 id: "26096",
-                g: 198,
+                g: 137,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -19201,7 +19280,7 @@ function(t) {
             },
             26196 : {
                 id: "26196",
-                g: 501,
+                g: 82,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -19213,7 +19292,7 @@ function(t) {
             },
             26270 : {
                 id: "26270",
-                g: 184,
+                g: 181,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -19225,7 +19304,7 @@ function(t) {
             },
             26294 : {
                 id: "26294",
-                g: 273,
+                g: 38,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -19237,7 +19316,7 @@ function(t) {
             },
             26298 : {
                 id: "26298",
-                g: 318,
+                g: 253,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -19249,7 +19328,7 @@ function(t) {
             },
             26446 : {
                 id: "26446",
-                g: 48,
+                g: 312,
                 o: 4,
                 m: !1,
                 oidx: 38,
@@ -19261,7 +19340,7 @@ function(t) {
             },
             26456 : {
                 id: "26456",
-                g: 144,
+                g: 6,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -19273,7 +19352,7 @@ function(t) {
             },
             26471 : {
                 id: "26471",
-                g: 336,
+                g: 319,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -19285,7 +19364,7 @@ function(t) {
             },
             26481 : {
                 id: "26481",
-                g: 9,
+                g: 90,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -19297,7 +19376,7 @@ function(t) {
             },
             26496 : {
                 id: "26496",
-                g: 327,
+                g: 314,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -19321,7 +19400,7 @@ function(t) {
             },
             26528 : {
                 id: "26528",
-                g: 410,
+                g: 425,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -19333,7 +19412,7 @@ function(t) {
             },
             26557 : {
                 id: "26557",
-                g: 141,
+                g: 150,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -19345,7 +19424,7 @@ function(t) {
             },
             26620 : {
                 id: "26620",
-                g: 386,
+                g: 12,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -19357,7 +19436,7 @@ function(t) {
             },
             26712 : {
                 id: "26712",
-                g: 85,
+                g: 344,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -19369,7 +19448,7 @@ function(t) {
             },
             26714 : {
                 id: "26714",
-                g: 182,
+                g: 94,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -19381,7 +19460,7 @@ function(t) {
             },
             26725 : {
                 id: "26725",
-                g: 209,
+                g: 196,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -19393,7 +19472,7 @@ function(t) {
             },
             26740 : {
                 id: "26740",
-                g: 181,
+                g: 79,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -19405,7 +19484,7 @@ function(t) {
             },
             26866 : {
                 id: "26866",
-                g: 360,
+                g: 282,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -19417,7 +19496,7 @@ function(t) {
             },
             26958 : {
                 id: "26958",
-                g: 93,
+                g: 11,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -19429,19 +19508,19 @@ function(t) {
             },
             27096 : {
                 id: "27096",
-                g: 326,
-                o: 4,
+                g: 78,
+                o: 3,
                 m: !1,
-                oidx: 20,
+                oidx: 6,
                 not: !0,
                 ks: !1,
                 ascendancyName: "Occultist",
                 isAscendancyStart: !1,
-                out: []
+                out: ["31316", "43242"]
             },
             27134 : {
                 id: "27134",
-                g: 66,
+                g: 72,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -19453,7 +19532,7 @@ function(t) {
             },
             27137 : {
                 id: "27137",
-                g: 187,
+                g: 182,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -19465,7 +19544,7 @@ function(t) {
             },
             27140 : {
                 id: "27140",
-                g: 24,
+                g: 50,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -19477,7 +19556,7 @@ function(t) {
             },
             27163 : {
                 id: "27163",
-                g: 298,
+                g: 289,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -19489,7 +19568,7 @@ function(t) {
             },
             27166 : {
                 id: "27166",
-                g: 28,
+                g: 97,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -19501,7 +19580,7 @@ function(t) {
             },
             27190 : {
                 id: "27190",
-                g: 344,
+                g: 134,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -19513,7 +19592,7 @@ function(t) {
             },
             27195 : {
                 id: "27195",
-                g: 28,
+                g: 97,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -19525,7 +19604,7 @@ function(t) {
             },
             27203 : {
                 id: "27203",
-                g: 399,
+                g: 426,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -19537,7 +19616,7 @@ function(t) {
             },
             27276 : {
                 id: "27276",
-                g: 87,
+                g: 39,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -19549,7 +19628,7 @@ function(t) {
             },
             27283 : {
                 id: "27283",
-                g: 328,
+                g: 315,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -19561,7 +19640,7 @@ function(t) {
             },
             27301 : {
                 id: "27301",
-                g: 24,
+                g: 50,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -19573,7 +19652,7 @@ function(t) {
             },
             27308 : {
                 id: "27308",
-                g: 75,
+                g: 99,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -19585,7 +19664,7 @@ function(t) {
             },
             27386 : {
                 id: "27386",
-                g: 368,
+                g: 361,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -19597,7 +19676,7 @@ function(t) {
             },
             27415 : {
                 id: "27415",
-                g: 265,
+                g: 355,
                 o: 4,
                 m: !1,
                 oidx: 13,
@@ -19609,7 +19688,7 @@ function(t) {
             },
             27514 : {
                 id: "27514",
-                g: 382,
+                g: 340,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -19621,7 +19700,7 @@ function(t) {
             },
             27536 : {
                 id: "27536",
-                g: 362,
+                g: 178,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -19633,7 +19712,7 @@ function(t) {
             },
             27564 : {
                 id: "27564",
-                g: 95,
+                g: 112,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -19645,7 +19724,7 @@ function(t) {
             },
             27575 : {
                 id: "27575",
-                g: 319,
+                g: 311,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -19657,7 +19736,7 @@ function(t) {
             },
             27604 : {
                 id: "27604",
-                g: 284,
+                g: 16,
                 o: 4,
                 m: !1,
                 oidx: 37,
@@ -19669,7 +19748,7 @@ function(t) {
             },
             27609 : {
                 id: "27609",
-                g: 430,
+                g: 190,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -19681,7 +19760,7 @@ function(t) {
             },
             27611 : {
                 id: "27611",
-                g: 308,
+                g: 298,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -19693,7 +19772,7 @@ function(t) {
             },
             27656 : {
                 id: "27656",
-                g: 411,
+                g: 506,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -19705,7 +19784,7 @@ function(t) {
             },
             27659 : {
                 id: "27659",
-                g: 157,
+                g: 463,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -19717,7 +19796,7 @@ function(t) {
             },
             27718 : {
                 id: "27718",
-                g: 163,
+                g: 167,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -19729,7 +19808,7 @@ function(t) {
             },
             27788 : {
                 id: "27788",
-                g: 377,
+                g: 14,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -19741,7 +19820,7 @@ function(t) {
             },
             27864 : {
                 id: "27864",
-                g: 118,
+                g: 140,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -19753,7 +19832,7 @@ function(t) {
             },
             27879 : {
                 id: "27879",
-                g: 300,
+                g: 117,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -19765,7 +19844,7 @@ function(t) {
             },
             27929 : {
                 id: "27929",
-                g: 453,
+                g: 479,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -19777,7 +19856,7 @@ function(t) {
             },
             27959 : {
                 id: "27959",
-                g: 171,
+                g: 52,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -19789,7 +19868,7 @@ function(t) {
             },
             27962 : {
                 id: "27962",
-                g: 59,
+                g: 131,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -19801,7 +19880,7 @@ function(t) {
             },
             28012 : {
                 id: "28012",
-                g: 381,
+                g: 365,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -19813,7 +19892,7 @@ function(t) {
             },
             28084 : {
                 id: "28084",
-                g: 327,
+                g: 314,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -19825,7 +19904,7 @@ function(t) {
             },
             28221 : {
                 id: "28221",
-                g: 21,
+                g: 61,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -19837,7 +19916,7 @@ function(t) {
             },
             28265 : {
                 id: "28265",
-                g: 55,
+                g: 40,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -19849,7 +19928,7 @@ function(t) {
             },
             28311 : {
                 id: "28311",
-                g: 13,
+                g: 80,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -19861,7 +19940,7 @@ function(t) {
             },
             28330 : {
                 id: "28330",
-                g: 340,
+                g: 323,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -19873,7 +19952,7 @@ function(t) {
             },
             28424 : {
                 id: "28424",
-                g: 499,
+                g: 444,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -19885,7 +19964,7 @@ function(t) {
             },
             28455 : {
                 id: "28455",
-                g: 35,
+                g: 89,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -19897,7 +19976,7 @@ function(t) {
             },
             28475 : {
                 id: "28475",
-                g: 73,
+                g: 107,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -19909,7 +19988,7 @@ function(t) {
             },
             28503 : {
                 id: "28503",
-                g: 332,
+                g: 317,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -19921,7 +20000,7 @@ function(t) {
             },
             28535 : {
                 id: "28535",
-                g: 48,
+                g: 312,
                 o: 4,
                 m: !1,
                 oidx: 36,
@@ -19933,7 +20012,7 @@ function(t) {
             },
             28548 : {
                 id: "28548",
-                g: 217,
+                g: 330,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -19945,7 +20024,7 @@ function(t) {
             },
             28574 : {
                 id: "28574",
-                g: 54,
+                g: 187,
                 o: 4,
                 m: !1,
                 oidx: 27,
@@ -19957,7 +20036,7 @@ function(t) {
             },
             28658 : {
                 id: "28658",
-                g: 342,
+                g: 327,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -19969,7 +20048,7 @@ function(t) {
             },
             28753 : {
                 id: "28753",
-                g: 137,
+                g: 170,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -19981,7 +20060,7 @@ function(t) {
             },
             28754 : {
                 id: "28754",
-                g: 211,
+                g: 431,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -19993,7 +20072,7 @@ function(t) {
             },
             28758 : {
                 id: "28758",
-                g: 302,
+                g: 295,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -20005,7 +20084,7 @@ function(t) {
             },
             28859 : {
                 id: "28859",
-                g: 285,
+                g: 290,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -20017,7 +20096,7 @@ function(t) {
             },
             28884 : {
                 id: "28884",
-                g: 41,
+                g: 263,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -20029,7 +20108,7 @@ function(t) {
             },
             28995 : {
                 id: "28995",
-                g: 93,
+                g: 11,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -20041,7 +20120,7 @@ function(t) {
             },
             29005 : {
                 id: "29005",
-                g: 401,
+                g: 421,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -20053,7 +20132,7 @@ function(t) {
             },
             29019 : {
                 id: "29019",
-                g: 112,
+                g: 202,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -20065,7 +20144,7 @@ function(t) {
             },
             29026 : {
                 id: "29026",
-                g: 182,
+                g: 94,
                 o: 4,
                 m: !1,
                 oidx: 23,
@@ -20075,9 +20154,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["29994"]
             },
+            29033 : {
+                id: "29033",
+                g: 515,
+                o: 1,
+                m: !1,
+                oidx: 5,
+                not: !1,
+                ks: !1,
+                ascendancyName: null,
+                isAscendancyStart: !1,
+                out: ["51954", "31875"]
+            },
             29049 : {
                 id: "29049",
-                g: 315,
+                g: 307,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -20089,7 +20180,7 @@ function(t) {
             },
             29061 : {
                 id: "29061",
-                g: 106,
+                g: 30,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -20101,7 +20192,7 @@ function(t) {
             },
             29089 : {
                 id: "29089",
-                g: 105,
+                g: 212,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -20113,7 +20204,7 @@ function(t) {
             },
             29104 : {
                 id: "29104",
-                g: 223,
+                g: 339,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -20125,7 +20216,7 @@ function(t) {
             },
             29106 : {
                 id: "29106",
-                g: 9,
+                g: 90,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -20137,7 +20228,7 @@ function(t) {
             },
             29199 : {
                 id: "29199",
-                g: 230,
+                g: 214,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -20149,7 +20240,7 @@ function(t) {
             },
             29292 : {
                 id: "29292",
-                g: 163,
+                g: 167,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -20161,7 +20252,7 @@ function(t) {
             },
             29294 : {
                 id: "29294",
-                g: 132,
+                g: 305,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -20173,7 +20264,7 @@ function(t) {
             },
             29353 : {
                 id: "29353",
-                g: 172,
+                g: 450,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -20185,7 +20276,7 @@ function(t) {
             },
             29379 : {
                 id: "29379",
-                g: 316,
+                g: 310,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -20197,7 +20288,7 @@ function(t) {
             },
             29547 : {
                 id: "29547",
-                g: 112,
+                g: 202,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -20209,7 +20300,7 @@ function(t) {
             },
             29549 : {
                 id: "29549",
-                g: 221,
+                g: 123,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -20221,7 +20312,7 @@ function(t) {
             },
             29552 : {
                 id: "29552",
-                g: 300,
+                g: 117,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -20233,7 +20324,7 @@ function(t) {
             },
             29781 : {
                 id: "29781",
-                g: 243,
+                g: 324,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -20245,7 +20336,7 @@ function(t) {
             },
             29825 : {
                 id: "29825",
-                g: 41,
+                g: 263,
                 o: 4,
                 m: !1,
                 oidx: 14,
@@ -20257,7 +20348,7 @@ function(t) {
             },
             29856 : {
                 id: "29856",
-                g: 196,
+                g: 188,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -20267,9 +20358,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["54354"]
             },
+            29861 : {
+                id: "29861",
+                g: 515,
+                o: 1,
+                m: !1,
+                oidx: 1,
+                not: !0,
+                ks: !1,
+                ascendancyName: null,
+                isAscendancyStart: !1,
+                out: []
+            },
             29870 : {
                 id: "29870",
-                g: 125,
+                g: 135,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -20281,7 +20384,7 @@ function(t) {
             },
             29933 : {
                 id: "29933",
-                g: 153,
+                g: 404,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -20293,7 +20396,7 @@ function(t) {
             },
             29937 : {
                 id: "29937",
-                g: 226,
+                g: 468,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -20305,7 +20408,7 @@ function(t) {
             },
             29994 : {
                 id: "29994",
-                g: 182,
+                g: 94,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -20317,7 +20420,7 @@ function(t) {
             },
             30030 : {
                 id: "30030",
-                g: 198,
+                g: 137,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -20329,7 +20432,7 @@ function(t) {
             },
             30110 : {
                 id: "30110",
-                g: 130,
+                g: 149,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -20341,7 +20444,7 @@ function(t) {
             },
             30155 : {
                 id: "30155",
-                g: 281,
+                g: 272,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -20353,7 +20456,7 @@ function(t) {
             },
             30160 : {
                 id: "30160",
-                g: 143,
+                g: 153,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -20365,7 +20468,7 @@ function(t) {
             },
             30205 : {
                 id: "30205",
-                g: 110,
+                g: 120,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -20377,7 +20480,7 @@ function(t) {
             },
             30225 : {
                 id: "30225",
-                g: 7,
+                g: 67,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -20389,7 +20492,7 @@ function(t) {
             },
             30251 : {
                 id: "30251",
-                g: 36,
+                g: 77,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -20401,7 +20504,7 @@ function(t) {
             },
             30319 : {
                 id: "30319",
-                g: 137,
+                g: 170,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -20413,7 +20516,7 @@ function(t) {
             },
             30335 : {
                 id: "30335",
-                g: 278,
+                g: 465,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -20425,7 +20528,7 @@ function(t) {
             },
             30338 : {
                 id: "30338",
-                g: 110,
+                g: 120,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -20437,7 +20540,7 @@ function(t) {
             },
             30380 : {
                 id: "30380",
-                g: 50,
+                g: 70,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -20449,7 +20552,7 @@ function(t) {
             },
             30439 : {
                 id: "30439",
-                g: 47,
+                g: 2,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -20461,7 +20564,7 @@ function(t) {
             },
             30455 : {
                 id: "30455",
-                g: 342,
+                g: 327,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -20473,7 +20576,7 @@ function(t) {
             },
             30471 : {
                 id: "30471",
-                g: 89,
+                g: 66,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -20485,7 +20588,7 @@ function(t) {
             },
             30547 : {
                 id: "30547",
-                g: 94,
+                g: 34,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -20497,7 +20600,7 @@ function(t) {
             },
             30679 : {
                 id: "30679",
-                g: 441,
+                g: 139,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -20509,7 +20612,7 @@ function(t) {
             },
             30690 : {
                 id: "30690",
-                g: 88,
+                g: 166,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -20521,7 +20624,7 @@ function(t) {
             },
             30691 : {
                 id: "30691",
-                g: 456,
+                g: 485,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -20533,7 +20636,7 @@ function(t) {
             },
             30693 : {
                 id: "30693",
-                g: 32,
+                g: 296,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -20545,7 +20648,7 @@ function(t) {
             },
             30697 : {
                 id: "30697",
-                g: 94,
+                g: 34,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -20557,7 +20660,7 @@ function(t) {
             },
             30733 : {
                 id: "30733",
-                g: 73,
+                g: 107,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -20569,7 +20672,7 @@ function(t) {
             },
             30745 : {
                 id: "30745",
-                g: 332,
+                g: 317,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -20581,7 +20684,7 @@ function(t) {
             },
             30767 : {
                 id: "30767",
-                g: 271,
+                g: 259,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -20593,7 +20696,7 @@ function(t) {
             },
             30825 : {
                 id: "30825",
-                g: 57,
+                g: 43,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -20605,7 +20708,7 @@ function(t) {
             },
             30842 : {
                 id: "30842",
-                g: 127,
+                g: 267,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -20617,7 +20720,7 @@ function(t) {
             },
             30894 : {
                 id: "30894",
-                g: 25,
+                g: 56,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -20629,7 +20732,7 @@ function(t) {
             },
             30919 : {
                 id: "30919",
-                g: 510,
+                g: 138,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -20641,7 +20744,7 @@ function(t) {
             },
             30926 : {
                 id: "30926",
-                g: 296,
+                g: 288,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -20653,7 +20756,7 @@ function(t) {
             },
             30940 : {
                 id: "30940",
-                g: 182,
+                g: 94,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -20661,11 +20764,11 @@ function(t) {
                 ks: !1,
                 ascendancyName: "Hierophant",
                 isAscendancyStart: !0,
-                out: ["11046", "22637", "44797", "26714"]
+                out: ["11046", "22637", "44797", "26714", "38387"]
             },
             30955 : {
                 id: "30955",
-                g: 223,
+                g: 339,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -20677,7 +20780,7 @@ function(t) {
             },
             30969 : {
                 id: "30969",
-                g: 242,
+                g: 37,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -20689,7 +20792,7 @@ function(t) {
             },
             31033 : {
                 id: "31033",
-                g: 28,
+                g: 97,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -20701,7 +20804,7 @@ function(t) {
             },
             31080 : {
                 id: "31080",
-                g: 387,
+                g: 400,
                 o: 4,
                 m: !1,
                 oidx: 23,
@@ -20713,7 +20816,7 @@ function(t) {
             },
             31137 : {
                 id: "31137",
-                g: 460,
+                g: 276,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -20725,7 +20828,7 @@ function(t) {
             },
             31222 : {
                 id: "31222",
-                g: 191,
+                g: 393,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -20737,7 +20840,7 @@ function(t) {
             },
             31257 : {
                 id: "31257",
-                g: 148,
+                g: 313,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -20749,7 +20852,7 @@ function(t) {
             },
             31315 : {
                 id: "31315",
-                g: 439,
+                g: 17,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -20759,12 +20862,24 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["39718"]
             },
-            31344 : {
-                id: "31344",
-                g: 326,
+            31316 : {
+                id: "31316",
+                g: 78,
                 o: 4,
                 m: !1,
-                oidx: 28,
+                oidx: 21,
+                not: !1,
+                ks: !1,
+                ascendancyName: "Occultist",
+                isAscendancyStart: !1,
+                out: ["25309"]
+            },
+            31344 : {
+                id: "31344",
+                g: 78,
+                o: 4,
+                m: !1,
+                oidx: 30,
                 not: !0,
                 ks: !1,
                 ascendancyName: "Occultist",
@@ -20773,7 +20888,7 @@ function(t) {
             },
             31359 : {
                 id: "31359",
-                g: 224,
+                g: 254,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -20785,7 +20900,7 @@ function(t) {
             },
             31364 : {
                 id: "31364",
-                g: 362,
+                g: 178,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -20797,7 +20912,7 @@ function(t) {
             },
             31462 : {
                 id: "31462",
-                g: 106,
+                g: 30,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -20809,7 +20924,7 @@ function(t) {
             },
             31471 : {
                 id: "31471",
-                g: 153,
+                g: 404,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -20821,7 +20936,7 @@ function(t) {
             },
             31501 : {
                 id: "31501",
-                g: 59,
+                g: 131,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -20833,7 +20948,7 @@ function(t) {
             },
             31508 : {
                 id: "31508",
-                g: 419,
+                g: 292,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -20845,7 +20960,7 @@ function(t) {
             },
             31520 : {
                 id: "31520",
-                g: 140,
+                g: 111,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -20857,7 +20972,7 @@ function(t) {
             },
             31583 : {
                 id: "31583",
-                g: 19,
+                g: 286,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -20869,7 +20984,7 @@ function(t) {
             },
             31598 : {
                 id: "31598",
-                g: 147,
+                g: 380,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -20881,7 +20996,7 @@ function(t) {
             },
             31604 : {
                 id: "31604",
-                g: 205,
+                g: 194,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -20893,7 +21008,7 @@ function(t) {
             },
             31628 : {
                 id: "31628",
-                g: 267,
+                g: 257,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -20905,7 +21020,7 @@ function(t) {
             },
             31667 : {
                 id: "31667",
-                g: 34,
+                g: 316,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -20917,7 +21032,7 @@ function(t) {
             },
             31683 : {
                 id: "31683",
-                g: 396,
+                g: 415,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -20929,7 +21044,7 @@ function(t) {
             },
             31700 : {
                 id: "31700",
-                g: 284,
+                g: 16,
                 o: 4,
                 m: !1,
                 oidx: 29,
@@ -20941,7 +21056,7 @@ function(t) {
             },
             31703 : {
                 id: "31703",
-                g: 183,
+                g: 232,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -20953,7 +21068,7 @@ function(t) {
             },
             31758 : {
                 id: "31758",
-                g: 401,
+                g: 421,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -20965,7 +21080,7 @@ function(t) {
             },
             31819 : {
                 id: "31819",
-                g: 215,
+                g: 199,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -20977,7 +21092,7 @@ function(t) {
             },
             31875 : {
                 id: "31875",
-                g: 438,
+                g: 462,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -20989,7 +21104,7 @@ function(t) {
             },
             31928 : {
                 id: "31928",
-                g: 28,
+                g: 97,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -21001,7 +21116,7 @@ function(t) {
             },
             31931 : {
                 id: "31931",
-                g: 142,
+                g: 81,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -21013,7 +21128,7 @@ function(t) {
             },
             31961 : {
                 id: "31961",
-                g: 397,
+                g: 418,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21025,7 +21140,7 @@ function(t) {
             },
             31973 : {
                 id: "31973",
-                g: 271,
+                g: 259,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -21037,7 +21152,7 @@ function(t) {
             },
             31984 : {
                 id: "31984",
-                g: 326,
+                g: 78,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -21049,7 +21164,7 @@ function(t) {
             },
             32024 : {
                 id: "32024",
-                g: 308,
+                g: 298,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -21061,7 +21176,7 @@ function(t) {
             },
             32091 : {
                 id: "32091",
-                g: 227,
+                g: 210,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21073,7 +21188,7 @@ function(t) {
             },
             32115 : {
                 id: "32115",
-                g: 246,
+                g: 237,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -21085,7 +21200,7 @@ function(t) {
             },
             32117 : {
                 id: "32117",
-                g: 343,
+                g: 328,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -21097,7 +21212,7 @@ function(t) {
             },
             32210 : {
                 id: "32210",
-                g: 459,
+                g: 92,
                 o: 4,
                 m: !1,
                 oidx: 13,
@@ -21109,7 +21224,7 @@ function(t) {
             },
             32227 : {
                 id: "32227",
-                g: 194,
+                g: 184,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -21121,7 +21236,7 @@ function(t) {
             },
             32245 : {
                 id: "32245",
-                g: 447,
+                g: 58,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21133,7 +21248,7 @@ function(t) {
             },
             32251 : {
                 id: "32251",
-                g: 132,
+                g: 305,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -21145,7 +21260,7 @@ function(t) {
             },
             32262 : {
                 id: "32262",
-                g: 39,
+                g: 155,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -21157,7 +21272,7 @@ function(t) {
             },
             32295 : {
                 id: "32295",
-                g: 491,
+                g: 375,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -21169,7 +21284,7 @@ function(t) {
             },
             32345 : {
                 id: "32345",
-                g: 232,
+                g: 215,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21181,7 +21296,7 @@ function(t) {
             },
             32364 : {
                 id: "32364",
-                g: 277,
+                g: 165,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -21193,8 +21308,8 @@ function(t) {
             },
             32417 : {
                 id: "32417",
-                g: 326,
-                o: 3,
+                g: 78,
+                o: 2,
                 m: !1,
                 oidx: 6,
                 not: !1,
@@ -21205,7 +21320,7 @@ function(t) {
             },
             32431 : {
                 id: "32431",
-                g: 44,
+                g: 25,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -21217,7 +21332,7 @@ function(t) {
             },
             32432 : {
                 id: "32432",
-                g: 137,
+                g: 170,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -21229,7 +21344,7 @@ function(t) {
             },
             32455 : {
                 id: "32455",
-                g: 283,
+                g: 377,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -21241,7 +21356,7 @@ function(t) {
             },
             32477 : {
                 id: "32477",
-                g: 242,
+                g: 37,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -21253,7 +21368,7 @@ function(t) {
             },
             32480 : {
                 id: "32480",
-                g: 278,
+                g: 465,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -21265,7 +21380,7 @@ function(t) {
             },
             32482 : {
                 id: "32482",
-                g: 28,
+                g: 97,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -21277,7 +21392,7 @@ function(t) {
             },
             32514 : {
                 id: "32514",
-                g: 334,
+                g: 46,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -21289,7 +21404,7 @@ function(t) {
             },
             32555 : {
                 id: "32555",
-                g: 22,
+                g: 303,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21301,7 +21416,7 @@ function(t) {
             },
             32640 : {
                 id: "32640",
-                g: 311,
+                g: 93,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -21313,7 +21428,7 @@ function(t) {
             },
             32662 : {
                 id: "32662",
-                g: 311,
+                g: 93,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -21325,7 +21440,7 @@ function(t) {
             },
             32710 : {
                 id: "32710",
-                g: 235,
+                g: 217,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21337,7 +21452,7 @@ function(t) {
             },
             32730 : {
                 id: "32730",
-                g: 118,
+                g: 140,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21349,7 +21464,7 @@ function(t) {
             },
             32739 : {
                 id: "32739",
-                g: 124,
+                g: 132,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -21361,7 +21476,7 @@ function(t) {
             },
             32763 : {
                 id: "32763",
-                g: 109,
+                g: 21,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -21373,7 +21488,7 @@ function(t) {
             },
             32802 : {
                 id: "32802",
-                g: 379,
+                g: 227,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -21385,7 +21500,7 @@ function(t) {
             },
             32816 : {
                 id: "32816",
-                g: 231,
+                g: 169,
                 o: 4,
                 m: !1,
                 oidx: 6,
@@ -21397,7 +21512,7 @@ function(t) {
             },
             32854 : {
                 id: "32854",
-                g: 38,
+                g: 108,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -21409,7 +21524,7 @@ function(t) {
             },
             32906 : {
                 id: "32906",
-                g: 36,
+                g: 77,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -21421,7 +21536,7 @@ function(t) {
             },
             32932 : {
                 id: "32932",
-                g: 164,
+                g: 205,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -21433,7 +21548,7 @@ function(t) {
             },
             32942 : {
                 id: "32942",
-                g: 160,
+                g: 8,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -21445,7 +21560,7 @@ function(t) {
             },
             32947 : {
                 id: "32947",
-                g: 41,
+                g: 263,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -21457,7 +21572,7 @@ function(t) {
             },
             32992 : {
                 id: "32992",
-                g: 277,
+                g: 165,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -21469,7 +21584,7 @@ function(t) {
             },
             32993 : {
                 id: "32993",
-                g: 266,
+                g: 255,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -21481,7 +21596,7 @@ function(t) {
             },
             33082 : {
                 id: "33082",
-                g: 67,
+                g: 28,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -21493,7 +21608,7 @@ function(t) {
             },
             33089 : {
                 id: "33089",
-                g: 201,
+                g: 191,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -21505,7 +21620,7 @@ function(t) {
             },
             33141 : {
                 id: "33141",
-                g: 144,
+                g: 6,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -21517,7 +21632,7 @@ function(t) {
             },
             33166 : {
                 id: "33166",
-                g: 413,
+                g: 76,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -21529,7 +21644,7 @@ function(t) {
             },
             33167 : {
                 id: "33167",
-                g: 182,
+                g: 94,
                 o: 4,
                 m: !1,
                 oidx: 4,
@@ -21541,7 +21656,7 @@ function(t) {
             },
             33179 : {
                 id: "33179",
-                g: 118,
+                g: 140,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -21553,7 +21668,7 @@ function(t) {
             },
             33196 : {
                 id: "33196",
-                g: 376,
+                g: 384,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -21565,7 +21680,7 @@ function(t) {
             },
             33287 : {
                 id: "33287",
-                g: 309,
+                g: 95,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -21577,7 +21692,7 @@ function(t) {
             },
             33296 : {
                 id: "33296",
-                g: 186,
+                g: 271,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21589,7 +21704,7 @@ function(t) {
             },
             33310 : {
                 id: "33310",
-                g: 465,
+                g: 301,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21601,7 +21716,7 @@ function(t) {
             },
             33363 : {
                 id: "33363",
-                g: 385,
+                g: 398,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -21613,7 +21728,7 @@ function(t) {
             },
             33374 : {
                 id: "33374",
-                g: 191,
+                g: 393,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -21625,7 +21740,7 @@ function(t) {
             },
             33435 : {
                 id: "33435",
-                g: 32,
+                g: 296,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21637,7 +21752,7 @@ function(t) {
             },
             33479 : {
                 id: "33479",
-                g: 152,
+                g: 160,
                 o: 4,
                 m: !1,
                 oidx: 13,
@@ -21649,7 +21764,7 @@ function(t) {
             },
             33508 : {
                 id: "33508",
-                g: 396,
+                g: 415,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -21661,7 +21776,7 @@ function(t) {
             },
             33545 : {
                 id: "33545",
-                g: 451,
+                g: 399,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21673,7 +21788,7 @@ function(t) {
             },
             33631 : {
                 id: "33631",
-                g: 388,
+                g: 401,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -21685,7 +21800,7 @@ function(t) {
             },
             33645 : {
                 id: "33645",
-                g: 362,
+                g: 178,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -21697,7 +21812,7 @@ function(t) {
             },
             33718 : {
                 id: "33718",
-                g: 317,
+                g: 88,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -21709,7 +21824,7 @@ function(t) {
             },
             33725 : {
                 id: "33725",
-                g: 92,
+                g: 18,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -21721,7 +21836,7 @@ function(t) {
             },
             33740 : {
                 id: "33740",
-                g: 388,
+                g: 401,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -21733,7 +21848,7 @@ function(t) {
             },
             33755 : {
                 id: "33755",
-                g: 243,
+                g: 324,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -21745,7 +21860,7 @@ function(t) {
             },
             33777 : {
                 id: "33777",
-                g: 137,
+                g: 170,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -21757,7 +21872,7 @@ function(t) {
             },
             33779 : {
                 id: "33779",
-                g: 136,
+                g: 284,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -21769,7 +21884,7 @@ function(t) {
             },
             33783 : {
                 id: "33783",
-                g: 7,
+                g: 67,
                 o: 4,
                 m: !1,
                 oidx: 27,
@@ -21781,7 +21896,7 @@ function(t) {
             },
             33795 : {
                 id: "33795",
-                g: 233,
+                g: 304,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21793,7 +21908,7 @@ function(t) {
             },
             33864 : {
                 id: "33864",
-                g: 78,
+                g: 201,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -21805,7 +21920,7 @@ function(t) {
             },
             33875 : {
                 id: "33875",
-                g: 88,
+                g: 166,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -21817,7 +21932,7 @@ function(t) {
             },
             33903 : {
                 id: "33903",
-                g: 110,
+                g: 120,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -21829,7 +21944,7 @@ function(t) {
             },
             33911 : {
                 id: "33911",
-                g: 458,
+                g: 439,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -21841,7 +21956,7 @@ function(t) {
             },
             33923 : {
                 id: "33923",
-                g: 210,
+                g: 13,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -21853,7 +21968,7 @@ function(t) {
             },
             33940 : {
                 id: "33940",
-                g: 284,
+                g: 16,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -21865,7 +21980,7 @@ function(t) {
             },
             33954 : {
                 id: "33954",
-                g: 173,
+                g: 244,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -21877,7 +21992,7 @@ function(t) {
             },
             33988 : {
                 id: "33988",
-                g: 372,
+                g: 378,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21889,7 +22004,7 @@ function(t) {
             },
             33989 : {
                 id: "33989",
-                g: 30,
+                g: 51,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -21901,7 +22016,7 @@ function(t) {
             },
             34009 : {
                 id: "34009",
-                g: 276,
+                g: 440,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21913,7 +22028,7 @@ function(t) {
             },
             34031 : {
                 id: "34031",
-                g: 51,
+                g: 482,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21925,7 +22040,7 @@ function(t) {
             },
             34062 : {
                 id: "34062",
-                g: 21,
+                g: 61,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -21937,7 +22052,7 @@ function(t) {
             },
             34098 : {
                 id: "34098",
-                g: 46,
+                g: 318,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21949,7 +22064,7 @@ function(t) {
             },
             34130 : {
                 id: "34130",
-                g: 11,
+                g: 71,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -21961,7 +22076,7 @@ function(t) {
             },
             34144 : {
                 id: "34144",
-                g: 76,
+                g: 100,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -21973,7 +22088,7 @@ function(t) {
             },
             34157 : {
                 id: "34157",
-                g: 320,
+                g: 231,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -21985,7 +22100,7 @@ function(t) {
             },
             34171 : {
                 id: "34171",
-                g: 502,
+                g: 3,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -21997,7 +22112,7 @@ function(t) {
             },
             34173 : {
                 id: "34173",
-                g: 319,
+                g: 311,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -22009,7 +22124,7 @@ function(t) {
             },
             34215 : {
                 id: "34215",
-                g: 233,
+                g: 304,
                 o: 4,
                 m: !1,
                 oidx: 4,
@@ -22021,7 +22136,7 @@ function(t) {
             },
             34245 : {
                 id: "34245",
-                g: 220,
+                g: 121,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -22033,7 +22148,7 @@ function(t) {
             },
             34306 : {
                 id: "34306",
-                g: 495,
+                g: 505,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -22045,7 +22160,7 @@ function(t) {
             },
             34363 : {
                 id: "34363",
-                g: 430,
+                g: 190,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -22057,7 +22172,7 @@ function(t) {
             },
             34400 : {
                 id: "34400",
-                g: 432,
+                g: 42,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -22069,7 +22184,7 @@ function(t) {
             },
             34434 : {
                 id: "34434",
-                g: 182,
+                g: 94,
                 o: 4,
                 m: !1,
                 oidx: 9,
@@ -22081,7 +22196,7 @@ function(t) {
             },
             34483 : {
                 id: "34483",
-                g: 49,
+                g: 469,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -22093,7 +22208,7 @@ function(t) {
             },
             34484 : {
                 id: "34484",
-                g: 233,
+                g: 304,
                 o: 4,
                 m: !1,
                 oidx: 7,
@@ -22105,7 +22220,7 @@ function(t) {
             },
             34510 : {
                 id: "34510",
-                g: 314,
+                g: 302,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -22117,7 +22232,7 @@ function(t) {
             },
             34513 : {
                 id: "34513",
-                g: 317,
+                g: 88,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -22129,7 +22244,7 @@ function(t) {
             },
             34567 : {
                 id: "34567",
-                g: 154,
+                g: 270,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -22141,7 +22256,7 @@ function(t) {
             },
             34579 : {
                 id: "34579",
-                g: 89,
+                g: 66,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -22153,7 +22268,7 @@ function(t) {
             },
             34601 : {
                 id: "34601",
-                g: 445,
+                g: 472,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -22165,7 +22280,7 @@ function(t) {
             },
             34661 : {
                 id: "34661",
-                g: 7,
+                g: 67,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -22177,7 +22292,7 @@ function(t) {
             },
             34666 : {
                 id: "34666",
-                g: 127,
+                g: 267,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -22189,7 +22304,7 @@ function(t) {
             },
             34678 : {
                 id: "34678",
-                g: 410,
+                g: 425,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -22201,7 +22316,7 @@ function(t) {
             },
             34763 : {
                 id: "34763",
-                g: 130,
+                g: 149,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -22213,7 +22328,7 @@ function(t) {
             },
             34774 : {
                 id: "34774",
-                g: 507,
+                g: 258,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -22225,7 +22340,7 @@ function(t) {
             },
             34880 : {
                 id: "34880",
-                g: 108,
+                g: 119,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -22237,7 +22352,7 @@ function(t) {
             },
             34882 : {
                 id: "34882",
-                g: 190,
+                g: 449,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -22249,7 +22364,7 @@ function(t) {
             },
             34906 : {
                 id: "34906",
-                g: 58,
+                g: 44,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -22261,7 +22376,7 @@ function(t) {
             },
             34907 : {
                 id: "34907",
-                g: 499,
+                g: 444,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -22273,7 +22388,7 @@ function(t) {
             },
             34959 : {
                 id: "34959",
-                g: 24,
+                g: 50,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -22285,7 +22400,7 @@ function(t) {
             },
             35053 : {
                 id: "35053",
-                g: 323,
+                g: 251,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -22297,7 +22412,7 @@ function(t) {
             },
             35179 : {
                 id: "35179",
-                g: 188,
+                g: 356,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -22309,7 +22424,7 @@ function(t) {
             },
             35185 : {
                 id: "35185",
-                g: 284,
+                g: 16,
                 o: 4,
                 m: !1,
                 oidx: 31,
@@ -22321,7 +22436,7 @@ function(t) {
             },
             35260 : {
                 id: "35260",
-                g: 9,
+                g: 90,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -22333,7 +22448,7 @@ function(t) {
             },
             35283 : {
                 id: "35283",
-                g: 211,
+                g: 431,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -22345,7 +22460,7 @@ function(t) {
             },
             35288 : {
                 id: "35288",
-                g: 85,
+                g: 344,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -22357,7 +22472,7 @@ function(t) {
             },
             35296 : {
                 id: "35296",
-                g: 335,
+                g: 45,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -22369,7 +22484,7 @@ function(t) {
             },
             35334 : {
                 id: "35334",
-                g: 221,
+                g: 123,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -22381,7 +22496,7 @@ function(t) {
             },
             35362 : {
                 id: "35362",
-                g: 72,
+                g: 91,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -22393,7 +22508,7 @@ function(t) {
             },
             35368 : {
                 id: "35368",
-                g: 171,
+                g: 52,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -22405,7 +22520,7 @@ function(t) {
             },
             35384 : {
                 id: "35384",
-                g: 332,
+                g: 317,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -22417,7 +22532,7 @@ function(t) {
             },
             35489 : {
                 id: "35489",
-                g: 92,
+                g: 18,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -22429,7 +22544,7 @@ function(t) {
             },
             35503 : {
                 id: "35503",
-                g: 396,
+                g: 415,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -22441,7 +22556,7 @@ function(t) {
             },
             35507 : {
                 id: "35507",
-                g: 112,
+                g: 202,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -22453,7 +22568,7 @@ function(t) {
             },
             35556 : {
                 id: "35556",
-                g: 426,
+                g: 31,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -22465,7 +22580,7 @@ function(t) {
             },
             35568 : {
                 id: "35568",
-                g: 305,
+                g: 241,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -22477,7 +22592,7 @@ function(t) {
             },
             35598 : {
                 id: "35598",
-                g: 41,
+                g: 263,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -22489,7 +22604,7 @@ function(t) {
             },
             35663 : {
                 id: "35663",
-                g: 11,
+                g: 71,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -22501,7 +22616,7 @@ function(t) {
             },
             35706 : {
                 id: "35706",
-                g: 78,
+                g: 201,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -22513,7 +22628,7 @@ function(t) {
             },
             35724 : {
                 id: "35724",
-                g: 329,
+                g: 124,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -22525,7 +22640,7 @@ function(t) {
             },
             35737 : {
                 id: "35737",
-                g: 460,
+                g: 276,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -22537,10 +22652,10 @@ function(t) {
             },
             35750 : {
                 id: "35750",
-                g: 284,
+                g: 16,
                 o: 4,
                 m: !1,
-                oidx: 3,
+                oidx: 0,
                 not: !0,
                 ks: !1,
                 ascendancyName: "Champion",
@@ -22549,7 +22664,7 @@ function(t) {
             },
             35754 : {
                 id: "35754",
-                g: 165,
+                g: 329,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -22561,7 +22676,7 @@ function(t) {
             },
             35851 : {
                 id: "35851",
-                g: 128,
+                g: 141,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -22573,7 +22688,7 @@ function(t) {
             },
             35894 : {
                 id: "35894",
-                g: 482,
+                g: 498,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -22585,7 +22700,7 @@ function(t) {
             },
             35910 : {
                 id: "35910",
-                g: 140,
+                g: 111,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -22597,7 +22712,7 @@ function(t) {
             },
             35958 : {
                 id: "35958",
-                g: 319,
+                g: 311,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -22609,7 +22724,7 @@ function(t) {
             },
             36017 : {
                 id: "36017",
-                g: 318,
+                g: 253,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -22621,7 +22736,7 @@ function(t) {
             },
             36047 : {
                 id: "36047",
-                g: 134,
+                g: 144,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -22633,7 +22748,7 @@ function(t) {
             },
             36121 : {
                 id: "36121",
-                g: 44,
+                g: 25,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -22645,7 +22760,7 @@ function(t) {
             },
             36221 : {
                 id: "36221",
-                g: 145,
+                g: 84,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -22657,7 +22772,7 @@ function(t) {
             },
             36222 : {
                 id: "36222",
-                g: 281,
+                g: 272,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -22669,7 +22784,7 @@ function(t) {
             },
             36225 : {
                 id: "36225",
-                g: 332,
+                g: 317,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -22681,7 +22796,7 @@ function(t) {
             },
             36226 : {
                 id: "36226",
-                g: 14,
+                g: 379,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -22693,7 +22808,7 @@ function(t) {
             },
             36242 : {
                 id: "36242",
-                g: 311,
+                g: 93,
                 o: 4,
                 m: !1,
                 oidx: 31,
@@ -22705,7 +22820,7 @@ function(t) {
             },
             36281 : {
                 id: "36281",
-                g: 242,
+                g: 37,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -22717,7 +22832,7 @@ function(t) {
             },
             36287 : {
                 id: "36287",
-                g: 216,
+                g: 246,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -22729,7 +22844,7 @@ function(t) {
             },
             36338 : {
                 id: "36338",
-                g: 439,
+                g: 17,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -22741,7 +22856,7 @@ function(t) {
             },
             36412 : {
                 id: "36412",
-                g: 14,
+                g: 379,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -22753,7 +22868,7 @@ function(t) {
             },
             36452 : {
                 id: "36452",
-                g: 380,
+                g: 335,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -22765,7 +22880,7 @@ function(t) {
             },
             36490 : {
                 id: "36490",
-                g: 194,
+                g: 184,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -22777,7 +22892,7 @@ function(t) {
             },
             36542 : {
                 id: "36542",
-                g: 461,
+                g: 206,
                 o: 4,
                 m: !1,
                 oidx: 27,
@@ -22789,7 +22904,7 @@ function(t) {
             },
             36543 : {
                 id: "36543",
-                g: 185,
+                g: 455,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -22801,7 +22916,7 @@ function(t) {
             },
             36585 : {
                 id: "36585",
-                g: 77,
+                g: 33,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -22813,7 +22928,7 @@ function(t) {
             },
             36634 : {
                 id: "36634",
-                g: 449,
+                g: 477,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -22825,7 +22940,7 @@ function(t) {
             },
             36675 : {
                 id: "36675",
-                g: 200,
+                g: 203,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -22837,7 +22952,7 @@ function(t) {
             },
             36678 : {
                 id: "36678",
-                g: 310,
+                g: 484,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -22849,7 +22964,7 @@ function(t) {
             },
             36687 : {
                 id: "36687",
-                g: 105,
+                g: 212,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -22861,7 +22976,7 @@ function(t) {
             },
             36704 : {
                 id: "36704",
-                g: 35,
+                g: 89,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -22873,7 +22988,7 @@ function(t) {
             },
             36761 : {
                 id: "36761",
-                g: 101,
+                g: 59,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -22885,7 +23000,7 @@ function(t) {
             },
             36774 : {
                 id: "36774",
-                g: 313,
+                g: 300,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -22897,7 +23012,7 @@ function(t) {
             },
             36801 : {
                 id: "36801",
-                g: 332,
+                g: 317,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -22909,7 +23024,7 @@ function(t) {
             },
             36858 : {
                 id: "36858",
-                g: 288,
+                g: 413,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -22921,7 +23036,7 @@ function(t) {
             },
             36874 : {
                 id: "36874",
-                g: 43,
+                g: 442,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -22933,7 +23048,7 @@ function(t) {
             },
             36877 : {
                 id: "36877",
-                g: 96,
+                g: 475,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -22945,7 +23060,7 @@ function(t) {
             },
             36881 : {
                 id: "36881",
-                g: 396,
+                g: 415,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -22957,7 +23072,7 @@ function(t) {
             },
             36915 : {
                 id: "36915",
-                g: 108,
+                g: 119,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -22969,7 +23084,7 @@ function(t) {
             },
             36949 : {
                 id: "36949",
-                g: 79,
+                g: 24,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -22981,7 +23096,7 @@ function(t) {
             },
             36972 : {
                 id: "36972",
-                g: 127,
+                g: 267,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -22993,7 +23108,7 @@ function(t) {
             },
             37078 : {
                 id: "37078",
-                g: 259,
+                g: 20,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -23005,7 +23120,7 @@ function(t) {
             },
             37114 : {
                 id: "37114",
-                g: 382,
+                g: 340,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -23017,10 +23132,10 @@ function(t) {
             },
             37127 : {
                 id: "37127",
-                g: 326,
+                g: 78,
                 o: 4,
                 m: !1,
-                oidx: 23,
+                oidx: 26,
                 not: !0,
                 ks: !1,
                 ascendancyName: "Occultist",
@@ -23029,7 +23144,7 @@ function(t) {
             },
             37163 : {
                 id: "37163",
-                g: 169,
+                g: 308,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -23041,7 +23156,7 @@ function(t) {
             },
             37191 : {
                 id: "37191",
-                g: 41,
+                g: 263,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -23053,7 +23168,7 @@ function(t) {
             },
             37326 : {
                 id: "37326",
-                g: 209,
+                g: 196,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -23065,7 +23180,7 @@ function(t) {
             },
             37394 : {
                 id: "37394",
-                g: 294,
+                g: 239,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -23077,7 +23192,7 @@ function(t) {
             },
             37419 : {
                 id: "37419",
-                g: 277,
+                g: 165,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -23089,7 +23204,7 @@ function(t) {
             },
             37486 : {
                 id: "37486",
-                g: 231,
+                g: 169,
                 o: 4,
                 m: !1,
                 oidx: 12,
@@ -23101,10 +23216,10 @@ function(t) {
             },
             37492 : {
                 id: "37492",
-                g: 326,
+                g: 78,
                 o: 4,
                 m: !1,
-                oidx: 12,
+                oidx: 10,
                 not: !0,
                 ks: !1,
                 ascendancyName: "Occultist",
@@ -23113,7 +23228,7 @@ function(t) {
             },
             37501 : {
                 id: "37501",
-                g: 406,
+                g: 228,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -23125,7 +23240,7 @@ function(t) {
             },
             37504 : {
                 id: "37504",
-                g: 279,
+                g: 268,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -23137,7 +23252,7 @@ function(t) {
             },
             37569 : {
                 id: "37569",
-                g: 461,
+                g: 206,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -23149,7 +23264,7 @@ function(t) {
             },
             37584 : {
                 id: "37584",
-                g: 158,
+                g: 27,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -23161,7 +23276,7 @@ function(t) {
             },
             37619 : {
                 id: "37619",
-                g: 312,
+                g: 500,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -23173,7 +23288,7 @@ function(t) {
             },
             37623 : {
                 id: "37623",
-                g: 118,
+                g: 140,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -23185,7 +23300,7 @@ function(t) {
             },
             37639 : {
                 id: "37639",
-                g: 15,
+                g: 19,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -23197,7 +23312,7 @@ function(t) {
             },
             37663 : {
                 id: "37663",
-                g: 335,
+                g: 45,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -23209,7 +23324,7 @@ function(t) {
             },
             37671 : {
                 id: "37671",
-                g: 119,
+                g: 233,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -23221,7 +23336,7 @@ function(t) {
             },
             37690 : {
                 id: "37690",
-                g: 181,
+                g: 79,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -23233,7 +23348,7 @@ function(t) {
             },
             37776 : {
                 id: "37776",
-                g: 279,
+                g: 268,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -23245,7 +23360,7 @@ function(t) {
             },
             37785 : {
                 id: "37785",
-                g: 224,
+                g: 254,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -23257,7 +23372,7 @@ function(t) {
             },
             37800 : {
                 id: "37800",
-                g: 112,
+                g: 202,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -23269,7 +23384,7 @@ function(t) {
             },
             37884 : {
                 id: "37884",
-                g: 385,
+                g: 398,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -23281,7 +23396,7 @@ function(t) {
             },
             37895 : {
                 id: "37895",
-                g: 148,
+                g: 313,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -23293,7 +23408,7 @@ function(t) {
             },
             37999 : {
                 id: "37999",
-                g: 70,
+                g: 396,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -23305,7 +23420,7 @@ function(t) {
             },
             38023 : {
                 id: "38023",
-                g: 94,
+                g: 34,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -23317,7 +23432,7 @@ function(t) {
             },
             38048 : {
                 id: "38048",
-                g: 181,
+                g: 79,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -23329,7 +23444,7 @@ function(t) {
             },
             38072 : {
                 id: "38072",
-                g: 419,
+                g: 292,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -23341,7 +23456,7 @@ function(t) {
             },
             38129 : {
                 id: "38129",
-                g: 511,
+                g: 514,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -23353,7 +23468,7 @@ function(t) {
             },
             38148 : {
                 id: "38148",
-                g: 7,
+                g: 67,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -23365,7 +23480,7 @@ function(t) {
             },
             38149 : {
                 id: "38149",
-                g: 334,
+                g: 46,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -23377,7 +23492,7 @@ function(t) {
             },
             38176 : {
                 id: "38176",
-                g: 265,
+                g: 355,
                 o: 4,
                 m: !1,
                 oidx: 3,
@@ -23389,7 +23504,7 @@ function(t) {
             },
             38180 : {
                 id: "38180",
-                g: 233,
+                g: 304,
                 o: 4,
                 m: !1,
                 oidx: 11,
@@ -23401,7 +23516,7 @@ function(t) {
             },
             38190 : {
                 id: "38190",
-                g: 392,
+                g: 64,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -23413,7 +23528,7 @@ function(t) {
             },
             38246 : {
                 id: "38246",
-                g: 25,
+                g: 56,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -23425,7 +23540,7 @@ function(t) {
             },
             38344 : {
                 id: "38344",
-                g: 303,
+                g: 175,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -23437,7 +23552,7 @@ function(t) {
             },
             38348 : {
                 id: "38348",
-                g: 179,
+                g: 386,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -23447,9 +23562,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["60735", "63843"]
             },
+            38387 : {
+                id: "38387",
+                g: 94,
+                o: 2,
+                m: !1,
+                oidx: 6,
+                not: !1,
+                ks: !1,
+                ascendancyName: "Hierophant",
+                isAscendancyStart: !1,
+                out: ["51492"]
+            },
             38450 : {
                 id: "38450",
-                g: 181,
+                g: 79,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -23461,7 +23588,7 @@ function(t) {
             },
             38508 : {
                 id: "38508",
-                g: 209,
+                g: 196,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -23473,7 +23600,7 @@ function(t) {
             },
             38516 : {
                 id: "38516",
-                g: 215,
+                g: 199,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -23485,7 +23612,7 @@ function(t) {
             },
             38539 : {
                 id: "38539",
-                g: 130,
+                g: 149,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -23497,7 +23624,7 @@ function(t) {
             },
             38599 : {
                 id: "38599",
-                g: 283,
+                g: 377,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -23509,7 +23636,7 @@ function(t) {
             },
             38662 : {
                 id: "38662",
-                g: 306,
+                g: 115,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -23521,7 +23648,7 @@ function(t) {
             },
             38689 : {
                 id: "38689",
-                g: 147,
+                g: 380,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -23533,7 +23660,7 @@ function(t) {
             },
             38701 : {
                 id: "38701",
-                g: 469,
+                g: 501,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -23545,7 +23672,7 @@ function(t) {
             },
             38777 : {
                 id: "38777",
-                g: 11,
+                g: 71,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -23557,7 +23684,7 @@ function(t) {
             },
             38789 : {
                 id: "38789",
-                g: 203,
+                g: 192,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -23569,7 +23696,7 @@ function(t) {
             },
             38805 : {
                 id: "38805",
-                g: 258,
+                g: 249,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -23581,7 +23708,7 @@ function(t) {
             },
             38836 : {
                 id: "38836",
-                g: 187,
+                g: 182,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -23593,7 +23720,7 @@ function(t) {
             },
             38864 : {
                 id: "38864",
-                g: 194,
+                g: 184,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -23605,7 +23732,7 @@ function(t) {
             },
             38900 : {
                 id: "38900",
-                g: 258,
+                g: 249,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -23617,7 +23744,7 @@ function(t) {
             },
             38905 : {
                 id: "38905",
-                g: 430,
+                g: 190,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -23629,7 +23756,7 @@ function(t) {
             },
             38918 : {
                 id: "38918",
-                g: 48,
+                g: 312,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -23641,7 +23768,7 @@ function(t) {
             },
             38922 : {
                 id: "38922",
-                g: 5,
+                g: 226,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -23653,7 +23780,7 @@ function(t) {
             },
             38947 : {
                 id: "38947",
-                g: 191,
+                g: 393,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -23665,7 +23792,7 @@ function(t) {
             },
             38989 : {
                 id: "38989",
-                g: 9,
+                g: 90,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -23677,7 +23804,7 @@ function(t) {
             },
             38999 : {
                 id: "38999",
-                g: 132,
+                g: 305,
                 o: 4,
                 m: !1,
                 oidx: 3,
@@ -23689,7 +23816,7 @@ function(t) {
             },
             39023 : {
                 id: "39023",
-                g: 406,
+                g: 228,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -23701,7 +23828,7 @@ function(t) {
             },
             39085 : {
                 id: "39085",
-                g: 490,
+                g: 480,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -23713,7 +23840,7 @@ function(t) {
             },
             39172 : {
                 id: "39172",
-                g: 13,
+                g: 80,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -23725,7 +23852,7 @@ function(t) {
             },
             39211 : {
                 id: "39211",
-                g: 117,
+                g: 127,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -23737,7 +23864,7 @@ function(t) {
             },
             39443 : {
                 id: "39443",
-                g: 302,
+                g: 295,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -23749,7 +23876,7 @@ function(t) {
             },
             39447 : {
                 id: "39447",
-                g: 279,
+                g: 268,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -23761,7 +23888,7 @@ function(t) {
             },
             39521 : {
                 id: "39521",
-                g: 300,
+                g: 117,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -23773,7 +23900,7 @@ function(t) {
             },
             39530 : {
                 id: "39530",
-                g: 35,
+                g: 89,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -23785,7 +23912,7 @@ function(t) {
             },
             39598 : {
                 id: "39598",
-                g: 508,
+                g: 326,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -23797,7 +23924,7 @@ function(t) {
             },
             39631 : {
                 id: "39631",
-                g: 401,
+                g: 421,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -23809,7 +23936,7 @@ function(t) {
             },
             39648 : {
                 id: "39648",
-                g: 301,
+                g: 363,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -23821,7 +23948,7 @@ function(t) {
             },
             39665 : {
                 id: "39665",
-                g: 334,
+                g: 46,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -23833,7 +23960,7 @@ function(t) {
             },
             39718 : {
                 id: "39718",
-                g: 291,
+                g: 423,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -23845,7 +23972,7 @@ function(t) {
             },
             39725 : {
                 id: "39725",
-                g: 354,
+                g: 60,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -23857,7 +23984,7 @@ function(t) {
             },
             39728 : {
                 id: "39728",
-                g: 277,
+                g: 165,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -23869,7 +23996,7 @@ function(t) {
             },
             39761 : {
                 id: "39761",
-                g: 15,
+                g: 19,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -23881,7 +24008,7 @@ function(t) {
             },
             39768 : {
                 id: "39768",
-                g: 124,
+                g: 132,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -23893,7 +24020,7 @@ function(t) {
             },
             39773 : {
                 id: "39773",
-                g: 396,
+                g: 415,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -23905,7 +24032,7 @@ function(t) {
             },
             39786 : {
                 id: "39786",
-                g: 11,
+                g: 71,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -23917,7 +24044,7 @@ function(t) {
             },
             39790 : {
                 id: "39790",
-                g: 363,
+                g: 507,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -23929,7 +24056,7 @@ function(t) {
             },
             39814 : {
                 id: "39814",
-                g: 344,
+                g: 134,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -23941,7 +24068,7 @@ function(t) {
             },
             39818 : {
                 id: "39818",
-                g: 318,
+                g: 253,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -23953,7 +24080,7 @@ function(t) {
             },
             39821 : {
                 id: "39821",
-                g: 350,
+                g: 336,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -23965,7 +24092,7 @@ function(t) {
             },
             39834 : {
                 id: "39834",
-                g: 48,
+                g: 312,
                 o: 4,
                 m: !1,
                 oidx: 27,
@@ -23977,7 +24104,7 @@ function(t) {
             },
             39841 : {
                 id: "39841",
-                g: 168,
+                g: 490,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -23989,7 +24116,7 @@ function(t) {
             },
             39861 : {
                 id: "39861",
-                g: 30,
+                g: 51,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -24001,7 +24128,7 @@ function(t) {
             },
             39916 : {
                 id: "39916",
-                g: 426,
+                g: 31,
                 o: 4,
                 m: !1,
                 oidx: 17,
@@ -24013,7 +24140,7 @@ function(t) {
             },
             39979 : {
                 id: "39979",
-                g: 332,
+                g: 317,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -24025,7 +24152,7 @@ function(t) {
             },
             39986 : {
                 id: "39986",
-                g: 491,
+                g: 375,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -24037,7 +24164,7 @@ function(t) {
             },
             40010 : {
                 id: "40010",
-                g: 277,
+                g: 165,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -24049,7 +24176,7 @@ function(t) {
             },
             40059 : {
                 id: "40059",
-                g: 231,
+                g: 169,
                 o: 4,
                 m: !1,
                 oidx: 10,
@@ -24061,7 +24188,7 @@ function(t) {
             },
             40100 : {
                 id: "40100",
-                g: 89,
+                g: 66,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -24073,7 +24200,7 @@ function(t) {
             },
             40126 : {
                 id: "40126",
-                g: 53,
+                g: 113,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -24085,7 +24212,7 @@ function(t) {
             },
             40132 : {
                 id: "40132",
-                g: 442,
+                g: 504,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -24097,7 +24224,7 @@ function(t) {
             },
             40229 : {
                 id: "40229",
-                g: 148,
+                g: 313,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -24109,7 +24236,7 @@ function(t) {
             },
             40291 : {
                 id: "40291",
-                g: 169,
+                g: 308,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -24121,7 +24248,7 @@ function(t) {
             },
             40362 : {
                 id: "40362",
-                g: 377,
+                g: 14,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -24133,7 +24260,7 @@ function(t) {
             },
             40366 : {
                 id: "40366",
-                g: 422,
+                g: 242,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -24145,7 +24272,7 @@ function(t) {
             },
             40409 : {
                 id: "40409",
-                g: 192,
+                g: 410,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -24157,7 +24284,7 @@ function(t) {
             },
             40508 : {
                 id: "40508",
-                g: 319,
+                g: 311,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -24169,7 +24296,7 @@ function(t) {
             },
             40510 : {
                 id: "40510",
-                g: 182,
+                g: 94,
                 o: 4,
                 m: !1,
                 oidx: 2,
@@ -24181,7 +24308,7 @@ function(t) {
             },
             40535 : {
                 id: "40535",
-                g: 278,
+                g: 465,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -24193,7 +24320,7 @@ function(t) {
             },
             40609 : {
                 id: "40609",
-                g: 14,
+                g: 379,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -24205,7 +24332,7 @@ function(t) {
             },
             40631 : {
                 id: "40631",
-                g: 311,
+                g: 93,
                 o: 4,
                 m: !1,
                 oidx: 39,
@@ -24217,7 +24344,7 @@ function(t) {
             },
             40637 : {
                 id: "40637",
-                g: 218,
+                g: 341,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -24229,7 +24356,7 @@ function(t) {
             },
             40644 : {
                 id: "40644",
-                g: 211,
+                g: 431,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -24241,7 +24368,7 @@ function(t) {
             },
             40645 : {
                 id: "40645",
-                g: 94,
+                g: 34,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -24253,7 +24380,7 @@ function(t) {
             },
             40653 : {
                 id: "40653",
-                g: 63,
+                g: 47,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -24265,7 +24392,7 @@ function(t) {
             },
             40705 : {
                 id: "40705",
-                g: 14,
+                g: 379,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -24277,7 +24404,7 @@ function(t) {
             },
             40743 : {
                 id: "40743",
-                g: 336,
+                g: 319,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -24289,7 +24416,7 @@ function(t) {
             },
             40766 : {
                 id: "40766",
-                g: 79,
+                g: 24,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -24299,9 +24426,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["23027"]
             },
+            40776 : {
+                id: "40776",
+                g: 402,
+                o: 2,
+                m: !1,
+                oidx: 6,
+                not: !1,
+                ks: !1,
+                ascendancyName: null,
+                isAscendancyStart: !1,
+                out: ["19679", "53018"]
+            },
             40813 : {
                 id: "40813",
-                g: 311,
+                g: 93,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -24313,7 +24452,7 @@ function(t) {
             },
             40834 : {
                 id: "40834",
-                g: 74,
+                g: 129,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -24325,7 +24464,7 @@ function(t) {
             },
             40840 : {
                 id: "40840",
-                g: 300,
+                g: 117,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -24337,7 +24476,7 @@ function(t) {
             },
             40867 : {
                 id: "40867",
-                g: 292,
+                g: 281,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -24349,7 +24488,7 @@ function(t) {
             },
             40907 : {
                 id: "40907",
-                g: 457,
+                g: 224,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -24361,7 +24500,7 @@ function(t) {
             },
             40927 : {
                 id: "40927",
-                g: 27,
+                g: 358,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -24373,7 +24512,7 @@ function(t) {
             },
             41026 : {
                 id: "41026",
-                g: 58,
+                g: 44,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -24385,7 +24524,7 @@ function(t) {
             },
             41027 : {
                 id: "41027",
-                g: 192,
+                g: 410,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -24397,7 +24536,7 @@ function(t) {
             },
             41081 : {
                 id: "41081",
-                g: 48,
+                g: 312,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -24409,7 +24548,7 @@ function(t) {
             },
             41119 : {
                 id: "41119",
-                g: 342,
+                g: 327,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -24421,7 +24560,7 @@ function(t) {
             },
             41190 : {
                 id: "41190",
-                g: 9,
+                g: 90,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -24433,7 +24572,7 @@ function(t) {
             },
             41250 : {
                 id: "41250",
-                g: 303,
+                g: 175,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -24445,7 +24584,7 @@ function(t) {
             },
             41263 : {
                 id: "41263",
-                g: 178,
+                g: 277,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -24457,7 +24596,7 @@ function(t) {
             },
             41380 : {
                 id: "41380",
-                g: 383,
+                g: 394,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -24467,9 +24606,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["57819"]
             },
+            41433 : {
+                id: "41433",
+                g: 16,
+                o: 3,
+                m: !1,
+                oidx: 9,
+                not: !1,
+                ks: !1,
+                ascendancyName: "Champion",
+                isAscendancyStart: !1,
+                out: ["13374"]
+            },
             41472 : {
                 id: "41472",
-                g: 254,
+                g: 438,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -24481,7 +24632,7 @@ function(t) {
             },
             41476 : {
                 id: "41476",
-                g: 160,
+                g: 8,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -24493,7 +24644,7 @@ function(t) {
             },
             41518 : {
                 id: "41518",
-                g: 107,
+                g: 247,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -24505,7 +24656,7 @@ function(t) {
             },
             41534 : {
                 id: "41534",
-                g: 161,
+                g: 86,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -24517,7 +24668,7 @@ function(t) {
             },
             41536 : {
                 id: "41536",
-                g: 303,
+                g: 175,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -24529,7 +24680,7 @@ function(t) {
             },
             41635 : {
                 id: "41635",
-                g: 427,
+                g: 445,
                 o: 4,
                 m: !1,
                 oidx: 7,
@@ -24541,7 +24692,7 @@ function(t) {
             },
             41689 : {
                 id: "41689",
-                g: 496,
+                g: 283,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -24553,7 +24704,7 @@ function(t) {
             },
             41706 : {
                 id: "41706",
-                g: 158,
+                g: 27,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -24565,7 +24716,7 @@ function(t) {
             },
             41866 : {
                 id: "41866",
-                g: 214,
+                g: 474,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -24577,7 +24728,7 @@ function(t) {
             },
             41891 : {
                 id: "41891",
-                g: 41,
+                g: 263,
                 o: 4,
                 m: !1,
                 oidx: 27,
@@ -24589,7 +24740,7 @@ function(t) {
             },
             41967 : {
                 id: "41967",
-                g: 337,
+                g: 179,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -24601,10 +24752,10 @@ function(t) {
             },
             41970 : {
                 id: "41970",
-                g: 18,
+                g: 63,
                 o: 4,
                 m: !1,
-                oidx: 0,
+                oidx: 3,
                 not: !1,
                 ks: !0,
                 ascendancyName: null,
@@ -24613,7 +24764,7 @@ function(t) {
             },
             41996 : {
                 id: "41996",
-                g: 29,
+                g: 163,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -24625,7 +24776,7 @@ function(t) {
             },
             42009 : {
                 id: "42009",
-                g: 120,
+                g: 128,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -24637,7 +24788,7 @@ function(t) {
             },
             42041 : {
                 id: "42041",
-                g: 355,
+                g: 73,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -24649,7 +24800,7 @@ function(t) {
             },
             42062 : {
                 id: "42062",
-                g: 72,
+                g: 91,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -24661,7 +24812,7 @@ function(t) {
             },
             42104 : {
                 id: "42104",
-                g: 357,
+                g: 345,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -24673,7 +24824,7 @@ function(t) {
             },
             42144 : {
                 id: "42144",
-                g: 417,
+                g: 511,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -24685,7 +24836,7 @@ function(t) {
             },
             42178 : {
                 id: "42178",
-                g: 8,
+                g: 106,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -24697,7 +24848,7 @@ function(t) {
             },
             42264 : {
                 id: "42264",
-                g: 277,
+                g: 165,
                 o: 4,
                 m: !1,
                 oidx: 7,
@@ -24709,7 +24860,7 @@ function(t) {
             },
             42274 : {
                 id: "42274",
-                g: 390,
+                g: 162,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -24721,7 +24872,7 @@ function(t) {
             },
             42293 : {
                 id: "42293",
-                g: 233,
+                g: 304,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -24731,9 +24882,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["62817"]
             },
+            42343 : {
+                id: "42343",
+                g: 63,
+                o: 4,
+                m: !1,
+                oidx: 37,
+                not: !1,
+                ks: !0,
+                ascendancyName: null,
+                isAscendancyStart: !1,
+                out: []
+            },
             42436 : {
                 id: "42436",
-                g: 491,
+                g: 375,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -24745,7 +24908,7 @@ function(t) {
             },
             42443 : {
                 id: "42443",
-                g: 377,
+                g: 14,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -24757,7 +24920,7 @@ function(t) {
             },
             42465 : {
                 id: "42465",
-                g: 203,
+                g: 192,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -24769,7 +24932,7 @@ function(t) {
             },
             42546 : {
                 id: "42546",
-                g: 330,
+                g: 65,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -24781,7 +24944,7 @@ function(t) {
             },
             42583 : {
                 id: "42583",
-                g: 253,
+                g: 240,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -24793,7 +24956,7 @@ function(t) {
             },
             42623 : {
                 id: "42623",
-                g: 110,
+                g: 120,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -24805,7 +24968,7 @@ function(t) {
             },
             42637 : {
                 id: "42637",
-                g: 198,
+                g: 137,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -24817,7 +24980,7 @@ function(t) {
             },
             42649 : {
                 id: "42649",
-                g: 77,
+                g: 33,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -24829,7 +24992,7 @@ function(t) {
             },
             42659 : {
                 id: "42659",
-                g: 34,
+                g: 316,
                 o: 4,
                 m: !1,
                 oidx: 12,
@@ -24841,7 +25004,7 @@ function(t) {
             },
             42668 : {
                 id: "42668",
-                g: 23,
+                g: 331,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -24853,7 +25016,7 @@ function(t) {
             },
             42671 : {
                 id: "42671",
-                g: 147,
+                g: 380,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -24865,7 +25028,7 @@ function(t) {
             },
             42686 : {
                 id: "42686",
-                g: 211,
+                g: 431,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -24877,7 +25040,7 @@ function(t) {
             },
             42720 : {
                 id: "42720",
-                g: 334,
+                g: 46,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -24889,7 +25052,7 @@ function(t) {
             },
             42731 : {
                 id: "42731",
-                g: 358,
+                g: 348,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -24901,7 +25064,7 @@ function(t) {
             },
             42760 : {
                 id: "42760",
-                g: 122,
+                g: 130,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -24913,7 +25076,7 @@ function(t) {
             },
             42788 : {
                 id: "42788",
-                g: 74,
+                g: 129,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -24925,7 +25088,7 @@ function(t) {
             },
             42795 : {
                 id: "42795",
-                g: 298,
+                g: 289,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -24937,7 +25100,7 @@ function(t) {
             },
             42800 : {
                 id: "42800",
-                g: 367,
+                g: 360,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -24949,7 +25112,7 @@ function(t) {
             },
             42804 : {
                 id: "42804",
-                g: 325,
+                g: 148,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -24961,7 +25124,7 @@ function(t) {
             },
             42837 : {
                 id: "42837",
-                g: 401,
+                g: 421,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -24973,7 +25136,7 @@ function(t) {
             },
             42861 : {
                 id: "42861",
-                g: 132,
+                g: 305,
                 o: 4,
                 m: !1,
                 oidx: 11,
@@ -24985,7 +25148,7 @@ function(t) {
             },
             42875 : {
                 id: "42875",
-                g: 212,
+                g: 197,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -24997,7 +25160,7 @@ function(t) {
             },
             42900 : {
                 id: "42900",
-                g: 257,
+                g: 248,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -25009,7 +25172,7 @@ function(t) {
             },
             42907 : {
                 id: "42907",
-                g: 130,
+                g: 149,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -25021,7 +25184,7 @@ function(t) {
             },
             42911 : {
                 id: "42911",
-                g: 292,
+                g: 281,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -25033,7 +25196,7 @@ function(t) {
             },
             42917 : {
                 id: "42917",
-                g: 15,
+                g: 19,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -25045,7 +25208,7 @@ function(t) {
             },
             42964 : {
                 id: "42964",
-                g: 383,
+                g: 394,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -25057,7 +25220,7 @@ function(t) {
             },
             43015 : {
                 id: "43015",
-                g: 327,
+                g: 314,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -25069,7 +25232,7 @@ function(t) {
             },
             43122 : {
                 id: "43122",
-                g: 503,
+                g: 373,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25081,7 +25244,7 @@ function(t) {
             },
             43133 : {
                 id: "43133",
-                g: 75,
+                g: 99,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -25093,7 +25256,7 @@ function(t) {
             },
             43162 : {
                 id: "43162",
-                g: 396,
+                g: 415,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -25105,7 +25268,7 @@ function(t) {
             },
             43170 : {
                 id: "43170",
-                g: 250,
+                g: 236,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -25117,7 +25280,7 @@ function(t) {
             },
             43193 : {
                 id: "43193",
-                g: 231,
+                g: 169,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -25129,7 +25292,7 @@ function(t) {
             },
             43195 : {
                 id: "43195",
-                g: 238,
+                g: 309,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25139,9 +25302,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: []
             },
+            43242 : {
+                id: "43242",
+                g: 78,
+                o: 4,
+                m: !1,
+                oidx: 19,
+                not: !1,
+                ks: !1,
+                ascendancyName: "Occultist",
+                isAscendancyStart: !1,
+                out: ["47630"]
+            },
             43303 : {
                 id: "43303",
-                g: 127,
+                g: 267,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -25153,7 +25328,7 @@ function(t) {
             },
             43316 : {
                 id: "43316",
-                g: 263,
+                g: 488,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -25165,7 +25340,7 @@ function(t) {
             },
             43336 : {
                 id: "43336",
-                g: 330,
+                g: 65,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -25177,7 +25352,7 @@ function(t) {
             },
             43374 : {
                 id: "43374",
-                g: 429,
+                g: 446,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25189,7 +25364,7 @@ function(t) {
             },
             43385 : {
                 id: "43385",
-                g: 376,
+                g: 384,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -25201,7 +25376,7 @@ function(t) {
             },
             43412 : {
                 id: "43412",
-                g: 127,
+                g: 267,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -25213,7 +25388,7 @@ function(t) {
             },
             43413 : {
                 id: "43413",
-                g: 101,
+                g: 59,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -25225,7 +25400,7 @@ function(t) {
             },
             43416 : {
                 id: "43416",
-                g: 289,
+                g: 222,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -25237,7 +25412,7 @@ function(t) {
             },
             43486 : {
                 id: "43486",
-                g: 18,
+                g: 63,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -25249,7 +25424,7 @@ function(t) {
             },
             43514 : {
                 id: "43514",
-                g: 323,
+                g: 251,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -25261,7 +25436,7 @@ function(t) {
             },
             43684 : {
                 id: "43684",
-                g: 155,
+                g: 388,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -25273,7 +25448,7 @@ function(t) {
             },
             43689 : {
                 id: "43689",
-                g: 23,
+                g: 331,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -25285,7 +25460,7 @@ function(t) {
             },
             43716 : {
                 id: "43716",
-                g: 76,
+                g: 100,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -25297,7 +25472,7 @@ function(t) {
             },
             43725 : {
                 id: "43725",
-                g: 284,
+                g: 16,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -25309,7 +25484,7 @@ function(t) {
             },
             43768 : {
                 id: "43768",
-                g: 250,
+                g: 236,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -25321,7 +25496,7 @@ function(t) {
             },
             43787 : {
                 id: "43787",
-                g: 316,
+                g: 310,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -25333,7 +25508,7 @@ function(t) {
             },
             43962 : {
                 id: "43962",
-                g: 509,
+                g: 168,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25345,7 +25520,7 @@ function(t) {
             },
             44059 : {
                 id: "44059",
-                g: 236,
+                g: 218,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -25357,7 +25532,7 @@ function(t) {
             },
             44103 : {
                 id: "44103",
-                g: 90,
+                g: 10,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -25369,7 +25544,7 @@ function(t) {
             },
             44134 : {
                 id: "44134",
-                g: 194,
+                g: 184,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -25381,7 +25556,7 @@ function(t) {
             },
             44183 : {
                 id: "44183",
-                g: 294,
+                g: 239,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -25393,7 +25568,7 @@ function(t) {
             },
             44184 : {
                 id: "44184",
-                g: 466,
+                g: 287,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25405,7 +25580,7 @@ function(t) {
             },
             44202 : {
                 id: "44202",
-                g: 151,
+                g: 156,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25417,7 +25592,7 @@ function(t) {
             },
             44207 : {
                 id: "44207",
-                g: 101,
+                g: 59,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -25429,7 +25604,7 @@ function(t) {
             },
             44297 : {
                 id: "44297",
-                g: 246,
+                g: 237,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -25441,7 +25616,7 @@ function(t) {
             },
             44339 : {
                 id: "44339",
-                g: 294,
+                g: 239,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -25453,7 +25628,7 @@ function(t) {
             },
             44354 : {
                 id: "44354",
-                g: 140,
+                g: 111,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -25465,7 +25640,7 @@ function(t) {
             },
             44355 : {
                 id: "44355",
-                g: 44,
+                g: 25,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -25477,7 +25652,7 @@ function(t) {
             },
             44362 : {
                 id: "44362",
-                g: 386,
+                g: 12,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -25489,7 +25664,7 @@ function(t) {
             },
             44429 : {
                 id: "44429",
-                g: 50,
+                g: 70,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -25501,7 +25676,7 @@ function(t) {
             },
             44482 : {
                 id: "44482",
-                g: 93,
+                g: 11,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -25513,7 +25688,7 @@ function(t) {
             },
             44529 : {
                 id: "44529",
-                g: 254,
+                g: 438,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -25525,7 +25700,7 @@ function(t) {
             },
             44562 : {
                 id: "44562",
-                g: 136,
+                g: 284,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -25537,7 +25712,7 @@ function(t) {
             },
             44606 : {
                 id: "44606",
-                g: 402,
+                g: 22,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25549,7 +25724,7 @@ function(t) {
             },
             44624 : {
                 id: "44624",
-                g: 205,
+                g: 194,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -25561,7 +25736,7 @@ function(t) {
             },
             44683 : {
                 id: "44683",
-                g: 103,
+                g: 158,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25573,7 +25748,7 @@ function(t) {
             },
             44723 : {
                 id: "44723",
-                g: 378,
+                g: 391,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -25585,7 +25760,7 @@ function(t) {
             },
             44797 : {
                 id: "44797",
-                g: 182,
+                g: 94,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -25597,7 +25772,7 @@ function(t) {
             },
             44799 : {
                 id: "44799",
-                g: 32,
+                g: 296,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -25609,7 +25784,7 @@ function(t) {
             },
             44908 : {
                 id: "44908",
-                g: 297,
+                g: 453,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25621,7 +25796,7 @@ function(t) {
             },
             44941 : {
                 id: "44941",
-                g: 407,
+                g: 395,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25633,7 +25808,7 @@ function(t) {
             },
             44955 : {
                 id: "44955",
-                g: 7,
+                g: 67,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -25645,7 +25820,7 @@ function(t) {
             },
             44967 : {
                 id: "44967",
-                g: 371,
+                g: 370,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25657,7 +25832,7 @@ function(t) {
             },
             44983 : {
                 id: "44983",
-                g: 7,
+                g: 67,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -25669,7 +25844,7 @@ function(t) {
             },
             45035 : {
                 id: "45035",
-                g: 350,
+                g: 336,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -25681,7 +25856,7 @@ function(t) {
             },
             45067 : {
                 id: "45067",
-                g: 499,
+                g: 444,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -25693,7 +25868,7 @@ function(t) {
             },
             45175 : {
                 id: "45175",
-                g: 6,
+                g: 83,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25705,7 +25880,7 @@ function(t) {
             },
             45227 : {
                 id: "45227",
-                g: 409,
+                g: 265,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -25717,7 +25892,7 @@ function(t) {
             },
             45272 : {
                 id: "45272",
-                g: 103,
+                g: 158,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -25729,7 +25904,7 @@ function(t) {
             },
             45313 : {
                 id: "45313",
-                g: 93,
+                g: 11,
                 o: 4,
                 m: !1,
                 oidx: 37,
@@ -25741,7 +25916,7 @@ function(t) {
             },
             45317 : {
                 id: "45317",
-                g: 390,
+                g: 162,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -25753,7 +25928,7 @@ function(t) {
             },
             45360 : {
                 id: "45360",
-                g: 105,
+                g: 212,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -25765,7 +25940,7 @@ function(t) {
             },
             45366 : {
                 id: "45366",
-                g: 136,
+                g: 284,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -25777,7 +25952,7 @@ function(t) {
             },
             45378 : {
                 id: "45378",
-                g: 106,
+                g: 30,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -25789,7 +25964,7 @@ function(t) {
             },
             45403 : {
                 id: "45403",
-                g: 330,
+                g: 65,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -25801,7 +25976,7 @@ function(t) {
             },
             45436 : {
                 id: "45436",
-                g: 242,
+                g: 37,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -25813,7 +25988,7 @@ function(t) {
             },
             45456 : {
                 id: "45456",
-                g: 21,
+                g: 61,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -25825,7 +26000,7 @@ function(t) {
             },
             45491 : {
                 id: "45491",
-                g: 484,
+                g: 29,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25837,7 +26012,7 @@ function(t) {
             },
             45593 : {
                 id: "45593",
-                g: 439,
+                g: 17,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -25849,7 +26024,7 @@ function(t) {
             },
             45680 : {
                 id: "45680",
-                g: 290,
+                g: 280,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -25861,7 +26036,7 @@ function(t) {
             },
             45696 : {
                 id: "45696",
-                g: 233,
+                g: 304,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -25873,7 +26048,7 @@ function(t) {
             },
             45788 : {
                 id: "45788",
-                g: 74,
+                g: 129,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -25885,7 +26060,7 @@ function(t) {
             },
             45827 : {
                 id: "45827",
-                g: 137,
+                g: 170,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -25897,7 +26072,7 @@ function(t) {
             },
             45838 : {
                 id: "45838",
-                g: 87,
+                g: 39,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -25909,7 +26084,7 @@ function(t) {
             },
             45887 : {
                 id: "45887",
-                g: 396,
+                g: 415,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -25921,7 +26096,7 @@ function(t) {
             },
             46092 : {
                 id: "46092",
-                g: 374,
+                g: 161,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -25933,7 +26108,7 @@ function(t) {
             },
             46127 : {
                 id: "46127",
-                g: 94,
+                g: 34,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -25945,7 +26120,7 @@ function(t) {
             },
             46136 : {
                 id: "46136",
-                g: 19,
+                g: 286,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -25957,7 +26132,7 @@ function(t) {
             },
             46277 : {
                 id: "46277",
-                g: 252,
+                g: 473,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -25969,7 +26144,7 @@ function(t) {
             },
             46289 : {
                 id: "46289",
-                g: 110,
+                g: 120,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -25981,7 +26156,7 @@ function(t) {
             },
             46292 : {
                 id: "46292",
-                g: 113,
+                g: 125,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -25993,7 +26168,7 @@ function(t) {
             },
             46340 : {
                 id: "46340",
-                g: 68,
+                g: 48,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -26005,7 +26180,7 @@ function(t) {
             },
             46344 : {
                 id: "46344",
-                g: 105,
+                g: 212,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -26017,7 +26192,7 @@ function(t) {
             },
             46408 : {
                 id: "46408",
-                g: 483,
+                g: 230,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -26029,7 +26204,7 @@ function(t) {
             },
             46413 : {
                 id: "46413",
-                g: 66,
+                g: 72,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -26041,7 +26216,7 @@ function(t) {
             },
             46469 : {
                 id: "46469",
-                g: 44,
+                g: 25,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -26053,7 +26228,7 @@ function(t) {
             },
             46578 : {
                 id: "46578",
-                g: 340,
+                g: 323,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -26065,7 +26240,7 @@ function(t) {
             },
             46636 : {
                 id: "46636",
-                g: 120,
+                g: 128,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -26077,7 +26252,7 @@ function(t) {
             },
             46726 : {
                 id: "46726",
-                g: 215,
+                g: 199,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -26089,7 +26264,7 @@ function(t) {
             },
             46730 : {
                 id: "46730",
-                g: 229,
+                g: 278,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -26101,7 +26276,7 @@ function(t) {
             },
             46756 : {
                 id: "46756",
-                g: 5,
+                g: 226,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -26113,7 +26288,7 @@ function(t) {
             },
             46842 : {
                 id: "46842",
-                g: 380,
+                g: 335,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -26125,7 +26300,7 @@ function(t) {
             },
             46871 : {
                 id: "46871",
-                g: 266,
+                g: 255,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -26137,7 +26312,7 @@ function(t) {
             },
             46882 : {
                 id: "46882",
-                g: 442,
+                g: 504,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -26149,7 +26324,7 @@ function(t) {
             },
             46896 : {
                 id: "46896",
-                g: 26,
+                g: 293,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -26161,7 +26336,7 @@ function(t) {
             },
             46897 : {
                 id: "46897",
-                g: 319,
+                g: 311,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -26173,7 +26348,7 @@ function(t) {
             },
             46910 : {
                 id: "46910",
-                g: 433,
+                g: 454,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -26185,7 +26360,7 @@ function(t) {
             },
             46952 : {
                 id: "46952",
-                g: 277,
+                g: 165,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -26197,7 +26372,7 @@ function(t) {
             },
             46965 : {
                 id: "46965",
-                g: 211,
+                g: 431,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -26209,7 +26384,7 @@ function(t) {
             },
             47030 : {
                 id: "47030",
-                g: 281,
+                g: 272,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -26221,7 +26396,7 @@ function(t) {
             },
             47062 : {
                 id: "47062",
-                g: 91,
+                g: 350,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -26233,7 +26408,7 @@ function(t) {
             },
             47065 : {
                 id: "47065",
-                g: 263,
+                g: 488,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -26245,7 +26420,7 @@ function(t) {
             },
             47175 : {
                 id: "47175",
-                g: 267,
+                g: 257,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -26257,7 +26432,7 @@ function(t) {
             },
             47251 : {
                 id: "47251",
-                g: 449,
+                g: 477,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -26269,7 +26444,7 @@ function(t) {
             },
             47306 : {
                 id: "47306",
-                g: 81,
+                g: 41,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -26281,7 +26456,7 @@ function(t) {
             },
             47312 : {
                 id: "47312",
-                g: 390,
+                g: 162,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -26293,7 +26468,7 @@ function(t) {
             },
             47321 : {
                 id: "47321",
-                g: 20,
+                g: 101,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -26305,7 +26480,7 @@ function(t) {
             },
             47366 : {
                 id: "47366",
-                g: 48,
+                g: 312,
                 o: 4,
                 m: !1,
                 oidx: 29,
@@ -26317,7 +26492,7 @@ function(t) {
             },
             47389 : {
                 id: "47389",
-                g: 354,
+                g: 60,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -26329,7 +26504,7 @@ function(t) {
             },
             47422 : {
                 id: "47422",
-                g: 194,
+                g: 184,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -26341,7 +26516,7 @@ function(t) {
             },
             47427 : {
                 id: "47427",
-                g: 15,
+                g: 19,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -26353,7 +26528,7 @@ function(t) {
             },
             47471 : {
                 id: "47471",
-                g: 460,
+                g: 276,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -26365,7 +26540,7 @@ function(t) {
             },
             47484 : {
                 id: "47484",
-                g: 128,
+                g: 141,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -26377,7 +26552,7 @@ function(t) {
             },
             47486 : {
                 id: "47486",
-                g: 34,
+                g: 316,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -26389,7 +26564,7 @@ function(t) {
             },
             47507 : {
                 id: "47507",
-                g: 289,
+                g: 222,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -26399,9 +26574,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["49929"]
             },
+            47630 : {
+                id: "47630",
+                g: 78,
+                o: 4,
+                m: !1,
+                oidx: 17,
+                not: !0,
+                ks: !1,
+                ascendancyName: "Occultist",
+                isAscendancyStart: !1,
+                out: []
+            },
             47774 : {
                 id: "47774",
-                g: 376,
+                g: 384,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -26413,7 +26600,7 @@ function(t) {
             },
             47873 : {
                 id: "47873",
-                g: 382,
+                g: 340,
                 o: 4,
                 m: !1,
                 oidx: 16,
@@ -26425,7 +26612,7 @@ function(t) {
             },
             47949 : {
                 id: "47949",
-                g: 386,
+                g: 12,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -26437,7 +26624,7 @@ function(t) {
             },
             48099 : {
                 id: "48099",
-                g: 343,
+                g: 328,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -26449,7 +26636,7 @@ function(t) {
             },
             48109 : {
                 id: "48109",
-                g: 209,
+                g: 196,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -26461,7 +26648,7 @@ function(t) {
             },
             48124 : {
                 id: "48124",
-                g: 326,
+                g: 78,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -26473,7 +26660,7 @@ function(t) {
             },
             48214 : {
                 id: "48214",
-                g: 231,
+                g: 169,
                 o: 4,
                 m: !1,
                 oidx: 14,
@@ -26485,7 +26672,7 @@ function(t) {
             },
             48239 : {
                 id: "48239",
-                g: 173,
+                g: 244,
                 o: 4,
                 m: !1,
                 oidx: 21,
@@ -26497,7 +26684,7 @@ function(t) {
             },
             48282 : {
                 id: "48282",
-                g: 15,
+                g: 19,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -26509,7 +26696,7 @@ function(t) {
             },
             48287 : {
                 id: "48287",
-                g: 212,
+                g: 197,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -26521,7 +26708,7 @@ function(t) {
             },
             48290 : {
                 id: "48290",
-                g: 67,
+                g: 28,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -26533,7 +26720,7 @@ function(t) {
             },
             48298 : {
                 id: "48298",
-                g: 469,
+                g: 501,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -26545,7 +26732,7 @@ function(t) {
             },
             48362 : {
                 id: "48362",
-                g: 399,
+                g: 426,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -26557,7 +26744,7 @@ function(t) {
             },
             48423 : {
                 id: "48423",
-                g: 181,
+                g: 79,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -26569,7 +26756,7 @@ function(t) {
             },
             48438 : {
                 id: "48438",
-                g: 55,
+                g: 40,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -26581,7 +26768,7 @@ function(t) {
             },
             48477 : {
                 id: "48477",
-                g: 87,
+                g: 39,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -26593,7 +26780,7 @@ function(t) {
             },
             48480 : {
                 id: "48480",
-                g: 34,
+                g: 316,
                 o: 4,
                 m: !1,
                 oidx: 3,
@@ -26605,7 +26792,7 @@ function(t) {
             },
             48513 : {
                 id: "48513",
-                g: 117,
+                g: 127,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -26617,7 +26804,7 @@ function(t) {
             },
             48514 : {
                 id: "48514",
-                g: 298,
+                g: 289,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -26629,7 +26816,7 @@ function(t) {
             },
             48614 : {
                 id: "48614",
-                g: 179,
+                g: 386,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -26641,7 +26828,7 @@ function(t) {
             },
             48698 : {
                 id: "48698",
-                g: 99,
+                g: 85,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -26653,7 +26840,7 @@ function(t) {
             },
             48719 : {
                 id: "48719",
-                g: 318,
+                g: 253,
                 o: 4,
                 m: !1,
                 oidx: 13,
@@ -26665,7 +26852,7 @@ function(t) {
             },
             48759 : {
                 id: "48759",
-                g: 96,
+                g: 475,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -26677,7 +26864,7 @@ function(t) {
             },
             48760 : {
                 id: "48760",
-                g: 118,
+                g: 140,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -26689,7 +26876,7 @@ function(t) {
             },
             48768 : {
                 id: "48768",
-                g: 21,
+                g: 61,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -26701,7 +26888,7 @@ function(t) {
             },
             48778 : {
                 id: "48778",
-                g: 178,
+                g: 277,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -26713,7 +26900,7 @@ function(t) {
             },
             48807 : {
                 id: "48807",
-                g: 359,
+                g: 349,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -26725,7 +26912,7 @@ function(t) {
             },
             48828 : {
                 id: "48828",
-                g: 91,
+                g: 350,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -26737,7 +26924,7 @@ function(t) {
             },
             48878 : {
                 id: "48878",
-                g: 300,
+                g: 117,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -26749,7 +26936,7 @@ function(t) {
             },
             48904 : {
                 id: "48904",
-                g: 132,
+                g: 305,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -26761,7 +26948,7 @@ function(t) {
             },
             48958 : {
                 id: "48958",
-                g: 273,
+                g: 38,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -26773,7 +26960,7 @@ function(t) {
             },
             49047 : {
                 id: "49047",
-                g: 341,
+                g: 325,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -26797,7 +26984,7 @@ function(t) {
             },
             49153 : {
                 id: "49153",
-                g: 246,
+                g: 237,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -26809,7 +26996,7 @@ function(t) {
             },
             49178 : {
                 id: "49178",
-                g: 73,
+                g: 107,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -26821,7 +27008,7 @@ function(t) {
             },
             49254 : {
                 id: "49254",
-                g: 497,
+                g: 118,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -26833,7 +27020,7 @@ function(t) {
             },
             49270 : {
                 id: "49270",
-                g: 113,
+                g: 125,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -26845,7 +27032,7 @@ function(t) {
             },
             49308 : {
                 id: "49308",
-                g: 325,
+                g: 148,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -26857,7 +27044,7 @@ function(t) {
             },
             49318 : {
                 id: "49318",
-                g: 72,
+                g: 91,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -26869,7 +27056,7 @@ function(t) {
             },
             49343 : {
                 id: "49343",
-                g: 101,
+                g: 59,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -26881,7 +27068,7 @@ function(t) {
             },
             49379 : {
                 id: "49379",
-                g: 498,
+                g: 322,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -26893,7 +27080,7 @@ function(t) {
             },
             49408 : {
                 id: "49408",
-                g: 99,
+                g: 85,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -26905,7 +27092,7 @@ function(t) {
             },
             49412 : {
                 id: "49412",
-                g: 272,
+                g: 376,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -26917,7 +27104,7 @@ function(t) {
             },
             49415 : {
                 id: "49415",
-                g: 67,
+                g: 28,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -26929,7 +27116,7 @@ function(t) {
             },
             49459 : {
                 id: "49459",
-                g: 314,
+                g: 302,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -26941,7 +27128,7 @@ function(t) {
             },
             49481 : {
                 id: "49481",
-                g: 111,
+                g: 397,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -26953,7 +27140,7 @@ function(t) {
             },
             49532 : {
                 id: "49532",
-                g: 147,
+                g: 380,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -26965,7 +27152,7 @@ function(t) {
             },
             49538 : {
                 id: "49538",
-                g: 229,
+                g: 278,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -26977,7 +27164,7 @@ function(t) {
             },
             49547 : {
                 id: "49547",
-                g: 201,
+                g: 191,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -26989,7 +27176,7 @@ function(t) {
             },
             49568 : {
                 id: "49568",
-                g: 332,
+                g: 317,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -27001,7 +27188,7 @@ function(t) {
             },
             49571 : {
                 id: "49571",
-                g: 82,
+                g: 62,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -27013,7 +27200,7 @@ function(t) {
             },
             49588 : {
                 id: "49588",
-                g: 44,
+                g: 25,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -27025,7 +27212,7 @@ function(t) {
             },
             49605 : {
                 id: "49605",
-                g: 464,
+                g: 57,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27037,7 +27224,7 @@ function(t) {
             },
             49621 : {
                 id: "49621",
-                g: 357,
+                g: 345,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -27049,7 +27236,7 @@ function(t) {
             },
             49624 : {
                 id: "49624",
-                g: 250,
+                g: 236,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -27061,7 +27248,7 @@ function(t) {
             },
             49651 : {
                 id: "49651",
-                g: 427,
+                g: 445,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -27073,7 +27260,7 @@ function(t) {
             },
             49779 : {
                 id: "49779",
-                g: 300,
+                g: 117,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -27085,7 +27272,7 @@ function(t) {
             },
             49806 : {
                 id: "49806",
-                g: 473,
+                g: 433,
                 o: 4,
                 m: !1,
                 oidx: 7,
@@ -27097,7 +27284,7 @@ function(t) {
             },
             49900 : {
                 id: "49900",
-                g: 177,
+                g: 185,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27109,7 +27296,7 @@ function(t) {
             },
             49929 : {
                 id: "49929",
-                g: 289,
+                g: 222,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -27121,7 +27308,7 @@ function(t) {
             },
             49939 : {
                 id: "49939",
-                g: 18,
+                g: 63,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -27129,11 +27316,11 @@ function(t) {
                 ks: !1,
                 ascendancyName: null,
                 isAscendancyStart: !1,
-                out: ["41970"]
+                out: ["41970", "42343"]
             },
             49957 : {
                 id: "49957",
-                g: 76,
+                g: 100,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -27157,7 +27344,7 @@ function(t) {
             },
             49978 : {
                 id: "49978",
-                g: 287,
+                g: 275,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27169,7 +27356,7 @@ function(t) {
             },
             50024 : {
                 id: "50024",
-                g: 132,
+                g: 305,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -27181,7 +27368,7 @@ function(t) {
             },
             50029 : {
                 id: "50029",
-                g: 78,
+                g: 201,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -27193,7 +27380,7 @@ function(t) {
             },
             50150 : {
                 id: "50150",
-                g: 242,
+                g: 37,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -27205,7 +27392,7 @@ function(t) {
             },
             50197 : {
                 id: "50197",
-                g: 375,
+                g: 383,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27217,7 +27404,7 @@ function(t) {
             },
             50264 : {
                 id: "50264",
-                g: 134,
+                g: 144,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -27229,7 +27416,7 @@ function(t) {
             },
             50306 : {
                 id: "50306",
-                g: 305,
+                g: 241,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -27241,7 +27428,7 @@ function(t) {
             },
             50338 : {
                 id: "50338",
-                g: 121,
+                g: 428,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27253,7 +27440,7 @@ function(t) {
             },
             50360 : {
                 id: "50360",
-                g: 55,
+                g: 40,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -27265,7 +27452,7 @@ function(t) {
             },
             50422 : {
                 id: "50422",
-                g: 479,
+                g: 496,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -27277,7 +27464,7 @@ function(t) {
             },
             50459 : {
                 id: "50459",
-                g: 350,
+                g: 336,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27289,7 +27476,7 @@ function(t) {
             },
             50472 : {
                 id: "50472",
-                g: 126,
+                g: 136,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -27301,7 +27488,7 @@ function(t) {
             },
             50515 : {
                 id: "50515",
-                g: 237,
+                g: 457,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -27313,7 +27500,7 @@ function(t) {
             },
             50557 : {
                 id: "50557",
-                g: 23,
+                g: 331,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -27325,7 +27512,7 @@ function(t) {
             },
             50570 : {
                 id: "50570",
-                g: 481,
+                g: 285,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27337,7 +27524,7 @@ function(t) {
             },
             50692 : {
                 id: "50692",
-                g: 34,
+                g: 316,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -27349,7 +27536,7 @@ function(t) {
             },
             50858 : {
                 id: "50858",
-                g: 100,
+                g: 299,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -27361,7 +27548,7 @@ function(t) {
             },
             50862 : {
                 id: "50862",
-                g: 204,
+                g: 180,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27373,7 +27560,7 @@ function(t) {
             },
             50904 : {
                 id: "50904",
-                g: 267,
+                g: 257,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -27385,10 +27572,10 @@ function(t) {
             },
             50935 : {
                 id: "50935",
-                g: 326,
+                g: 78,
                 o: 4,
                 m: !1,
-                oidx: 14,
+                oidx: 12,
                 not: !1,
                 ks: !1,
                 ascendancyName: "Occultist",
@@ -27397,7 +27584,7 @@ function(t) {
             },
             50986 : {
                 id: "50986",
-                g: 354,
+                g: 60,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27409,7 +27596,7 @@ function(t) {
             },
             51101 : {
                 id: "51101",
-                g: 311,
+                g: 93,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -27421,7 +27608,7 @@ function(t) {
             },
             51146 : {
                 id: "51146",
-                g: 300,
+                g: 117,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -27433,7 +27620,7 @@ function(t) {
             },
             51212 : {
                 id: "51212",
-                g: 110,
+                g: 120,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -27445,7 +27632,7 @@ function(t) {
             },
             51220 : {
                 id: "51220",
-                g: 87,
+                g: 39,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -27457,7 +27644,7 @@ function(t) {
             },
             51235 : {
                 id: "51235",
-                g: 335,
+                g: 45,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -27469,7 +27656,7 @@ function(t) {
             },
             51287 : {
                 id: "51287",
-                g: 24,
+                g: 50,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -27481,7 +27668,7 @@ function(t) {
             },
             51291 : {
                 id: "51291",
-                g: 181,
+                g: 79,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -27493,7 +27680,7 @@ function(t) {
             },
             51391 : {
                 id: "51391",
-                g: 382,
+                g: 340,
                 o: 4,
                 m: !1,
                 oidx: 27,
@@ -27505,7 +27692,7 @@ function(t) {
             },
             51404 : {
                 id: "51404",
-                g: 260,
+                g: 250,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -27517,7 +27704,7 @@ function(t) {
             },
             51420 : {
                 id: "51420",
-                g: 111,
+                g: 397,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -27529,7 +27716,7 @@ function(t) {
             },
             51440 : {
                 id: "51440",
-                g: 223,
+                g: 339,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -27541,7 +27728,7 @@ function(t) {
             },
             51462 : {
                 id: "51462",
-                g: 48,
+                g: 312,
                 o: 4,
                 m: !1,
                 oidx: 31,
@@ -27551,9 +27738,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["47366"]
             },
+            51492 : {
+                id: "51492",
+                g: 94,
+                o: 3,
+                m: !1,
+                oidx: 6,
+                not: !0,
+                ks: !1,
+                ascendancyName: "Hierophant",
+                isAscendancyStart: !1,
+                out: []
+            },
             51517 : {
                 id: "51517",
-                g: 341,
+                g: 325,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -27565,7 +27764,7 @@ function(t) {
             },
             51524 : {
                 id: "51524",
-                g: 300,
+                g: 117,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -27577,7 +27776,7 @@ function(t) {
             },
             51559 : {
                 id: "51559",
-                g: 15,
+                g: 19,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -27589,7 +27788,7 @@ function(t) {
             },
             51782 : {
                 id: "51782",
-                g: 180,
+                g: 193,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -27601,7 +27800,7 @@ function(t) {
             },
             51786 : {
                 id: "51786",
-                g: 54,
+                g: 187,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -27613,7 +27812,7 @@ function(t) {
             },
             51856 : {
                 id: "51856",
-                g: 117,
+                g: 127,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -27625,7 +27824,7 @@ function(t) {
             },
             51881 : {
                 id: "51881",
-                g: 334,
+                g: 46,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -27637,7 +27836,7 @@ function(t) {
             },
             51883 : {
                 id: "51883",
-                g: 220,
+                g: 121,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -27649,7 +27848,7 @@ function(t) {
             },
             51923 : {
                 id: "51923",
-                g: 178,
+                g: 277,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -27659,9 +27858,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["48778"]
             },
+            51954 : {
+                id: "51954",
+                g: 515,
+                o: 1,
+                m: !1,
+                oidx: 3,
+                not: !1,
+                ks: !1,
+                ascendancyName: null,
+                isAscendancyStart: !1,
+                out: ["29861"]
+            },
             51998 : {
                 id: "51998",
-                g: 247,
+                g: 103,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -27673,7 +27884,7 @@ function(t) {
             },
             52157 : {
                 id: "52157",
-                g: 239,
+                g: 223,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -27685,7 +27896,7 @@ function(t) {
             },
             52213 : {
                 id: "52213",
-                g: 196,
+                g: 188,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -27697,7 +27908,7 @@ function(t) {
             },
             52230 : {
                 id: "52230",
-                g: 316,
+                g: 310,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -27709,7 +27920,7 @@ function(t) {
             },
             52407 : {
                 id: "52407",
-                g: 106,
+                g: 30,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -27721,7 +27932,7 @@ function(t) {
             },
             52412 : {
                 id: "52412",
-                g: 76,
+                g: 100,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -27733,7 +27944,7 @@ function(t) {
             },
             52502 : {
                 id: "52502",
-                g: 83,
+                g: 102,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -27745,7 +27956,7 @@ function(t) {
             },
             52575 : {
                 id: "52575",
-                g: 118,
+                g: 140,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -27757,7 +27968,7 @@ function(t) {
             },
             52632 : {
                 id: "52632",
-                g: 281,
+                g: 272,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -27769,7 +27980,7 @@ function(t) {
             },
             52714 : {
                 id: "52714",
-                g: 170,
+                g: 207,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27781,7 +27992,7 @@ function(t) {
             },
             52848 : {
                 id: "52848",
-                g: 300,
+                g: 117,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -27793,7 +28004,7 @@ function(t) {
             },
             52904 : {
                 id: "52904",
-                g: 333,
+                g: 389,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -27805,7 +28016,7 @@ function(t) {
             },
             53002 : {
                 id: "53002",
-                g: 200,
+                g: 203,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -27817,7 +28028,7 @@ function(t) {
             },
             53013 : {
                 id: "53013",
-                g: 130,
+                g: 149,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -27827,9 +28038,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: []
             },
+            53018 : {
+                id: "53018",
+                g: 402,
+                o: 2,
+                m: !1,
+                oidx: 8,
+                not: !1,
+                ks: !1,
+                ascendancyName: null,
+                isAscendancyStart: !1,
+                out: ["15973"]
+            },
             53042 : {
                 id: "53042",
-                g: 293,
+                g: 332,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -27841,7 +28064,7 @@ function(t) {
             },
             53086 : {
                 id: "53086",
-                g: 93,
+                g: 11,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -27853,7 +28076,7 @@ function(t) {
             },
             53095 : {
                 id: "53095",
-                g: 34,
+                g: 316,
                 o: 4,
                 m: !1,
                 oidx: 17,
@@ -27865,7 +28088,7 @@ function(t) {
             },
             53114 : {
                 id: "53114",
-                g: 439,
+                g: 17,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -27877,7 +28100,7 @@ function(t) {
             },
             53118 : {
                 id: "53118",
-                g: 50,
+                g: 70,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -27889,7 +28112,7 @@ function(t) {
             },
             53213 : {
                 id: "53213",
-                g: 208,
+                g: 306,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27901,7 +28124,7 @@ function(t) {
             },
             53225 : {
                 id: "53225",
-                g: 385,
+                g: 398,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -27913,7 +28136,7 @@ function(t) {
             },
             53279 : {
                 id: "53279",
-                g: 304,
+                g: 297,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -27925,7 +28148,7 @@ function(t) {
             },
             53421 : {
                 id: "53421",
-                g: 362,
+                g: 178,
                 o: 4,
                 m: !1,
                 oidx: 27,
@@ -27937,7 +28160,7 @@ function(t) {
             },
             53456 : {
                 id: "53456",
-                g: 133,
+                g: 142,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27949,7 +28172,7 @@ function(t) {
             },
             53493 : {
                 id: "53493",
-                g: 349,
+                g: 481,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -27961,7 +28184,7 @@ function(t) {
             },
             53558 : {
                 id: "53558",
-                g: 405,
+                g: 359,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -27973,7 +28196,7 @@ function(t) {
             },
             53732 : {
                 id: "53732",
-                g: 14,
+                g: 379,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -27985,7 +28208,7 @@ function(t) {
             },
             53757 : {
                 id: "53757",
-                g: 257,
+                g: 248,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -27997,7 +28220,7 @@ function(t) {
             },
             53793 : {
                 id: "53793",
-                g: 63,
+                g: 47,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -28009,7 +28232,7 @@ function(t) {
             },
             53816 : {
                 id: "53816",
-                g: 247,
+                g: 103,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -28021,7 +28244,7 @@ function(t) {
             },
             53884 : {
                 id: "53884",
-                g: 425,
+                g: 7,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -28033,7 +28256,7 @@ function(t) {
             },
             53992 : {
                 id: "53992",
-                g: 330,
+                g: 65,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -28045,7 +28268,7 @@ function(t) {
             },
             54016 : {
                 id: "54016",
-                g: 105,
+                g: 212,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -28057,7 +28280,7 @@ function(t) {
             },
             54043 : {
                 id: "54043",
-                g: 296,
+                g: 288,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -28069,7 +28292,7 @@ function(t) {
             },
             54127 : {
                 id: "54127",
-                g: 153,
+                g: 404,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -28081,7 +28304,7 @@ function(t) {
             },
             54142 : {
                 id: "54142",
-                g: 477,
+                g: 245,
                 o: 4,
                 m: !1,
                 oidx: 10,
@@ -28093,7 +28316,7 @@ function(t) {
             },
             54159 : {
                 id: "54159",
-                g: 318,
+                g: 253,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -28105,7 +28328,7 @@ function(t) {
             },
             54267 : {
                 id: "54267",
-                g: 75,
+                g: 99,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -28117,7 +28340,7 @@ function(t) {
             },
             54268 : {
                 id: "54268",
-                g: 201,
+                g: 191,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -28129,7 +28352,7 @@ function(t) {
             },
             54279 : {
                 id: "54279",
-                g: 382,
+                g: 340,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -28141,7 +28364,7 @@ function(t) {
             },
             54307 : {
                 id: "54307",
-                g: 487,
+                g: 502,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -28153,7 +28376,7 @@ function(t) {
             },
             54338 : {
                 id: "54338",
-                g: 110,
+                g: 120,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -28165,7 +28388,7 @@ function(t) {
             },
             54354 : {
                 id: "54354",
-                g: 196,
+                g: 188,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -28177,7 +28400,7 @@ function(t) {
             },
             54396 : {
                 id: "54396",
-                g: 269,
+                g: 262,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -28189,7 +28412,7 @@ function(t) {
             },
             54415 : {
                 id: "54415",
-                g: 241,
+                g: 390,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -28201,7 +28424,7 @@ function(t) {
             },
             54447 : {
                 id: "54447",
-                g: 97,
+                g: 114,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -28213,7 +28436,7 @@ function(t) {
             },
             54574 : {
                 id: "54574",
-                g: 45,
+                g: 256,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -28225,7 +28448,7 @@ function(t) {
             },
             54597 : {
                 id: "54597",
-                g: 148,
+                g: 313,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -28237,7 +28460,7 @@ function(t) {
             },
             54645 : {
                 id: "54645",
-                g: 106,
+                g: 30,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -28249,7 +28472,7 @@ function(t) {
             },
             54657 : {
                 id: "54657",
-                g: 320,
+                g: 231,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -28261,7 +28484,7 @@ function(t) {
             },
             54667 : {
                 id: "54667",
-                g: 15,
+                g: 19,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -28273,7 +28496,7 @@ function(t) {
             },
             54694 : {
                 id: "54694",
-                g: 32,
+                g: 296,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -28285,7 +28508,7 @@ function(t) {
             },
             54713 : {
                 id: "54713",
-                g: 130,
+                g: 149,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -28297,7 +28520,7 @@ function(t) {
             },
             54776 : {
                 id: "54776",
-                g: 55,
+                g: 40,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -28309,7 +28532,7 @@ function(t) {
             },
             54791 : {
                 id: "54791",
-                g: 332,
+                g: 317,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -28321,7 +28544,7 @@ function(t) {
             },
             54872 : {
                 id: "54872",
-                g: 35,
+                g: 89,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -28333,7 +28556,7 @@ function(t) {
             },
             54877 : {
                 id: "54877",
-                g: 161,
+                g: 86,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -28345,7 +28568,7 @@ function(t) {
             },
             54922 : {
                 id: "54922",
-                g: 424,
+                g: 152,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -28357,7 +28580,7 @@ function(t) {
             },
             54974 : {
                 id: "54974",
-                g: 45,
+                g: 256,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -28369,7 +28592,7 @@ function(t) {
             },
             55085 : {
                 id: "55085",
-                g: 200,
+                g: 203,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -28381,7 +28604,7 @@ function(t) {
             },
             55146 : {
                 id: "55146",
-                g: 277,
+                g: 165,
                 o: 4,
                 m: !1,
                 oidx: 10,
@@ -28393,7 +28616,7 @@ function(t) {
             },
             55166 : {
                 id: "55166",
-                g: 67,
+                g: 28,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -28405,7 +28628,7 @@ function(t) {
             },
             55190 : {
                 id: "55190",
-                g: 85,
+                g: 344,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -28417,7 +28640,7 @@ function(t) {
             },
             55236 : {
                 id: "55236",
-                g: 41,
+                g: 263,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -28429,7 +28652,7 @@ function(t) {
             },
             55247 : {
                 id: "55247",
-                g: 413,
+                g: 76,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -28441,7 +28664,7 @@ function(t) {
             },
             55307 : {
                 id: "55307",
-                g: 336,
+                g: 319,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -28453,7 +28676,7 @@ function(t) {
             },
             55332 : {
                 id: "55332",
-                g: 219,
+                g: 200,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -28465,7 +28688,7 @@ function(t) {
             },
             55373 : {
                 id: "55373",
-                g: 91,
+                g: 350,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -28477,7 +28700,7 @@ function(t) {
             },
             55380 : {
                 id: "55380",
-                g: 137,
+                g: 170,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -28489,7 +28712,7 @@ function(t) {
             },
             55392 : {
                 id: "55392",
-                g: 200,
+                g: 203,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -28501,7 +28724,7 @@ function(t) {
             },
             55414 : {
                 id: "55414",
-                g: 194,
+                g: 184,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -28513,7 +28736,7 @@ function(t) {
             },
             55485 : {
                 id: "55485",
-                g: 253,
+                g: 240,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -28525,7 +28748,7 @@ function(t) {
             },
             55509 : {
                 id: "55509",
-                g: 362,
+                g: 178,
                 o: 4,
                 m: !1,
                 oidx: 37,
@@ -28537,7 +28760,7 @@ function(t) {
             },
             55563 : {
                 id: "55563",
-                g: 108,
+                g: 119,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -28549,7 +28772,7 @@ function(t) {
             },
             55571 : {
                 id: "55571",
-                g: 285,
+                g: 290,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -28561,7 +28784,7 @@ function(t) {
             },
             55604 : {
                 id: "55604",
-                g: 335,
+                g: 45,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -28573,7 +28796,7 @@ function(t) {
             },
             55643 : {
                 id: "55643",
-                g: 218,
+                g: 341,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -28585,7 +28808,7 @@ function(t) {
             },
             55646 : {
                 id: "55646",
-                g: 318,
+                g: 253,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -28597,7 +28820,7 @@ function(t) {
             },
             55647 : {
                 id: "55647",
-                g: 44,
+                g: 25,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -28609,7 +28832,7 @@ function(t) {
             },
             55649 : {
                 id: "55649",
-                g: 98,
+                g: 412,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -28621,7 +28844,7 @@ function(t) {
             },
             55676 : {
                 id: "55676",
-                g: 309,
+                g: 95,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -28633,7 +28856,7 @@ function(t) {
             },
             55686 : {
                 id: "55686",
-                g: 173,
+                g: 244,
                 o: 4,
                 m: !1,
                 oidx: 23,
@@ -28645,7 +28868,7 @@ function(t) {
             },
             55750 : {
                 id: "55750",
-                g: 334,
+                g: 46,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -28657,7 +28880,7 @@ function(t) {
             },
             55866 : {
                 id: "55866",
-                g: 390,
+                g: 162,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -28669,7 +28892,7 @@ function(t) {
             },
             55867 : {
                 id: "55867",
-                g: 41,
+                g: 263,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -28681,7 +28904,7 @@ function(t) {
             },
             55871 : {
                 id: "55871",
-                g: 100,
+                g: 299,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -28693,7 +28916,7 @@ function(t) {
             },
             55906 : {
                 id: "55906",
-                g: 181,
+                g: 79,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -28705,7 +28928,7 @@ function(t) {
             },
             55934 : {
                 id: "55934",
-                g: 77,
+                g: 33,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -28717,7 +28940,7 @@ function(t) {
             },
             55985 : {
                 id: "55985",
-                g: 93,
+                g: 11,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -28729,7 +28952,7 @@ function(t) {
             },
             55993 : {
                 id: "55993",
-                g: 471,
+                g: 109,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -28741,7 +28964,7 @@ function(t) {
             },
             56001 : {
                 id: "56001",
-                g: 504,
+                g: 499,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -28753,7 +28976,7 @@ function(t) {
             },
             56029 : {
                 id: "56029",
-                g: 197,
+                g: 189,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -28765,7 +28988,7 @@ function(t) {
             },
             56066 : {
                 id: "56066",
-                g: 296,
+                g: 288,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -28777,7 +29000,7 @@ function(t) {
             },
             56075 : {
                 id: "56075",
-                g: 280,
+                g: 269,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -28789,7 +29012,7 @@ function(t) {
             },
             56090 : {
                 id: "56090",
-                g: 99,
+                g: 85,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -28801,7 +29024,7 @@ function(t) {
             },
             56143 : {
                 id: "56143",
-                g: 366,
+                g: 171,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -28813,7 +29036,7 @@ function(t) {
             },
             56149 : {
                 id: "56149",
-                g: 125,
+                g: 135,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -28825,7 +29048,7 @@ function(t) {
             },
             56153 : {
                 id: "56153",
-                g: 21,
+                g: 61,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -28837,7 +29060,7 @@ function(t) {
             },
             56158 : {
                 id: "56158",
-                g: 304,
+                g: 297,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -28849,7 +29072,7 @@ function(t) {
             },
             56174 : {
                 id: "56174",
-                g: 194,
+                g: 184,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -28859,9 +29082,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["38864", "22261"]
             },
+            56186 : {
+                id: "56186",
+                g: 218,
+                o: 2,
+                m: !1,
+                oidx: 8,
+                not: !1,
+                ks: !1,
+                ascendancyName: null,
+                isAscendancyStart: !1,
+                out: ["11162"]
+            },
             56231 : {
                 id: "56231",
-                g: 201,
+                g: 191,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -28873,7 +29108,7 @@ function(t) {
             },
             56276 : {
                 id: "56276",
-                g: 302,
+                g: 295,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -28885,7 +29120,7 @@ function(t) {
             },
             56295 : {
                 id: "56295",
-                g: 428,
+                g: 487,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -28897,7 +29132,7 @@ function(t) {
             },
             56305 : {
                 id: "56305",
-                g: 38,
+                g: 108,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -28909,7 +29144,7 @@ function(t) {
             },
             56355 : {
                 id: "56355",
-                g: 406,
+                g: 228,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -28921,7 +29156,7 @@ function(t) {
             },
             56359 : {
                 id: "56359",
-                g: 40,
+                g: 75,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -28933,7 +29168,7 @@ function(t) {
             },
             56370 : {
                 id: "56370",
-                g: 237,
+                g: 457,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -28945,7 +29180,7 @@ function(t) {
             },
             56381 : {
                 id: "56381",
-                g: 72,
+                g: 91,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -28957,7 +29192,7 @@ function(t) {
             },
             56435 : {
                 id: "56435",
-                g: 36,
+                g: 77,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -28969,7 +29204,7 @@ function(t) {
             },
             56461 : {
                 id: "56461",
-                g: 382,
+                g: 340,
                 o: 4,
                 m: !1,
                 oidx: 13,
@@ -28981,7 +29216,7 @@ function(t) {
             },
             56509 : {
                 id: "56509",
-                g: 196,
+                g: 188,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -28993,7 +29228,7 @@ function(t) {
             },
             56589 : {
                 id: "56589",
-                g: 52,
+                g: 32,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -29005,7 +29240,7 @@ function(t) {
             },
             56646 : {
                 id: "56646",
-                g: 492,
+                g: 5,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -29017,7 +29252,7 @@ function(t) {
             },
             56648 : {
                 id: "56648",
-                g: 20,
+                g: 101,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -29029,7 +29264,7 @@ function(t) {
             },
             56671 : {
                 id: "56671",
-                g: 386,
+                g: 12,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -29041,7 +29276,7 @@ function(t) {
             },
             56716 : {
                 id: "56716",
-                g: 44,
+                g: 25,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -29053,7 +29288,7 @@ function(t) {
             },
             56722 : {
                 id: "56722",
-                g: 180,
+                g: 193,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -29065,7 +29300,7 @@ function(t) {
             },
             56744 : {
                 id: "56744",
-                g: 444,
+                g: 172,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -29077,7 +29312,7 @@ function(t) {
             },
             56789 : {
                 id: "56789",
-                g: 246,
+                g: 237,
                 o: 4,
                 m: !1,
                 oidx: 15,
@@ -29089,7 +29324,7 @@ function(t) {
             },
             56803 : {
                 id: "56803",
-                g: 409,
+                g: 265,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -29101,7 +29336,7 @@ function(t) {
             },
             56807 : {
                 id: "56807",
-                g: 92,
+                g: 18,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -29113,7 +29348,7 @@ function(t) {
             },
             56856 : {
                 id: "56856",
-                g: 93,
+                g: 11,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -29125,10 +29360,10 @@ function(t) {
             },
             56967 : {
                 id: "56967",
-                g: 284,
+                g: 16,
                 o: 4,
                 m: !1,
-                oidx: 8,
+                oidx: 6,
                 not: !0,
                 ks: !1,
                 ascendancyName: "Champion",
@@ -29137,7 +29372,7 @@ function(t) {
             },
             56982 : {
                 id: "56982",
-                g: 5,
+                g: 226,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -29149,7 +29384,7 @@ function(t) {
             },
             57001 : {
                 id: "57001",
-                g: 194,
+                g: 184,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -29161,7 +29396,7 @@ function(t) {
             },
             57052 : {
                 id: "57052",
-                g: 478,
+                g: 403,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -29173,7 +29408,7 @@ function(t) {
             },
             57061 : {
                 id: "57061",
-                g: 42,
+                g: 4,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -29185,7 +29420,7 @@ function(t) {
             },
             57080 : {
                 id: "57080",
-                g: 357,
+                g: 345,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -29197,7 +29432,7 @@ function(t) {
             },
             57196 : {
                 id: "57196",
-                g: 368,
+                g: 361,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -29209,7 +29444,7 @@ function(t) {
             },
             57197 : {
                 id: "57197",
-                g: 382,
+                g: 340,
                 o: 3,
                 m: !1,
                 oidx: 7,
@@ -29221,7 +29456,7 @@ function(t) {
             },
             57199 : {
                 id: "57199",
-                g: 260,
+                g: 250,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -29233,7 +29468,7 @@ function(t) {
             },
             57222 : {
                 id: "57222",
-                g: 231,
+                g: 169,
                 o: 4,
                 m: !1,
                 oidx: 8,
@@ -29245,7 +29480,7 @@ function(t) {
             },
             57226 : {
                 id: "57226",
-                g: 97,
+                g: 114,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -29257,7 +29492,7 @@ function(t) {
             },
             57240 : {
                 id: "57240",
-                g: 343,
+                g: 328,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -29269,7 +29504,7 @@ function(t) {
             },
             57248 : {
                 id: "57248",
-                g: 87,
+                g: 39,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -29281,7 +29516,7 @@ function(t) {
             },
             57264 : {
                 id: "57264",
-                g: 97,
+                g: 114,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -29293,7 +29528,7 @@ function(t) {
             },
             57266 : {
                 id: "57266",
-                g: 94,
+                g: 34,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -29305,7 +29540,7 @@ function(t) {
             },
             57278 : {
                 id: "57278",
-                g: 220,
+                g: 121,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -29317,7 +29552,7 @@ function(t) {
             },
             57279 : {
                 id: "57279",
-                g: 489,
+                g: 98,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -29329,7 +29564,7 @@ function(t) {
             },
             57331 : {
                 id: "57331",
-                g: 41,
+                g: 263,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -29341,7 +29576,7 @@ function(t) {
             },
             57362 : {
                 id: "57362",
-                g: 44,
+                g: 25,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -29353,7 +29588,7 @@ function(t) {
             },
             57429 : {
                 id: "57429",
-                g: 161,
+                g: 86,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -29365,7 +29600,7 @@ function(t) {
             },
             57493 : {
                 id: "57493",
-                g: 74,
+                g: 129,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -29377,7 +29612,7 @@ function(t) {
             },
             57503 : {
                 id: "57503",
-                g: 35,
+                g: 89,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -29389,7 +29624,7 @@ function(t) {
             },
             57539 : {
                 id: "57539",
-                g: 366,
+                g: 171,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -29401,7 +29636,7 @@ function(t) {
             },
             57560 : {
                 id: "57560",
-                g: 132,
+                g: 305,
                 o: 4,
                 m: !1,
                 oidx: 9,
@@ -29413,7 +29648,7 @@ function(t) {
             },
             57562 : {
                 id: "57562",
-                g: 266,
+                g: 255,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -29425,7 +29660,7 @@ function(t) {
             },
             57736 : {
                 id: "57736",
-                g: 162,
+                g: 291,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -29437,7 +29672,7 @@ function(t) {
             },
             57782 : {
                 id: "57782",
-                g: 201,
+                g: 191,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -29449,7 +29684,7 @@ function(t) {
             },
             57819 : {
                 id: "57819",
-                g: 383,
+                g: 394,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -29461,7 +29696,7 @@ function(t) {
             },
             57839 : {
                 id: "57839",
-                g: 323,
+                g: 251,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -29473,7 +29708,7 @@ function(t) {
             },
             57900 : {
                 id: "57900",
-                g: 405,
+                g: 359,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -29485,7 +29720,7 @@ function(t) {
             },
             57923 : {
                 id: "57923",
-                g: 5,
+                g: 226,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -29497,7 +29732,7 @@ function(t) {
             },
             57950 : {
                 id: "57950",
-                g: 266,
+                g: 255,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -29509,7 +29744,7 @@ function(t) {
             },
             57953 : {
                 id: "57953",
-                g: 82,
+                g: 62,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -29521,7 +29756,7 @@ function(t) {
             },
             57969 : {
                 id: "57969",
-                g: 392,
+                g: 64,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -29533,7 +29768,7 @@ function(t) {
             },
             57984 : {
                 id: "57984",
-                g: 90,
+                g: 10,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -29545,7 +29780,7 @@ function(t) {
             },
             58029 : {
                 id: "58029",
-                g: 180,
+                g: 193,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -29557,7 +29792,7 @@ function(t) {
             },
             58069 : {
                 id: "58069",
-                g: 110,
+                g: 120,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -29569,7 +29804,7 @@ function(t) {
             },
             58103 : {
                 id: "58103",
-                g: 78,
+                g: 201,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -29581,7 +29816,7 @@ function(t) {
             },
             58157 : {
                 id: "58157",
-                g: 14,
+                g: 379,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -29593,10 +29828,10 @@ function(t) {
             },
             58198 : {
                 id: "58198",
-                g: 236,
+                g: 218,
                 o: 2,
                 m: !1,
-                oidx: 9,
+                oidx: 0,
                 not: !0,
                 ks: !1,
                 ascendancyName: null,
@@ -29605,7 +29840,7 @@ function(t) {
             },
             58218 : {
                 id: "58218",
-                g: 39,
+                g: 155,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -29617,7 +29852,7 @@ function(t) {
             },
             58229 : {
                 id: "58229",
-                g: 173,
+                g: 244,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -29629,7 +29864,7 @@ function(t) {
             },
             58244 : {
                 id: "58244",
-                g: 274,
+                g: 266,
                 o: 4,
                 m: !1,
                 oidx: 7,
@@ -29641,7 +29876,7 @@ function(t) {
             },
             58271 : {
                 id: "58271",
-                g: 410,
+                g: 425,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -29653,7 +29888,7 @@ function(t) {
             },
             58402 : {
                 id: "58402",
-                g: 225,
+                g: 209,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -29665,7 +29900,7 @@ function(t) {
             },
             58427 : {
                 id: "58427",
-                g: 362,
+                g: 178,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -29677,7 +29912,7 @@ function(t) {
             },
             58442 : {
                 id: "58442",
-                g: 26,
+                g: 293,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -29689,7 +29924,7 @@ function(t) {
             },
             58449 : {
                 id: "58449",
-                g: 12,
+                g: 96,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -29701,7 +29936,7 @@ function(t) {
             },
             58453 : {
                 id: "58453",
-                g: 32,
+                g: 296,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -29713,7 +29948,7 @@ function(t) {
             },
             58454 : {
                 id: "58454",
-                g: 41,
+                g: 263,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -29725,7 +29960,7 @@ function(t) {
             },
             58474 : {
                 id: "58474",
-                g: 376,
+                g: 384,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -29737,7 +29972,7 @@ function(t) {
             },
             58541 : {
                 id: "58541",
-                g: 144,
+                g: 6,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -29749,7 +29984,7 @@ function(t) {
             },
             58545 : {
                 id: "58545",
-                g: 158,
+                g: 27,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -29761,10 +29996,10 @@ function(t) {
             },
             58603 : {
                 id: "58603",
-                g: 236,
+                g: 218,
                 o: 2,
                 m: !1,
-                oidx: 0,
+                oidx: 3,
                 not: !1,
                 ks: !1,
                 ascendancyName: null,
@@ -29773,7 +30008,7 @@ function(t) {
             },
             58604 : {
                 id: "58604",
-                g: 7,
+                g: 67,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -29785,7 +30020,7 @@ function(t) {
             },
             58649 : {
                 id: "58649",
-                g: 19,
+                g: 286,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -29797,7 +30032,7 @@ function(t) {
             },
             58763 : {
                 id: "58763",
-                g: 283,
+                g: 377,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -29809,7 +30044,7 @@ function(t) {
             },
             58827 : {
                 id: "58827",
-                g: 505,
+                g: 143,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -29821,7 +30056,7 @@ function(t) {
             },
             58831 : {
                 id: "58831",
-                g: 406,
+                g: 228,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -29833,7 +30068,7 @@ function(t) {
             },
             58833 : {
                 id: "58833",
-                g: 91,
+                g: 350,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -29845,7 +30080,7 @@ function(t) {
             },
             58854 : {
                 id: "58854",
-                g: 442,
+                g: 504,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -29857,7 +30092,7 @@ function(t) {
             },
             58968 : {
                 id: "58968",
-                g: 335,
+                g: 45,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -29869,7 +30104,7 @@ function(t) {
             },
             59005 : {
                 id: "59005",
-                g: 210,
+                g: 13,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -29881,7 +30116,7 @@ function(t) {
             },
             59009 : {
                 id: "59009",
-                g: 239,
+                g: 223,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -29893,7 +30128,7 @@ function(t) {
             },
             59016 : {
                 id: "59016",
-                g: 92,
+                g: 18,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -29905,7 +30140,7 @@ function(t) {
             },
             59036 : {
                 id: "59036",
-                g: 136,
+                g: 284,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -29917,7 +30152,7 @@ function(t) {
             },
             59146 : {
                 id: "59146",
-                g: 223,
+                g: 339,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -29929,7 +30164,7 @@ function(t) {
             },
             59151 : {
                 id: "59151",
-                g: 196,
+                g: 188,
                 o: 3,
                 m: !1,
                 oidx: 2,
@@ -29941,7 +30176,7 @@ function(t) {
             },
             59180 : {
                 id: "59180",
-                g: 155,
+                g: 388,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -29953,7 +30188,7 @@ function(t) {
             },
             59220 : {
                 id: "59220",
-                g: 256,
+                g: 243,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -29965,7 +30200,7 @@ function(t) {
             },
             59252 : {
                 id: "59252",
-                g: 167,
+                g: 452,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -29977,7 +30212,7 @@ function(t) {
             },
             59290 : {
                 id: "59290",
-                g: 166,
+                g: 234,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -29989,7 +30224,7 @@ function(t) {
             },
             59295 : {
                 id: "59295",
-                g: 36,
+                g: 77,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -30001,7 +30236,7 @@ function(t) {
             },
             59370 : {
                 id: "59370",
-                g: 244,
+                g: 229,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -30013,7 +30248,7 @@ function(t) {
             },
             59482 : {
                 id: "59482",
-                g: 26,
+                g: 293,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -30025,7 +30260,7 @@ function(t) {
             },
             59494 : {
                 id: "59494",
-                g: 65,
+                g: 177,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -30037,7 +30272,7 @@ function(t) {
             },
             59556 : {
                 id: "59556",
-                g: 59,
+                g: 131,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -30049,7 +30284,7 @@ function(t) {
             },
             59565 : {
                 id: "59565",
-                g: 205,
+                g: 194,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -30061,7 +30296,7 @@ function(t) {
             },
             59605 : {
                 id: "59605",
-                g: 45,
+                g: 256,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -30073,7 +30308,7 @@ function(t) {
             },
             59606 : {
                 id: "59606",
-                g: 114,
+                g: 126,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30085,7 +30320,7 @@ function(t) {
             },
             59650 : {
                 id: "59650",
-                g: 228,
+                g: 87,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30097,7 +30332,7 @@ function(t) {
             },
             59717 : {
                 id: "59717",
-                g: 35,
+                g: 89,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -30109,7 +30344,7 @@ function(t) {
             },
             59718 : {
                 id: "59718",
-                g: 305,
+                g: 241,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -30121,7 +30356,7 @@ function(t) {
             },
             59728 : {
                 id: "59728",
-                g: 159,
+                g: 405,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30133,7 +30368,7 @@ function(t) {
             },
             59766 : {
                 id: "59766",
-                g: 155,
+                g: 388,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -30145,7 +30380,7 @@ function(t) {
             },
             59800 : {
                 id: "59800",
-                g: 311,
+                g: 93,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -30157,7 +30392,7 @@ function(t) {
             },
             59837 : {
                 id: "59837",
-                g: 93,
+                g: 11,
                 o: 4,
                 m: !1,
                 oidx: 34,
@@ -30169,7 +30404,7 @@ function(t) {
             },
             59861 : {
                 id: "59861",
-                g: 28,
+                g: 97,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -30181,7 +30416,7 @@ function(t) {
             },
             59920 : {
                 id: "59920",
-                g: 132,
+                g: 305,
                 o: 4,
                 m: !1,
                 oidx: 17,
@@ -30193,7 +30428,7 @@ function(t) {
             },
             59928 : {
                 id: "59928",
-                g: 193,
+                g: 458,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30205,7 +30440,7 @@ function(t) {
             },
             59959 : {
                 id: "59959",
-                g: 160,
+                g: 8,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -30217,7 +30452,7 @@ function(t) {
             },
             60002 : {
                 id: "60002",
-                g: 281,
+                g: 272,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -30229,7 +30464,7 @@ function(t) {
             },
             60090 : {
                 id: "60090",
-                g: 104,
+                g: 346,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30241,7 +30476,7 @@ function(t) {
             },
             60169 : {
                 id: "60169",
-                g: 11,
+                g: 71,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -30253,7 +30488,7 @@ function(t) {
             },
             60180 : {
                 id: "60180",
-                g: 455,
+                g: 434,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30265,7 +30500,7 @@ function(t) {
             },
             60204 : {
                 id: "60204",
-                g: 90,
+                g: 10,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -30277,7 +30512,7 @@ function(t) {
             },
             60259 : {
                 id: "60259",
-                g: 261,
+                g: 364,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -30289,7 +30524,7 @@ function(t) {
             },
             60302 : {
                 id: "60302",
-                g: 385,
+                g: 398,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -30301,7 +30536,7 @@ function(t) {
             },
             60388 : {
                 id: "60388",
-                g: 243,
+                g: 324,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -30313,7 +30548,7 @@ function(t) {
             },
             60398 : {
                 id: "60398",
-                g: 339,
+                g: 321,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30325,7 +30560,7 @@ function(t) {
             },
             60405 : {
                 id: "60405",
-                g: 289,
+                g: 222,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -30337,7 +30572,7 @@ function(t) {
             },
             60440 : {
                 id: "60440",
-                g: 324,
+                g: 385,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30349,7 +30584,7 @@ function(t) {
             },
             60462 : {
                 id: "60462",
-                g: 182,
+                g: 94,
                 o: 4,
                 m: !1,
                 oidx: 7,
@@ -30361,7 +30596,7 @@ function(t) {
             },
             60472 : {
                 id: "60472",
-                g: 71,
+                g: 459,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30373,7 +30608,7 @@ function(t) {
             },
             60501 : {
                 id: "60501",
-                g: 203,
+                g: 192,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -30385,7 +30620,7 @@ function(t) {
             },
             60508 : {
                 id: "60508",
-                g: 284,
+                g: 16,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -30397,7 +30632,7 @@ function(t) {
             },
             60532 : {
                 id: "60532",
-                g: 188,
+                g: 356,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -30409,7 +30644,7 @@ function(t) {
             },
             60547 : {
                 id: "60547",
-                g: 318,
+                g: 253,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -30421,7 +30656,7 @@ function(t) {
             },
             60554 : {
                 id: "60554",
-                g: 308,
+                g: 298,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -30433,7 +30668,7 @@ function(t) {
             },
             60592 : {
                 id: "60592",
-                g: 128,
+                g: 141,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -30445,7 +30680,7 @@ function(t) {
             },
             60619 : {
                 id: "60619",
-                g: 66,
+                g: 72,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -30457,7 +30692,7 @@ function(t) {
             },
             60735 : {
                 id: "60735",
-                g: 179,
+                g: 386,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -30469,7 +30704,7 @@ function(t) {
             },
             60737 : {
                 id: "60737",
-                g: 110,
+                g: 120,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30481,7 +30716,7 @@ function(t) {
             },
             60769 : {
                 id: "60769",
-                g: 231,
+                g: 169,
                 o: 3,
                 m: !1,
                 oidx: 3,
@@ -30493,7 +30728,7 @@ function(t) {
             },
             60791 : {
                 id: "60791",
-                g: 318,
+                g: 253,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30505,7 +30740,7 @@ function(t) {
             },
             60803 : {
                 id: "60803",
-                g: 125,
+                g: 135,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -30517,7 +30752,7 @@ function(t) {
             },
             60887 : {
                 id: "60887",
-                g: 273,
+                g: 38,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -30529,7 +30764,7 @@ function(t) {
             },
             60942 : {
                 id: "60942",
-                g: 474,
+                g: 219,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30541,7 +30776,7 @@ function(t) {
             },
             60949 : {
                 id: "60949",
-                g: 211,
+                g: 431,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -30553,7 +30788,7 @@ function(t) {
             },
             61050 : {
                 id: "61050",
-                g: 323,
+                g: 251,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -30565,7 +30800,7 @@ function(t) {
             },
             61072 : {
                 id: "61072",
-                g: 389,
+                g: 508,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30577,7 +30812,7 @@ function(t) {
             },
             61198 : {
                 id: "61198",
-                g: 124,
+                g: 132,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -30589,7 +30824,7 @@ function(t) {
             },
             61217 : {
                 id: "61217",
-                g: 210,
+                g: 13,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -30601,7 +30836,7 @@ function(t) {
             },
             61259 : {
                 id: "61259",
-                g: 382,
+                g: 340,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -30613,7 +30848,7 @@ function(t) {
             },
             61262 : {
                 id: "61262",
-                g: 421,
+                g: 368,
                 o: 4,
                 m: !1,
                 oidx: 30,
@@ -30625,7 +30860,7 @@ function(t) {
             },
             61264 : {
                 id: "61264",
-                g: 44,
+                g: 25,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -30637,7 +30872,7 @@ function(t) {
             },
             61306 : {
                 id: "61306",
-                g: 156,
+                g: 213,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30649,7 +30884,7 @@ function(t) {
             },
             61308 : {
                 id: "61308",
-                g: 27,
+                g: 358,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -30661,7 +30896,7 @@ function(t) {
             },
             61320 : {
                 id: "61320",
-                g: 413,
+                g: 76,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -30673,7 +30908,7 @@ function(t) {
             },
             61327 : {
                 id: "61327",
-                g: 260,
+                g: 250,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -30685,7 +30920,7 @@ function(t) {
             },
             61372 : {
                 id: "61372",
-                g: 277,
+                g: 165,
                 o: 3,
                 m: !1,
                 oidx: 1,
@@ -30697,7 +30932,7 @@ function(t) {
             },
             61393 : {
                 id: "61393",
-                g: 233,
+                g: 304,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -30707,9 +30942,21 @@ function(t) {
                 isAscendancyStart: !1,
                 out: ["17315"]
             },
+            61399 : {
+                id: "61399",
+                g: 402,
+                o: 0,
+                m: !0,
+                oidx: 0,
+                not: !1,
+                ks: !1,
+                ascendancyName: null,
+                isAscendancyStart: !1,
+                out: []
+            },
             61419 : {
                 id: "61419",
-                g: 304,
+                g: 297,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -30721,7 +30968,7 @@ function(t) {
             },
             61437 : {
                 id: "61437",
-                g: 88,
+                g: 166,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -30733,7 +30980,7 @@ function(t) {
             },
             61471 : {
                 id: "61471",
-                g: 254,
+                g: 438,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -30745,10 +30992,10 @@ function(t) {
             },
             61478 : {
                 id: "61478",
-                g: 284,
+                g: 16,
                 o: 4,
                 m: !1,
-                oidx: 6,
+                oidx: 3,
                 not: !1,
                 ks: !1,
                 ascendancyName: "Champion",
@@ -30757,7 +31004,7 @@ function(t) {
             },
             61525 : {
                 id: "61525",
-                g: 400,
+                g: 429,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30769,7 +31016,7 @@ function(t) {
             },
             61627 : {
                 id: "61627",
-                g: 93,
+                g: 11,
                 o: 4,
                 m: !1,
                 oidx: 32,
@@ -30781,7 +31028,7 @@ function(t) {
             },
             61653 : {
                 id: "61653",
-                g: 392,
+                g: 64,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -30793,7 +31040,7 @@ function(t) {
             },
             61689 : {
                 id: "61689",
-                g: 221,
+                g: 123,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -30805,7 +31052,7 @@ function(t) {
             },
             61787 : {
                 id: "61787",
-                g: 253,
+                g: 240,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -30817,7 +31064,7 @@ function(t) {
             },
             61804 : {
                 id: "61804",
-                g: 203,
+                g: 192,
                 o: 3,
                 m: !1,
                 oidx: 6,
@@ -30829,7 +31076,7 @@ function(t) {
             },
             61805 : {
                 id: "61805",
-                g: 311,
+                g: 93,
                 o: 4,
                 m: !1,
                 oidx: 2,
@@ -30841,7 +31088,7 @@ function(t) {
             },
             61834 : {
                 id: "61834",
-                g: 199,
+                g: 198,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30853,7 +31100,7 @@ function(t) {
             },
             61868 : {
                 id: "61868",
-                g: 28,
+                g: 97,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -30865,7 +31112,7 @@ function(t) {
             },
             61871 : {
                 id: "61871",
-                g: 231,
+                g: 169,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -30877,7 +31124,7 @@ function(t) {
             },
             61875 : {
                 id: "61875",
-                g: 498,
+                g: 322,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -30889,7 +31136,7 @@ function(t) {
             },
             61950 : {
                 id: "61950",
-                g: 66,
+                g: 72,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -30901,7 +31148,7 @@ function(t) {
             },
             61981 : {
                 id: "61981",
-                g: 289,
+                g: 222,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -30913,7 +31160,7 @@ function(t) {
             },
             61982 : {
                 id: "61982",
-                g: 341,
+                g: 325,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -30925,7 +31172,7 @@ function(t) {
             },
             61991 : {
                 id: "61991",
-                g: 75,
+                g: 99,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -30937,7 +31184,7 @@ function(t) {
             },
             61999 : {
                 id: "61999",
-                g: 28,
+                g: 97,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -30949,7 +31196,7 @@ function(t) {
             },
             62017 : {
                 id: "62017",
-                g: 309,
+                g: 95,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -30961,7 +31208,7 @@ function(t) {
             },
             62021 : {
                 id: "62021",
-                g: 253,
+                g: 240,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -30973,7 +31220,7 @@ function(t) {
             },
             62042 : {
                 id: "62042",
-                g: 67,
+                g: 28,
                 o: 3,
                 m: !1,
                 oidx: 0,
@@ -30985,7 +31232,7 @@ function(t) {
             },
             62069 : {
                 id: "62069",
-                g: 19,
+                g: 286,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -30997,7 +31244,7 @@ function(t) {
             },
             62103 : {
                 id: "62103",
-                g: 91,
+                g: 350,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -31009,7 +31256,7 @@ function(t) {
             },
             62108 : {
                 id: "62108",
-                g: 13,
+                g: 80,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -31021,7 +31268,7 @@ function(t) {
             },
             62136 : {
                 id: "62136",
-                g: 93,
+                g: 11,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -31033,7 +31280,7 @@ function(t) {
             },
             62162 : {
                 id: "62162",
-                g: 180,
+                g: 193,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -31045,7 +31292,7 @@ function(t) {
             },
             62177 : {
                 id: "62177",
-                g: 325,
+                g: 148,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -31057,7 +31304,7 @@ function(t) {
             },
             62214 : {
                 id: "62214",
-                g: 38,
+                g: 108,
                 o: 2,
                 m: !1,
                 oidx: 11,
@@ -31069,7 +31316,7 @@ function(t) {
             },
             62217 : {
                 id: "62217",
-                g: 296,
+                g: 288,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -31081,7 +31328,7 @@ function(t) {
             },
             62225 : {
                 id: "62225",
-                g: 361,
+                g: 133,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -31093,7 +31340,7 @@ function(t) {
             },
             62303 : {
                 id: "62303",
-                g: 270,
+                g: 116,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -31105,7 +31352,7 @@ function(t) {
             },
             62319 : {
                 id: "62319",
-                g: 195,
+                g: 417,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -31117,7 +31364,7 @@ function(t) {
             },
             62349 : {
                 id: "62349",
-                g: 246,
+                g: 237,
                 o: 4,
                 m: !1,
                 oidx: 8,
@@ -31129,7 +31376,7 @@ function(t) {
             },
             62363 : {
                 id: "62363",
-                g: 209,
+                g: 196,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -31141,7 +31388,7 @@ function(t) {
             },
             62429 : {
                 id: "62429",
-                g: 209,
+                g: 196,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -31153,7 +31400,7 @@ function(t) {
             },
             62504 : {
                 id: "62504",
-                g: 326,
+                g: 78,
                 o: 3,
                 m: !1,
                 oidx: 9,
@@ -31165,7 +31412,7 @@ function(t) {
             },
             62577 : {
                 id: "62577",
-                g: 80,
+                g: 104,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -31177,7 +31424,7 @@ function(t) {
             },
             62595 : {
                 id: "62595",
-                g: 246,
+                g: 237,
                 o: 4,
                 m: !1,
                 oidx: 5,
@@ -31189,7 +31436,7 @@ function(t) {
             },
             62662 : {
                 id: "62662",
-                g: 295,
+                g: 260,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -31201,7 +31448,7 @@ function(t) {
             },
             62694 : {
                 id: "62694",
-                g: 409,
+                g: 265,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -31213,7 +31460,7 @@ function(t) {
             },
             62697 : {
                 id: "62697",
-                g: 141,
+                g: 150,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -31225,7 +31472,7 @@ function(t) {
             },
             62712 : {
                 id: "62712",
-                g: 303,
+                g: 175,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -31237,7 +31484,7 @@ function(t) {
             },
             62795 : {
                 id: "62795",
-                g: 99,
+                g: 85,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -31249,7 +31496,7 @@ function(t) {
             },
             62817 : {
                 id: "62817",
-                g: 233,
+                g: 304,
                 o: 4,
                 m: !1,
                 oidx: 33,
@@ -31261,7 +31508,7 @@ function(t) {
             },
             62831 : {
                 id: "62831",
-                g: 87,
+                g: 39,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -31273,7 +31520,7 @@ function(t) {
             },
             63048 : {
                 id: "63048",
-                g: 134,
+                g: 144,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -31285,7 +31532,7 @@ function(t) {
             },
             63067 : {
                 id: "63067",
-                g: 126,
+                g: 136,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -31297,7 +31544,7 @@ function(t) {
             },
             63135 : {
                 id: "63135",
-                g: 48,
+                g: 312,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -31309,7 +31556,7 @@ function(t) {
             },
             63139 : {
                 id: "63139",
-                g: 415,
+                g: 164,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -31321,7 +31568,7 @@ function(t) {
             },
             63150 : {
                 id: "63150",
-                g: 57,
+                g: 43,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -31333,7 +31580,7 @@ function(t) {
             },
             63167 : {
                 id: "63167",
-                g: 192,
+                g: 410,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -31345,7 +31592,7 @@ function(t) {
             },
             63194 : {
                 id: "63194",
-                g: 353,
+                g: 427,
                 o: 1,
                 m: !1,
                 oidx: 3,
@@ -31357,7 +31604,7 @@ function(t) {
             },
             63207 : {
                 id: "63207",
-                g: 300,
+                g: 117,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -31369,7 +31616,7 @@ function(t) {
             },
             63228 : {
                 id: "63228",
-                g: 325,
+                g: 148,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -31381,7 +31628,7 @@ function(t) {
             },
             63282 : {
                 id: "63282",
-                g: 2,
+                g: 173,
                 o: 4,
                 m: !1,
                 oidx: 20,
@@ -31393,7 +31640,7 @@ function(t) {
             },
             63293 : {
                 id: "63293",
-                g: 311,
+                g: 93,
                 o: 4,
                 m: !1,
                 oidx: 29,
@@ -31405,7 +31652,7 @@ function(t) {
             },
             63309 : {
                 id: "63309",
-                g: 36,
+                g: 77,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -31417,7 +31664,7 @@ function(t) {
             },
             63357 : {
                 id: "63357",
-                g: 29,
+                g: 163,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -31429,7 +31676,7 @@ function(t) {
             },
             63380 : {
                 id: "63380",
-                g: 148,
+                g: 313,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -31441,7 +31688,7 @@ function(t) {
             },
             63398 : {
                 id: "63398",
-                g: 380,
+                g: 335,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -31453,7 +31700,7 @@ function(t) {
             },
             63417 : {
                 id: "63417",
-                g: 247,
+                g: 103,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -31465,7 +31712,7 @@ function(t) {
             },
             63422 : {
                 id: "63422",
-                g: 13,
+                g: 80,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -31477,7 +31724,7 @@ function(t) {
             },
             63425 : {
                 id: "63425",
-                g: 139,
+                g: 464,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -31489,7 +31736,7 @@ function(t) {
             },
             63447 : {
                 id: "63447",
-                g: 321,
+                g: 432,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -31501,7 +31748,7 @@ function(t) {
             },
             63490 : {
                 id: "63490",
-                g: 118,
+                g: 140,
                 o: 4,
                 m: !1,
                 oidx: 3,
@@ -31513,7 +31760,7 @@ function(t) {
             },
             63543 : {
                 id: "63543",
-                g: 58,
+                g: 44,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -31525,7 +31772,7 @@ function(t) {
             },
             63583 : {
                 id: "63583",
-                g: 132,
+                g: 305,
                 o: 3,
                 m: !1,
                 oidx: 4,
@@ -31537,7 +31784,7 @@ function(t) {
             },
             63635 : {
                 id: "63635",
-                g: 140,
+                g: 111,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -31549,7 +31796,7 @@ function(t) {
             },
             63639 : {
                 id: "63639",
-                g: 512,
+                g: 279,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -31561,7 +31808,7 @@ function(t) {
             },
             63649 : {
                 id: "63649",
-                g: 473,
+                g: 433,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -31573,7 +31820,7 @@ function(t) {
             },
             63723 : {
                 id: "63723",
-                g: 135,
+                g: 145,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -31585,7 +31832,7 @@ function(t) {
             },
             63795 : {
                 id: "63795",
-                g: 244,
+                g: 229,
                 o: 4,
                 m: !1,
                 oidx: 0,
@@ -31597,7 +31844,7 @@ function(t) {
             },
             63799 : {
                 id: "63799",
-                g: 413,
+                g: 76,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -31609,7 +31856,7 @@ function(t) {
             },
             63824 : {
                 id: "63824",
-                g: 106,
+                g: 30,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -31621,7 +31868,7 @@ function(t) {
             },
             63843 : {
                 id: "63843",
-                g: 131,
+                g: 491,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -31633,7 +31880,7 @@ function(t) {
             },
             63845 : {
                 id: "63845",
-                g: 222,
+                g: 343,
                 o: 1,
                 m: !1,
                 oidx: 2,
@@ -31645,7 +31892,7 @@ function(t) {
             },
             63908 : {
                 id: "63908",
-                g: 41,
+                g: 263,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -31657,7 +31904,7 @@ function(t) {
             },
             63933 : {
                 id: "63933",
-                g: 364,
+                g: 353,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -31669,7 +31916,7 @@ function(t) {
             },
             63944 : {
                 id: "63944",
-                g: 296,
+                g: 288,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -31681,7 +31928,7 @@ function(t) {
             },
             63963 : {
                 id: "63963",
-                g: 283,
+                g: 377,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -31693,7 +31940,7 @@ function(t) {
             },
             63965 : {
                 id: "63965",
-                g: 400,
+                g: 429,
                 o: 3,
                 m: !1,
                 oidx: 11,
@@ -31705,7 +31952,7 @@ function(t) {
             },
             63976 : {
                 id: "63976",
-                g: 62,
+                g: 68,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -31717,7 +31964,7 @@ function(t) {
             },
             64024 : {
                 id: "64024",
-                g: 323,
+                g: 251,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -31729,7 +31976,7 @@ function(t) {
             },
             64111 : {
                 id: "64111",
-                g: 311,
+                g: 93,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -31741,7 +31988,7 @@ function(t) {
             },
             64210 : {
                 id: "64210",
-                g: 268,
+                g: 220,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -31753,7 +32000,7 @@ function(t) {
             },
             64235 : {
                 id: "64235",
-                g: 312,
+                g: 500,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -31765,7 +32012,7 @@ function(t) {
             },
             64239 : {
                 id: "64239",
-                g: 160,
+                g: 8,
                 o: 2,
                 m: !1,
                 oidx: 2,
@@ -31777,7 +32024,7 @@ function(t) {
             },
             64241 : {
                 id: "64241",
-                g: 336,
+                g: 319,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -31789,7 +32036,7 @@ function(t) {
             },
             64265 : {
                 id: "64265",
-                g: 353,
+                g: 427,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -31801,7 +32048,7 @@ function(t) {
             },
             64395 : {
                 id: "64395",
-                g: 3,
+                g: 147,
                 o: 2,
                 m: !1,
                 oidx: 9,
@@ -31813,7 +32060,7 @@ function(t) {
             },
             64426 : {
                 id: "64426",
-                g: 38,
+                g: 108,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -31825,7 +32072,7 @@ function(t) {
             },
             64501 : {
                 id: "64501",
-                g: 19,
+                g: 286,
                 o: 2,
                 m: !1,
                 oidx: 7,
@@ -31837,7 +32084,7 @@ function(t) {
             },
             64587 : {
                 id: "64587",
-                g: 212,
+                g: 197,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -31849,7 +32096,7 @@ function(t) {
             },
             64588 : {
                 id: "64588",
-                g: 382,
+                g: 340,
                 o: 4,
                 m: !1,
                 oidx: 22,
@@ -31861,7 +32108,7 @@ function(t) {
             },
             64612 : {
                 id: "64612",
-                g: 160,
+                g: 8,
                 o: 2,
                 m: !1,
                 oidx: 4,
@@ -31873,7 +32120,7 @@ function(t) {
             },
             64709 : {
                 id: "64709",
-                g: 395,
+                g: 261,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -31885,7 +32132,7 @@ function(t) {
             },
             64761 : {
                 id: "64761",
-                g: 334,
+                g: 46,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -31897,7 +32144,7 @@ function(t) {
             },
             64768 : {
                 id: "64768",
-                g: 277,
+                g: 165,
                 o: 4,
                 m: !1,
                 oidx: 1,
@@ -31909,7 +32156,7 @@ function(t) {
             },
             64816 : {
                 id: "64816",
-                g: 24,
+                g: 50,
                 o: 2,
                 m: !1,
                 oidx: 6,
@@ -31921,7 +32168,7 @@ function(t) {
             },
             64842 : {
                 id: "64842",
-                g: 48,
+                g: 312,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -31933,7 +32180,7 @@ function(t) {
             },
             64864 : {
                 id: "64864",
-                g: 171,
+                g: 52,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -31945,7 +32192,7 @@ function(t) {
             },
             64878 : {
                 id: "64878",
-                g: 242,
+                g: 37,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -31957,7 +32204,7 @@ function(t) {
             },
             65033 : {
                 id: "65033",
-                g: 303,
+                g: 175,
                 o: 2,
                 m: !1,
                 oidx: 8,
@@ -31969,7 +32216,7 @@ function(t) {
             },
             65034 : {
                 id: "65034",
-                g: 253,
+                g: 240,
                 o: 3,
                 m: !1,
                 oidx: 10,
@@ -31981,7 +32228,7 @@ function(t) {
             },
             65053 : {
                 id: "65053",
-                g: 111,
+                g: 397,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -31993,7 +32240,7 @@ function(t) {
             },
             65097 : {
                 id: "65097",
-                g: 162,
+                g: 291,
                 o: 1,
                 m: !1,
                 oidx: 0,
@@ -32005,7 +32252,7 @@ function(t) {
             },
             65108 : {
                 id: "65108",
-                g: 338,
+                g: 435,
                 o: 2,
                 m: !1,
                 oidx: 5,
@@ -32017,7 +32264,7 @@ function(t) {
             },
             65131 : {
                 id: "65131",
-                g: 205,
+                g: 194,
                 o: 2,
                 m: !1,
                 oidx: 10,
@@ -32029,7 +32276,7 @@ function(t) {
             },
             65153 : {
                 id: "65153",
-                g: 318,
+                g: 253,
                 o: 4,
                 m: !1,
                 oidx: 17,
@@ -32041,7 +32288,7 @@ function(t) {
             },
             65159 : {
                 id: "65159",
-                g: 140,
+                g: 111,
                 o: 2,
                 m: !1,
                 oidx: 1,
@@ -32053,7 +32300,7 @@ function(t) {
             },
             65167 : {
                 id: "65167",
-                g: 253,
+                g: 240,
                 o: 3,
                 m: !1,
                 oidx: 5,
@@ -32065,7 +32312,7 @@ function(t) {
             },
             65203 : {
                 id: "65203",
-                g: 298,
+                g: 289,
                 o: 3,
                 m: !1,
                 oidx: 8,
@@ -32077,7 +32324,7 @@ function(t) {
             },
             65210 : {
                 id: "65210",
-                g: 343,
+                g: 328,
                 o: 2,
                 m: !1,
                 oidx: 3,
@@ -32089,7 +32336,7 @@ function(t) {
             },
             65224 : {
                 id: "65224",
-                g: 383,
+                g: 394,
                 o: 0,
                 m: !1,
                 oidx: 0,
@@ -32101,7 +32348,7 @@ function(t) {
             },
             65225 : {
                 id: "65225",
-                g: 137,
+                g: 170,
                 o: 0,
                 m: !0,
                 oidx: 0,
@@ -32113,7 +32360,7 @@ function(t) {
             },
             65296 : {
                 id: "65296",
-                g: 311,
+                g: 93,
                 o: 4,
                 m: !1,
                 oidx: 37,
@@ -32125,7 +32372,7 @@ function(t) {
             },
             65308 : {
                 id: "65308",
-                g: 217,
+                g: 330,
                 o: 1,
                 m: !1,
                 oidx: 5,
@@ -32137,7 +32384,7 @@ function(t) {
             },
             65456 : {
                 id: "65456",
-                g: 143,
+                g: 153,
                 o: 1,
                 m: !1,
                 oidx: 1,
@@ -32149,7 +32396,7 @@ function(t) {
             },
             65491 : {
                 id: "65491",
-                g: 430,
+                g: 190,
                 o: 2,
                 m: !1,
                 oidx: 0,
@@ -32161,7 +32408,7 @@ function(t) {
             },
             65502 : {
                 id: "65502",
-                g: 256,
+                g: 243,
                 o: 1,
                 m: !1,
                 oidx: 4,
@@ -32174,2052 +32421,2064 @@ function(t) {
         },
         groups: {
             1 : {
-                x: -1023.48,
-                y: 3799.75
+                x: -643.636,
+                y: -3743.59
             },
             2 : {
-                x: -5807.97,
-                y: -79.7297
-            },
-            3 : {
-                x: -3235.18,
-                y: -4635.27
-            },
-            4 : {
-                x: -2500.98,
-                y: -4433.87
-            },
-            5 : {
-                x: -4126,
-                y: 3864.31
-            },
-            6 : {
-                x: 737.904,
-                y: -979.543
-            },
-            7 : {
-                x: -942.818,
-                y: -4252.79
-            },
-            8 : {
-                x: 3888.82,
-                y: 5651.85
-            },
-            9 : {
-                x: -6376.63,
-                y: -2901.63
-            },
-            10 : {
-                x: 746.097,
-                y: 5657.27
-            },
-            11 : {
-                x: -4441.9,
-                y: 1570.37
-            },
-            12 : {
-                x: -3677.63,
-                y: 1570.93
-            },
-            13 : {
-                x: -4899.88,
-                y: 3192.62
-            },
-            14 : {
-                x: 787.072,
-                y: -6483
-            },
-            15 : {
-                x: -6412.21,
-                y: -866.917
-            },
-            16 : {
-                x: -3.33598,
-                y: 1360.64
-            },
-            17 : {
-                x: -2697.55,
-                y: -3138.37
-            },
-            18 : {
-                x: -5807.91,
-                y: -3453.47
-            },
-            19 : {
-                x: 3022.59,
-                y: -2009.62
-            },
-            20 : {
-                x: 3333.63,
-                y: -3301.79
-            },
-            21 : {
-                x: 648.905,
-                y: -396.45
-            },
-            22 : {
-                x: 6203.88,
-                y: 4168.72
-            },
-            23 : {
-                x: -3408.98,
-                y: -3271.13
-            },
-            24 : {
-                x: -3190.08,
-                y: -527.433
-            },
-            25 : {
-                x: 4145.42,
-                y: 2350.19
-            },
-            26 : {
-                x: 5054.18,
-                y: -3151.3
-            },
-            27 : {
-                x: -4052.1,
-                y: -2490.66
-            },
-            28 : {
-                x: -4489.95,
-                y: 2454.36
-            },
-            29 : {
-                x: -7146.59,
-                y: 7425.47
-            },
-            30 : {
-                x: 2800.84,
-                y: 81.5361
-            },
-            31 : {
-                x: 2914.53,
-                y: 1347.77
-            },
-            32 : {
-                x: -4528.12,
-                y: -2004.44
-            },
-            33 : {
-                x: -5805.78,
-                y: 3018
-            },
-            34 : {
-                x: -9091.84,
-                y: 652.324
-            },
-            35 : {
-                x: 1516.74,
-                y: 5146.86
-            },
-            36 : {
-                x: -4117.23,
-                y: 622.568
-            },
-            37 : {
-                x: 2133.78,
-                y: -3793.41
-            },
-            38 : {
-                x: -5299.44,
-                y: -788.944
-            },
-            39 : {
-                x: -4560.26,
-                y: -3977.58
-            },
-            40 : {
-                x: -4590.89,
-                y: 4779.21
-            },
-            41 : {
-                x: 9194.32,
-                y: -2615.48
-            },
-            42 : {
-                x: -2157.92,
-                y: 3126.84
-            },
-            43 : {
-                x: 2364.66,
-                y: 4512.38
-            },
-            44 : {
-                x: 2.7304,
-                y: -6191.82
-            },
-            45 : {
-                x: 2352.7,
-                y: -283.597
-            },
-            46 : {
-                x: -2472.7,
-                y: -3506.94
-            },
-            47 : {
                 x: -2813.95,
                 y: 5438.33
             },
-            48 : {
-                x: 9073.24,
-                y: -1196.8
-            },
-            49 : {
-                x: 1334.37,
-                y: 2500.76
-            },
-            50 : {
-                x: -5471.29,
-                y: 1397.84
-            },
-            51 : {
-                x: -465.466,
-                y: 4719.49
-            },
-            52 : {
-                x: 2367.15,
-                y: 4088.46
-            },
-            53 : {
-                x: -1190.73,
-                y: -18.8151
-            },
-            54 : {
-                x: 1870.2,
-                y: -470.126
-            },
-            55 : {
-                x: 1.00464,
-                y: 3836.23
-            },
-            56 : {
-                x: 3502.89,
-                y: 4100.46
-            },
-            57 : {
-                x: -4655.53,
-                y: 3711.67
-            },
-            58 : {
-                x: -2443.4,
-                y: 345.669
-            },
-            59 : {
-                x: 5315.95,
-                y: -2721.97
-            },
-            60 : {
-                x: -2870.48,
-                y: -1508.02
-            },
-            61 : {
-                x: 8803.39,
-                y: 2041.3
-            },
-            62 : {
-                x: -1263.56,
-                y: -722.851
-            },
-            63 : {
-                x: -4596.02,
-                y: 2453.81
-            },
-            64 : {
-                x: -4207.82,
-                y: 5043.97
-            },
-            65 : {
-                x: -2617.24,
-                y: 3640.93
-            },
-            66 : {
-                x: -5022.32,
-                y: -3076.43
-            },
-            67 : {
-                x: -6365.4,
-                y: 3017.96
-            },
-            68 : {
-                x: -3969.04,
-                y: -2838.46
-            },
-            69 : {
-                x: 2803.26,
-                y: 4372.41
-            },
-            70 : {
-                x: -5600.83,
-                y: -2004.34
-            },
-            71 : {
-                x: -5084.91,
-                y: -1999.11
-            },
-            72 : {
-                x: -804.679,
-                y: 6160.19
-            },
-            73 : {
-                x: -1519.9,
-                y: 2474.17
-            },
-            74 : {
-                x: 2676.89,
-                y: 3891.84
-            },
-            75 : {
-                x: -536.505,
-                y: -1319.25
-            },
-            76 : {
-                x: -1463.41,
-                y: -6245.97
-            },
-            77 : {
-                x: 1899.55,
-                y: -4403.39
-            },
-            78 : {
-                x: -1751.18,
-                y: -5306.89
-            },
-            79 : {
-                x: -5446.4,
-                y: -1466.19
-            },
-            80 : {
-                x: 2864.33,
-                y: -5651.59
-            },
-            81 : {
-                x: 2186.07,
-                y: -4931.37
-            },
-            82 : {
-                x: -6578.61,
-                y: 2001.01
-            },
-            83 : {
-                x: -3144.14,
-                y: -5408.87
-            },
-            84 : {
-                x: 5711.41,
-                y: .170044
-            },
-            85 : {
-                x: -6086.95,
-                y: -53.7007
-            },
-            86 : {
-                x: 298.775,
-                y: 4379.71
-            },
-            87 : {
-                x: 3188.98,
-                y: -1330.09
-            },
-            88 : {
-                x: -7512.4,
-                y: 7213.68
-            },
-            89 : {
-                x: 1369.36,
-                y: 181.769
-            },
-            90 : {
-                x: 1383.12,
-                y: 765.71
-            },
-            91 : {
-                x: 2.83856,
-                y: 5.65056
-            },
-            92 : {
-                x: 5757.58,
-                y: 739.279
-            },
-            93 : {
-                x: 8649.58,
-                y: 624.872
-            },
-            94 : {
-                x: -6375.6,
-                y: 1061.78
-            },
-            95 : {
-                x: -3003.39,
-                y: -2349.62
-            },
-            96 : {
-                x: 5896.02,
-                y: 264.081
-            },
-            97 : {
-                x: -1.8421,
-                y: -2635.47
-            },
-            98 : {
-                x: -4597.38,
-                y: 1570.16
-            },
-            99 : {
-                x: 4220,
-                y: -373.022
-            },
-            100 : {
-                x: -3535.69,
-                y: 3530.17
-            },
-            101 : {
-                x: 2.85721,
-                y: 6351.25
-            },
-            102 : {
-                x: 1591.35,
-                y: 3705.31
-            },
-            103 : {
-                x: 2356.45,
-                y: -1348.67
-            },
-            104 : {
-                x: 401.606,
-                y: -1791.18
-            },
-            105 : {
-                x: 2242.36,
-                y: 3203.19
-            },
-            106 : {
-                x: -6478.44,
-                y: -2003.82
-            },
-            107 : {
-                x: 4205.36,
-                y: -2832.73
-            },
-            108 : {
-                x: -3951.57,
-                y: -3272.21
-            },
-            109 : {
-                x: 6465.24,
-                y: 41.3341
-            },
-            110 : {
-                x: 4215.4,
-                y: -1307.89
-            },
-            111 : {
-                x: 5891.82,
-                y: 3282.88
-            },
-            112 : {
-                x: -1540.49,
-                y: 5972.11
-            },
-            113 : {
-                x: 882.749,
-                y: 2173.03
-            },
-            114 : {
-                x: 4859.01,
-                y: .129861
-            },
-            115 : {
-                x: 2868.63,
-                y: 2314.54
-            },
-            116 : {
-                x: 3278.93,
-                y: 3802.8
-            },
-            117 : {
-                x: -393.207,
-                y: 3381.27
-            },
-            118 : {
-                x: -1959.82,
-                y: 7876.7
-            },
-            119 : {
-                x: 2200.53,
-                y: -3435.58
-            },
-            120 : {
-                x: -3145.82,
-                y: 3824.37
-            },
-            121 : {
-                x: 3566.14,
-                y: 1330.53
-            },
-            122 : {
-                x: -2551.08,
-                y: -4143.66
-            },
-            123 : {
-                x: -1240.46,
-                y: 4712.14
-            },
-            124 : {
-                x: -3680.38,
-                y: 2006.07
-            },
-            125 : {
-                x: 3215.39,
-                y: 2330.69
-            },
-            126 : {
-                x: 1040.19,
-                y: -5000.54
-            },
-            127 : {
-                x: -775.456,
-                y: 4374.21
-            },
-            128 : {
-                x: 5399.41,
-                y: -996.671
-            },
-            129 : {
-                x: -5083.34,
-                y: 1994.12
-            },
-            130 : {
-                x: 5103.94,
-                y: -4577.47
-            },
-            131 : {
-                x: 5078.95,
-                y: 1827.06
-            },
-            132 : {
-                x: -10551.3,
-                y: 1987.92
-            },
-            133 : {
-                x: 6208.42,
-                y: -3238.98
-            },
-            134 : {
-                x: -3157.81,
-                y: 2456.37
-            },
-            135 : {
-                x: -5805.31,
-                y: 1998.55
-            },
-            136 : {
-                x: -1748.21,
-                y: -4420.43
-            },
-            137 : {
-                x: 6960.16,
-                y: -1851.99
-            },
-            138 : {
-                x: 4855.71,
-                y: -2833.13
-            },
-            139 : {
-                x: -5246.07,
-                y: -4526.23
-            },
-            140 : {
-                x: -3107.6,
-                y: 381.32
-            },
-            141 : {
-                x: 1922.83,
-                y: -5496.54
-            },
-            142 : {
-                x: -4596.87,
-                y: -1647.66
-            },
-            143 : {
-                x: -3026.03,
-                y: 4750.98
-            },
-            144 : {
+            3 : {
+                x: -5306.78,
+                y: -1999.74
+            },
+            4 : {
+                x: -2157.92,
+                y: 3126.84
+            },
+            5 : {
+                x: 5221.01,
+                y: 686.623
+            },
+            6 : {
                 x: -3314.15,
                 y: 5150.37
             },
-            145 : {
-                x: 5614.17,
-                y: 2468.78
+            7 : {
+                x: -8022.65,
+                y: -868.71
             },
-            146 : {
-                x: -7006.45,
-                y: 6394.38
-            },
-            147 : {
-                x: -6779.42,
-                y: 7213.7
-            },
-            148 : {
-                x: -4907.34,
-                y: 248.813
-            },
-            149 : {
-                x: 3850.95,
-                y: -3353.71
-            },
-            150 : {
-                x: 1226,
-                y: 4717.72
-            },
-            151 : {
-                x: -5805.77,
-                y: -649.633
-            },
-            152 : {
-                x: -1511.46,
-                y: -1321.34
-            },
-            153 : {
-                x: 3.12471,
-                y: 5195.44
-            },
-            154 : {
-                x: -6758.29,
-                y: 7388.84
-            },
-            155 : {
-                x: 2396.24,
-                y: 5251.7
-            },
-            156 : {
-                x: 3579.55,
-                y: 2826.11
-            },
-            157 : {
-                x: 1613.49,
-                y: -3748.88
-            },
-            158 : {
-                x: -603.943,
-                y: 5177.32
-            },
-            159 : {
-                x: -4471.41,
-                y: -2633
-            },
-            160 : {
+            8 : {
                 x: 2648.09,
                 y: -4924.36
             },
-            161 : {
-                x: -7510.82,
-                y: 6793.7
+            9 : {
+                x: 7375.96,
+                y: 378.791
             },
-            162 : {
-                x: 626.257,
-                y: -1314.34
+            10 : {
+                x: 1383.12,
+                y: 765.71
             },
-            163 : {
-                x: -1366.87,
-                y: 1836.1
+            11 : {
+                x: 8649.58,
+                y: 624.872
             },
-            164 : {
-                x: -5023.97,
-                y: -3620
+            12 : {
+                x: -2023.03,
+                y: -6255.44
             },
-            165 : {
-                x: -7147.07,
-                y: 7001.78
+            13 : {
+                x: -3194.72,
+                y: -2258.7
             },
-            166 : {
-                x: -4017.52,
-                y: -298.529
+            14 : {
+                x: 5725.35,
+                y: -1428.62
             },
-            167 : {
-                x: 4859.88,
-                y: -455.235
+            15 : {
+                x: 11.4758,
+                y: -5611.23
             },
-            168 : {
-                x: -2708.3,
-                y: -5282.85
+            16 : {
+                x: -45.0943,
+                y: 8304.86
             },
-            169 : {
-                x: -3819.77,
-                y: -4412.99
+            17 : {
+                x: 4215.21,
+                y: 384.589
             },
-            170 : {
-                x: 4588.66,
-                y: -185.041
+            18 : {
+                x: 5757.58,
+                y: 739.279
             },
-            171 : {
+            19 : {
+                x: -6412.21,
+                y: -866.917
+            },
+            20 : {
+                x: -14.0685,
+                y: -1076.21
+            },
+            21 : {
+                x: 6465.24,
+                y: 41.3341
+            },
+            22 : {
+                x: -3674.51,
+                y: 606.939
+            },
+            23 : {
+                x: 3502.89,
+                y: 4100.46
+            },
+            24 : {
+                x: -5446.4,
+                y: -1466.19
+            },
+            25 : {
+                x: 2.7304,
+                y: -6191.82
+            },
+            26 : {
+                x: -2500.98,
+                y: -4433.87
+            },
+            27 : {
+                x: -603.943,
+                y: 5177.32
+            },
+            28 : {
+                x: -6365.4,
+                y: 3017.96
+            },
+            29 : {
+                x: 4703.39,
+                y: 2364.44
+            },
+            30 : {
+                x: -6478.44,
+                y: -2003.82
+            },
+            31 : {
+                x: -3096.01,
+                y: -1646.66
+            },
+            32 : {
+                x: 2367.15,
+                y: 4088.46
+            },
+            33 : {
+                x: 1899.55,
+                y: -4403.39
+            },
+            34 : {
+                x: -6375.6,
+                y: 1061.78
+            },
+            35 : {
+                x: 468.784,
+                y: 4717.25
+            },
+            36 : {
+                x: 1276.22,
+                y: -3750.64
+            },
+            37 : {
+                x: 6650.6,
+                y: 3907.9
+            },
+            38 : {
+                x: -1703.81,
+                y: 4391.45
+            },
+            39 : {
+                x: 3188.98,
+                y: -1330.09
+            },
+            40 : {
+                x: 1.00464,
+                y: 3836.23
+            },
+            41 : {
+                x: 2186.07,
+                y: -4931.37
+            },
+            42 : {
+                x: -3262.3,
+                y: 5659.79
+            },
+            43 : {
+                x: -4655.53,
+                y: 3711.67
+            },
+            44 : {
+                x: -2443.4,
+                y: 345.669
+            },
+            45 : {
+                x: 3207.01,
+                y: -356.947
+            },
+            46 : {
+                x: 6854.03,
+                y: 1814.44
+            },
+            47 : {
+                x: -4596.02,
+                y: 2453.81
+            },
+            48 : {
+                x: -3969.04,
+                y: -2838.46
+            },
+            49 : {
+                x: 1226,
+                y: 4717.72
+            },
+            50 : {
+                x: -3190.08,
+                y: -527.433
+            },
+            51 : {
+                x: 2800.84,
+                y: 81.5361
+            },
+            52 : {
                 x: 795.699,
                 y: -5441.3
             },
+            53 : {
+                x: 3278.93,
+                y: 3802.8
+            },
+            54 : {
+                x: 298.775,
+                y: 4379.71
+            },
+            55 : {
+                x: -7006.45,
+                y: 6394.38
+            },
+            56 : {
+                x: 4145.42,
+                y: 2350.19
+            },
+            57 : {
+                x: 3155.04,
+                y: -5075.81
+            },
+            58 : {
+                x: -4392.05,
+                y: -203.489
+            },
+            59 : {
+                x: 2.85721,
+                y: 6351.25
+            },
+            60 : {
+                x: 2.21388,
+                y: 2641.63
+            },
+            61 : {
+                x: 648.905,
+                y: -396.45
+            },
+            62 : {
+                x: -6578.61,
+                y: 2001.01
+            },
+            63 : {
+                x: -5807.91,
+                y: -3453.47
+            },
+            64 : {
+                x: 4319.84,
+                y: -3714
+            },
+            65 : {
+                x: -6780.06,
+                y: 6791.7
+            },
+            66 : {
+                x: 1369.36,
+                y: 181.769
+            },
+            67 : {
+                x: -942.818,
+                y: -4252.79
+            },
+            68 : {
+                x: -1263.56,
+                y: -722.851
+            },
+            69 : {
+                x: 2724.72,
+                y: 4707.99
+            },
+            70 : {
+                x: -5471.29,
+                y: 1397.84
+            },
+            71 : {
+                x: -4441.9,
+                y: 1570.37
+            },
+            72 : {
+                x: -5022.32,
+                y: -3076.43
+            },
+            73 : {
+                x: 1381.09,
+                y: 1913.86
+            },
+            74 : {
+                x: -2697.55,
+                y: -3138.37
+            },
+            75 : {
+                x: -4590.89,
+                y: 4779.21
+            },
+            76 : {
+                x: 2326.75,
+                y: -2752.46
+            },
+            77 : {
+                x: -4117.23,
+                y: 622.568
+            },
+            78 : {
+                x: -2384.67,
+                y: -7759.7
+            },
+            79 : {
+                x: -650.565,
+                y: -376.013
+            },
+            80 : {
+                x: -4899.88,
+                y: 3192.62
+            },
+            81 : {
+                x: -4596.87,
+                y: -1647.66
+            },
+            82 : {
+                x: -5454.2,
+                y: -2000.75
+            },
+            83 : {
+                x: 737.904,
+                y: -979.543
+            },
+            84 : {
+                x: 5614.17,
+                y: 2468.78
+            },
+            85 : {
+                x: 4220,
+                y: -373.022
+            },
+            86 : {
+                x: -7510.82,
+                y: 6793.7
+            },
+            87 : {
+                x: 302.009,
+                y: -3113.94
+            },
+            88 : {
+                x: -2167.49,
+                y: 5432.38
+            },
+            89 : {
+                x: 1516.74,
+                y: 5146.86
+            },
+            90 : {
+                x: -6376.63,
+                y: -2901.63
+            },
+            91 : {
+                x: -804.679,
+                y: 6160.19
+            },
+            92 : {
+                x: 493.755,
+                y: -3459.94
+            },
+            93 : {
+                x: 8903.66,
+                y: 1874.62
+            },
+            94 : {
+                x: -8214.36,
+                y: -2385.12
+            },
+            95 : {
+                x: -5469.14,
+                y: 2657.32
+            },
+            96 : {
+                x: -3677.63,
+                y: 1570.93
+            },
+            97 : {
+                x: -4489.95,
+                y: 2454.36
+            },
+            98 : {
+                x: -5118.11,
+                y: 4097.73
+            },
+            99 : {
+                x: -536.505,
+                y: -1319.25
+            },
+            100 : {
+                x: -1463.41,
+                y: -6245.97
+            },
+            101 : {
+                x: 3333.63,
+                y: -3301.79
+            },
+            102 : {
+                x: -3144.14,
+                y: -5408.87
+            },
+            103 : {
+                x: -8535.31,
+                y: 3169.39
+            },
+            104 : {
+                x: 2864.33,
+                y: -5651.59
+            },
+            105 : {
+                x: -2744.9,
+                y: 2021.18
+            },
+            106 : {
+                x: 3888.82,
+                y: 5651.85
+            },
+            107 : {
+                x: -1519.9,
+                y: 2474.17
+            },
+            108 : {
+                x: -5299.44,
+                y: -788.944
+            },
+            109 : {
+                x: -6644.59,
+                y: -2005.18
+            },
+            110 : {
+                x: -5806,
+                y: -1239.66
+            },
+            111 : {
+                x: -3107.6,
+                y: 381.32
+            },
+            112 : {
+                x: -3003.39,
+                y: -2349.62
+            },
+            113 : {
+                x: -1190.73,
+                y: -18.8151
+            },
+            114 : {
+                x: -1.8421,
+                y: -2635.47
+            },
+            115 : {
+                x: 3565.05,
+                y: 806.912
+            },
+            116 : {
+                x: -4493.35,
+                y: -1365.77
+            },
+            117 : {
+                x: 1878.44,
+                y: -6416.85
+            },
+            118 : {
+                x: -3570.8,
+                y: -2490.82
+            },
+            119 : {
+                x: -3951.57,
+                y: -3272.21
+            },
+            120 : {
+                x: 4215.4,
+                y: -1307.89
+            },
+            121 : {
+                x: -444.078,
+                y: -5003.39
+            },
+            122 : {
+                x: 1142.64,
+                y: -2078.29
+            },
+            123 : {
+                x: 1553.63,
+                y: -5126.73
+            },
+            124 : {
+                x: -2792.06,
+                y: -2034.76
+            },
+            125 : {
+                x: 882.749,
+                y: 2173.03
+            },
+            126 : {
+                x: 4859.01,
+                y: .129861
+            },
+            127 : {
+                x: -393.207,
+                y: 3381.27
+            },
+            128 : {
+                x: -3145.82,
+                y: 3824.37
+            },
+            129 : {
+                x: 2676.89,
+                y: 3891.84
+            },
+            130 : {
+                x: -2551.08,
+                y: -4143.66
+            },
+            131 : {
+                x: 5315.95,
+                y: -2721.97
+            },
+            132 : {
+                x: -3680.38,
+                y: 2006.07
+            },
+            133 : {
+                x: -6394.58,
+                y: -1864.16
+            },
+            134 : {
+                x: 4015.24,
+                y: -4266.04
+            },
+            135 : {
+                x: 3215.39,
+                y: 2330.69
+            },
+            136 : {
+                x: 1040.19,
+                y: -5000.54
+            },
+            137 : {
+                x: 2853.39,
+                y: 5912.69
+            },
+            138 : {
+                x: -7421.76,
+                y: 6577.8
+            },
+            139 : {
+                x: 4306.95,
+                y: 4798.89
+            },
+            140 : {
+                x: -1959.82,
+                y: 7876.7
+            },
+            141 : {
+                x: 5399.41,
+                y: -996.671
+            },
+            142 : {
+                x: 6208.42,
+                y: -3238.98
+            },
+            143 : {
+                x: -6548.35,
+                y: 6817.83
+            },
+            144 : {
+                x: -3157.81,
+                y: 2456.37
+            },
+            145 : {
+                x: -5805.31,
+                y: 1998.55
+            },
+            146 : {
+                x: 3760.86,
+                y: -2410.14
+            },
+            147 : {
+                x: -3235.18,
+                y: -4635.27
+            },
+            148 : {
+                x: 5718.15,
+                y: -2229.64
+            },
+            149 : {
+                x: 5103.94,
+                y: -4577.47
+            },
+            150 : {
+                x: 1922.83,
+                y: -5496.54
+            },
+            151 : {
+                x: -5805.78,
+                y: 3018
+            },
+            152 : {
+                x: 6482.71,
+                y: 4473.78
+            },
+            153 : {
+                x: -3026.03,
+                y: 4750.98
+            },
+            154 : {
+                x: 1885.07,
+                y: -5803.12
+            },
+            155 : {
+                x: -4560.26,
+                y: -3977.58
+            },
+            156 : {
+                x: -5805.77,
+                y: -649.633
+            },
+            157 : {
+                x: 1656.37,
+                y: 4254.68
+            },
+            158 : {
+                x: 2356.45,
+                y: -1348.67
+            },
+            159 : {
+                x: 6202.86,
+                y: 1809.07
+            },
+            160 : {
+                x: -1511.46,
+                y: -1321.34
+            },
+            161 : {
+                x: 1486.93,
+                y: -1265.98
+            },
+            162 : {
+                x: -917.66,
+                y: -1944.76
+            },
+            163 : {
+                x: -7146.59,
+                y: 7425.47
+            },
+            164 : {
+                x: 2848.79,
+                y: 3232.21
+            },
+            165 : {
+                x: -8146.03,
+                y: -3672.88
+            },
+            166 : {
+                x: -7512.4,
+                y: 7213.68
+            },
+            167 : {
+                x: -1366.87,
+                y: 1836.1
+            },
+            168 : {
+                x: -7510.26,
+                y: 6737.02
+            },
+            169 : {
+                x: -8299.39,
+                y: -1022.94
+            },
+            170 : {
+                x: 6960.16,
+                y: -1851.99
+            },
+            171 : {
+                x: -5314.74,
+                y: 4369.25
+            },
             172 : {
-                x: -5806.28,
-                y: -12.7873
+                x: 6941.74,
+                y: 415.175
             },
             173 : {
-                x: 8291.79,
-                y: -4243.09
+                x: -5807.97,
+                y: -79.7297
             },
             174 : {
                 x: 607.025,
                 y: 5180.21
             },
             175 : {
-                x: 1038.22,
-                y: 565.817
+                x: 3236.98,
+                y: 1359.37
             },
             176 : {
                 x: -3675.24,
                 y: 1082.28
             },
             177 : {
-                x: 6203.84,
-                y: -625.752
+                x: -2617.24,
+                y: 3640.93
             },
             178 : {
-                x: 1695.53,
-                y: -2377.1
-            },
-            179 : {
-                x: 5568.94,
-                y: 1821.07
-            },
-            180 : {
-                x: -7146.01,
-                y: 6581.75
-            },
-            181 : {
-                x: -650.565,
-                y: -376.013
-            },
-            182 : {
-                x: -8214.36,
-                y: -2385.12
-            },
-            183 : {
-                x: 1745.77,
-                y: -3272.37
-            },
-            184 : {
-                x: -5807.6,
-                y: -2764.2
-            },
-            185 : {
-                x: -3005.29,
-                y: 2454.17
-            },
-            186 : {
-                x: -287.552,
-                y: -3101.83
-            },
-            187 : {
-                x: -5460.76,
-                y: -266.582
-            },
-            188 : {
-                x: 648.619,
-                y: 317.957
-            },
-            189 : {
-                x: 2415.88,
-                y: -3144.02
-            },
-            190 : {
-                x: 2639.51,
-                y: -5351.76
-            },
-            191 : {
-                x: 6505.46,
-                y: -415.836
-            },
-            192 : {
-                x: 3159.05,
-                y: -4510.63
-            },
-            193 : {
-                x: -5805.67,
-                y: 1064.21
-            },
-            194 : {
-                x: 6810.04,
-                y: -2686.38
-            },
-            195 : {
-                x: -3422.19,
-                y: 5844.92
-            },
-            196 : {
-                x: 6862.22,
-                y: 2783.58
-            },
-            197 : {
-                x: -2838.4,
-                y: -4276.49
-            },
-            198 : {
-                x: 2853.39,
-                y: 5912.69
-            },
-            199 : {
-                x: 5719.25,
-                y: -1830.93
-            },
-            200 : {
-                x: 4514.48,
-                y: 5118.11
-            },
-            201 : {
-                x: 806.822,
-                y: 6158.3
-            },
-            202 : {
-                x: -2176.9,
-                y: -4214.66
-            },
-            203 : {
-                x: -804.545,
-                y: -6487.22
-            },
-            204 : {
-                x: -3672.27,
-                y: -15.1986
-            },
-            205 : {
-                x: -1235.69,
-                y: 5182.78
-            },
-            206 : {
-                x: 5064.43,
-                y: 4166.67
-            },
-            207 : {
-                x: 529.496,
-                y: 1847.29
-            },
-            208 : {
-                x: 5540.23,
-                y: -1829.23
-            },
-            209 : {
-                x: -5446.86,
-                y: 1991.42
-            },
-            210 : {
-                x: -3194.72,
-                y: -2258.7
-            },
-            211 : {
-                x: 4214.22,
-                y: -2341.95
-            },
-            212 : {
-                x: -3742.46,
-                y: 4394.27
-            },
-            213 : {
-                x: 4703.89,
-                y: 1298.84
-            },
-            214 : {
-                x: 5076.02,
-                y: 2365.64
-            },
-            215 : {
-                x: -4052.13,
-                y: -1505.14
-            },
-            216 : {
-                x: 6202.62,
-                y: 890.598
-            },
-            217 : {
-                x: 5904.15,
-                y: -797.787
-            },
-            218 : {
-                x: 498.387,
-                y: -3419.32
-            },
-            219 : {
-                x: -1750.68,
-                y: -4334.09
-            },
-            220 : {
-                x: -444.078,
-                y: -5003.39
-            },
-            221 : {
-                x: 1553.63,
-                y: -5126.73
-            },
-            222 : {
-                x: -11.757,
-                y: -689.684
-            },
-            223 : {
-                x: 3800.79,
-                y: 3259.95
-            },
-            224 : {
-                x: 5899.71,
-                y: -311.585
-            },
-            225 : {
-                x: -4596.25,
-                y: -2349.04
-            },
-            226 : {
-                x: 1514.75,
-                y: 5655.97
-            },
-            227 : {
-                x: 1330.48,
-                y: 1167.25
-            },
-            228 : {
-                x: 302.009,
-                y: -3113.94
-            },
-            229 : {
-                x: -273.072,
-                y: 4377.84
-            },
-            230 : {
-                x: -5804.7,
-                y: -2004.08
-            },
-            231 : {
-                x: -8299.39,
-                y: -1022.94
-            },
-            232 : {
-                x: 2545.24,
-                y: -4362.26
-            },
-            233 : {
-                x: 1721.56,
-                y: 7892.91
-            },
-            234 : {
-                x: 6202.86,
-                y: 1809.07
-            },
-            235 : {
-                x: 2549.61,
-                y: -4036.63
-            },
-            236 : {
-                x: 6208.31,
-                y: -3736.46
-            },
-            237 : {
-                x: -1754,
-                y: 5332.47
-            },
-            238 : {
-                x: -7378.96,
-                y: 7452.77
-            },
-            239 : {
-                x: 3548.06,
-                y: -1828.29
-            },
-            240 : {
-                x: 1012.27,
-                y: 3782.08
-            },
-            241 : {
-                x: -4135.25,
-                y: 1080.54
-            },
-            242 : {
-                x: 6650.6,
-                y: 3907.9
-            },
-            243 : {
-                x: -887.137,
-                y: -5312.3
-            },
-            244 : {
-                x: 3264.91,
-                y: 1336.94
-            },
-            245 : {
-                x: -7743.1,
-                y: 7186.04
-            },
-            246 : {
-                x: -8532.23,
-                y: 3170.51
-            },
-            247 : {
-                x: -8535.31,
-                y: 3169.39
-            },
-            248 : {
-                x: -2337.21,
-                y: 4078.9
-            },
-            249 : {
-                x: -421.246,
-                y: -1777.76
-            },
-            250 : {
-                x: 5299.38,
-                y: 4426.1
-            },
-            251 : {
-                x: -7101.21,
-                y: 6544.94
-            },
-            252 : {
-                x: 6203.99,
-                y: -1301.19
-            },
-            253 : {
-                x: -1362.84,
-                y: 810.036
-            },
-            254 : {
-                x: -3702.06,
-                y: -1998.72
-            },
-            255 : {
-                x: 1703.87,
-                y: 523.326
-            },
-            256 : {
-                x: 5940.66,
-                y: 1474.75
-            },
-            257 : {
-                x: -1885.13,
-                y: -3797.04
-            },
-            258 : {
-                x: 327.103,
-                y: -4369.78
-            },
-            259 : {
-                x: -14.0685,
-                y: -1076.21
-            },
-            260 : {
-                x: 3358.73,
-                y: 5203.03
-            },
-            261 : {
-                x: 4777.87,
-                y: -1835.66
-            },
-            262 : {
-                x: -2744.9,
-                y: 2021.18
-            },
-            263 : {
-                x: 5265.6,
-                y: -644.286
-            },
-            264 : {
-                x: 4220.34,
-                y: 4.63907
-            },
-            265 : {
-                x: 971.046,
-                y: -4255.56
-            },
-            266 : {
-                x: 4525.15,
-                y: 3807.9
-            },
-            267 : {
-                x: -2339.97,
-                y: 1360.77
-            },
-            268 : {
-                x: -5105.11,
-                y: -4126.1
-            },
-            269 : {
-                x: -4954.87,
-                y: 790.413
-            },
-            270 : {
-                x: -4493.35,
-                y: -1365.77
-            },
-            271 : {
-                x: -3019.08,
-                y: -6168.64
-            },
-            272 : {
-                x: -3412.25,
-                y: 2943.7
-            },
-            273 : {
-                x: -1703.81,
-                y: 4391.45
-            },
-            274 : {
-                x: 4877.08,
-                y: -1823.84
-            },
-            275 : {
-                x: -4931.17,
-                y: 3922.72
-            },
-            276 : {
-                x: -536.054,
-                y: 3836.27
-            },
-            277 : {
-                x: -8146.03,
-                y: -3672.88
-            },
-            278 : {
-                x: -3170.88,
-                y: 1570.79
-            },
-            279 : {
-                x: 5283.85,
-                y: -257.805
-            },
-            280 : {
-                x: 2465.42,
-                y: -5972.48
-            },
-            281 : {
-                x: 801.181,
-                y: 4375.14
-            },
-            282 : {
-                x: -3689.3,
-                y: 2454.83
-            },
-            283 : {
-                x: -3231.98,
-                y: -3781.01
-            },
-            284 : {
-                x: -45.0943,
-                y: 8304.86
-            },
-            285 : {
-                x: 3576.52,
-                y: -4395.42
-            },
-            286 : {
-                x: -3090.06,
-                y: 1544.65
-            },
-            287 : {
-                x: 3564.65,
-                y: .747348
-            },
-            288 : {
-                x: 4815.75,
-                y: -4083.77
-            },
-            289 : {
-                x: 4903.47,
-                y: -3694.57
-            },
-            290 : {
-                x: 1694.56,
-                y: -1911.09
-            },
-            291 : {
-                x: 4859.44,
-                y: 468.341
-            },
-            292 : {
-                x: -440.174,
-                y: 3412.28
-            },
-            293 : {
-                x: 510.096,
-                y: 972.011
-            },
-            294 : {
-                x: 2710.41,
-                y: -3598.77
-            },
-            295 : {
-                x: -602.265,
-                y: 339.952
-            },
-            296 : {
-                x: -2421.66,
-                y: -5382.98
-            },
-            297 : {
-                x: -3669.76,
-                y: -1159.5
-            },
-            298 : {
-                x: 975.61,
-                y: -4240.52
-            },
-            299 : {
-                x: 2.33896,
-                y: 5657.23
-            },
-            300 : {
-                x: 1878.44,
-                y: -6416.85
-            },
-            301 : {
-                x: -2232.69,
-                y: -2803.21
-            },
-            302 : {
-                x: 3784.87,
-                y: -3081.14
-            },
-            303 : {
-                x: 3236.98,
-                y: 1359.37
-            },
-            304 : {
-                x: 9.10728,
-                y: -5236.32
-            },
-            305 : {
-                x: -1.11947,
-                y: 3410.97
-            },
-            306 : {
-                x: 3565.05,
-                y: 806.912
-            },
-            307 : {
-                x: 786.907,
-                y: -5801.23
-            },
-            308 : {
-                x: 2.53657,
-                y: -4258.24
-            },
-            309 : {
-                x: -5469.14,
-                y: 2657.32
-            },
-            310 : {
-                x: -3067.17,
-                y: -5096.62
-            },
-            311 : {
-                x: 8903.66,
-                y: 1874.62
-            },
-            312 : {
-                x: 5619.04,
-                y: 1149.48
-            },
-            313 : {
-                x: -466.7,
-                y: -3409.32
-            },
-            314 : {
-                x: 3114.69,
-                y: 4813.29
-            },
-            315 : {
-                x: -4376.67,
-                y: -5537.57
-            },
-            316 : {
-                x: 2107.68,
-                y: 4152.51
-            },
-            317 : {
-                x: -2167.49,
-                y: 5432.38
-            },
-            318 : {
-                x: 565.203,
-                y: -7423.01
-            },
-            319 : {
-                x: -5445.08,
-                y: -2545.4
-            },
-            320 : {
-                x: -2351.97,
-                y: -4821.35
-            },
-            321 : {
-                x: -1751.37,
-                y: -5793.9
-            },
-            322 : {
-                x: 5247.79,
-                y: 252.011
-            },
-            323 : {
-                x: -2193.62,
-                y: 4995.65
-            },
-            324 : {
-                x: 3794.48,
-                y: -4699.55
-            },
-            325 : {
-                x: 5718.15,
-                y: -2229.64
-            },
-            326 : {
-                x: -2384.67,
-                y: -7759.7
-            },
-            327 : {
-                x: -917.792,
-                y: 2012.9
-            },
-            328 : {
-                x: 1147.47,
-                y: 4246.6
-            },
-            329 : {
-                x: -2792.06,
-                y: -2034.76
-            },
-            330 : {
-                x: -6780.06,
-                y: 6791.7
-            },
-            331 : {
-                x: 1276.22,
-                y: -3750.64
-            },
-            332 : {
-                x: 6804.3,
-                y: -1039.63
-            },
-            333 : {
-                x: 3009.58,
-                y: 2338.39
-            },
-            334 : {
-                x: 6854.03,
-                y: 1814.44
-            },
-            335 : {
-                x: 3207.01,
-                y: -356.947
-            },
-            336 : {
-                x: 6579.81,
-                y: 1109.24
-            },
-            337 : {
-                x: 880.905,
-                y: 1205.36
-            },
-            338 : {
-                x: -4968.51,
-                y: -341.869
-            },
-            339 : {
-                x: -2137.56,
-                y: -3393.97
-            },
-            340 : {
-                x: -562.323,
-                y: 1846.02
-            },
-            341 : {
-                x: 1679.73,
-                y: -3974.79
-            },
-            342 : {
-                x: 5836.64,
-                y: 3859.72
-            },
-            343 : {
-                x: 3572.29,
-                y: 1827.86
-            },
-            344 : {
-                x: 4015.24,
-                y: -4266.04
-            },
-            345 : {
-                x: -2106.16,
-                y: 5946.28
-            },
-            346 : {
-                x: 1869.63,
-                y: -279.253
-            },
-            347 : {
-                x: -2542.7,
-                y: -6156.97
-            },
-            348 : {
-                x: -4611.12,
-                y: -5100.25
-            },
-            349 : {
-                x: -388.144,
-                y: -4629.31
-            },
-            350 : {
-                x: 2348.91,
-                y: 1363.15
-            },
-            351 : {
-                x: -3351.84,
-                y: 4112.4
-            },
-            352 : {
-                x: 6504.38,
-                y: -3416.35
-            },
-            353 : {
-                x: 3249.6,
-                y: 440.586
-            },
-            354 : {
-                x: 2.21388,
-                y: 2641.63
-            },
-            355 : {
-                x: 1381.09,
-                y: 1913.86
-            },
-            356 : {
-                x: -1949.42,
-                y: 5661.31
-            },
-            357 : {
-                x: 5942.83,
-                y: 2168.37
-            },
-            358 : {
-                x: -14.713,
-                y: -1608.26
-            },
-            359 : {
-                x: 538.608,
-                y: 3841.25
-            },
-            360 : {
-                x: -3672.45,
-                y: -1504.71
-            },
-            361 : {
-                x: -6394.58,
-                y: -1864.16
-            },
-            362 : {
                 x: 9326.67,
                 y: 3425.74
             },
-            363 : {
-                x: -8022.84,
-                y: -1176.73
-            },
-            364 : {
-                x: -628.12,
-                y: 1040.86
-            },
-            365 : {
-                x: 2650.33,
-                y: 5655.89
-            },
-            366 : {
-                x: -5314.74,
-                y: 4369.25
-            },
-            367 : {
-                x: -3366.65,
-                y: 3642.29
-            },
-            368 : {
-                x: 453.907,
-                y: -5001.01
-            },
-            369 : {
-                x: -2704.77,
-                y: 4711.05
-            },
-            370 : {
-                x: 3562.03,
-                y: -404.282
-            },
-            371 : {
-                x: -4594.94,
-                y: -414.85
-            },
-            372 : {
-                x: -2836.12,
-                y: 1556.26
-            },
-            373 : {
-                x: -1911.86,
-                y: 4714.9
-            },
-            374 : {
-                x: 1486.93,
-                y: -1265.98
-            },
-            375 : {
-                x: -4384.48,
-                y: 196.24
-            },
-            376 : {
-                x: 5437.67,
-                y: 3029.87
-            },
-            377 : {
-                x: 5725.35,
-                y: -1428.62
-            },
-            378 : {
-                x: -317.852,
-                y: -4361.55
-            },
-            379 : {
-                x: 4012.06,
-                y: 3997.49
-            },
-            380 : {
-                x: -4389.06,
-                y: -4810.66
-            },
-            381 : {
-                x: 4858.92,
-                y: -822.244
-            },
-            382 : {
-                x: -1115.84,
-                y: -7816.62
-            },
-            383 : {
-                x: 4151.27,
-                y: 1330.18
-            },
-            384 : {
-                x: 3322.05,
-                y: -5287.21
-            },
-            385 : {
-                x: 5857.73,
-                y: -3103.42
-            },
-            386 : {
-                x: -2023.03,
-                y: -6255.44
-            },
-            387 : {
-                x: -2250.5,
-                y: 2923.11
-            },
-            388 : {
-                x: -2770.66,
-                y: -94.1434
-            },
-            389 : {
-                x: -7558.01,
-                y: 7184.51
-            },
-            390 : {
-                x: -917.66,
-                y: -1944.76
-            },
-            391 : {
-                x: 4.62638,
-                y: -4253.35
-            },
-            392 : {
-                x: 4319.84,
-                y: -3714
-            },
-            393 : {
-                x: -1236.01,
-                y: -3736.16
-            },
-            394 : {
-                x: -830.727,
-                y: -916.91
-            },
-            395 : {
-                x: 4013.16,
-                y: 3705.5
-            },
-            396 : {
-                x: 6.3354,
-                y: 765.658
-            },
-            397 : {
-                x: -6095.56,
-                y: 408.104
-            },
-            398 : {
-                x: -1157.33,
-                y: 4260.12
-            },
-            399 : {
-                x: 1.87995,
-                y: -3738.17
-            },
-            400 : {
-                x: -2350.53,
-                y: -1349.66
-            },
-            401 : {
-                x: -3190.2,
-                y: -1515.88
-            },
-            402 : {
-                x: -3674.51,
-                y: 606.939
-            },
-            403 : {
-                x: -5806,
-                y: -1239.66
-            },
-            404 : {
-                x: 3264.75,
-                y: 5656.98
-            },
-            405 : {
-                x: 1380.24,
-                y: 3312.8
-            },
-            406 : {
-                x: -5435.21,
-                y: 407.989
-            },
-            407 : {
-                x: -4815.55,
-                y: -5434.7
-            },
-            408 : {
-                x: 4340.35,
-                y: -4826.16
-            },
-            409 : {
-                x: 399.729,
-                y: 3401.77
-            },
-            410 : {
-                x: 3932.82,
-                y: 4469.6
-            },
-            411 : {
-                x: 5952.31,
-                y: -1829.79
-            },
-            412 : {
-                x: -3677.7,
-                y: -587.71
-            },
-            413 : {
-                x: 2326.75,
-                y: -2752.46
-            },
-            414 : {
-                x: 3760.86,
-                y: -2410.14
-            },
-            415 : {
-                x: 2848.79,
-                y: 3232.21
-            },
-            416 : {
-                x: -4601.44,
-                y: 708.72
-            },
-            417 : {
-                x: -7602.79,
-                y: 6578.31
-            },
-            418 : {
-                x: 11.4758,
-                y: -5611.23
-            },
-            419 : {
-                x: 4704.19,
-                y: 1826.84
-            },
-            420 : {
-                x: 6210.68,
-                y: -2350.34
-            },
-            421 : {
-                x: -887.52,
-                y: 5659.54
-            },
-            422 : {
-                x: -3618.41,
-                y: -3587.71
-            },
-            423 : {
-                x: -4183.68,
-                y: 4702.85
-            },
-            424 : {
-                x: 6482.71,
-                y: 4473.78
-            },
-            425 : {
-                x: -8022.65,
-                y: -868.71
-            },
-            426 : {
-                x: -3096.01,
-                y: -1646.66
-            },
-            427 : {
-                x: 1804.21,
-                y: -4323.01
-            },
-            428 : {
-                x: 6207.08,
-                y: -1840.31
-            },
-            429 : {
-                x: -2025.22,
-                y: 3537.77
-            },
-            430 : {
+            179 : {
+                x: 880.905,
+                y: 1205.36
+            },
+            180 : {
+                x: -3672.27,
+                y: -15.1986
+            },
+            181 : {
+                x: -5807.6,
+                y: -2764.2
+            },
+            182 : {
+                x: -5460.76,
+                y: -266.582
+            },
+            183 : {
+                x: 5711.41,
+                y: .170044
+            },
+            184 : {
+                x: 6810.04,
+                y: -2686.38
+            },
+            185 : {
+                x: 6203.84,
+                y: -625.752
+            },
+            186 : {
+                x: 5247.79,
+                y: 252.011
+            },
+            187 : {
+                x: 1870.2,
+                y: -470.126
+            },
+            188 : {
+                x: 6862.22,
+                y: 2783.58
+            },
+            189 : {
+                x: -2838.4,
+                y: -4276.49
+            },
+            190 : {
                 x: -4117.32,
                 y: -861.654
             },
-            431 : {
-                x: 2831.35,
-                y: -3140.99
+            191 : {
+                x: 806.822,
+                y: 6158.3
             },
-            432 : {
-                x: -3262.3,
-                y: 5659.79
+            192 : {
+                x: -804.545,
+                y: -6487.22
             },
-            433 : {
-                x: -1925.64,
-                y: -476.021
+            193 : {
+                x: -7146.01,
+                y: 6581.75
             },
-            434 : {
-                x: -6780.01,
-                y: 7268.38
+            194 : {
+                x: -1235.69,
+                y: 5182.78
             },
-            435 : {
-                x: -3985.94,
-                y: 2942.65
+            195 : {
+                x: 529.496,
+                y: 1847.29
             },
-            436 : {
-                x: 2831.8,
-                y: -4182.25
+            196 : {
+                x: -5446.86,
+                y: 1991.42
             },
-            437 : {
-                x: -4594.54,
-                y: -786.585
+            197 : {
+                x: -3742.46,
+                y: 4394.27
             },
-            438 : {
-                x: -1710.24,
-                y: -3560.52
+            198 : {
+                x: 5719.25,
+                y: -1830.93
             },
-            439 : {
-                x: 4215.21,
-                y: 384.589
+            199 : {
+                x: -4052.13,
+                y: -1505.14
             },
-            440 : {
-                x: 2099.1,
-                y: 3642.47
+            200 : {
+                x: -1750.68,
+                y: -4334.09
             },
-            441 : {
-                x: 4306.95,
-                y: 4798.89
+            201 : {
+                x: -1751.18,
+                y: -5306.89
             },
-            442 : {
-                x: 3372.76,
-                y: 5912.5
+            202 : {
+                x: -1540.49,
+                y: 5972.11
             },
-            443 : {
-                x: 6202.31,
-                y: 2781.35
+            203 : {
+                x: 4514.48,
+                y: 5118.11
             },
-            444 : {
-                x: 6941.74,
-                y: 415.175
+            204 : {
+                x: -1023.48,
+                y: 3799.75
             },
-            445 : {
-                x: -2743.51,
-                y: 4386.59
+            205 : {
+                x: -5023.97,
+                y: -3620
             },
-            446 : {
-                x: 1825.35,
-                y: 4709.37
-            },
-            447 : {
-                x: -4392.05,
-                y: -203.489
-            },
-            448 : {
-                x: 2724.72,
-                y: 4707.99
-            },
-            449 : {
-                x: -1549.02,
-                y: -2514.39
-            },
-            450 : {
-                x: -3344.95,
-                y: -2838.24
-            },
-            451 : {
-                x: 1218.47,
-                y: -700.527
-            },
-            452 : {
-                x: 7375.96,
-                y: 378.791
-            },
-            453 : {
-                x: 705.694,
-                y: -3751.68
-            },
-            454 : {
-                x: -643.636,
-                y: -3743.59
-            },
-            455 : {
-                x: 4591.18,
-                y: 207.387
-            },
-            456 : {
-                x: -1530.1,
-                y: 3674.85
-            },
-            457 : {
-                x: -3805.05,
-                y: 3281.2
-            },
-            458 : {
-                x: 1288.87,
-                y: -1378.52
-            },
-            459 : {
-                x: 493.755,
-                y: -3459.94
-            },
-            460 : {
-                x: 1174.35,
-                y: -2376.67
-            },
-            461 : {
+            206 : {
                 x: -507.803,
                 y: -3449.96
             },
-            462 : {
-                x: 1885.07,
-                y: -5803.12
+            207 : {
+                x: 4588.66,
+                y: -185.041
             },
-            463 : {
-                x: -6913.99,
-                y: 6554.39
+            208 : {
+                x: 1591.35,
+                y: 3705.31
             },
-            464 : {
-                x: 3155.04,
-                y: -5075.81
+            209 : {
+                x: -4596.25,
+                y: -2349.04
             },
-            465 : {
-                x: 2241.83,
-                y: -5586.67
+            210 : {
+                x: 1330.48,
+                y: 1167.25
             },
-            466 : {
-                x: -803.356,
-                y: -5794.1
+            211 : {
+                x: 1825.35,
+                y: 4709.37
             },
-            467 : {
-                x: -2345.62,
-                y: 4528.39
+            212 : {
+                x: 2242.36,
+                y: 3203.19
             },
-            468 : {
-                x: 3565.21,
-                y: 401.685
+            213 : {
+                x: 3579.55,
+                y: 2826.11
             },
-            469 : {
-                x: -2746.02,
-                y: -3625.75
+            214 : {
+                x: -5804.7,
+                y: -2004.08
             },
-            470 : {
-                x: 3563.21,
-                y: -1323.88
+            215 : {
+                x: 2545.24,
+                y: -4362.26
             },
-            471 : {
-                x: -6644.59,
-                y: -2005.18
+            216 : {
+                x: 8803.39,
+                y: 2041.3
             },
-            472 : {
-                x: 3561.95,
-                y: -822.695
+            217 : {
+                x: 2549.61,
+                y: -4036.63
             },
-            473 : {
-                x: 448.162,
-                y: 3410.19
+            218 : {
+                x: 6208.31,
+                y: -3736.46
             },
-            474 : {
+            219 : {
                 x: 5069.83,
                 y: 2856.35
             },
-            475 : {
-                x: 468.784,
-                y: 4717.25
+            220 : {
+                x: -5105.11,
+                y: -4126.1
             },
-            476 : {
-                x: 4594.18,
-                y: 1299.06
-            },
-            477 : {
-                x: 3088.91,
-                y: 2346.68
-            },
-            478 : {
-                x: -7652.04,
-                y: 7109.34
-            },
-            479 : {
-                x: -4594.07,
-                y: -498.542
-            },
-            480 : {
-                x: -743.785,
-                y: 5657.44
-            },
-            481 : {
-                x: -4120.36,
-                y: -1159.85
-            },
-            482 : {
-                x: 3515.46,
-                y: -2342.64
-            },
-            483 : {
-                x: 4859.09,
-                y: -1301.24
-            },
-            484 : {
-                x: 4703.39,
-                y: 2364.44
-            },
-            485 : {
-                x: 398.51,
-                y: -4637.54
-            },
-            486 : {
-                x: 1142.64,
-                y: -2078.29
-            },
-            487 : {
-                x: 6543.52,
-                y: 505.394
-            },
-            488 : {
+            221 : {
                 x: 1679.9,
                 y: 5974.65
             },
-            489 : {
-                x: -5118.11,
-                y: 4097.73
+            222 : {
+                x: 4903.47,
+                y: -3694.57
             },
-            490 : {
-                x: -1308.36,
-                y: -1412.68
+            223 : {
+                x: 3548.06,
+                y: -1828.29
             },
-            491 : {
-                x: 3876.73,
-                y: -5147.24
+            224 : {
+                x: -3805.05,
+                y: 3281.2
             },
-            492 : {
-                x: 5221.01,
-                y: 686.623
+            225 : {
+                x: 1012.27,
+                y: 3782.08
             },
-            493 : {
-                x: 4859.15,
-                y: -2359.85
+            226 : {
+                x: -4126,
+                y: 3864.31
             },
-            494 : {
-                x: 1656.37,
-                y: 4254.68
+            227 : {
+                x: 4012.06,
+                y: 3997.49
             },
-            495 : {
-                x: 413.405,
-                y: -858.047
+            228 : {
+                x: -5435.21,
+                y: 407.989
             },
-            496 : {
-                x: 2874.49,
-                y: -1342.49
+            229 : {
+                x: 3264.91,
+                y: 1336.94
             },
-            497 : {
-                x: -3570.8,
-                y: -2490.82
+            230 : {
+                x: 4859.09,
+                y: -1301.24
             },
-            498 : {
-                x: 1212.17,
-                y: -136.779
+            231 : {
+                x: -2351.97,
+                y: -4821.35
             },
-            499 : {
-                x: 2124.17,
-                y: 277.436
+            232 : {
+                x: 1825.69,
+                y: -3285.26
             },
-            500 : {
-                x: -6639.09,
-                y: 6980.21
+            233 : {
+                x: 2200.53,
+                y: -3435.58
             },
-            501 : {
-                x: -5454.2,
-                y: -2000.75
+            234 : {
+                x: -4017.52,
+                y: -298.529
             },
-            502 : {
-                x: -5306.78,
-                y: -1999.74
+            235 : {
+                x: -2337.21,
+                y: 4078.9
             },
-            503 : {
-                x: -6731.13,
-                y: 6816.49
+            236 : {
+                x: 5299.38,
+                y: 4426.1
             },
-            504 : {
-                x: -1.04553,
-                y: 4715.36
+            237 : {
+                x: -8532.23,
+                y: 3170.51
             },
-            505 : {
-                x: -6548.35,
-                y: 6817.83
+            238 : {
+                x: 3264.75,
+                y: 5656.98
             },
-            506 : {
-                x: -6869.33,
-                y: 7429.13
+            239 : {
+                x: 2710.41,
+                y: -3598.77
             },
-            507 : {
+            240 : {
+                x: -1362.84,
+                y: 810.036
+            },
+            241 : {
+                x: -1.11947,
+                y: 3410.97
+            },
+            242 : {
+                x: -3618.41,
+                y: -3587.71
+            },
+            243 : {
+                x: 5940.66,
+                y: 1474.75
+            },
+            244 : {
+                x: 8291.79,
+                y: -4243.09
+            },
+            245 : {
+                x: 3088.91,
+                y: 2346.68
+            },
+            246 : {
+                x: 6202.62,
+                y: 890.598
+            },
+            247 : {
+                x: 4205.36,
+                y: -2832.73
+            },
+            248 : {
+                x: -1885.13,
+                y: -3797.04
+            },
+            249 : {
+                x: 327.103,
+                y: -4369.78
+            },
+            250 : {
+                x: 3358.73,
+                y: 5203.03
+            },
+            251 : {
+                x: -2193.62,
+                y: 4995.65
+            },
+            252 : {
+                x: 4220.34,
+                y: 4.63907
+            },
+            253 : {
+                x: 565.203,
+                y: -7423.01
+            },
+            254 : {
+                x: 5899.71,
+                y: -311.585
+            },
+            255 : {
+                x: 4525.15,
+                y: 3807.9
+            },
+            256 : {
+                x: 2352.7,
+                y: -283.597
+            },
+            257 : {
+                x: -2339.97,
+                y: 1360.77
+            },
+            258 : {
                 x: -7286.71,
                 y: 7532.89
             },
-            508 : {
+            259 : {
+                x: -3019.08,
+                y: -6168.64
+            },
+            260 : {
+                x: -602.265,
+                y: 339.952
+            },
+            261 : {
+                x: 4013.16,
+                y: 3705.5
+            },
+            262 : {
+                x: -4954.87,
+                y: 790.413
+            },
+            263 : {
+                x: 9194.32,
+                y: -2615.48
+            },
+            264 : {
+                x: 2831.46,
+                y: -2799.06
+            },
+            265 : {
+                x: 399.729,
+                y: 3401.77
+            },
+            266 : {
+                x: 4877.08,
+                y: -1823.84
+            },
+            267 : {
+                x: -775.456,
+                y: 4374.21
+            },
+            268 : {
+                x: 5283.85,
+                y: -257.805
+            },
+            269 : {
+                x: 2465.42,
+                y: -5972.48
+            },
+            270 : {
+                x: -6758.29,
+                y: 7388.84
+            },
+            271 : {
+                x: -287.552,
+                y: -3101.83
+            },
+            272 : {
+                x: 801.181,
+                y: 4375.14
+            },
+            273 : {
+                x: -3689.3,
+                y: 2454.83
+            },
+            274 : {
+                x: -3090.06,
+                y: 1544.65
+            },
+            275 : {
+                x: 3564.65,
+                y: .747348
+            },
+            276 : {
+                x: 1174.35,
+                y: -2376.67
+            },
+            277 : {
+                x: 1695.53,
+                y: -2377.1
+            },
+            278 : {
+                x: -273.072,
+                y: 4377.84
+            },
+            279 : {
+                x: 2742.05,
+                y: -1805.74
+            },
+            280 : {
+                x: 1694.56,
+                y: -1911.09
+            },
+            281 : {
+                x: -440.174,
+                y: 3412.28
+            },
+            282 : {
+                x: -3672.45,
+                y: -1504.71
+            },
+            283 : {
+                x: 2874.49,
+                y: -1342.49
+            },
+            284 : {
+                x: -1748.21,
+                y: -4420.43
+            },
+            285 : {
+                x: -4120.36,
+                y: -1159.85
+            },
+            286 : {
+                x: 3022.59,
+                y: -2009.62
+            },
+            287 : {
+                x: -803.356,
+                y: -5794.1
+            },
+            288 : {
+                x: -2421.66,
+                y: -5382.98
+            },
+            289 : {
+                x: 975.61,
+                y: -4240.52
+            },
+            290 : {
+                x: 3576.52,
+                y: -4395.42
+            },
+            291 : {
+                x: 626.257,
+                y: -1314.34
+            },
+            292 : {
+                x: 4704.19,
+                y: 1826.84
+            },
+            293 : {
+                x: 5054.18,
+                y: -3151.3
+            },
+            294 : {
+                x: 2.33896,
+                y: 5657.23
+            },
+            295 : {
+                x: 3784.87,
+                y: -3081.14
+            },
+            296 : {
+                x: -4528.12,
+                y: -2004.44
+            },
+            297 : {
+                x: 9.10728,
+                y: -5236.32
+            },
+            298 : {
+                x: 2.53657,
+                y: -4258.24
+            },
+            299 : {
+                x: -3535.69,
+                y: 3530.17
+            },
+            300 : {
+                x: -466.7,
+                y: -3409.32
+            },
+            301 : {
+                x: 2241.83,
+                y: -5586.67
+            },
+            302 : {
+                x: 3114.69,
+                y: 4813.29
+            },
+            303 : {
+                x: 6203.88,
+                y: 4168.72
+            },
+            304 : {
+                x: 1721.56,
+                y: 7892.91
+            },
+            305 : {
+                x: -10551.3,
+                y: 1987.92
+            },
+            306 : {
+                x: 5540.23,
+                y: -1829.23
+            },
+            307 : {
+                x: -4376.67,
+                y: -5537.57
+            },
+            308 : {
+                x: -3819.77,
+                y: -4412.99
+            },
+            309 : {
+                x: -7378.96,
+                y: 7452.77
+            },
+            310 : {
+                x: 2107.68,
+                y: 4152.51
+            },
+            311 : {
+                x: -5445.08,
+                y: -2545.4
+            },
+            312 : {
+                x: 9073.24,
+                y: -1196.8
+            },
+            313 : {
+                x: -4907.34,
+                y: 248.813
+            },
+            314 : {
+                x: -917.792,
+                y: 2012.9
+            },
+            315 : {
+                x: 1147.47,
+                y: 4246.6
+            },
+            316 : {
+                x: -9091.84,
+                y: 652.324
+            },
+            317 : {
+                x: 6804.3,
+                y: -1039.63
+            },
+            318 : {
+                x: -2472.7,
+                y: -3506.94
+            },
+            319 : {
+                x: 6579.81,
+                y: 1109.24
+            },
+            320 : {
+                x: 3565.21,
+                y: 401.685
+            },
+            321 : {
+                x: -2137.56,
+                y: -3393.97
+            },
+            322 : {
+                x: 1212.17,
+                y: -136.779
+            },
+            323 : {
+                x: -562.323,
+                y: 1846.02
+            },
+            324 : {
+                x: -887.137,
+                y: -5312.3
+            },
+            325 : {
+                x: 1679.73,
+                y: -3974.79
+            },
+            326 : {
                 x: -7193.98,
                 y: 7451.31
             },
+            327 : {
+                x: 5836.64,
+                y: 3859.72
+            },
+            328 : {
+                x: 3572.29,
+                y: 1827.86
+            },
+            329 : {
+                x: -7147.07,
+                y: 7001.78
+            },
+            330 : {
+                x: 5904.15,
+                y: -797.787
+            },
+            331 : {
+                x: -3408.98,
+                y: -3271.13
+            },
+            332 : {
+                x: 510.096,
+                y: 972.011
+            },
+            333 : {
+                x: -2542.7,
+                y: -6156.97
+            },
+            334 : {
+                x: -4611.12,
+                y: -5100.25
+            },
+            335 : {
+                x: -4389.06,
+                y: -4810.66
+            },
+            336 : {
+                x: 2348.91,
+                y: 1363.15
+            },
+            337 : {
+                x: 3563.21,
+                y: -1323.88
+            },
+            338 : {
+                x: -3351.84,
+                y: 4112.4
+            },
+            339 : {
+                x: 3800.79,
+                y: 3259.95
+            },
+            340 : {
+                x: -1115.84,
+                y: -7816.62
+            },
+            341 : {
+                x: 498.387,
+                y: -3419.32
+            },
+            342 : {
+                x: 6504.38,
+                y: -3416.35
+            },
+            343 : {
+                x: -11.757,
+                y: -689.684
+            },
+            344 : {
+                x: -6086.95,
+                y: -53.7007
+            },
+            345 : {
+                x: 5942.83,
+                y: 2168.37
+            },
+            346 : {
+                x: 401.606,
+                y: -1791.18
+            },
+            347 : {
+                x: 2868.63,
+                y: 2314.54
+            },
+            348 : {
+                x: -14.713,
+                y: -1608.26
+            },
+            349 : {
+                x: 538.608,
+                y: 3841.25
+            },
+            350 : {
+                x: 2.83856,
+                y: 5.65056
+            },
+            351 : {
+                x: -7743.1,
+                y: 7186.04
+            },
+            352 : {
+                x: -421.246,
+                y: -1777.76
+            },
+            353 : {
+                x: -628.12,
+                y: 1040.86
+            },
+            354 : {
+                x: 2650.33,
+                y: 5655.89
+            },
+            355 : {
+                x: 971.046,
+                y: -4255.56
+            },
+            356 : {
+                x: 648.619,
+                y: 317.957
+            },
+            357 : {
+                x: 786.907,
+                y: -5801.23
+            },
+            358 : {
+                x: -4052.1,
+                y: -2490.66
+            },
+            359 : {
+                x: 1380.24,
+                y: 3312.8
+            },
+            360 : {
+                x: -3366.65,
+                y: 3642.29
+            },
+            361 : {
+                x: 453.907,
+                y: -5001.01
+            },
+            362 : {
+                x: -1240.46,
+                y: 4712.14
+            },
+            363 : {
+                x: -2232.69,
+                y: -2803.21
+            },
+            364 : {
+                x: 4777.87,
+                y: -1835.66
+            },
+            365 : {
+                x: 4858.92,
+                y: -822.244
+            },
+            366 : {
+                x: -2704.77,
+                y: 4711.05
+            },
+            367 : {
+                x: -6780.01,
+                y: 7268.38
+            },
+            368 : {
+                x: -887.52,
+                y: 5659.54
+            },
+            369 : {
+                x: 3562.03,
+                y: -404.282
+            },
+            370 : {
+                x: -4594.94,
+                y: -414.85
+            },
+            371 : {
+                x: -2345.62,
+                y: 4528.39
+            },
+            372 : {
+                x: 4340.35,
+                y: -4826.16
+            },
+            373 : {
+                x: -6731.13,
+                y: 6816.49
+            },
+            374 : {
+                x: -830.727,
+                y: -916.91
+            },
+            375 : {
+                x: 3876.73,
+                y: -5147.24
+            },
+            376 : {
+                x: -3412.25,
+                y: 2943.7
+            },
+            377 : {
+                x: -3231.98,
+                y: -3781.01
+            },
+            378 : {
+                x: -2836.12,
+                y: 1556.26
+            },
+            379 : {
+                x: 787.072,
+                y: -6483
+            },
+            380 : {
+                x: -6779.42,
+                y: 7213.7
+            },
+            381 : {
+                x: -1911.86,
+                y: 4714.9
+            },
+            382 : {
+                x: -2176.9,
+                y: -4214.66
+            },
+            383 : {
+                x: -4384.48,
+                y: 196.24
+            },
+            384 : {
+                x: 5437.67,
+                y: 3029.87
+            },
+            385 : {
+                x: 3794.48,
+                y: -4699.55
+            },
+            386 : {
+                x: 5568.94,
+                y: 1821.07
+            },
+            387 : {
+                x: -5083.34,
+                y: 1994.12
+            },
+            388 : {
+                x: 2396.24,
+                y: 5251.7
+            },
+            389 : {
+                x: 3009.58,
+                y: 2338.39
+            },
+            390 : {
+                x: -4135.25,
+                y: 1080.54
+            },
+            391 : {
+                x: -317.852,
+                y: -4361.55
+            },
+            392 : {
+                x: 2803.26,
+                y: 4372.41
+            },
+            393 : {
+                x: 6505.46,
+                y: -415.836
+            },
+            394 : {
+                x: 4151.27,
+                y: 1330.18
+            },
+            395 : {
+                x: -4815.55,
+                y: -5434.7
+            },
+            396 : {
+                x: -5600.83,
+                y: -2004.34
+            },
+            397 : {
+                x: 5891.82,
+                y: 3282.88
+            },
+            398 : {
+                x: 5857.73,
+                y: -3103.42
+            },
+            399 : {
+                x: 1218.47,
+                y: -700.527
+            },
+            400 : {
+                x: -2250.5,
+                y: 2923.11
+            },
+            401 : {
+                x: -2770.66,
+                y: -94.1434
+            },
+            402 : {
+                x: 3729.89,
+                y: -3831.92
+            },
+            403 : {
+                x: -7652.04,
+                y: 7109.34
+            },
+            404 : {
+                x: 3.12471,
+                y: 5195.44
+            },
+            405 : {
+                x: -4471.41,
+                y: -2633
+            },
+            406 : {
+                x: 2133.78,
+                y: -3793.41
+            },
+            407 : {
+                x: 2415.88,
+                y: -3144.02
+            },
+            408 : {
+                x: 4.62638,
+                y: -4253.35
+            },
+            409 : {
+                x: -4207.82,
+                y: 5043.97
+            },
+            410 : {
+                x: 3159.05,
+                y: -4510.63
+            },
+            411 : {
+                x: -1949.42,
+                y: 5661.31
+            },
+            412 : {
+                x: -4597.38,
+                y: 1570.16
+            },
+            413 : {
+                x: 4815.75,
+                y: -4083.77
+            },
+            414 : {
+                x: -1236.01,
+                y: -3736.16
+            },
+            415 : {
+                x: 6.3354,
+                y: 765.658
+            },
+            416 : {
+                x: 3322.05,
+                y: -5287.21
+            },
+            417 : {
+                x: -3422.19,
+                y: 5844.92
+            },
+            418 : {
+                x: -6095.56,
+                y: 408.104
+            },
+            419 : {
+                x: -1157.33,
+                y: 4260.12
+            },
+            420 : {
+                x: -2870.48,
+                y: -1508.02
+            },
+            421 : {
+                x: -3190.2,
+                y: -1515.88
+            },
+            422 : {
+                x: 2914.53,
+                y: 1347.77
+            },
+            423 : {
+                x: 4859.44,
+                y: 468.341
+            },
+            424 : {
+                x: 1703.87,
+                y: 523.326
+            },
+            425 : {
+                x: 3932.82,
+                y: 4469.6
+            },
+            426 : {
+                x: 1.87995,
+                y: -3738.17
+            },
+            427 : {
+                x: 3249.6,
+                y: 440.586
+            },
+            428 : {
+                x: 3566.14,
+                y: 1330.53
+            },
+            429 : {
+                x: -2350.53,
+                y: -1349.66
+            },
+            430 : {
+                x: -4601.44,
+                y: 708.72
+            },
+            431 : {
+                x: 4214.22,
+                y: -2341.95
+            },
+            432 : {
+                x: -1751.37,
+                y: -5793.9
+            },
+            433 : {
+                x: 448.162,
+                y: 3410.19
+            },
+            434 : {
+                x: 4591.18,
+                y: 207.387
+            },
+            435 : {
+                x: -4968.51,
+                y: -341.869
+            },
+            436 : {
+                x: -4183.68,
+                y: 4702.85
+            },
+            437 : {
+                x: 4703.89,
+                y: 1298.84
+            },
+            438 : {
+                x: -3702.06,
+                y: -1998.72
+            },
+            439 : {
+                x: 1288.87,
+                y: -1378.52
+            },
+            440 : {
+                x: -536.054,
+                y: 3836.27
+            },
+            441 : {
+                x: -6869.33,
+                y: 7429.13
+            },
+            442 : {
+                x: 2364.66,
+                y: 4512.38
+            },
+            443 : {
+                x: -3.33598,
+                y: 1360.64
+            },
+            444 : {
+                x: 2124.17,
+                y: 277.436
+            },
+            445 : {
+                x: 1804.21,
+                y: -4323.01
+            },
+            446 : {
+                x: -2025.22,
+                y: 3537.77
+            },
+            447 : {
+                x: -4931.17,
+                y: 3922.72
+            },
+            448 : {
+                x: 2831.35,
+                y: -3140.99
+            },
+            449 : {
+                x: 2639.51,
+                y: -5351.76
+            },
+            450 : {
+                x: -5806.28,
+                y: -12.7873
+            },
+            451 : {
+                x: 398.51,
+                y: -4637.54
+            },
+            452 : {
+                x: 4859.88,
+                y: -455.235
+            },
+            453 : {
+                x: -3669.76,
+                y: -1159.5
+            },
+            454 : {
+                x: -1925.64,
+                y: -476.021
+            },
+            455 : {
+                x: -3005.29,
+                y: 2454.17
+            },
+            456 : {
+                x: -3985.94,
+                y: 2942.65
+            },
+            457 : {
+                x: -1754,
+                y: 5332.47
+            },
+            458 : {
+                x: -5805.67,
+                y: 1064.21
+            },
+            459 : {
+                x: -5084.91,
+                y: -1999.11
+            },
+            460 : {
+                x: 2831.8,
+                y: -4182.25
+            },
+            461 : {
+                x: -4594.54,
+                y: -786.585
+            },
+            462 : {
+                x: -1710.24,
+                y: -3560.52
+            },
+            463 : {
+                x: 1613.49,
+                y: -3748.88
+            },
+            464 : {
+                x: -5246.07,
+                y: -4526.23
+            },
+            465 : {
+                x: -3170.88,
+                y: 1570.79
+            },
+            466 : {
+                x: -2106.16,
+                y: 5946.28
+            },
+            467 : {
+                x: 746.097,
+                y: 5657.27
+            },
+            468 : {
+                x: 1514.75,
+                y: 5655.97
+            },
+            469 : {
+                x: 1334.37,
+                y: 2500.76
+            },
+            470 : {
+                x: 2099.1,
+                y: 3642.47
+            },
+            471 : {
+                x: 6202.31,
+                y: 2781.35
+            },
+            472 : {
+                x: -2743.51,
+                y: 4386.59
+            },
+            473 : {
+                x: 6203.99,
+                y: -1301.19
+            },
+            474 : {
+                x: 5076.02,
+                y: 2365.64
+            },
+            475 : {
+                x: 5896.02,
+                y: 264.081
+            },
+            476 : {
+                x: 5064.43,
+                y: 4166.67
+            },
+            477 : {
+                x: -1549.02,
+                y: -2514.39
+            },
+            478 : {
+                x: -3344.95,
+                y: -2838.24
+            },
+            479 : {
+                x: 705.694,
+                y: -3751.68
+            },
+            480 : {
+                x: -1308.36,
+                y: -1412.68
+            },
+            481 : {
+                x: -388.144,
+                y: -4629.31
+            },
+            482 : {
+                x: -465.466,
+                y: 4719.49
+            },
+            483 : {
+                x: 3850.95,
+                y: -3353.71
+            },
+            484 : {
+                x: -3067.17,
+                y: -5096.62
+            },
+            485 : {
+                x: -1530.1,
+                y: 3674.85
+            },
+            486 : {
+                x: 6210.68,
+                y: -2350.34
+            },
+            487 : {
+                x: 6207.08,
+                y: -1840.31
+            },
+            488 : {
+                x: 5265.6,
+                y: -644.286
+            },
+            489 : {
+                x: 4855.71,
+                y: -2833.13
+            },
+            490 : {
+                x: -2708.3,
+                y: -5282.85
+            },
+            491 : {
+                x: 5078.95,
+                y: 1827.06
+            },
+            492 : {
+                x: -3677.7,
+                y: -587.71
+            },
+            493 : {
+                x: 1038.22,
+                y: 565.817
+            },
+            494 : {
+                x: 3561.95,
+                y: -822.695
+            },
+            495 : {
+                x: 4594.18,
+                y: 1299.06
+            },
+            496 : {
+                x: -4594.07,
+                y: -498.542
+            },
+            497 : {
+                x: -743.785,
+                y: 5657.44
+            },
+            498 : {
+                x: 3515.46,
+                y: -2342.64
+            },
+            499 : {
+                x: -1.04553,
+                y: 4715.36
+            },
+            500 : {
+                x: 5619.04,
+                y: 1149.48
+            },
+            501 : {
+                x: -2746.02,
+                y: -3625.75
+            },
+            502 : {
+                x: 6543.52,
+                y: 505.394
+            },
+            503 : {
+                x: 4859.15,
+                y: -2359.85
+            },
+            504 : {
+                x: 3372.76,
+                y: 5912.5
+            },
+            505 : {
+                x: 413.405,
+                y: -858.047
+            },
+            506 : {
+                x: 5952.31,
+                y: -1829.79
+            },
+            507 : {
+                x: -8022.84,
+                y: -1176.73
+            },
+            508 : {
+                x: -7558.01,
+                y: 7184.51
+            },
             509 : {
-                x: -7510.26,
-                y: 6737.02
+                x: -6913.99,
+                y: 6554.39
             },
             510 : {
-                x: -7421.76,
-                y: 6577.8
+                x: -7101.21,
+                y: 6544.94
             },
             511 : {
+                x: -7602.79,
+                y: 6578.31
+            },
+            512 : {
+                x: -6639.09,
+                y: 6980.21
+            },
+            513 : {
+                x: 1869.63,
+                y: -279.253
+            },
+            514 : {
                 x: 2518.96,
                 y: -1639.57
             },
-            512 : {
-                x: 2742.05,
-                y: -1805.74
+            515 : {
+                x: -1543.31,
+                y: -3321.36
             }
         },
         constants: {
@@ -34260,12 +34519,12 @@ function(t, n, e) {
         value: !0
     });
     var o = e(0),
-    i = e(60);
-    e(81);
-    var s, c, r, d = e(59),
-    l = e(7),
-    u = e(78),
-    m = e(75),
+    i = e(65);
+    e(86);
+    var s, c, r, d = e(64),
+    l = e(4),
+    u = e(83),
+    m = e(80),
     y = e(1); !
     function(t) {
         t[t.MainInventory = 0] = "MainInventory",
@@ -34326,11 +34585,10 @@ function(t, n, e) {
                 chars: a
             })
         },
-			//lucifer-7
+						//lucifer-7
         n.prototype.fetchChar = function() {
             var t = this;
             l.getJson("/api/data/" + this.props.snapshotVersion.version + "/getcharacter?overview=" + this.props.snapshotVersion.name + "&account=" + this.props.account + "&name=" + this.props.name).then(function(n) {
-				 
                 t.setState({
                     char: RepItemNinja(n)
                 })
@@ -34512,7 +34770,7 @@ function(t, n, e) {
                 className: "bg-teal border-light-grey py3 px6 hover:glow-teal cursor-pointer color-white block",
                 href: "/" + this.props.snapshotVersion.url + "/builds" + (this.state.search.length ? "?" + this.state.search: "")
             },
-				//lucifer-1
+						//lucifer-1
             "返回搜索"), o.createElement("div", {
                 className: "next-previous flex"
             },
@@ -34746,20 +35004,21 @@ function(t, n, e) {
         value: !0
     });
     var o = e(0),
-    i = e(9);
-    e(89),
-    e(86),
-    e(40),
-    e(50),
-    e(49),
-    e(48),
-    e(47),
+    i = e(10);
+    e(94),
+    e(91),
     e(46),
-    Array.from || (Array.from = e(42));
-    var s = e(84),
-    c = e(72),
-    r = e(13),
-    d = e(4),
+    e(44),
+    e(55),
+    e(54),
+    e(53),
+    e(52),
+    e(51),
+    Array.from || (Array.from = e(48));
+    var s = e(89),
+    c = e(77),
+    r = e(15),
+    d = e(5),
     l = window.leagues,
     u = window.oldLeagues,
     m = function(t) {
@@ -34774,7 +35033,7 @@ function(t, n, e) {
                 caughtError: !0
             })
         },
-		//lucifer -5
+						//lucifer -5
         n.prototype.render = function() {
             return this.state.caughtError ? o.createElement("div", null, o.createElement("div", {
                 className: "flex items-center content-center",
@@ -34797,12 +35056,12 @@ function(t, n, e) {
         n.prototype.render = function() {
 			
 				//lucifer-8
-			var headerDiv=	document.getElementById("header");
+				var headerDiv=	document.getElementById("header");
 		while(headerDiv.hasChildNodes()) //当div下还存在子节点时 循环继续
 		{
 			headerDiv.removeChild(headerDiv.firstChild);
 		}
-			
+
             return i.createPortal(o.createElement("div", {
                 className: "site-header"
             },
@@ -34825,7 +35084,6 @@ function(t, n, e) {
                 href: "/",
                 className: "bg-teal border-light-grey py3 px6 hover:glow-teal cursor-pointer"
             },
-			//lucifer
             "进入ninja首页")), o.createElement(r.LeagueSelector, {
                 targetPath: "builds",
                 leagues: l,
@@ -34880,23 +35138,19 @@ function(t, n, e) {
     Object.defineProperty(n, "__esModule", {
         value: !0
     }),
-    e(58);
+    e(63);
     var a = e(0),
-    o = e(9),
-    i = e(90),
-    s = e(21); !
+    o = e(10),
+    i = e(95),
+    s = e(27); !
     function(t) {
         o.render(a.createElement(s.AppContainer, null, a.createElement(t, null)), document.getElementById("container"))
     } (i.
 default)
 },
 function(t, n, e) {
-    t.exports = e(91)
+    t.exports = e(96)
 }]);
-
-
-
-
 //lucifer5
 //lucifer
 	
