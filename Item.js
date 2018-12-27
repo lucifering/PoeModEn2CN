@@ -1,6 +1,10 @@
 ﻿ 
  var keyStonesJson= [ 
-
+{"en":/Master of Metal/g,"cn":"钢铁大师"},
+{"en":/Runebinder/g,"cn":"符文绑定者"},
+{"en":/Explosive Runes/g,"cn":"爆炸符文"},
+{"en":/Runesmith/g,"cn":"符文工匠"},
+{"en":/Skittering Runes/g,"cn":"飞掠符文"},
 {"en":/Radiant Crusade/g,"cn":"光明圣战"},
 {"en":/Unwavering Crusade/g,"cn":"坚定圣战"},
 {"en":/Nature's Reprisal/g,"cn":"大自然的报仇"},

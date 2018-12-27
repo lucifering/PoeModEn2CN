@@ -1,0 +1,25 @@
+Java eclipse项目
+
+通过补丁工具 把ggpk里面的 StatDescriptions目录下的部分txt导出到 StatDescriptions文件夹下面。
+
+文件列表：
+    active_skill_gem_stat_descriptions.txt
+    aura_skill_stat_descriptions.txt
+    banner_aura_skill_stat_descriptions.txt
+    beam_skill_stat_descriptions.txt
+    brand_skill_stat_descriptions.txt
+    curse_skill_stat_descriptions.txt
+    debuff_skill_stat_descriptions.txt
+    gem_stat_descriptions.txt
+    minion_attack_skill_stat_descriptions.txt
+    minion_skill_stat_descriptions.txt
+    minion_spell_skill_stat_descriptions.txt
+    offering_skill_stat_descriptions.txt
+    passive_skill_aura_stat_descriptions.txt
+    passive_skill_stat_descriptions.txt
+    skill_stat_descriptions.txt
+    stat_descriptions.txt
+    variable_duration_skill_stat_descriptions.txt
+	
+	
+运行项目 生成 mods.js

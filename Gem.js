@@ -1,7 +1,16 @@
 var gemJson=[
-
-
-
+{"en":/Arcane Wake/g,"cn":"秘术苏醒"},
+{"en":/Feast of Flesh/g,"cn":"血肉盛宴"},
+{"en":/Armageddon Brand/g,"cn":"末日烙印"},
+{"en":/Bonechill Support/g,"cn":"彻骨（辅）"},
+{"en":/Brand Recall/g,"cn":"烙印召回"},
+{"en":/Storm Brand/g,"cn":"风暴烙印"},
+{"en":/Winter Orb/g,"cn":"寒冬宝珠"},
+{"en":/Dread Banner/g,"cn":"恐怖之旗"},
+{"en":/Multiple Totems Support/g,"cn":"多重图腾（辅）"},
+{"en":/War Banner/g,"cn":"战旗"},
+{"en":/Lancing Steel/g,"cn":"断金之刃"},
+{"en":/Shattering Steel/g,"cn":"破碎铁刃"},
 {"en":/Vicious Projectiles Support/g,"cn":"邪恶投掷(辅)"},
 {"en":/Envy/g,"cn":"嫉妒"},
 {"en":/Summon Doedre's Effigy/g,"cn":"召唤德瑞的雕像"},
@@ -10,8 +19,6 @@ var gemJson=[
 {"en":/Aspect of the Avian/g,"cn":"鸟之势"},
 {"en":/Aspect of the Cat/g,"cn":"猫之势"},
 {"en":/Petrification Statue/g,"cn":"召唤石化雕像"},
-
-
 {"en":/Herald of Agony/g,"cn":"苦痛之捷"},
 {"en":/Scourge Arrow/g,"cn":"灾厄之箭"},
 {"en":/Toxic Rain/g,"cn":"腐蚀毒雨"},

@@ -35184,7 +35184,11 @@ function toCnMod(namejsons, enname) {
             }
             return linkCN.replace("<br>", "\n");
 
-        } //end of for
+        }else{
+		
+		} 
+
+
     }
     return enname.replace("<br>", "\n");
 

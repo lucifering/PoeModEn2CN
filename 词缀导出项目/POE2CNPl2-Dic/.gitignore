@@ -1,0 +1,6 @@
+﻿*.lucifer
+*.zip
+*.bak
+/bin
+mods.js
+/StatDescriptions
