@@ -1,5 +1,8 @@
 ﻿ 
  var keyStonesJson= [ 
+{"en":/Sign of Purpose/g,"cn":"目的标识"},
+{"en":/Withering Presence/g,"cn":"凋零姿态"},
+{"en":/Frigid Wake/g,"cn":"寒风唤醒"},
 {"en":/Master of Metal/g,"cn":"钢铁大师"},
 {"en":/Runebinder/g,"cn":"符文绑定者"},
 {"en":/Explosive Runes/g,"cn":"爆炸符文"},

@@ -24,7 +24,7 @@ import lucifering.poe.dic.utils.StrUtil;
 
 public class MainWorker {
 
-	// 如果没有简体中文词缀 那么是否取繁体中文
+	// 如果没有简体中文词缀 那么是否取繁体中文  未实现
 	public static boolean enableTW = false;
 
 	public static void main(String[] args) throws Exception {
@@ -252,7 +252,7 @@ public class MainWorker {
 
 					if (tmpbean.en.size() != tmpbean.tw.size()) {
 
-					 
+					 //todo
 					}
 				}
 

@@ -1,5 +1,5 @@
 var uniqueNameJson=[
-
+{"en":/Reach of The Council/g,"cn":"议会之触 脊弓"},
 {"en":/Bitterbind Point/g,"cn":"苦痛之处 巨人魔盾"},
 {"en":/Cinderswallow Urn/g,"cn":"灰烬之瓮 真银药剂"},
 {"en":/Flamesight/g,"cn":"卓识 日耀之冠"},
@@ -252,7 +252,6 @@ var uniqueNameJson=[
 {"en":/Mon'tregul's Grasp/g,"cn":"凋灵魔爪 虚影短杖"},
 {"en":/Doomfletch's Prism/g,"cn":"灭世之狱 皇家猎弓"},
 {"en":/Null's Inclination/g,"cn":"虚无之倾 漫游之弓"},
-{"en":/Reach of The Council/g,"cn":"议会之触 脊弓"},
 {"en":/The Whispering Ice/g,"cn":"冰点低语 毒牙长杖"},
 {"en":/Reaper's Pursuit/g,"cn":"死神的取魂器 幽影巨斧"},
 {"en":/Uul-Netol's Kiss/g,"cn":"乌尔尼多之吻 双影巨斧"},

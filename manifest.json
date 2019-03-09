@@ -1,8 +1,8 @@
 ﻿{
     "name": "poe论坛装备词缀汉化·光影",
-    "manifest_version": 8,
-    "version": "3.5.1",
-    "description": "poe论坛装备词缀汉化·光影",
+    "manifest_version": 12,
+    "version": "3.6.0",
+    "description": "poe论坛装备词缀汉化·光影路西法",
      
     "permissions": [
         "tabs",
@@ -11,7 +11,7 @@
         "activeTab"
     ],
     "browser_action": {
-	      "default_title": "poe论坛装备词缀汉化·光影",
+	      "default_title": "poe论坛装备词缀汉化·光影路西法",
 	      "default_icon": "logo.png",
 	      "default_popup": "popup.html"
 	}
