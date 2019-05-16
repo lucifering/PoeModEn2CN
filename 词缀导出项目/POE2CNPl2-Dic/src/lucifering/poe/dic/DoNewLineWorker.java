@@ -12,40 +12,53 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
 import com.google.gson.Gson;
 
 import lucifering.poe.dic.bean.CNENBean;
+import lucifering.poe.dic.bean.DoCNENBean;
 import lucifering.poe.dic.bean.TmpLinesBean;
 import lucifering.poe.dic.utils.FUtil;
 import lucifering.poe.dic.utils.StrUtil;
 
-public class MainWorker {
+public class DoNewLineWorker {
 
 	// 如果没有简体中文词缀 那么是否取繁体中文  未实现
 	public static boolean enableTW = false;
 
+	public static List removeDuplicate(List list) {   
+	    HashSet h = new HashSet(list);   
+	    list.clear();   
+	    list.addAll(h);   
+	    return list;   
+	}
+	
 	public static void main(String[] args) throws Exception {
 		
 		Gson gson = new Gson();
-		 OutputStreamWriter out = new OutputStreamWriter(new FileOutputStream("./mods.js"),"UTF-8");
-		 out.write("var modsjson= [\r\n");
+		 OutputStreamWriter out = new OutputStreamWriter(new FileOutputStream("./poe2.dl"),"UTF-8");
+		 
 	     
 		 List<String>  wStrList=new ArrayList<String>();
-		List<File> statDescriptionsList = FUtil.getCurDirFileList("./StatDescriptions/", ".txt");
+		List<File> statDescriptionsList = FUtil.getCurDirFileList("./DoStatDescriptions/", ".txt");
 		for (File file : statDescriptionsList) {
 
-			List<CNENBean>  cnenList=getMod(file);
-			for(CNENBean bean:cnenList ) {				
-				wStrList.add("{\"en\":/"+bean.en+"/g,\"cn\":\""+bean.cn+"\"},\r\n");
+			List<DoCNENBean>  cnenList=getMod(file);
+			for(DoCNENBean bean:cnenList ) {		
+				
+				wStrList.add("[[{\"type\":0,\"SourString\":\"\",\"regexString\":\""+bean.en+"\",\"formatString\":\""+
+				bean.en_formatString+"\"}],[{\"type\":1,\"SourString\":\"\",\"regexString\":\""+
+						bean.cn+"\",\"formatString\":\""+bean.cn_formatString+"\"}]]\r\n"
+						);
 			}
 			
 			
 			// break;
 		}
-		
+		wStrList=removeDuplicate(wStrList);
 		wStrList.sort(new Comparator<String>() {
 
 			@Override
@@ -56,22 +69,23 @@ public class MainWorker {
 			
 		});
 		
+		
 		for(String str :wStrList) {
 			
 			out.write(str);
 		}
 		
-		 out.write("];");
+		 
 		out.close();
 		System.out.println("All Done!");
 
 	}
 
 	@SuppressWarnings("unused")
-	public static List<CNENBean> getMod(File file) throws Exception {
+	public static List<DoCNENBean> getMod(File file) throws Exception {
 		System.out.println(file.getAbsolutePath());
 		Gson gson = new Gson();
-		List<CNENBean> beanList = new ArrayList<CNENBean>();
+		List<DoCNENBean> beanList = new ArrayList<DoCNENBean>();
 
 		InputStreamReader isr = new InputStreamReader(new FileInputStream(file), "unicode");
 		BufferedReader br = new BufferedReader(isr);
@@ -230,8 +244,8 @@ public class MainWorker {
 
 		for (Map.Entry<String, TmpLinesBean> entry : linesListMap.entrySet()) {
 			// System.out.println("【ok】="+gson.toJson( entry.getValue()));
-			List<CNENBean>  cnenList=TmpLinesBean2CnEnBean(entry.getKey(), entry.getValue());
-			
+			List<DoCNENBean>  cnenList=TmpLinesBean2CnEnBean(entry.getKey(), entry.getValue());
+			//System.out.println("【ok】="+gson.toJson( cnenList));
 			
 			beanList.addAll( cnenList);
 		}
@@ -240,9 +254,9 @@ public class MainWorker {
 	}
 
 	// 获取的数据转换为 cn和en
-	public static List<CNENBean> TmpLinesBean2CnEnBean(String key, TmpLinesBean tmpbean) {
+	public static List<DoCNENBean> TmpLinesBean2CnEnBean(String key, TmpLinesBean tmpbean) {
 		Gson gson = new Gson();
-		List<CNENBean> beanList = new ArrayList<CNENBean>();
+		List<DoCNENBean> beanList = new ArrayList<DoCNENBean>();
 
 		if (tmpbean.en != null && tmpbean.cn != null) {
 
@@ -265,59 +279,100 @@ public class MainWorker {
 					
 					if(stren.contains("\"") && strcn.contains("\"")) {
 						
-						CNENBean bean=new CNENBean();
-						String en=stren.substring(stren.indexOf("\"")+1,stren.lastIndexOf("\""));
-						String cn=strcn.substring(strcn.indexOf("\"")+1,strcn.lastIndexOf("\""));
 						
-						en=en.replaceAll("\\\\n", "<br>");
-						cn=cn.replaceAll("\\\\n", "<br>");
-						
-						
-						if(en.contains("%1$+d")) {
-							bean.en=StrUtil.enPre(en,true);
-							bean.cn=StrUtil.cnPre(cn);
+						String enStr=stren.substring(stren.indexOf("\"")+1,stren.lastIndexOf("\""));
+						String cnStr=strcn.substring(strcn.indexOf("\"")+1,strcn.lastIndexOf("\""));
+						if(!enStr.contains("\\n") && !cnStr.contains("\\n")) {
+							continue;
 							
-							if(bean.en.contains("%1$+d")) {
-								
-								CNENBean bean2=new CNENBean();
-								bean2.cn=bean.cn;
-								bean2.en=bean.en;
-								
-								while((bean.en.contains("%1$+d"))) {
-									bean.en=bean.en.replace("%1$+d" , "\\+(\\d+|(\\d+\\.\\d+))");
-								}
-								while((bean.cn.contains("%1$+d"))) {
-									bean.cn=bean.cn.replace("%1$+d" , "+#");
-								}
-								
-								while((bean2.en.contains("%1$+d"))) {
-									bean2.en=bean2.en.replace("%1$+d" , "\\-(\\d+|(\\d+\\.\\d+))");
-								}
-								while((bean2.cn.contains("%1$+d"))) {
-									bean2.cn=bean2.cn.replace("%1$+d" , "-#");
-								}
-								beanList.add(bean2);
-								
-								
-							 }
-						
-							
-						}else {
-							bean.en=StrUtil.enPre(en,true);
-							bean.cn=StrUtil.cnPre(cn);
-						}
-						
-						
-						if(en.isEmpty()) {
-							System.out.println("【Error】=" + gson.toJson(tmpbean));
-						}else {
-							 
-						//	System.out.println("【ok】=" + en);
-						//	System.out.println("【ok】=" + cn);
 							
 						}
 						
-						beanList.add(bean);
+						String[] engroup=enStr.split("\\\\n");
+						String[] cngroup=cnStr.split("\\\\n");
+					
+						if(engroup.length ==cngroup.length) {
+							
+							for(int index=0;index<engroup.length;index++) {
+								
+								
+								String en=engroup[index];
+								String cn=cngroup[index];
+								System.out.println(en+"=VS="+cn);
+								
+								DoCNENBean bean=new DoCNENBean();
+								bean.en=StrUtil.doEnPre(en,false);
+								bean.cn=StrUtil.doEnPre(cn,false);
+								bean.cn_formatString=StrUtil.cnPreFormatString(cn,true);
+								bean.en_formatString=StrUtil.enPreFormatString(en,true);
+								
+								
+								
+								if(en.contains("%1$+d")) {
+									bean.en=StrUtil.doEnPre(en,false);
+									bean.cn=StrUtil.doEnPre(cn,false);
+									bean.cn_formatString=StrUtil.cnPreFormatString( cn,true);
+									bean.en_formatString=StrUtil.enPreFormatString(en,true);
+									
+									
+									if(bean.en.contains("%1$+d")) {
+										
+										DoCNENBean bean2=new DoCNENBean();
+										bean2.cn=bean.cn;
+										bean2.en=bean.en;
+										
+										bean2.cn_formatString=StrUtil.cnPreFormatString( cn,false);
+										bean2.en_formatString=StrUtil.enPreFormatString(en,false);
+										
+										while((bean.en.contains("%1$+d"))) {
+											bean.en=bean.en.replace("%1$+d" , "\\\\+(\\\\d+|(\\\\d+\\\\.\\\\d+))");
+											 
+											 
+										}
+										while((bean.cn.contains("%1$+d"))) {
+											bean.cn=bean.cn.replace("%1$+d" , "\\\\+(\\\\d+|(\\\\d+\\\\.\\\\d+))");
+										}
+										
+										while((bean2.en.contains("%1$+d"))) {
+											bean2.en=bean2.en.replace("%1$+d" , "\\\\-(\\\\d+|(\\\\d+\\\\.\\\\d+))");
+										}
+										while((bean2.cn.contains("%1$+d"))) {
+											bean2.cn=bean2.cn.replace("%1$+d" , "\\\\-(\\\\d+|(\\\\d+\\\\.\\\\d+))");
+										}
+										beanList.add(bean2);
+										
+										
+									 }
+								
+									
+								}else {
+								//	System.out.println("【else】");
+									bean.en=StrUtil.doEnPre(en,false);
+									bean.cn=StrUtil.doEnPre(cn,false);
+								}
+								
+								
+								if(en.isEmpty()) {
+									System.out.println("【Error】=" + gson.toJson(tmpbean));
+								}else {
+									 
+								//	System.out.println("【ok】=" + en);
+								//	System.out.println("【ok】=" + cn);
+									
+								}
+								//System.out.println("【ok】=" + bean.en);
+							//	System.out.println("【ok】=" + bean.cn);
+								beanList.add(bean);
+								
+							}
+							
+							
+						}
+						
+					//	en=en.replaceAll("\\\\n", "<br>");
+					//	cn=cn.replaceAll("\\\\n", "<br>");
+						
+						
 						
 					}else {
 						System.out.println("【Error】=" + gson.toJson(tmpbean));
@@ -332,6 +387,8 @@ public class MainWorker {
 		} else {
 			System.out.println("【Error!】=" + gson.toJson(tmpbean));
 		}
+		
+	//	System.out.println("【beanList!】=" + gson.toJson(beanList));
 
 		return beanList;
 	}

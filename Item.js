@@ -245,6 +245,7 @@
 
 
 var baseItemJson=[
+{"en":/Ornate Quiver/g,"cn":"华美箭袋"},
 {"en":/Nailed Fist/g,"cn":"拳钉"},
 {"en":/Sharktooth Claw/g,"cn":"鲨颚爪"},
 {"en":/Awl/g,"cn":"凿钉"},

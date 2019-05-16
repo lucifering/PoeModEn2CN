@@ -1,7 +1,7 @@
 ﻿{
     "name": "poe论坛装备词缀汉化·光影",
-    "manifest_version": 12,
-    "version": "3.6.0",
+    "manifest_version": 15,
+    "version": "3.6.3",
     "description": "poe论坛装备词缀汉化·光影路西法",
      
     "permissions": [
